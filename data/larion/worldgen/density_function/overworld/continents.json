@@ -4,27 +4,44 @@
         "type": "add",
         "argument1": -1.0,
         "argument2": {
-            "type": "add",
+            "type": "mul",
             "argument1": {
-                "type": "more_dfs:power",
-                "base": {
-                    "type": "minecraft:noise",
-                    "noise": "larion:continents_large",
-                    "xz_scale": 1.0,
-                    "y_scale": 0
+                "type": "add",
+                "argument1": {
+                    "type": "add",
+                    "argument1": {
+                        "type": "more_dfs:power",
+                        "base": {
+                            "type": "minecraft:noise",
+                            "noise": "larion:continents_large",
+                            "xz_scale": 1.0,
+                            "y_scale": 0
+                        },
+                        "exp": 2.0
+                    },
+                    "argument2": {
+                        "type": "more_dfs:power",
+                        "base": {
+                            "type": "minecraft:noise",
+                            "noise": "larion:continents_small",
+                            "xz_scale": 1.0,
+                            "y_scale": 0
+                        },
+                        "exp": 2.0
+                    }
                 },
-                "exp": 2.0
+                "argument2": {
+                    "type": "more_dfs:power",
+                    "base": {
+                        "type": "minecraft:noise",
+                        "noise": "larion:islands",
+                        "xz_scale": 1.0,
+                        "y_scale": 0
+                    },
+                    "exp": 2.0
+                }
             },
-            "argument2": {
-                "type": "more_dfs:power",
-                "base": {
-                    "type": "minecraft:noise",
-                    "noise": "larion:continents_small",
-                    "xz_scale": 1.0,
-                    "y_scale": 0
-                },
-                "exp": 2.0
-            }
+            "argument2": 2.0
         }
     },
     "argument2": {
