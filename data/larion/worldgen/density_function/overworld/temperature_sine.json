@@ -1,0 +1,22 @@
+{
+    "type": "mul",
+    "argument1": {
+        "type": "more_dfs:sine",
+        "input": {
+            "type": "mul",
+            "argument1": {
+                "type": "more_dfs:z"
+            },
+            "argument2": {
+                "type": "mul",
+                "argument1": {
+                    "type": "more_dfs:power",
+                    "base": 6000,
+                    "exp": -1
+                },
+                "argument2": 3.14
+            }
+        }
+    },
+    "argument2": 1.0
+}
