@@ -1,41 +1,33 @@
 {
-    "type": "minecraft:add",
-    "argument1": {
-        "type": "minecraft:spline",
-        "spline": {
-            "coordinate": {
-                "type": "minecraft:noise",
-                "noise": "larion:ridge",
-                "xz_scale": 1.0,
-                "y_scale": 0.0
+    "type": "minecraft:spline",
+    "spline": {
+        "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "larion:ridge",
+            "xz_scale": 1.0,
+            "y_scale": 0.0
+        },
+        "points": [
+            {
+                "location": -1.0,
+                "derivative": 0.0,
+                "value": -1.0
             },
-            "points": [
-                {
-                    "location": -1.0,
-                    "derivative": 0.0,
-                    "value": -1.0
-                },
-                {
-                    "location": -0.8,
-                    "derivative": 0.0,
-                    "value": -0.5
-                },
-                {
-                    "location": 0.3,
-                    "derivative": 0.0,
-                    "value": 0.6
-                },
-                {
-                    "location": 1.0,
-                    "derivative": 0.0,
-                    "value": 1.0
-                }
-            ]
-        }
-    },
-    "argument2": {
-        "type": "minecraft:mul",
-        "argument1": "larion:overworld/coasts",
-        "argument2": -0.3
+            {
+                "location": -0.8,
+                "derivative": 0.0,
+                "value": -0.5
+            },
+            {
+                "location": 0.3,
+                "derivative": 0.0,
+                "value": 0.6
+            },
+            {
+                "location": 1.0,
+                "derivative": 0.0,
+                "value": 1.0
+            }
+        ]
     }
 }
