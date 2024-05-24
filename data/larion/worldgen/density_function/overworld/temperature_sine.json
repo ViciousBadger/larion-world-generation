@@ -1,14 +1,14 @@
 {
-    "type": "mul",
+    "type": "minecraft:mul",
     "argument1": {
         "type": "more_dfs:sine",
         "input": {
-            "type": "mul",
+            "type": "minecraft:mul",
             "argument1": {
                 "type": "more_dfs:z"
             },
             "argument2": {
-                "type": "mul",
+                "type": "minecraft:mul",
                 "argument1": {
                     "type": "more_dfs:power",
                     "base": 6000,

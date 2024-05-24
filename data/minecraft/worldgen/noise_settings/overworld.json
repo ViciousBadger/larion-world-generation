@@ -61,9 +61,9 @@
                         "argument1": {
                           "type": "minecraft:y_clamped_gradient",
                           "from_value": 1.0,
-                          "from_y": 240,
+                          "from_y": 300,
                           "to_value": 0.0,
-                          "to_y": 256
+                          "to_y": 319
                         },
                         "argument2": {
                           "type": "minecraft:add",
@@ -246,15 +246,7 @@
     },
     "ridges": "minecraft:overworld/ridges",
     "temperature": "larion:overworld/temperature",
-    "vegetation": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:vegetation",
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0.0,
-      "shift_z": "minecraft:shift_z",
-      "xz_scale": 0.25,
-      "y_scale": 0.0
-    },
+    "vegetation": "larion:overworld/vegetation",
     "vein_gap": {
       "type": "minecraft:noise",
       "noise": "minecraft:ore_gap",

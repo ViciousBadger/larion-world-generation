@@ -1,14 +1,14 @@
 {
     "type": "more_dfs:subtract",
     "argument1": {
-        "type": "add",
+        "type": "minecraft:add",
         "argument1": -1.0,
         "argument2": {
-            "type": "mul",
+            "type": "minecraft:mul",
             "argument1": {
-                "type": "add",
+                "type": "minecraft:add",
                 "argument1": {
-                    "type": "add",
+                    "type": "minecraft:add",
                     "argument1": {
                         "type": "more_dfs:power",
                         "base": {
