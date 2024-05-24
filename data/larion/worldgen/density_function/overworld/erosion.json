@@ -14,7 +14,7 @@
                 "type": "more_dfs:power",
                 "base": {
                     "type": "minecraft:max",
-                    "argument1": "larion:overworld/continents",
+                    "argument1": "minecraft:overworld/continents",
                     "argument2": 0.0
                 },
                 "exp": 2.0
