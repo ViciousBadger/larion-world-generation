@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:add",
+    "argument1": "minecraft:overworld/factor",
+    "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "minecraft:overworld/continents",
+            "points": [
+                {
+                    "location": -1.05,
+                    "derivative": 0,
+                    "value": 0
+                },
+                {
+                    "location": -0.8,
+                    "derivative": 0,
+                    "value": 2.5
+                },
+                {
+                    "location": -0.275,
+                    "derivative": 0,
+                    "value": 2.5
+                },
+                {
+                    "location": -0.15,
+                    "derivative": 0,
+                    "value": 0
+                }
+            ]
+        }
+    }
+}

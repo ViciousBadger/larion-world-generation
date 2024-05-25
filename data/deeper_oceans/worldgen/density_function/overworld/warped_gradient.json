@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:range_choice",
+          "input": "minecraft:y",
+          "min_inclusive": 16,
+          "max_exclusive": 48,
+          "when_in_range": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_y": 16,
+            "to_y": 48,
+            "from_value": 0.625,
+            "to_value": 0.375
+          },
+          "when_out_of_range": 0
+        },
+        "argument2": {
+          "type": "minecraft:range_choice",
+          "input": "minecraft:y",
+          "min_inclusive": -64,
+          "max_exclusive": 16,
+          "when_in_range": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_y": -64,
+            "to_y": 16,
+            "from_value": 0.875,
+            "to_value": 0.625
+          },
+          "when_out_of_range": 0
+        }
+      },
+      "argument2": {
+        "type": "minecraft:range_choice",
+        "input": "minecraft:y",
+        "min_inclusive": 48,
+        "max_exclusive": 320,
+        "when_in_range": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_y": 48,
+          "to_y": 320,
+          "from_value": 0.375,
+          "to_value": -1.5
+        },
+        "when_out_of_range": 0
+      }
+    },
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "minecraft:overworld/continents",
+        "points": [
+          {
+            "location": -1.05,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": -0.8,
+            "derivative": 0,
+            "value": 1
+          },
+          {
+            "location": -0.275,
+            "derivative": 0,
+            "value": 1
+          },
+          {
+            "location": -0.15,
+            "derivative": 0,
+            "value": 0
+          }
+        ]
+      }
+    }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": -64,
+      "to_y": 320,
+      "from_value": 1.5,
+      "to_value": -1.5
+    },
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "minecraft:overworld/continents",
+        "points": [
+          {
+            "location": -1.05,
+            "derivative": 0,
+            "value": 1
+          },
+          {
+            "location": -0.8,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": -0.275,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": -0.15,
+            "derivative": 0,
+            "value": 1
+          }
+        ]
+      }
+    }
+  }
+}
