@@ -1,23 +1,29 @@
 {
     "type": "minecraft:mul",
     "argument1": {
-        "type": "more_dfs:power",
-        "base": {
-            "type": "minecraft:add",
+        "type": "minecraft:add",
+        "argument1": {
+            "type": "minecraft:mul",
             "argument1": {
-                "type": "minecraft:noise",
-                "noise": "larion:jank_minor",
-                "xz_scale": 0.25,
-                "y_scale": 0.25
+                "type": "minecraft:abs",
+                "argument": {
+                    "type": "minecraft:noise",
+                    "noise": "larion:jank_minor",
+                    "xz_scale": 0.25,
+                    "y_scale": 0.5
+                }
             },
-            "argument2": {
+            "argument2": -1.0
+        },
+        "argument2": {
+            "type": "minecraft:abs",
+            "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:jank_major",
-                "xz_scale": 0.25,
-                "y_scale": 0.3
+                "xz_scale": 0.5,
+                "y_scale": 0.25
             }
-        },
-        "exp": 2.0
+        }
     },
     "argument2": {
         "type": "minecraft:clamp",

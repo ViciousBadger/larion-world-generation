@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:spline",
+    "spline": {
+        "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "larion:ridge",
+            "xz_scale": 1.0,
+            "y_scale": 0.0
+        },
+        "points": [
+            {
+                "location": -1.0,
+                "derivative": 0.0,
+                "value": -1.0
+            },
+            {
+                "location": -0.8,
+                "derivative": 0.0,
+                "value": -0.5
+            },
+            {
+                "location": 0.3,
+                "derivative": 0.0,
+                "value": 0.6
+            },
+            {
+                "location": 1.0,
+                "derivative": 0.0,
+                "value": 1.0
+            }
+        ]
+    }
+}
