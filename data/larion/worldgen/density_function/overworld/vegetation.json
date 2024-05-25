@@ -5,16 +5,24 @@
         "argument": {
             "type": "minecraft:add",
             "argument1": {
-                "type": "minecraft:noise",
-                "noise": "larion:vegetation",
-                "xz_scale": 0.25,
-                "y_scale": 0
+                "type": "minecraft:mul",
+                "argument1": {
+                    "type": "minecraft:noise",
+                    "noise": "larion:vegetation",
+                    "xz_scale": 0.25,
+                    "y_scale": 0
+                },
+                "argument2": 0.9
             },
             "argument2": {
-                "type": "minecraft:noise",
-                "noise": "larion:vegetation_variation",
-                "xz_scale": 0.25,
-                "y_scale": 0
+                "type": "minecraft:mul",
+                "argument1": {
+                    "type": "minecraft:noise",
+                    "noise": "larion:vegetation_variation",
+                    "xz_scale": 0.25,
+                    "y_scale": 0
+                },
+                "argument2": 0.3
             }
         }
     }
