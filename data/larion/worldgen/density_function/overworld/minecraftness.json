@@ -3,49 +3,51 @@
     "argument1": {
         "type": "minecraft:add",
         "argument1": {
-            "type": "minecraft:mul",
-            "argument1": {
-                "type": "minecraft:abs",
-                "argument": {
-                    "type": "minecraft:noise",
-                    "noise": "larion:jank_minor",
-                    "xz_scale": 0.25,
-                    "y_scale": 0.5
-                }
-            },
-            "argument2": -1.0
+            "type": "minecraft:noise",
+            "noise": "larion:jank/narrow",
+            "xz_scale": 0.25,
+            "y_scale": 0.75
         },
         "argument2": {
-            "type": "minecraft:abs",
-            "argument": {
-                "type": "minecraft:noise",
-                "noise": "larion:jank_major",
-                "xz_scale": 0.5,
-                "y_scale": 0.25
-            }
+            "type": "minecraft:noise",
+            "noise": "larion:jank/tall",
+            "xz_scale": 0.75,
+            "y_scale": 0.25
         }
     },
     "argument2": {
         "type": "minecraft:clamp",
         "input": {
-            "type": "minecraft:mul",
+            "type": "minecraft:max",
             "argument1": {
                 "type": "minecraft:mul",
                 "argument1": {
-                    "type": "minecraft:add",
-                    "argument1": "minecraft:overworld/ridges_folded",
-                    "argument2": 1.0
+                    "type": "minecraft:mul",
+                    "argument1": {
+                        "type": "minecraft:add",
+                        "argument1": "minecraft:overworld/ridges_folded",
+                        "argument2": 1.0
+                    },
+                    "argument2": 3.0
                 },
-                "argument2": 3.0
+                "argument2": {
+                    "type": "minecraft:mul",
+                    "argument1": {
+                        "type": "minecraft:add",
+                        "argument1": "minecraft:overworld/continents",
+                        "argument2": 0.2
+                    },
+                    "argument2": 3.0
+                }
             },
             "argument2": {
-                "type": "minecraft:mul",
-                "argument1": {
-                    "type": "minecraft:add",
-                    "argument1": "minecraft:overworld/continents",
-                    "argument2": 0.2
-                },
-                "argument2": 10.0
+                    "type": "minecraft:mul",
+                    "argument1": {
+                        "type": "minecraft:add",
+                        "argument1": "minecraft:overworld/continents",
+                        "argument2": 1.0
+                    },
+                    "argument2": -20.0
             }
         },
         "min": 0.0,
