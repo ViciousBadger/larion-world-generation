@@ -30,13 +30,13 @@
         "final_density": {
             "type": "minecraft:min",
             "argument1": {
-                "type": "minecraft:min",
-                "argument1": {
-                    "type": "minecraft:squeeze",
-                    "argument": {
-                        "type": "minecraft:mul",
-                        "argument1": 0.64,
-                        "argument2": {
+                "type": "minecraft:squeeze",
+                "argument": {
+                    "type": "minecraft:mul",
+                    "argument1": 0.64,
+                    "argument2": {
+                        "type": "min",
+                        "argument1": {
                             "type": "minecraft:interpolated",
                             "argument": {
                                 "type": "minecraft:blend_density",
@@ -163,34 +163,34 @@
                                     }
                                 }
                             }
-                        }
+                        },
+                        "argument2": "jacobsjo:overworld/saddle_river"
                     }
-                },
-                "argument2": "minecraft:overworld/caves/noodle"
+                }
             },
-            "argument2": "apollo:overworld/extra_density/underground_rivers/total"
+            "argument2": "minecraft:overworld/caves/noodle"
         },
         "fluid_level_floodedness": {
-            "type": "minecraft:range_choice",
-            "input": "apollo:overworld/extra_density/underground_rivers/parameters",
-            "min_inclusive": 0.9,
-            "max_exclusive": 1.1,
+            "type": "range_choice",
+            "min_inclusive": 0.5,
+            "max_exclusive": 1.5,
+            "input": "jacobsjo:overworld/saddle_river_select",
             "when_in_range": 1,
             "when_out_of_range": {
-                "type": "minecraft:noise",
+                "type": "noise",
                 "noise": "minecraft:aquifer_fluid_level_floodedness",
                 "xz_scale": 1,
                 "y_scale": 0.67
             }
         },
         "fluid_level_spread": {
-            "type": "minecraft:range_choice",
-            "input": "apollo:overworld/extra_density/underground_rivers/parameters",
-            "min_inclusive": 0.9,
-            "max_exclusive": 1.1,
+            "type": "range_choice",
+            "min_inclusive": 0.5,
+            "max_exclusive": 1.5,
+            "input": "jacobsjo:overworld/saddle_river_select",
             "when_in_range": 0.5,
             "when_out_of_range": {
-                "type": "minecraft:noise",
+                "type": "noise",
                 "noise": "minecraft:aquifer_fluid_level_spread",
                 "xz_scale": 1.0,
                 "y_scale": 0.7142857142857143

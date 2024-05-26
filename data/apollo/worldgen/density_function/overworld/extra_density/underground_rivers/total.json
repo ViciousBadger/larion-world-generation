@@ -64,7 +64,7 @@
                   "coordinate": "minecraft:overworld/ridges",
                   "points": [
                     {
-                      "location": -0.0625,
+                      "location": -0.08,
                       "derivative": 0,
                       "value": 0
                     },
@@ -74,7 +74,7 @@
                       "value": 1
                     },
                     {
-                      "location": 0.0625,
+                      "location": 0.08,
                       "derivative": 0,
                       "value": 0
                     }
