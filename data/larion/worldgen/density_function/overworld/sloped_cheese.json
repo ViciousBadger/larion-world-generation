@@ -29,7 +29,7 @@
                     "argument2": {
                         "type": "minecraft:mul",
                         "argument1": "larion:overworld/minecraftness",
-                        "argument2": 0.25
+                        "argument2": 0.28
                     }
                 },
                 "argument2": "deeper_oceans:overworld/warped_factor"

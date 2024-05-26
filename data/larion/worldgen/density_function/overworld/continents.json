@@ -13,7 +13,7 @@
                         "type": "more_dfs:power",
                         "base": {
                             "type": "minecraft:noise",
-                            "noise": "larion:continents_large",
+                            "noise": "larion:continentalness/continents_large",
                             "xz_scale": 1.0,
                             "y_scale": 0
                         },
@@ -23,7 +23,7 @@
                         "type": "more_dfs:power",
                         "base": {
                             "type": "minecraft:noise",
-                            "noise": "larion:continents_small",
+                            "noise": "larion:continentalness/continents_small",
                             "xz_scale": 1.0,
                             "y_scale": 0
                         },
@@ -34,7 +34,7 @@
                     "type": "more_dfs:power",
                     "base": {
                         "type": "minecraft:noise",
-                        "noise": "larion:islands",
+                        "noise": "larion:continentalness/islands",
                         "xz_scale": 1.0,
                         "y_scale": 0
                     },
@@ -46,7 +46,7 @@
     },
     "argument2": {
         "type": "minecraft:noise",
-        "noise": "larion:mushroom_islands",
+        "noise": "larion:continentalness/mushroom_islands",
         "xz_scale": 1.0,
         "y_scale": 0
     }
