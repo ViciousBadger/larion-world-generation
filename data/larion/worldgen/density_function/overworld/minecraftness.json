@@ -23,24 +23,36 @@
         "input": {
             "type": "minecraft:max",
             "argument1": {
-                "type": "minecraft:mul",
+                "type": "minecraft:min",
                 "argument1": {
-                    "type": "minecraft:mul",
+                    "type": "minecraft:min",
                     "argument1": {
-                        "type": "minecraft:add",
-                        "argument1": "minecraft:overworld/ridges_folded",
-                        "argument2": 1.0
+                        "type": "minecraft:mul",
+                        "argument1": {
+                            "type": "minecraft:add",
+                            "argument1": "minecraft:overworld/ridges_folded",
+                            "argument2": 1.0
+                        },
+                        "argument2": 2.3
                     },
-                    "argument2": 3.3
+                    "argument2": {
+                        "type": "minecraft:mul",
+                        "argument1": {
+                            "type": "minecraft:add",
+                            "argument1": "minecraft:overworld/continents",
+                            "argument2": 0.2
+                        },
+                        "argument2": 3.3
+                    }
                 },
                 "argument2": {
-                    "type": "minecraft:mul",
-                    "argument1": {
-                        "type": "minecraft:add",
-                        "argument1": "minecraft:overworld/continents",
-                        "argument2": 0.2
-                    },
-                    "argument2": 4.4
+                        "type": "minecraft:mul",
+                        "argument1": {
+                            "type": "minecraft:add",
+                            "argument1": "minecraft:overworld/erosion",
+                            "argument2": -0.62
+                        },
+                        "argument2": -8.0
                 }
             },
             "argument2": {
@@ -50,7 +62,7 @@
                     "argument1": "minecraft:overworld/continents",
                     "argument2": 1.0
                 },
-                "argument2": -20.0
+                "argument2": -16.0
             }
         },
         "min": 0.0,

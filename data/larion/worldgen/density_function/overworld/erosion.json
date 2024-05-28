@@ -1,12 +1,6 @@
 {
     "type": "minecraft:add",
     "argument1": {
-        "type": "minecraft:noise",
-        "noise": "larion:erosion_base",
-        "xz_scale": 0.25,
-        "y_scale": 0.0
-    },
-    "argument2": {
         "type": "minecraft:mul",
         "argument1": {
             "type": "minecraft:quarter_negative",
@@ -20,6 +14,12 @@
                 "argument2": -0.666
             }
         },
-        "argument2": -1.35
+        "argument2": -2.0
+    },
+    "argument2": {
+        "type": "minecraft:noise",
+        "noise": "larion:erosion_variation",
+        "xz_scale": 0.25,
+        "y_scale": 0.0
     }
 }
