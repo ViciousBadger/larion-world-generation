@@ -37,7 +37,7 @@
                             "argument": {
                                 "type": "minecraft:noise",
                                 "noise": "larion:continents/small_continents",
-                                "xz_scale": 0.321,
+                                "xz_scale": 0.345,
                                 "y_scale": 0
                             }
                         }
@@ -47,7 +47,7 @@
                         "argument": {
                             "type": "minecraft:noise",
                             "noise": "larion:continents/islands",
-                            "xz_scale": 0.321,
+                            "xz_scale": 0.234,
                             "y_scale": 0
                         }
                     }
