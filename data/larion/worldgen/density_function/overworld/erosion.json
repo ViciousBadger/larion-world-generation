@@ -5,14 +5,18 @@
         "argument1": {
             "type": "minecraft:add",
             "argument1": "minecraft:overworld/continents",
-            "argument2": -0.2
+            "argument2": -0.1
         },
         "argument2": -2.0
     },
     "argument2": {
-        "type": "minecraft:noise",
-        "noise": "larion:erosion_variation",
-        "xz_scale": 0.25,
-        "y_scale": 0.0
+        "type": "minecraft:mul",
+        "argument1": {
+            "type": "minecraft:noise",
+            "noise": "larion:erosion_variation",
+            "xz_scale": 0.25,
+            "y_scale": 0.0
+        },
+        "argument2": 0.8
     }
 }

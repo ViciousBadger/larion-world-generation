@@ -59,7 +59,7 @@
     },
     "argument2": {
         "type": "minecraft:noise",
-        "noise": "larion:continents/variance",
+        "noise": "larion:continents/variation",
         "xz_scale": 0.25,
         "y_scale": 0
     }
