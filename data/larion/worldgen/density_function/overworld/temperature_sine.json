@@ -2,7 +2,7 @@
     "type": "minecraft:mul",
     "argument1": {
         "type": "more_dfs:sine",
-        "input": {
+        "argument": {
             "type": "minecraft:mul",
             "argument1": {
                 "type": "more_dfs:z"
