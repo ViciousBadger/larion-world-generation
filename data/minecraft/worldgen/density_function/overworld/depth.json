@@ -1,5 +1,11 @@
 {
-  "type": "minecraft:add",
-  "argument1": "larion:overworld/warped_gradient",
-  "argument2": "minecraft:overworld/offset"
+    "type": "minecraft:add",
+    "argument1": {
+        "type": "minecraft:y_clamped_gradient",
+        "from_value": 1.5,
+        "from_y": -64,
+        "to_value": -1.5,
+        "to_y": 448
+    },
+    "argument2": "minecraft:overworld/offset"
 }
