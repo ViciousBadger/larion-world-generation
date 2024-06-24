@@ -14,12 +14,24 @@
                         "argument1": {
                             "type": "minecraft:max",
                             "argument1": {
-                                "type": "minecraft:abs",
-                                "argument": {
-                                    "type": "minecraft:noise",
-                                    "noise": "larion:continents/large_continents",
-                                    "xz_scale": 0.567,
-                                    "y_scale": 0
+                                "type": "minecraft:max",
+                                "argument1": {
+                                    "type": "minecraft:abs",
+                                    "argument": {
+                                        "type": "minecraft:noise",
+                                        "noise": "larion:continents/large_continents",
+                                        "xz_scale": 0.567,
+                                        "y_scale": 0
+                                    }
+                                },
+                                "argument2": {
+                                    "type": "minecraft:abs",
+                                    "argument": {
+                                        "type": "minecraft:noise",
+                                        "noise": "larion:continents/large_continents_alt",
+                                        "xz_scale": 0.678,
+                                        "y_scale": 0
+                                    }
                                 }
                             },
                             "argument2": {
