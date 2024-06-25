@@ -17,7 +17,7 @@
                 "argument1": {
                     "type": "minecraft:noise",
                     "noise": "larion:erosion_variation",
-                    "xz_scale": 0.25,
+                    "xz_scale": 0.15,
                     "y_scale": 0.0
                 },
                 "argument2": 1.4
