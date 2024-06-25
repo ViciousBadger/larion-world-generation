@@ -9,16 +9,15 @@
         "argument2": -0.35
     },
     "when_out_of_range": {
-
-    "type": "minecraft:range_choice",
-    "input": "larion:overworld/temperature",
-    "min_inclusive": 0.2,
-    "max_exclusive": 0.55,
-    "when_in_range": {
-        "type": "minecraft:add",
-        "argument1": "larion:overworld/temperature",
-        "argument2": 0.35
-    },
-    "when_out_of_range": "larion:overworld/temperature"
+        "type": "minecraft:range_choice",
+        "input": "larion:overworld/temperature",
+        "min_inclusive": 0.2,
+        "max_exclusive": 0.55,
+        "when_in_range": {
+            "type": "minecraft:add",
+            "argument1": "larion:overworld/temperature",
+            "argument2": 0.35
+        },
+        "when_out_of_range": "larion:overworld/temperature"
     }
 }
