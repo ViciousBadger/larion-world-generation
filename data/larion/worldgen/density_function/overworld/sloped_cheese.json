@@ -32,7 +32,7 @@
                         "argument2": 0.28
                     }
                 },
-                "argument2": "larion:overworld/warped_factor"
+                "argument2": "minecraft:overworld/factor"
             }
         }
     },
