@@ -6,9 +6,46 @@
         "argument2": {
             "type": "minecraft:mul",
             "argument1": {
-                "type": "minecraft:max",
-                "argument1": "larion:overworld/land/continents",
-                "argument2": "larion:overworld/land/islands"
+                "type": "minecraft:spline",
+                "spline": {
+                    "coordinate": {
+                        "type": "minecraft:max",
+                        "argument1": "larion:overworld/land/continents",
+                        "argument2": "larion:overworld/land/islands"
+                    },
+                    "points": [
+                        {
+                            "location": 0.0,
+                            "derivative": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "location": 0.5,
+                            "derivative": 1.0,
+                            "value": 0.5
+                        },
+                        {
+                            "location": 0.7,
+                            "derivative": 1.0,
+                            "value": 0.6
+                        },
+                        {
+                            "location": 0.9,
+                            "derivative": 1.0,
+                            "value": 0.75
+                        },
+                        {
+                            "location": 1.0,
+                            "derivative": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "location": 1.3,
+                            "derivative": 1.0,
+                            "value": 0.5
+                        }
+                    ]
+                }
             },
             "argument2": 2.0
         }

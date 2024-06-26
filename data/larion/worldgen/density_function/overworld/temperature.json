@@ -11,32 +11,32 @@
                     "points": [
                         {
                             "location": -1.2,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": -1.0
                         },
                         {
                             "location": -0.9,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": -0.45
                         },
                         {
                             "location": -0.4,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": -0.15
                         },
                         {
                             "location": 0.6,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": 0.2
                         },
                         {
                             "location": 0.95,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": 0.55
                         },
                         {
                             "location": 1.2,
-                            "derivative": 0.0,
+                            "derivative": 1.0,
                             "value": 1.0
                         }
                     ]
@@ -45,7 +45,7 @@
             "argument2": {
                 "type": "minecraft:noise",
                 "noise": "larion:temperature_variation",
-                "xz_scale": 0.2,
+                "xz_scale": 0.3,
                 "y_scale": 0
             }
         }
