@@ -4,32 +4,36 @@
         "coordinate": {
             "type": "minecraft:add",
             "argument1": {
-                "type": "minecraft:mul",
+                "type": "minecraft:add",
                 "argument1": {
                     "type": "minecraft:mul",
                     "argument1": {
-                        "type": "minecraft:add",
-                        "argument1": "minecraft:overworld/continents",
-                        "argument2": -0.1
+                        "type": "minecraft:mul",
+                        "argument1": {
+                            "type": "minecraft:add",
+                            "argument1": "minecraft:overworld/continents",
+                            "argument2": -0.1
+                        },
+                        "argument2": "larion:overworld/erosion_temperature_factor"
                     },
-                    "argument2": "larion:overworld/erosion_temperature_factor"
+                    "argument2": -2.0
                 },
-                "argument2": -2.0
+                "argument2": {
+                    "type": "minecraft:mul",
+                    "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": {
+                            "type": "minecraft:noise",
+                            "noise": "larion:erosion_variation",
+                            "xz_scale": 0.15,
+                            "y_scale": 0.0
+                        },
+                        "argument2": "larion:overworld/erosion_temperature_factor"
+                    },
+                    "argument2": 1.4
+                }
             },
-            "argument2": {
-                "type": "minecraft:mul",
-                "argument1": {
-                    "type": "minecraft:mul",
-                    "argument1": {
-                        "type": "minecraft:noise",
-                        "noise": "larion:erosion_variation",
-                        "xz_scale": 0.15,
-                        "y_scale": 0.0
-                    },
-                    "argument2": "larion:overworld/erosion_temperature_factor"
-                },
-                "argument2": 1.4
-            }
+            "argument2": "larion:overworld/erosion_temperature_shift"
         },
         "points": [
             {
