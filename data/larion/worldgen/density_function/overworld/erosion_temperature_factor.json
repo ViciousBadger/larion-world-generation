@@ -2,6 +2,8 @@
     "type": "minecraft:cache_once",
     "argument": {
         "type": "minecraft:spline",
+        "min_value": 0.0,
+        "max_value": 0.3,
         "spline": {
             "coordinate": "larion:overworld/temperature",
             "points": [

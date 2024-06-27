@@ -17,7 +17,7 @@
                     "type": "minecraft:mul",
                     "argument1": {
                         "type": "minecraft:noise",
-                        "noise": "larion:dunes",
+                        "noise": "larion:dunes_offset",
                         "xz_scale": 0.25,
                         "y_scale": 0
                     },

@@ -16,10 +16,10 @@
                         "type": "mul",
                         "argument1": {
                             "type": "add",
-                            "argument1": 0.7,
+                            "argument1": 0.2,
                             "argument2": {
                                 "type": "mul",
-                                "argument1": 0.3,
+                                "argument1": 0.8,
                                 "argument2": {
                                     "type": "flat_cache",
                                     "argument": {
@@ -53,24 +53,24 @@
                         "argument1": "minecraft:overworld/ridges",
                         "argument2": {
                             "type": "minecraft:spline",
-                            "min_value": 1.0999999999999996,
+                            "min_value": 1.0,
                             "max_value": 3.300000000000003,
                             "spline": {
                                 "coordinate": "minecraft:y",
                                 "points": [
                                     {
                                         "location": 60.509265936997025,
-                                        "value": 1.475759518670229,
+                                        "value": 1.0,
                                         "derivative": -3.5094424407272773e-17
                                     },
                                     {
                                         "location": 71.45346553627607,
-                                        "value": 1.2622981528356434,
+                                        "value": 1.1,
                                         "derivative": 0
                                     },
                                     {
                                         "location": 86.656980106773,
-                                        "value": 2.8890924112088507,
+                                        "value": 2.2890924112088507,
                                         "derivative": 0.05117304361518664
                                     },
                                     {
