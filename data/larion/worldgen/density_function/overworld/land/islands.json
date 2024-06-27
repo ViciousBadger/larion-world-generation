@@ -8,17 +8,22 @@
                 {
                     "location": 0.0,
                     "derivative": 1.0,
-                    "value": 0.0
+                    "value": 0.4
                 },
                 {
-                    "location": 0.10,
+                    "location": 0.05,
                     "derivative": 1.0,
-                    "value": 0.7
+                    "value": 0.5
+                },
+                {
+                    "location": 0.08,
+                    "derivative": 1.0,
+                    "value": 0.6
                 },
                 {
                     "location": 0.23,
                     "derivative": 1.0,
-                    "value": 1.0
+                    "value": 0.7
                 },
                 {
                     "location": 1.0,
@@ -29,7 +34,7 @@
         }
     },
     "argument2": {
-        "type": "minecraft:max",
+        "type": "minecraft:add",
         "argument1": {
             "type": "minecraft:abs",
             "argument": {
