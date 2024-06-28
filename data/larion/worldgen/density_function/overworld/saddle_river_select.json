@@ -1,6 +1,6 @@
 {
     "type": "range_choice",
-    "min_inclusive": 45,
+    "min_inclusive": 32,
     "max_exclusive": 1000,
     "input": "minecraft:y",
     "when_in_range": {
