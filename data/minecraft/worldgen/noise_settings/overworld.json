@@ -35,12 +35,12 @@
                     "type": "minecraft:mul",
                     "argument1": 0.64,
                     "argument2": {
-                        "type": "min",
-                        "argument1": {
-                            "type": "minecraft:interpolated",
+                        "type": "minecraft:interpolated",
+                        "argument": {
+                            "type": "minecraft:blend_density",
                             "argument": {
-                                "type": "minecraft:blend_density",
-                                "argument": {
+                                "type": "minecraft:min",
+                                "argument1": {
                                     "type": "minecraft:add",
                                     "argument1": 0.1171875,
                                     "argument2": {
@@ -161,10 +161,10 @@
                                             }
                                         }
                                     }
-                                }
+                                },
+                                "argument2": "larion:overworld/river_noodle"
                             }
-                        },
-                        "argument2": "larion:overworld/saddle_river"
+                        }
                     }
                 }
             },
@@ -172,9 +172,9 @@
         },
         "fluid_level_floodedness": {
             "type": "range_choice",
-            "min_inclusive": 0.5,
-            "max_exclusive": 1.5,
-            "input": "larion:overworld/saddle_river_select",
+            "min_inclusive": -1.2,
+            "max_exclusive": -0.6,
+            "input": "larion:overworld/river_noodle_flood",
             "when_in_range": 1,
             "when_out_of_range": {
                 "type": "noise",
@@ -185,9 +185,9 @@
         },
         "fluid_level_spread": {
             "type": "range_choice",
-            "min_inclusive": 0.5,
-            "max_exclusive": 1.5,
-            "input": "larion:overworld/saddle_river_select",
+            "min_inclusive": -1.2,
+            "max_exclusive": -0.6,
+            "input": "larion:overworld/river_noodle_flood",
             "when_in_range": 0.5,
             "when_out_of_range": {
                 "type": "noise",

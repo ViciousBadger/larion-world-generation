@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:spline",
+    "spline": {
+        "coordinate": "larion:overworld/erosion",
+        "points": [
+            {
+                "location": -1.0,
+                "derivative": 1.0,
+                "value": -1.0
+            },
+            {
+                "location": 0.0,
+                "derivative": 1.0,
+                "value": 0.0
+            },
+            {
+                "location": 0.35,
+                "derivative": 1.0,
+                "value": 0.45
+            },
+            {
+                "location": 0.65,
+                "derivative": 1.0,
+                "value": 0.55
+            },
+            {
+                "location": 1.0,
+                "derivative": 1.0,
+                "value": 1.0
+            }
+        ]
+    }
+}
