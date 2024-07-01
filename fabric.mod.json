@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "larion",
+    "version": "1.0.0",
+    "name": "Larion",
+    "description": "Epic fantasy style world generation overhaul",
+    "authors": [
+        "Badgerson"
+    ],
+    "contact": {
+        "homepage": "https://github.com/ViciousBadger/larion-terrain-generation"
+    },
+    "license": "Apache-2.0",
+    "icon": "pack.png",
+    "environment": "*",
+    "depends": {
+        "fabric-api": "*",
+        "fabricloader": ">=0.12.0",
+        "minecraft": ">=1.20.4",
+        "more_density_functions": "=1.0.0"
+    },
+    "suggests": {
+        "c2me": "*",
+        "noisium": "*",
+        "faster-random": "*",
+        "wwoo": "*"
+    }
+}

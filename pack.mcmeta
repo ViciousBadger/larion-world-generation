@@ -1,6 +1,17 @@
 {
-	"pack": {
-		"pack_format": 26,
-		"description": "Epic fantasy style terrain generation overhaul"
-	}
+    "pack": {
+        "pack_format": 26,
+        "description": [
+            "Epic fantasy style terrain generation overhaul",
+            "REQUIRES the 'More Density Functions' Fabric mod!"
+        ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": 41,
+                "directory": "1-20-5-overlay"
+            }
+        ]
+    }
 }
