@@ -1,6 +1,10 @@
 {
     "pack": {
         "pack_format": 26,
+        "supported_formats": [
+            26,
+            41
+        ],
         "description": [
             "Epic fantasy style terrain generation overhaul",
             "REQUIRES the 'More Density Functions' Fabric mod!"
