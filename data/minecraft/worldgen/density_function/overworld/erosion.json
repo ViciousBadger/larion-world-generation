@@ -1,7 +1,7 @@
 {
-    "type": "minecraft:flat_cache",
-    "argument": {
-        "type": "minecraft:cache_2d",
-        "argument": "larion:overworld/erosion_adjusted"
-    }
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": "larion:overworld/erosion_adjusted"
+  }
 }
