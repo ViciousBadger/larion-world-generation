@@ -40,7 +40,8 @@
               "type": "minecraft:blend_density",
               "argument": {
                 "type": "minecraft:min",
-                "argument1": {
+                "argument1": "larion:overworld/river_noodle",
+                "argument2": {
                   "type": "minecraft:add",
                   "argument1": 0.1171875,
                   "argument2": {
@@ -161,8 +162,7 @@
                       }
                     }
                   }
-                },
-                "argument2": "larion:overworld/river_noodle"
+                }
               }
             }
           }
