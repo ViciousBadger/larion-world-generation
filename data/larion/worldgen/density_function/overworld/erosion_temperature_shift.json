@@ -1,48 +1,48 @@
 {
-    "type": "minecraft:cache_once",
-    "argument": {
-        "type": "minecraft:spline",
-        "min_value": 0.0,
-        "max_value": 1.0,
-        "spline": {
-            "coordinate": "larion:overworld/temperature",
-            "points": [
-                {
-                    "location": -1.0,
-                    "derivative": 1.0,
-                    "value": 0.0
-                },
-                {
-                    "location": 0.0,
-                    "derivative": 1.0,
-                    "value": 0.0
-                },
-                {
-                    "location": 0.35,
-                    "derivative": 1.0,
-                    "value": 0.1
-                },
-                {
-                    "location": 0.40,
-                    "derivative": 1.0,
-                    "value": 0.2
-                },
-                {
-                    "location": 0.50,
-                    "derivative": 1.0,
-                    "value": 0.2
-                },
-                {
-                    "location": 0.55,
-                    "derivative": 1.0,
-                    "value": 0.1
-                },
-                {
-                    "location": 1.0,
-                    "derivative": 1.0,
-                    "value": 0.0
-                }
-            ]
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:spline",
+    "min_value": 0.0,
+    "max_value": 1.0,
+    "spline": {
+      "coordinate": "larion:overworld/temperature",
+      "points": [
+        {
+          "location": -1.0,
+          "derivative": 1.0,
+          "value": 0.0
+        },
+        {
+          "location": 0.0,
+          "derivative": 1.0,
+          "value": 0.0
+        },
+        {
+          "location": 0.35,
+          "derivative": 1.0,
+          "value": 0.1
+        },
+        {
+          "location": 0.40,
+          "derivative": 1.0,
+          "value": 0.2
+        },
+        {
+          "location": 0.50,
+          "derivative": 1.0,
+          "value": 0.2
+        },
+        {
+          "location": 0.55,
+          "derivative": 1.0,
+          "value": 0.1
+        },
+        {
+          "location": 1.0,
+          "derivative": 1.0,
+          "value": 0.0
         }
+      ]
     }
+  }
 }

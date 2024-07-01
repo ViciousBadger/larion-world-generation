@@ -1,79 +1,79 @@
 {
+  "type": "minecraft:add",
+  "argument1": {
     "type": "minecraft:add",
-    "argument1": {
-        "type": "minecraft:add",
-        "argument1": -1.0,
-        "argument2": {
-            "type": "minecraft:mul",
-            "argument1": {
-                "type": "minecraft:spline",
-                "spline": {
-                    "coordinate": {
-                        "type": "minecraft:max",
-                        "argument1": "larion:overworld/land/continents",
-                        "argument2": "larion:overworld/land/islands"
-                    },
-                    "points": [
-                        {
-                            "location": 0.0,
-                            "derivative": 1.0,
-                            "value": 0.0
-                        },
-                        {
-                            "location": 0.5,
-                            "derivative": 1.0,
-                            "value": 0.5
-                        },
-                        {
-                            "location": 0.9,
-                            "derivative": 1.0,
-                            "value": 0.75
-                        },
-                        {
-                            "location": 0.95,
-                            "derivative": 1.0,
-                            "value": 0.9
-                        },
-                        {
-                            "location": 1.0,
-                            "derivative": 1.0,
-                            "value": 1.2
-                        },
-                        {
-                            "location": 1.05,
-                            "derivative": 1.0,
-                            "value": 0.9
-                        },
-                        {
-                            "location": 1.1,
-                            "derivative": 1.0,
-                            "value": 0.72
-                        },
-                        {
-                            "location": 1.5,
-                            "derivative": 1.0,
-                            "value": 0.52
-                        },
-                        {
-                            "location": 2.0,
-                            "derivative": 1.0,
-                            "value": 0.51
-                        },
-                        {
-                            "location": 3.0,
-                            "derivative": 1.0,
-                            "value": 0.8
-                        }
-                    ]
-                }
-            },
-            "argument2": 2.0
-        }
-    },
+    "argument1": -1.0,
     "argument2": {
-        "type": "minecraft:noise",
-        "noise": "larion:land/variation",
-        "xz_scale": 0.25,
-        "y_scale": 0
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:max",
+            "argument1": "larion:overworld/land/continents",
+            "argument2": "larion:overworld/land/islands"
+          },
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": 1.0,
+              "value": 0.0
+            },
+            {
+              "location": 0.5,
+              "derivative": 1.0,
+              "value": 0.5
+            },
+            {
+              "location": 0.9,
+              "derivative": 1.0,
+              "value": 0.75
+            },
+            {
+              "location": 0.95,
+              "derivative": 1.0,
+              "value": 0.9
+            },
+            {
+              "location": 1.0,
+              "derivative": 1.0,
+              "value": 1.2
+            },
+            {
+              "location": 1.05,
+              "derivative": 1.0,
+              "value": 0.9
+            },
+            {
+              "location": 1.1,
+              "derivative": 1.0,
+              "value": 0.72
+            },
+            {
+              "location": 1.5,
+              "derivative": 1.0,
+              "value": 0.52
+            },
+            {
+              "location": 2.0,
+              "derivative": 1.0,
+              "value": 0.51
+            },
+            {
+              "location": 3.0,
+              "derivative": 1.0,
+              "value": 0.8
+            }
+          ]
+        }
+      },
+      "argument2": 2.0
     }
+  },
+  "argument2": {
+    "type": "minecraft:noise",
+    "noise": "larion:land/variation",
+    "xz_scale": 0.25,
+    "y_scale": 0
+  }
 }

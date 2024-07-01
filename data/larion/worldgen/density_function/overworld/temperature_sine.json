@@ -1,22 +1,22 @@
 {
-    "type": "minecraft:mul",
-    "argument1": {
-        "type": "more_dfs:sine",
-        "argument": {
-            "type": "minecraft:mul",
-            "argument1": {
-                "type": "more_dfs:z"
-            },
-            "argument2": {
-                "type": "minecraft:mul",
-                "argument1": {
-                    "type": "more_dfs:power",
-                    "base": 6400,
-                    "exp": -1
-                },
-                "argument2": 3.14
-            }
-        }
-    },
-    "argument2": 1.0
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "more_dfs:sine",
+    "argument": {
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "more_dfs:z"
+      },
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "more_dfs:power",
+          "base": 6400,
+          "exp": -1
+        },
+        "argument2": 3.14
+      }
+    }
+  },
+  "argument2": 1.0
 }

@@ -1,11 +1,11 @@
 {
-    "type": "minecraft:cache_once",
-    "argument": {
-        "type": "range_choice",
-        "input": "minecraft:y",
-        "min_inclusive": 50,
-        "max_exclusive": 90,
-        "when_in_range": "minecraft:overworld/ridges_folded",
-        "when_out_of_range": 0.0
-    }
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 50,
+    "max_exclusive": 90,
+    "when_in_range": "minecraft:overworld/ridges_folded",
+    "when_out_of_range": 0.0
+  }
 }
