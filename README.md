@@ -41,7 +41,7 @@ as a pure vanilla data pack.)
 
 # Features
 
-## Huge continents and little islands
+## Continents and islands
 
 ![Map of a continent](images/continent.jpg)
 
@@ -163,10 +163,10 @@ The island group pictured here is unusually large!
 
 # Known issues
 
-- Some seeds will spawn you in water or on a tiny island out of nowhere. If you
-  want a bit more predictability when creating a world, I would recommend using
-  [World Preview](https://modrinth.com/mod/world-preview).
-- World generation performance is way worse due to the increased complexity of
+- Some seeds will spawn you in water or on a tiny island in the middle of
+nowhere. If you want a bit more predictability when creating a world, I would
+recommend using [World Preview](https://modrinth.com/mod/world-preview).
+- World generation performance is way worse due to the higher complexity of
 density functions and increased world height. The extra "jank" effect that
 creates overhangs seems to cause the largest reduction in speed because it adds
 two extra layers of full-3d noise to the mix. You can remedy this by using
@@ -219,7 +219,8 @@ overwritten files along with descriptions what has been changed.
     - `depth` is edited to increase max terrain height to 448 (from 320)
     - `offset` has been modified to make sure the sea level aligns correctly
     (The weirdly specific `-0.7437500262260437` number) and also to add
-    `larion:overworld/dunes` to terrain height
+    `larion:overworld/dunes` to terrain height. A large part of the function was
+    also multiplied by 0.9 to scale down everything just a bit..
     - `sloped_cheese` has been modified to add `larion:overworld/minecraftness`
     to overall terrain density, creating overhangs and weirdness
 
