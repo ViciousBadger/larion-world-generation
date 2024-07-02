@@ -86,10 +86,10 @@ the bands warps back around like this picture shows:
 ![Temperature bands, zoomed out](images/temp-bands-far.jpg)
 
 You may have noticed that desert-y and jungle-y biomes have been swapped
-compared to vanilla, as I felt this was somewhat more appropriate and Earth-like
-- of course the Earth's biome distribution is way more complex - but deserts
+compared to vanilla, as I felt this was somewhat more appropriate and
+Earth-like - of course the Earth's biome distribution is way more complex - but deserts
 usually appear in subtropical latitudes (Sahara, Australia) while jungles and
-such appear at the equator (Central Africa, South America)
+such appear at the equator (Central Africa, South America).
 
 ## Coastal swamps and inland mountains
 
@@ -99,7 +99,7 @@ The "erosion" noise, determining if an area has "low erosion" (mountains) or
 "high erosion" (swamps, but also all windswept biomes), has been explicitly tied
 to the continents noise so that erosion will "lower" as you go further
 inland. The result is that continents usually have swamps and windswept biomes
-at the edges, normal biomes further in and mountains in the central areas.
+at the edges, normal biomes further in and mountains at the center.
 
 In some cases, continents would become TOO mountainous (even I have
 limits), so I made the erosion and continentalness taper off after a certain
@@ -137,7 +137,7 @@ The vegetational noise has not been changed too much, but it's a bit more random
 (less snow-free taigas!), cold zones more humid (old growth pine forests!),
 subtropical zones dry (deserts!), tropical zones humid (jungles!).
 
-![A comparison of vegetation noise](images/vs-vanilla-ridges.jpg)
+![A comparison of vegetation noise](images/vs-vanilla-vegetation.jpg)
 
 ## Desert dunes
 
@@ -157,7 +157,7 @@ these zones are covered with large dunes.
 
 As a side effect of many of the other changes, mushroom islands are somewhat
 more common and generate as scattered islands or single small blobs. They are
-taller than usual with more varied terrain features - sometimes they even float.
+more hilly than usual with more varied terrain features - sometimes they even float.
 
 The island group pictured here is unusually large!
 
@@ -183,8 +183,7 @@ chunk pre-generation methods I tried:
 
 Larion overwrites a lot of world generation data files. Unfortunately this can
 cause compability issues with several other datapacks that change the same
-files. To make it easier to create compability patches etc, here is a list of
-overwritten files along with descriptions what has been changed.
+files.
 
 Note that Larion does NOT change any of the biome files, so mods that only
 modify biomes (such as Arboria and Geophilic) should be fully compatible!
@@ -196,6 +195,9 @@ otherwise tall mountains will be cut off at Y=320. I have no idea why WWOO
 overwrites this file, it seems no actual changes were made..
 
 ## Changes to vanilla data files
+
+To make it easier to create compability patches etc, here is a list of
+overwritten files along with descriptions what has been changed.
 
 - `dimension_type/overworld.json` and `dimension_type/overworld_caves.json`
     - Changed `height` and `logical_height` to 512
@@ -217,3 +219,19 @@ overwrites this file, it seems no actual changes were made..
     `larion:overworld/dunes` to terrain height
     - `sloped_cheese` has been modified to add `larion:overworld/minecraftness`
     to overall terrain density, creating overhangs and weirdness
+
+# Footnote
+
+Larion is licensed under Apache 2.0, meaning you are free to modify and use the
+pack as you wish. You can freely use any individual parts in your own
+datapack. However, if you choose to redistribute Larion, please be sure to
+include the copyright (LICENSE.md) file and also state any significant changes
+made to the datapack.
+
+If you like the project and want to send me a donation, here is a Paypal link:
+
+https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
+
+.. or if you like, send some Bitcoin: bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
+
+Thank you for reading <3
