@@ -59,15 +59,30 @@ as a pure vanilla data pack.)
 
 ![Dunes](images/dunes.jpg)
 
+All the above changes to erosion and continents meant deserts had become
+annoyingly rare and odd-looking. They usually only appeared along coastlines
+while inland terrain was exclusively badlands. Because if this I decided to make
+a special case - in subtropical temperature bands, a stripe of very high erosion
+will always appear and no "jank" will be applied. Instead of the jank, deserts
+are covered with large sand dunes.
+
 ## Way weirder mushroom islands
+
+![Mushroom islands](images/mushroom.jpg)
+
+As a side effect of many of the other changes, mushroom islands are somewhat
+more common and generate as scattered islands or single small blobs. They are
+taller than usual with more varied terrain features - sometimes they even float.
+
+The island group pictured here is unusually large!
 
 # Known issues
 
-- World generation performance is heavily impacted due to the increased
-complexity of density functions and increased world height. The extra "jank"
-effect that creates overhangs seems to cause the largest reduction in speed
-because it adds two extra layers of full-3d noise to the mix. You can remedy
-this by using worldgen optimization mods - I recommend these:
+- World generation performance is way worse due to the increased complexity of
+density functions and increased world height. The extra "jank" effect that
+creates overhangs seems to cause the largest reduction in speed because it adds
+two extra layers of full-3d noise to the mix. You can remedy this by using
+worldgen optimization mods - I recommend these:
     - [C2ME](https://modrinth.com/mod/c2me-fabric) (MAJOR performance boost, scales with CPU core count)
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
