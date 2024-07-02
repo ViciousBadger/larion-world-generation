@@ -85,6 +85,12 @@ the bands warps back around like this picture shows:
 
 ![Temperature bands, zoomed out](images/temp-bands-far.jpg)
 
+You may have noticed that desert-y and jungle-y biomes have been swapped
+compared to vanilla, as I felt this was somewhat more appropriate and Earth-like
+- of course the Earth's biome distribution is way more complex - but deserts
+usually appear in subtropical latitudes (Sahara, Australia) while jungles and
+such appear at the equator (Central Africa, South America)
+
 ## Coastal swamps and inland mountains
 
 ![Example of different erosion levels](images/erosion.jpg)
@@ -115,18 +121,35 @@ Larion world.
 
 ![A comparison of ridge noise](images/vs-vanilla-ridges.jpg)
 
+An additional feature is that rivers can now flow underground in tunnels,
+meaning they will continue below mountains and hilly terrain! They will also
+rarely be obstructed by terrain outside of tunnels, making them much easier to
+sail though. This was a must-have feature with all the extra hills, without it
+rivers would be blocked all of the time.
+
+![A river tunnel](images/river-tunnel.jpg)
+
 ## More vegetation, but sometimes less
+
+The vegetational noise has not been changed too much, but it's a bit more random
+(two layers of noise instead of one) and has been tweaked slightly to provoke my
+"favorite" biomes of each temperature band to appear. Icy zones are more dry
+(less snow-free taigas!), cold zones more humid (old growth pine forests!),
+subtropical zones dry (deserts!), tropical zones humid (jungles!).
+
+![A comparison of vegetation noise](images/vs-vanilla-ridges.jpg)
 
 ## Desert dunes
 
 ![Dunes](images/dunes.jpg)
 
 All the above changes to erosion and continents meant deserts had become
-annoyingly rare and odd-looking. They usually only appeared along coastlines
-while inland terrain was exclusively badlands. Because if this I decided to make
-a special case - in subtropical temperature bands, a stripe of very high erosion
-(high erosion + subtropical = desert) will always appear and no "jank" will be
-applied. Instead of the jank, these zones are covered with large dunes.
+annoyingly rare and odd-looking. They didn't jive with the jank factor, and they
+usually only appeared along coastlines while inland terrain was exclusively
+badlands. Because if this I decided to make a special case - in subtropical
+temperature bands, a stripe of very high erosion (high erosion + subtropical =
+desert) will always appear and no "jank" will be applied. Instead of the jank,
+these zones are covered with large dunes.
 
 ## Way weirder mushroom islands
 
