@@ -33,7 +33,7 @@ functions to the core game! It would be great to be able to distribute Larion
 as a pure vanilla data pack.)
 
 
-- Download [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder
+- Download **Version 1.0.4** of [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder - make sure to pick the one that matches the version of Minecraft you are using. 
 - Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
     - Alternatively, you can download `Larion-xxxx-mcxxxx.zip` and add it
     directly to your world as a datapack, but More Density Functions is still
