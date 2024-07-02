@@ -12,7 +12,7 @@ major challenge?
 Do you also like sailing the high seas? Exploring far-off islands? Huge inland
 valleys? Massive deserts? Long, winding river tunnels? Floating mushroom islands!?!
 
-Then this Fabric mod was practically made for you!
+Then this mod/datapack was practically made for you!
 
 Larion is a major revamp of the overworld generation in Minecraft that aims to
 be a blend of **Epic fantasy** (think World of Warcraft, Lord of the Rings,
