@@ -1,6 +1,6 @@
 ![Banner](images/banner.jpg)
 
-# Larion - Epic Fantasy World Generation for Minecraft 1.19.2-1.20.6
+# Larion, for Minecraft 1.19.2-1.20.6
 
 Do you like mountains?
 
@@ -61,6 +61,8 @@ The world height has been raised from 384 to 512, meaning the world now
 stretches from Y=-64 to Y=448. The scale of the terrain has been extended as
 well, meaning pretty much every hill is taller than it usually would be, but
 stupidly tall mountains are of couse the key feature of this change.
+
+Oh yeah and of course oceans are also deeper. The deepest oceans reach down to around Y=0!
 
 ## The Jank Factor
 
@@ -223,6 +225,13 @@ overwritten files along with descriptions what has been changed.
     also multiplied by 0.9 to scale down everything just a bit..
     - `sloped_cheese` has been modified to add `larion:overworld/minecraftness`
     to overall terrain density, creating overhangs and weirdness
+
+# Special thanks to
+
+- alkexr, creator of [Eldor](https://www.planetminecraft.com/data-pack/eldor/)
+- jacobsjo, creaor of [Saddle Valley Rivers](https://www.planetminecraft.com/data-pack/saddle-valley-rivers-canyons-and-underground-rivers-1-18-2-only/)
+- devpelux, creator of [X-Mountains](https://modrinth.com/datapack/xmountains)
+- Apollo, creator of [Deeper oceans](https://modrinth.com/datapack/deeper-oceans) and [Tectonic](https://modrinth.com/datapack/tectonic)
 
 # Footnotes
 

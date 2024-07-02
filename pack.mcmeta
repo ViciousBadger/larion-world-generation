@@ -1,7 +1,11 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "supported_formats": [
+      10,
+      12,
+      15,
+      18,
       26,
       41
     ],
