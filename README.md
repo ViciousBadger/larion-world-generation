@@ -41,7 +41,16 @@ as a pure vanilla data pack.)
 
 # Features
 
-## Huge continents, small islands
+## Huge continents and little islands
+
+![Map of a continent](images/continent.jpg)
+
+Instead of an infinite mainland with small scattered "oceans" (more like big
+lakes), the overworld now consists of differently sized continents with many
+smaller islands between them. I felt like other world generation datapacks
+usually made continents way too big, so in Larion they are scaled down quite a
+bit so that they are easier to explore fully, but still large enough to be
+impressive. The continent pictured above is approximately 8500x2800 blocks in size.
 
 ## Taller everything
 
@@ -63,8 +72,8 @@ All the above changes to erosion and continents meant deserts had become
 annoyingly rare and odd-looking. They usually only appeared along coastlines
 while inland terrain was exclusively badlands. Because if this I decided to make
 a special case - in subtropical temperature bands, a stripe of very high erosion
-will always appear and no "jank" will be applied. Instead of the jank, deserts
-are covered with large sand dunes.
+(high erosion + subtropical = desert) will always appear and no "jank" will be
+applied. Instead of the jank, these zones are covered with large dunes.
 
 ## Way weirder mushroom islands
 
