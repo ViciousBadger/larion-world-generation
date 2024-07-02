@@ -70,9 +70,18 @@ There's not much interesting about a world with only smooth, easy-to-climb
 slopes. It may look "realistic" but where's the fun in that??
 
 This is why I added an entirely new layer of what I call "jank" or
-"minecraftness" to the terrain. It tapers off at rivers, oceans and deserts, but other than that, every surface has been affected. This added noise creates more hills, more overhangs, floating islands and other strange phenomenon.
+"minecraftness" to the terrain. It works similarily to the existing "windswept" effect. It tapers off at rivers, beaches, oceans and deserts, but other than that, every surface has been affected. This added noise creates more hills, more overhangs, floating islands and other strange phenomenon.
 
 ## Temperature bands
+
+![Temperature bands](images/temp-bands.jpg)
+
+Blobby temperature zones have been replaced by what I call "temperature bands",
+meaning it gets colder as you go north and warmer as you go south. If you live
+on the southern hemisphere and feel offended, simply set your spawn point far
+enough to the south, as the bands loop back around like this picture shows:
+
+![Temperature bands, zoomed out](images/temp-bands-far.jpg)
 
 ## Coastal swamps and inland mountains
 
