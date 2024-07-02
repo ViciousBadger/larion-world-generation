@@ -87,7 +87,7 @@ the bands warps back around like this picture shows:
 
 You may have noticed that desert-y and jungle-y biomes have been swapped
 compared to vanilla, as I felt this was somewhat more appropriate and
-Earth-like - of course the Earth's biome distribution is way more complex - but deserts
+Earth-like. Of course the Earth's biome distribution is way more complex - but deserts
 usually appear in subtropical latitudes (Sahara, Australia) while jungles and
 such appear at the equator (Central Africa, South America).
 
@@ -111,7 +111,7 @@ point, creating large valleys in the middle of some continents.
 
 The "ridge" noise, also called weirdness, is what creates rivers, hills,
 mountain peaks and even "weird" biome variants. As you can imagine, it's one of
-the more complex noise functions in the game.
+the more difficult noise functions to get "right".
 
 Larion uses the same "ridge" noise as the
 [Eldor](https://www.planetminecraft.com/data-pack/eldor/) datapack, tweaked only
@@ -131,11 +131,11 @@ rivers would be blocked all of the time.
 
 ## More vegetation, but sometimes less
 
-The vegetational noise has not been changed too much, but it's a bit more random
-(two layers of noise instead of one) and has been tweaked slightly to provoke my
-"favorite" biomes of each temperature band to appear. Icy zones are more dry
-(less snow-free taigas!), cold zones more humid (old growth pine forests!),
-subtropical zones dry (deserts!), tropical zones humid (jungles!).
+The vegetation/humidity noise is a bit more random (more layers of less uniform
+noise) and has been tweaked slightly to provoke my "favorite" biomes of each
+temperature band to appear. Icy zones are more dry (less snow-free taigas!),
+cold zones more humid (old growth pine forests!), subtropical zones dry
+(deserts!), tropical zones humid (jungles!).
 
 ![A comparison of vegetation noise](images/vs-vanilla-vegetation.jpg)
 
@@ -147,7 +147,7 @@ All the above changes to erosion and continents meant deserts had become
 annoyingly rare and odd-looking. They didn't jive with the jank factor, and they
 usually only appeared along coastlines while inland terrain was exclusively
 badlands. Because if this I decided to make a special case - in subtropical
-temperature bands, a stripe of very high erosion (high erosion + subtropical =
+temperature bands, a stripe of predictably high erosion (high erosion + subtropical =
 desert) will always appear and no "jank" will be applied. Instead of the jank,
 these zones are covered with large dunes.
 
@@ -223,7 +223,11 @@ overwritten files along with descriptions what has been changed.
     - `sloped_cheese` has been modified to add `larion:overworld/minecraftness`
     to overall terrain density, creating overhangs and weirdness
 
-# Footnote
+# Footnotes
+
+All pictures in this readme were taken using the [Distant
+Horizons](https://modrinth.com/mod/distanthorizons) mod combined with [BSL
+shaders](https://modrinth.com/shader/bsl-shaders). 
 
 Larion is licensed under Apache 2.0, meaning you are free to modify and use the
 pack as you wish. You can freely use any individual parts in your own
