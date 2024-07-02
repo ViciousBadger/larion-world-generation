@@ -5,10 +5,7 @@
       26,
       41
     ],
-    "description": [
-      "Epic fantasy style terrain generation overhaul",
-      "REQUIRES the 'More Density Functions' Fabric mod!"
-    ]
+    "description": "Epic fantasy world generation overhaul"
   },
   "overlays": {
     "entries": [

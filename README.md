@@ -23,19 +23,19 @@ distributed, along with some extra terrain features described below.
 
 ## How to install
 
-- Download [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder
-- Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
-    - Alternatively, you can add the Larion jar directly to your world as a
-    datapack, but More Density Functions is still required for it to work.
-
-## Requirements
-
 Larion **requires** the [More Density
 Functions](https://modrinth.com/mod/more-density-functions) Fabric mod in order
 to function, as several important features make use of the "sine" and "x"
 functions added by this mod. (If anyone from Mojang reads this, please add these
 functions to the core game! It would be great to be able to distribute Larion
 as a pure vanilla data pack.)
+
+
+- Download [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder
+- Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
+    - Alternatively, you can download `Larion-xxxx-mcxxxx.zip` and add it
+    directly to your world as a datapack, but More Density Functions is still
+    required for it to work.
 
 # Features
 
