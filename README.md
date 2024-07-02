@@ -87,7 +87,7 @@ the bands warps back around like this picture shows:
 
 ## Coastal swamps and inland mountains
 
-![Example of a valley with a small swamp and some windswept hills inside](images/valley.jpg)
+![Example of different erosion levels](images/erosion.jpg)
 
 The "erosion" noise, determining if an area has "low erosion" (mountains) or
 "high erosion" (swamps, but also all windswept biomes), has been explicitly tied
@@ -102,6 +102,18 @@ point, creating large valleys in the middle of some continents.
 ![A comparison of erosion noise](images/vs-vanilla-erosion.jpg)
 
 ## Rivers and ridges
+
+The "ridge" noise, also called weirdness, is what creates rivers, hills,
+mountain peaks and even "weird" biome variants. As you can imagine, it's one of
+the more complex noise functions in the game.
+
+Larion uses the same "ridge" noise as the
+[Eldor](https://www.planetminecraft.com/data-pack/eldor/) datapack, tweaked only
+slightly to make rivers a bit wider and longer. alkexr did such a fantastic job
+creating his ridge noise I could hardly imagine doing it any better, and the rivers and peaks it generates fit perfectly within the
+Larion world.
+
+![A comparison of ridge noise](images/vs-vanilla-ridges.jpg)
 
 ## More vegetation, but sometimes less
 
