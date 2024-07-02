@@ -225,8 +225,8 @@ overwritten files along with descriptions what has been changed.
 Larion is licensed under Apache 2.0, meaning you are free to modify and use the
 pack as you wish. You can freely use any individual parts in your own
 datapack. However, if you choose to redistribute Larion, please be sure to
-include the copyright (LICENSE.md) file and also state any significant changes
-made to the datapack.
+include the copyright (LICENSE.md) file, a link to this page and also state any
+significant changes made to the datapack.
 
 If you like the project and want to send me a donation, here is a Paypal link:
 
