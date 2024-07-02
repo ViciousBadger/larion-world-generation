@@ -41,7 +41,25 @@ as a pure vanilla data pack.)
 
 # Features
 
-TODO
+## Huge continents, small islands
+
+## Taller everything
+
+## The Jank Factor
+
+## Temperature bands
+
+## Coastal swamps and inland mountains
+
+## Rivers and ridges
+
+## More vegetation, but sometimes less
+
+## Desert dunes
+
+![Dunes](images/dunes.jpg)
+
+## Way weirder mushroom islands
 
 # Known issues
 
