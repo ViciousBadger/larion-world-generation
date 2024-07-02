@@ -49,10 +49,21 @@ Instead of an infinite mainland with small scattered "oceans" (more like big
 lakes), the overworld now consists of differently sized continents with many
 smaller islands between them. I felt like other world generation datapacks
 usually made continents way too big, so in Larion they are scaled down quite a
-bit so that they are easier to explore fully, but still large enough to be
-impressive. The continent pictured above is approximately 8500x2800 blocks in size.
+bit so that they are easier to explore fully, but still large enough to feel vast. The continent pictured above is approximately 8500x2800 blocks in size.
+
+Below is a comparison of the continental noise "shapes" of vanilla Minecraft and
+Larion.
+
+![A comparison of continental noise](images/vs-vanilla-continents.jpg)
 
 ## Taller everything
+
+![A really really tall mountain](images/mountain.jpg)
+
+The world height has been raised from 384 to 512, meaning the world now
+stretches from Y=-64 to Y=448. The scale of the terrain has been extended as
+well, meaning pretty much every hill is taller than it usually would be, but
+stupidly tall mountains are of couse the key feature of this change.
 
 ## The Jank Factor
 
