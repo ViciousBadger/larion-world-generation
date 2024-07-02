@@ -163,6 +163,9 @@ The island group pictured here is unusually large!
 
 # Known issues
 
+- Some seeds will spawn you in water or on a tiny island out of nowhere. If you
+  want a bit more predictability when creating a world, I would recommend using
+  [World Preview](https://modrinth.com/mod/world-preview).
 - World generation performance is way worse due to the increased complexity of
 density functions and increased world height. The extra "jank" effect that
 creates overhangs seems to cause the largest reduction in speed because it adds
