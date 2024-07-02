@@ -51,9 +51,6 @@ smaller islands between them. I felt like other world generation datapacks
 usually made continents way too big, so in Larion they are scaled down quite a
 bit so that they are easier to explore fully, but still large enough to feel vast. The continent pictured above is approximately 8500x2800 blocks in size.
 
-Below is a comparison of the continental noise "shapes" of vanilla Minecraft and
-Larion.
-
 ![A comparison of continental noise](images/vs-vanilla-continents.jpg)
 
 ## Taller everything
@@ -66,6 +63,14 @@ well, meaning pretty much every hill is taller than it usually would be, but
 stupidly tall mountains are of couse the key feature of this change.
 
 ## The Jank Factor
+
+![Jank](images/jank.jpg)
+
+There's not much interesting about a world with only smooth, easy-to-climb
+slopes. It may look "realistic" but where's the fun in that??
+
+This is why I added an entirely new layer of what I call "jank" or
+"minecraftness" to the terrain. It tapers off at rivers, oceans and deserts, but other than that, every surface has been affected. This added noise creates more hills, more overhangs, floating islands and other strange phenomenon.
 
 ## Temperature bands
 
