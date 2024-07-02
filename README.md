@@ -1,3 +1,5 @@
+![Banner](images/banner.jpg)
+
 # Larion - Epic Fantasy World Generation for Minecraft 1.19.2-1.20.6
 
 Do you like mountains?
