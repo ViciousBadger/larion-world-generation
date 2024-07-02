@@ -231,6 +231,7 @@ datapack. However, if you choose to redistribute Larion, please be sure to
 include the copyright (LICENSE.md) file, a link to this page and also state any
 significant changes made to the datapack.
 
+The current version took about a month of precious free time to make.
 If you like the project and want to send me a donation, here is a Paypal link:
 
 https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
