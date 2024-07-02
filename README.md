@@ -48,14 +48,18 @@ TODO
 - World generation performance is heavily impacted due to the increased
 complexity of density functions and increased world height. The extra "jank"
 effect that creates overhangs seems to cause the largest reduction in speed
-because it adds two extra layers of full-3d noise to the mix.
+because it adds two extra layers of full-3d noise to the mix. You can remedy
+this by using worldgen optimization mods - I recommend these:
+    - [C2ME](https://modrinth.com/mod/c2me-fabric) (MAJOR performance boost, scales with CPU core count)
+    - [Noisium](https://modrinth.com/mod/noisium)
+    - [Faster Random](https://modrinth.com/mod/faster-random)
+    - [FerriteCore](https://modrinth.com/mod/ferrite-core)
 - There seems to be some kind of incompability between **More Density
 Functions** and **Chunky** - in my experience, Chunky fails to generate any new
-chunks, which is unfortunate.. I experienced no such problems with other chunk
-pre-generation methods:
-
-- [Distant Horizons](https://modrinth.com/mod/distanthorizons) (Only generates LODs, not real chunks)
-- [Fabric/Quilt Chunk Pregenerator](https://modrinth.com/mod/distanthorizons) (Not as featureful as Chunky, but a working alternative for now)
+chunks, which is unfortunate.. I experienced no such problems with the other
+chunk pre-generation methods I tried:
+    - [Distant Horizons](https://modrinth.com/mod/distanthorizons) (Only generates LODs, not real chunks)
+    - [Fabric/Quilt Chunk Pregenerator](https://modrinth.com/mod/distanthorizons) (Not as featureful as Chunky, but a working alternative for now)
 
 # Note on datapack compability
 
