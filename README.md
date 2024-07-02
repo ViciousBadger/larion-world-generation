@@ -232,6 +232,6 @@ If you like the project and want to send me a donation, here is a Paypal link:
 
 https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
 
-.. or if you like, send some Bitcoin: bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
+.. or perhaps send some Bitcoin: bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
 
 Thank you for reading <3
