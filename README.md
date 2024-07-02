@@ -76,14 +76,30 @@ This is why I added an entirely new layer of what I call "jank" or
 
 ![Temperature bands](images/temp-bands.jpg)
 
-Blobby temperature zones have been replaced by what I call "temperature bands",
-meaning it gets colder as you go north and warmer as you go south. If you live
-on the southern hemisphere and feel offended, simply set your spawn point far
-enough to the south, as the bands loop back around like this picture shows:
+I felt like the temperature zones in Minecraft could use some extra size, but
+also a bit of predictability. To solve this, the temperature noise map has been
+replaced with what I call "temperature bands", meaning it gets colder as you go
+north and warmer as you go south. If you live on the southern hemisphere and
+feel offended by this, simply set your spawn point far enough to the south, as
+the bands warps back around like this picture shows:
 
 ![Temperature bands, zoomed out](images/temp-bands-far.jpg)
 
 ## Coastal swamps and inland mountains
+
+![Example of a valley with a small swamp and some windswept hills inside](images/valley.jpg)
+
+The "erosion" noise, determining if an area has "low erosion" (mountains) or
+"high erosion" (swamps, but also all windswept biomes), has been explicitly tied
+to the continents noise so that erosion will "lower" as you go further
+inland. The result is that continents usually have swamps and windswept biomes
+at the edges, normal biomes further in and mountains in the central areas.
+
+In some cases, continents would become TOO mountainous (even I have
+limits), so I made the erosion and continentalness taper off after a certain
+point, creating large valleys in the middle of some continents.
+
+![A comparison of erosion noise](images/vs-vanilla-erosion.jpg)
 
 ## Rivers and ridges
 
