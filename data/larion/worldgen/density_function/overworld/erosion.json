@@ -6,11 +6,7 @@
       "type": "minecraft:mul",
       "argument1": {
         "type": "minecraft:mul",
-        "argument1": {
-          "type": "minecraft:add",
-          "argument1": "minecraft:overworld/continents",
-          "argument2": -0.1
-        },
+        "argument1": "larion:overworld/mountain_chains",
         "argument2": "larion:overworld/erosion_temperature_factor"
       },
       "argument2": -2.2
