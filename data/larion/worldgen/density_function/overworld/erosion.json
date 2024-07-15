@@ -23,7 +23,34 @@
         },
         "argument2": "larion:overworld/erosion_temperature_factor"
       },
-      "argument2": 1.4
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/mountain_chains",
+          "points": [
+            {
+              "location": -0.5,
+              "derivative": 0.0,
+              "value": 1.5
+            },
+            {
+              "location": 0.4,
+              "derivative": 0.0,
+              "value": 1.0
+            },
+            {
+              "location": 0.7,
+              "derivative": 0.0,
+              "value": 0.0
+            },
+            {
+              "location": 1.0,
+              "derivative": 0.0,
+              "value": 0.0
+            }
+          ]
+        }
+      }
     }
   },
   "argument2": "larion:overworld/erosion_temperature_shift"
