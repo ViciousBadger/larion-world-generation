@@ -34,7 +34,7 @@
     }
   },
   "argument2": {
-    "type": "minecraft:add",
+    "type": "minecraft:max",
     "argument1": {
       "type": "minecraft:abs",
       "argument": {
