@@ -6,7 +6,7 @@
     "argument": {
       "type": "minecraft:noise",
       "noise": "larion:ridge/w",
-      "xz_scale": 0.3,
+      "xz_scale": 0.2,
       "y_scale": 0.0
     }
   }

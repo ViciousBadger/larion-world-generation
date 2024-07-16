@@ -40,7 +40,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:land/islands_small",
-        "xz_scale": 0.25,
+        "xz_scale": 0.3,
         "y_scale": 0
       }
     },
