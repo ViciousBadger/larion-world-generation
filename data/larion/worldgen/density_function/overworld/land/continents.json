@@ -3,26 +3,30 @@
   "argument": {
     "type": "minecraft:mul",
     "argument1": {
-      "type": "minecraft:mul",
+      "type": "minecraft:add",
       "argument1": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:shifted_noise",
-          "noise": "larion:land/continentalness",
-          "xz_scale": 0.18,
-          "y_scale": 0,
-          "shift_x": 0,
-          "shift_y": 0,
-          "shift_z": {
-            "type": "minecraft:mul",
-            "argument1": {
-              "type": "more_dfs:z"
-            },
-            "argument2": 0.2
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:shifted_noise",
+            "noise": "larion:land/continentalness",
+            "xz_scale": 0.18,
+            "y_scale": 0,
+            "shift_x": 0,
+            "shift_y": 0,
+            "shift_z": {
+              "type": "minecraft:mul",
+              "argument1": {
+                "type": "more_dfs:z"
+              },
+              "argument2": 0.2
+            }
           }
-        }
+        },
+        "argument2": 2.0
       },
-      "argument2": 2.0
+      "argument2": -0.05
     },
     "argument2": {
       "type": "minecraft:max",
