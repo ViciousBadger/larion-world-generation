@@ -7,21 +7,43 @@
       "argument1": {
         "type": "minecraft:mul",
         "argument1": {
-          "type": "minecraft:abs",
-          "argument": {
-            "type": "minecraft:shifted_noise",
-            "noise": "larion:land/continentalness",
-            "xz_scale": 0.18,
-            "y_scale": 0,
-            "shift_x": 0,
-            "shift_y": 0,
-            "shift_z": {
-              "type": "minecraft:mul",
-              "argument1": {
-                "type": "more_dfs:z"
+          "type": "minecraft:spline",
+          "spline": {
+            "coordinate": {
+              "type": "minecraft:abs",
+              "argument": {
+                "type": "minecraft:shifted_noise",
+                "noise": "larion:land/continentalness",
+                "xz_scale": 0.17,
+                "y_scale": 0,
+                "shift_x": 0,
+                "shift_y": 0,
+                "shift_z": {
+                  "type": "minecraft:mul",
+                  "argument1": {
+                    "type": "more_dfs:z"
+                  },
+                  "argument2": 0.2
+                }
+              }
+            },
+            "points": [
+              {
+                "location": 0.0,
+                "derivative": 1.0,
+                "value": 0.0
               },
-              "argument2": 0.2
-            }
+              {
+                "location": 0.5,
+                "derivative": 1.0,
+                "value": 0.6
+              },
+              {
+                "location": 1.0,
+                "derivative": 1.0,
+                "value": 1.0
+              }
+            ]
           }
         },
         "argument2": 2.0
