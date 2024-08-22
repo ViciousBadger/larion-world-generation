@@ -3,53 +3,49 @@
   "argument": {
     "type": "minecraft:mul",
     "argument1": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:spline",
-        "spline": {
-          "coordinate": {
-            "type": "minecraft:abs",
-            "argument": {
-              "type": "minecraft:shifted_noise",
-              "noise": "larion:land/continentalness",
-              "xz_scale": 0.17,
-              "y_scale": 0,
-              "shift_x": 0,
-              "shift_y": 0,
-              "shift_z": {
-                "type": "minecraft:mul",
-                "argument1": {
-                  "type": "more_dfs:z"
-                },
-                "argument2": 0.2
-              }
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": {
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:shifted_noise",
+            "noise": "larion:land/continentalness",
+            "xz_scale": 0.17,
+            "y_scale": 0,
+            "shift_x": 0,
+            "shift_y": 0,
+            "shift_z": {
+              "type": "minecraft:mul",
+              "argument1": {
+                "type": "more_dfs:z"
+              },
+              "argument2": 0.2
             }
+          }
+        },
+        "points": [
+          {
+            "location": 0,
+            "derivative": 1,
+            "value": 0
           },
-          "points": [
-            {
-              "location": 0,
-              "derivative": 1,
-              "value": 0
-            },
-            {
-              "location": 0.04,
-              "derivative": 1,
-              "value": 0
-            },
-            {
-              "location": 0.3,
-              "derivative": 1,
-              "value": 1
-            },
-            {
-              "location": 1,
-              "derivative": 1,
-              "value": 1.3
-            }
-          ]
-        }
-      },
-      "argument2": -0.1
+          {
+            "location": 0.04,
+            "derivative": 1,
+            "value": 0
+          },
+          {
+            "location": 0.3,
+            "derivative": 1,
+            "value": 1
+          },
+          {
+            "location": 1,
+            "derivative": 1,
+            "value": 1.3
+          }
+        ]
+      }
     },
     "argument2": {
       "type": "minecraft:max",

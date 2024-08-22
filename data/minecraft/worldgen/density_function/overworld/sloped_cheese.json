@@ -29,7 +29,7 @@
           "argument2": {
             "type": "minecraft:mul",
             "argument1": "larion:overworld/minecraftness",
-            "argument2": 0.0
+            "argument2": 0.28
           }
         },
         "argument2": "minecraft:overworld/factor"

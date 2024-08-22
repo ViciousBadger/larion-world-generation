@@ -30,9 +30,9 @@
         "value": 1.0
       },
       {
-        "location": -0.15,
+        "location": -0.12,
         "derivative": 1.0,
-        "value": 0.4
+        "value": 0.7
       },
       {
         "location": 0.0,
@@ -40,9 +40,9 @@
         "value": 0.0
       },
       {
-        "location": 0.15,
+        "location": 0.12,
         "derivative": 1.0,
-        "value": 0.4
+        "value": 0.7
       },
       {
         "location": 1.0,
