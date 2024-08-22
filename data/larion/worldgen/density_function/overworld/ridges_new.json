@@ -1,1 +1,17 @@
-2.0
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "more_dfs:signum",
+    "argument": {
+      "type": "minecraft:noise",
+      "noise": "larion:ridges/polarity",
+      "xz_scale": 0.25,
+      "y_scale": 0
+    }
+  },
+  "argument2": {
+    "type": "minecraft:min",
+    "argument1": "larion:overworld/ridges/rivers",
+    "argument2": "larion:overworld/ridges/hills"
+  }
+}

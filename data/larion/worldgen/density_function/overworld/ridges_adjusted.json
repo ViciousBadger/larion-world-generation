@@ -1,7 +1,6 @@
 {
-  "comment": "Written by alkexr, see https://www.planetminecraft.com/data-pack/eldor/",
   "type": "minecraft:mul",
-  "argument1": "larion:overworld/ridges",
+  "argument1": "larion:overworld/ridges_new",
   "argument2": {
     "type": "minecraft:spline",
     "spline": {
