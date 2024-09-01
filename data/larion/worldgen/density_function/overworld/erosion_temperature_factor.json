@@ -3,7 +3,7 @@
   "argument": {
     "type": "minecraft:spline",
     "min_value": 0.0,
-    "max_value": 0.3,
+    "max_value": 1.0,
     "spline": {
       "coordinate": "larion:overworld/temperature",
       "points": [
@@ -25,12 +25,40 @@
         {
           "location": 0.40,
           "derivative": 1.0,
-          "value": 0.0
+          "value": {
+            "coordinate": "larion:overworld/erosion",
+            "points": [
+              {
+                "location": -0.1,
+                "derivative": 0.0,
+                "value": 1.0
+              },
+              {
+                "location": 0.0,
+                "derivative": 1.0,
+                "value": 0.0
+              }
+            ]
+          }
         },
         {
           "location": 0.50,
           "derivative": 1.0,
-          "value": 0.0
+          "value": {
+            "coordinate": "larion:overworld/erosion",
+            "points": [
+              {
+                "location": -0.1,
+                "derivative": 0.0,
+                "value": 1.0
+              },
+              {
+                "location": 0.0,
+                "derivative": 1.0,
+                "value": 0.0
+              }
+            ]
+          }
         },
         {
           "location": 0.55,

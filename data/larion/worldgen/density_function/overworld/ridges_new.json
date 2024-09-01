@@ -12,6 +12,14 @@
   "argument2": {
     "type": "minecraft:min",
     "argument1": "larion:overworld/ridges/rivers",
-    "argument2": "larion:overworld/ridges/hills"
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": "larion:overworld/erosion_temperature_factor",
+        "argument2": "larion:overworld/ridges/hills"
+      },
+      "argument2": "larion:overworld/erosion_temperature_shift"
+    }
   }
 }
