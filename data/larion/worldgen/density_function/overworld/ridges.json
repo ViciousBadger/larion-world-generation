@@ -1,70 +1,29 @@
 {
-  "comment": "Written by alkexr, see https://www.planetminecraft.com/data-pack/eldor/",
   "type": "minecraft:mul",
   "argument1": {
-    "type": "minecraft:clamp",
-    "min": -1.0,
-    "max": 1.0,
+    "type": "minecraft:range_choice",
     "input": {
-      "type": "minecraft:mul",
-      "argument1": -62.831853,
-      "argument2": "larion:overworld/weird_base"
-    }
+      "type": "minecraft:noise",
+      "noise": "larion:ridges/rivers_a",
+      "xz_scale": 0.12,
+      "y_scale": 0
+    },
+    "min_inclusive": 0,
+    "max_exclusive": 10000.0,
+    "when_in_range": 1,
+    "when_out_of_range": -1
   },
   "argument2": {
     "type": "minecraft:min",
-    "argument1": {
-      "type": "minecraft:abs",
-      "argument": "larion:overworld/weird_base"
-    },
+    "argument1": "larion:overworld/ridges/rivers",
     "argument2": {
       "type": "minecraft:add",
-      "argument1": 0.166666,
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:add",
-          "argument1": -0.5,
-          "argument2": {
-            "type": "minecraft:abs",
-            "argument": {
-              "type": "minecraft:add",
-              "argument1": -0.5,
-              "argument2": {
-                "type": "minecraft:abs",
-                "argument": {
-                  "type": "minecraft:min",
-                  "argument1": {
-                    "type": "minecraft:abs",
-                    "argument": {
-                      "type": "minecraft:add",
-                      "argument1": "larion:overworld/ridge/u",
-                      "argument2": {
-                        "type": "minecraft:mul",
-                        "argument1": -1.0,
-                        "argument2": "larion:overworld/ridge/v"
-                      }
-                    }
-                  },
-                  "argument2": {
-                    "type": "minecraft:add",
-                    "argument1": {
-                      "type": "minecraft:mul",
-                      "argument1": -1.0,
-                      "argument2": "larion:overworld/ridge/w"
-                    },
-                    "argument2": {
-                      "type": "minecraft:max",
-                      "argument1": "larion:overworld/ridge/u",
-                      "argument2": "larion:overworld/ridge/v"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": "larion:overworld/erosion_temperature_factor",
+        "argument2": "larion:overworld/ridges/hills"
+      },
+      "argument2": "larion:overworld/erosion_temperature_shift"
     }
   }
 }

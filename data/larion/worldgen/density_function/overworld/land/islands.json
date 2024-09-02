@@ -8,11 +8,6 @@
         {
           "location": 0.0,
           "derivative": 1.0,
-          "value": 0.2
-        },
-        {
-          "location": 0.02,
-          "derivative": 1.0,
           "value": 0.5
         },
         {
@@ -37,7 +32,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:land/islands_small",
-          "xz_scale": 0.3,
+          "xz_scale": 0.25,
           "y_scale": 0
         }
       },
@@ -56,7 +51,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:land/islands_large",
-        "xz_scale": 0.2,
+        "xz_scale": 0.25,
         "y_scale": 0
       }
     }

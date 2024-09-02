@@ -1,6 +1,6 @@
 {
   "type": "minecraft:mul",
-  "argument1": "larion:overworld/ridges_new",
+  "argument1": "larion:overworld/ridges",
   "argument2": {
     "type": "minecraft:spline",
     "spline": {

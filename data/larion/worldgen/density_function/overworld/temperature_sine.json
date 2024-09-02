@@ -11,7 +11,7 @@
         "type": "minecraft:mul",
         "argument1": {
           "type": "more_dfs:power",
-          "base": 6400,
+          "base": 12000,
           "exp": -1
         },
         "argument2": 3.14
