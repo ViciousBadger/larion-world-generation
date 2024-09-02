@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:noise",
+  "noise": "larion:ridges/polarity",
+  "xz_scale": 0.25,
+  "y_scale": 0
+}
