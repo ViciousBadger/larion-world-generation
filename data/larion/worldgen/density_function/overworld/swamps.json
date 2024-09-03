@@ -8,7 +8,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:swamps",
-          "xz_scale": 0.25,
+          "xz_scale": 0.45,
           "y_scale": 0.0
         }
       },
@@ -17,7 +17,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:swamps_alt",
-          "xz_scale": 0.25,
+          "xz_scale": 0.3,
           "y_scale": 0.0
         }
       }
@@ -29,12 +29,12 @@
         "value": 0.0
       },
       {
-        "location": 0.6,
+        "location": 0.4,
         "derivative": 0.0,
         "value": 0.45
       },
       {
-        "location": 0.8,
+        "location": 0.48,
         "derivative": 0.0,
         "value": 0.55
       },

@@ -35,12 +35,12 @@
               "value": 0.35
             },
             {
-              "location": 0.98,
+              "location": 0.95,
               "derivative": 0.0,
               "value": 0.55
             },
             {
-              "location": 1.0,
+              "location": 1.1,
               "derivative": 0.0,
               "value": 1.0
             }

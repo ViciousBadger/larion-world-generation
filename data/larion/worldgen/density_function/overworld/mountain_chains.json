@@ -6,7 +6,7 @@
       "coordinate": {
         "type": "minecraft:noise",
         "noise": "larion:mountain_chains",
-        "xz_scale": 0.12,
+        "xz_scale": 0.14,
         "y_scale": 0.0
       },
       "points": [
