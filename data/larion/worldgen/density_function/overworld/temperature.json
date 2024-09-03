@@ -10,32 +10,37 @@
           "coordinate": "larion:overworld/temperature_sine",
           "points": [
             {
-              "location": -1.2,
+              "location": -1.0,
               "derivative": 0.0,
               "value": -1.0
             },
             {
-              "location": -0.8,
+              "location": -0.9,
               "derivative": 0.0,
               "value": -0.45
             },
             {
-              "location": -0.35,
+              "location": -0.6,
               "derivative": 0.0,
               "value": -0.15
             },
             {
-              "location": 0.8,
+              "location": 0.80,
               "derivative": 0.0,
               "value": 0.2
             },
             {
-              "location": 0.95,
+              "location": 0.9,
+              "derivative": 0.0,
+              "value": 0.35
+            },
+            {
+              "location": 0.98,
               "derivative": 0.0,
               "value": 0.55
             },
             {
-              "location": 1.2,
+              "location": 1.0,
               "derivative": 0.0,
               "value": 1.0
             }
