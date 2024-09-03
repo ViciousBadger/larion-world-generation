@@ -39,7 +39,7 @@
               "value": 0.5
             },
             {
-              "location": 0.0,
+              "location": 0.3,
               "derivative": 0.0,
               "value": 0.2
             }
@@ -48,7 +48,7 @@
       },
       {
         "location": 0.2,
-        "derivative": 1.0,
+        "derivative": 0.0,
         "value": {
           "coordinate": "minecraft:overworld/erosion",
           "points": [
@@ -58,7 +58,7 @@
               "value": 0.6
             },
             {
-              "location": 0.0,
+              "location": 0.3,
               "derivative": 0.0,
               "value": 0.4
             }
@@ -66,8 +66,8 @@
         }
       },
       {
-        "location": 0.8,
-        "derivative": 1.0,
+        "location": 0.5,
+        "derivative": 0.0,
         "value": 0.7
       },
       {

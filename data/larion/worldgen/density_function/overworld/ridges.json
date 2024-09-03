@@ -14,16 +14,8 @@
     "when_out_of_range": -1
   },
   "argument2": {
-    "type": "minecraft:min",
+    "type": "minecraft:mul",
     "argument1": "larion:overworld/ridges/rivers",
-    "argument2": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:mul",
-        "argument1": "larion:overworld/erosion_temperature_factor",
-        "argument2": "larion:overworld/ridges/hills"
-      },
-      "argument2": "larion:overworld/erosion_temperature_shift"
-    }
+    "argument2": "larion:overworld/ridges/hills"
   }
 }
