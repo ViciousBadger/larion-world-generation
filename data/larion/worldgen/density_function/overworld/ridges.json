@@ -4,7 +4,7 @@
     "type": "minecraft:range_choice",
     "input": {
       "type": "minecraft:noise",
-      "noise": "larion:ridges/rivers_a",
+      "noise": "larion:ridges/polarity",
       "xz_scale": 0.12,
       "y_scale": 0
     },
