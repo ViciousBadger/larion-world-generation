@@ -2,12 +2,7 @@
   "type": "minecraft:mul",
   "argument1": {
     "type": "minecraft:range_choice",
-    "input": {
-      "type": "minecraft:noise",
-      "noise": "larion:ridges/polarity",
-      "xz_scale": 0.12,
-      "y_scale": 0
-    },
+    "input": "larion:overworld/ridges/polarity",
     "min_inclusive": 0,
     "max_exclusive": 10000.0,
     "when_in_range": 1,
