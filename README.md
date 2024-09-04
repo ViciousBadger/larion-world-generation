@@ -2,23 +2,9 @@
 
 # Larion, for Minecraft 1.19.2-1.20.6
 
-Do you like mountains?
-
-Do you like REALLY TALL mountains?
-
-Do you like terrain so hilly and full of cliffs, basic navigation becomes a
-major challenge?
-
-Do you also like sailing the high seas? Exploring far-off islands? Huge inland
-valleys? Massive deserts? Long, winding river tunnels? Floating mushroom islands!?!
-
-Then this mod/datapack was practically made for you!
-
 Larion is a major revamp of the overworld generation in Minecraft that aims to
-be a blend of **Epic fantasy** (think World of Warcraft, Lord of the Rings,
-realism is not a priority here, cool factor is!) and **Minecraftness** (The
-janky, hilly, blobby terrain Minecraft is known for that was most prominent in
-Alpha and Beta versions).
+"scale up" the terrain generation to something closer to an epic fantasy game like
+Skyrim or World of Warcraft.
 
 To accomplish this, Larion makes several major changes to how biomes are
 distributed, along with some extra terrain features described below.
@@ -33,13 +19,14 @@ functions to the core game! It would be great to be able to distribute Larion
 as a pure vanilla data pack.)
 
 
-- Download **Version 1.0.4** of [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder - make sure to pick the one that matches the version of Minecraft you are using. 
+- Download **Version 1.0.5** of [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder - make sure to pick the one that matches the version of Minecraft you are using. 
 - Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
     - Alternatively, you can download `Larion-xxxx-mcxxxx.zip` and add it
     directly to your world as a datapack, but More Density Functions is still
-    required for it to work.
+    required for it to work. Using the datapack .zip allows you to re-order
+    Larion in relation to other datapacks.
 
-# Features
+# Features (Not yet updated for v2.0.0)
 
 ## Continents and islands
 
