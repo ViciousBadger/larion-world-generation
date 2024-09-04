@@ -4,10 +4,14 @@
 
 Larion is a major revamp of the overworld generation in Minecraft that aims to
 "scale up" the terrain generation to something closer to an epic fantasy game like
-Skyrim or World of Warcraft.
+Skyrim or World of Warcraft. To accomplish this, every "density function" used to
+distribute biomes and determine terrain height has been altered heavily. Worlds generated
+with Larion consist of huge continents, long winding mountain ranges and much more
+unpredictable biome placement.
 
-To accomplish this, Larion makes several major changes to how biomes are
-distributed, along with some extra terrain features described below.
+In comparison to similar world generation datapacks, Larion does not aim to be
+completely realistic. Instead, terrain is much more vertical and uneven,
+making exploration more interesting and difficult.
 
 ## How to install
 
