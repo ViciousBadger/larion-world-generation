@@ -3,12 +3,12 @@
   "argument1": {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": "larion:overworld/land/continents_shape",
+      "coordinate": "larion:overworld/land/continents",
       "points": [
         {
           "location": 0.0,
           "derivative": 0.0,
-          "value": 0.3
+          "value": 0.2
         },
         {
           "location": 0.05,

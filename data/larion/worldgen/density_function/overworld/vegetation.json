@@ -17,7 +17,7 @@
       "argument2": {
         "type": "minecraft:mul",
         "argument1": {
-          "type": "minecraft:squeeze",
+          "type": "minecraft:square",
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:vegetation_variation",

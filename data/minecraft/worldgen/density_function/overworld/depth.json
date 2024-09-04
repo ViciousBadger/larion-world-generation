@@ -9,7 +9,7 @@
   },
   "argument2": {
     "type": "minecraft:add",
-    "argument1": -0.25,
+    "argument1": -0.238,
     "argument2": {
       "type": "minecraft:add",
       "argument1": "minecraft:overworld/offset",
