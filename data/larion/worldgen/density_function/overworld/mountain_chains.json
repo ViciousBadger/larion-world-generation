@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:noise",
+        "noise": "larion:mountain_chains",
+        "xz_scale": 0.14,
+        "y_scale": 0.0
+      },
+      "points": [
+        {
+          "location": -1.0,
+          "derivative": 0.0,
+          "value": -2.0
+        },
+        {
+          "location": -0.5,
+          "derivative": 0.0,
+          "value": -2.0
+        },
+        {
+          "location": -0.15,
+          "derivative": 0.0,
+          "value": 0.1
+        },
+        {
+          "location": 0.0,
+          "derivative": 0.0,
+          "value": 1.0
+        },
+        {
+          "location": 0.15,
+          "derivative": 0.0,
+          "value": 0.1
+        },
+        {
+          "location": 0.5,
+          "derivative": 0.0,
+          "value": -2.0
+        },
+        {
+          "location": 1.0,
+          "derivative": 0.0,
+          "value": -2.0
+        }
+      ]
+    }
+  }
+}

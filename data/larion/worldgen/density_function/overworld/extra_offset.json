@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/erosion",
+    "points": [
+      {
+        "derivative": 0.0,
+        "location": 0.3,
+        "value": {
+          "coordinate": "minecraft:overworld/ridges_folded",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -1.0,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.6,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.1,
+              "value": {
+                "coordinate": "minecraft:overworld/continents",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": -1.05,
+                    "value": 0.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -1.0,
+                    "value": -0.22
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.44,
+                    "value": -0.04
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.1,
+                    "value": 0.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.7,
+                    "value": 0.1
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 1.0,
+                    "value": 0.27
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "derivative": 0.0,
+        "location": 0.55,
+        "value": {
+          "coordinate": "minecraft:overworld/ridges_folded",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -1.0,
+              "value": -0.03
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.0,
+              "value": -0.01
+            },
+            {
+              "derivative": 0.0,
+              "location": 1.0,
+              "value": -0.05
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

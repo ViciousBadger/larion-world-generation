@@ -9,7 +9,7 @@
         "argument1": {
           "type": "minecraft:noise",
           "noise": "larion:vegetation",
-          "xz_scale": 0.25,
+          "xz_scale": 0.38,
           "y_scale": 0
         },
         "argument2": 1.0
@@ -17,11 +17,11 @@
       "argument2": {
         "type": "minecraft:mul",
         "argument1": {
-          "type": "minecraft:squeeze",
+          "type": "minecraft:square",
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:vegetation_variation",
-            "xz_scale": 0.25,
+            "xz_scale": 0.23,
             "y_scale": 0
           }
         },

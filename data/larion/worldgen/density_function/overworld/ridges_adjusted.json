@@ -1,44 +1,6 @@
 {
-  "comment": "Written by alkexr, see https://www.planetminecraft.com/data-pack/eldor/",
   "type": "minecraft:mul",
-  "argument1": {
-    "type": "minecraft:spline",
-    "spline": {
-      "coordinate": "larion:overworld/ridges",
-      "points": [
-        {
-          "location": -1.0,
-          "derivative": 1.0,
-          "value": -1.0
-        },
-        {
-          "location": -0.25,
-          "derivative": 1.0,
-          "value": -0.25
-        },
-        {
-          "location": -0.075,
-          "derivative": 1.5,
-          "value": -0.125
-        },
-        {
-          "location": 0.075,
-          "derivative": 1.5,
-          "value": 0.125
-        },
-        {
-          "location": 0.25,
-          "derivative": 1.0,
-          "value": 0.25
-        },
-        {
-          "location": 1.0,
-          "derivative": 1.0,
-          "value": 1.0
-        }
-      ]
-    }
-  },
+  "argument1": "larion:overworld/ridges",
   "argument2": {
     "type": "minecraft:spline",
     "spline": {
@@ -57,7 +19,7 @@
         {
           "location": -0.18,
           "derivative": 1.0,
-          "value": 0.3
+          "value": 0.6
         },
         {
           "location": 0.3,
