@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:quarter_negative",
+  "argument": {
+    "type": "minecraft:noise",
+    "noise": "larion:land/variation",
+    "xz_scale": 0.25,
+    "y_scale": 0
+  }
+}

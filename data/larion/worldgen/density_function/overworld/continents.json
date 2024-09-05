@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "argument1": "larion:overworld/continents/shapes",
+  "argument2": "larion:overworld/continents/variation"
+}
