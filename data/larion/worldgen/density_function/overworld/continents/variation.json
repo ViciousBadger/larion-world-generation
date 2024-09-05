@@ -1,9 +1,67 @@
 {
-  "type": "minecraft:quarter_negative",
-  "argument": {
-    "type": "minecraft:noise",
-    "noise": "larion:land/variation",
-    "xz_scale": 0.25,
-    "y_scale": 0
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:abs",
+      "argument": {
+        "type": "minecraft:noise",
+        "noise": "larion:land/variation",
+        "xz_scale": 0.22,
+        "y_scale": 0
+      }
+    },
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/continents/shapes",
+        "points": [
+          {
+            "location": -0.3,
+            "derivative": 0.0,
+            "value": 1.0
+          },
+          {
+            "location": 0.3,
+            "derivative": 0.0,
+            "value": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": -1.0,
+      "argument2": {
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:noise",
+          "noise": "larion:land/variation_negative",
+          "xz_scale": 0.22,
+          "y_scale": 0
+        }
+      }
+    },
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/continents/shapes",
+        "points": [
+          {
+            "location": 0.0,
+            "derivative": 0.0,
+            "value": 0.0
+          },
+          {
+            "location": 0.6,
+            "derivative": 0.0,
+            "value": 1.0
+          }
+        ]
+      }
+    }
   }
 }

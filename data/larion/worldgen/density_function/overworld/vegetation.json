@@ -5,17 +5,13 @@
     "argument": {
       "type": "minecraft:add",
       "argument1": {
-        "type": "minecraft:mul",
-        "argument1": {
-          "type": "minecraft:abs",
-          "argument": {
-            "type": "minecraft:noise",
-            "noise": "larion:vegetation/wetness",
-            "xz_scale": 0.18,
-            "y_scale": 0
-          }
-        },
-        "argument2": 1.0
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:noise",
+          "noise": "larion:vegetation/wetness",
+          "xz_scale": 0.18,
+          "y_scale": 0
+        }
       },
       "argument2": {
         "type": "minecraft:mul",
