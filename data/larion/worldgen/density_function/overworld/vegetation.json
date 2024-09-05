@@ -24,7 +24,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:vegetation/dryness",
-            "xz_scale": 0.18,
+            "xz_scale": 0.14,
             "y_scale": 0
           }
         },
