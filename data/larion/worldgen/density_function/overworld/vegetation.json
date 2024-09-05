@@ -7,21 +7,24 @@
       "argument1": {
         "type": "minecraft:mul",
         "argument1": {
-          "type": "minecraft:noise",
-          "noise": "larion:vegetation",
-          "xz_scale": 0.38,
-          "y_scale": 0
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "larion:vegetation/wetness",
+            "xz_scale": 0.18,
+            "y_scale": 0
+          }
         },
         "argument2": 1.0
       },
       "argument2": {
         "type": "minecraft:mul",
         "argument1": {
-          "type": "minecraft:square",
+          "type": "minecraft:abs",
           "argument": {
             "type": "minecraft:noise",
-            "noise": "larion:vegetation_variation",
-            "xz_scale": 0.23,
+            "noise": "larion:vegetation/dryness",
+            "xz_scale": 0.18,
             "y_scale": 0
           }
         },

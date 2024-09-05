@@ -7,27 +7,27 @@
       "points": [
         {
           "location": -1.0,
-          "derivative": 1.0,
+          "derivative": 0.0,
           "value": -1.0
         },
         {
           "location": -0.7,
-          "derivative": 1.0,
+          "derivative": 0.0,
           "value": -0.5
         },
         {
           "location": 0.0,
-          "derivative": 1.0,
+          "derivative": 0.0,
           "value": 0.1
         },
         {
           "location": 0.7,
-          "derivative": 1.0,
+          "derivative": 0.0,
           "value": 0.5
         },
         {
           "location": 1.0,
-          "derivative": 1.0,
+          "derivative": 0.0,
           "value": 1.0
         }
       ]
@@ -41,12 +41,12 @@
         {
           "location": -1.0,
           "derivative": 0.0,
-          "value": -1.0
+          "value": -0.6
         },
         {
           "location": -0.3,
           "derivative": 0.0,
-          "value": 0.0
+          "value": 0.2
         },
         {
           "location": 0.1,

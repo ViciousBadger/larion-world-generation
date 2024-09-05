@@ -1,9 +1,11 @@
 {
   "amplitudes": [
+    1.2,
     1.0,
     1.0,
-    0.5,
+    1.0,
+    1.0,
     1.0
   ],
-  "firstOctave": -7
+  "firstOctave": -8
 }
