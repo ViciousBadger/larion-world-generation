@@ -9,7 +9,7 @@
         "type": "minecraft:abs",
         "argument": {
           "type": "minecraft:noise",
-          "noise": "larion:land/mushroom",
+          "noise": "larion:continents/mushroom",
           "xz_scale": 0.25,
           "y_scale": 0
         }

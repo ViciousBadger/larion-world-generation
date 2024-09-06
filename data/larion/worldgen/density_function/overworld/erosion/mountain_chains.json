@@ -9,7 +9,7 @@
           "type": "minecraft:abs",
           "argument": {
             "type": "minecraft:noise",
-            "noise": "larion:mountain_chains",
+            "noise": "larion:erosion/mountain_chains",
             "xz_scale": 0.14,
             "y_scale": 0.0
           }
@@ -42,7 +42,7 @@
       "type": "minecraft:abs",
       "argument": {
         "type": "minecraft:noise",
-        "noise": "larion:mountain_chain_variation",
+        "noise": "larion:erosion/mountain_chain_variation",
         "xz_scale": 0.25,
         "y_scale": 0.0
       }

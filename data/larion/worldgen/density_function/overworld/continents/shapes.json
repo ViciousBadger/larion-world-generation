@@ -14,7 +14,7 @@
               "type": "minecraft:abs",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:land/shapes_a",
+                "noise": "larion:continents/shapes_a",
                 "xz_scale": 0.15,
                 "y_scale": 0
               }
@@ -23,7 +23,7 @@
               "type": "minecraft:abs",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:land/shapes_b",
+                "noise": "larion:continents/shapes_b",
                 "xz_scale": 0.15,
                 "y_scale": 0
               }
@@ -35,7 +35,7 @@
               "type": "minecraft:abs",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:land/shapes_a",
+                "noise": "larion:continents/shapes_a",
                 "xz_scale": 0.15,
                 "y_scale": 0
               }
@@ -44,7 +44,7 @@
               "type": "minecraft:abs",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:land/shapes_b",
+                "noise": "larion:continents/shapes_b",
                 "xz_scale": 0.15,
                 "y_scale": 0
               }

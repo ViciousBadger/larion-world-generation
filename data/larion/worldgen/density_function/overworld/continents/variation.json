@@ -4,7 +4,7 @@
     "type": "minecraft:abs",
     "argument": {
       "type": "minecraft:noise",
-      "noise": "larion:land/variation",
+      "noise": "larion:continents/variation",
       "xz_scale": 2.5,
       "y_scale": 0
     }
