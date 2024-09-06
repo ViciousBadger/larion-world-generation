@@ -6,11 +6,11 @@
     "argument2": {
       "type": "minecraft:quarter_negative",
       "argument": {
-        "type": "minecraft:mul",
+        "type": "minecraft:add",
         "argument1": {
           "type": "minecraft:add",
           "argument1": {
-            "type": "minecraft:add",
+            "type": "minecraft:mul",
             "argument1": {
               "type": "minecraft:add",
               "argument1": "minecraft:overworld/depth",
@@ -28,19 +28,19 @@
                 }
               }
             },
-            "argument2": {
-              "type": "minecraft:mul",
-              "argument1": "larion:overworld/dunes",
-              "argument2": "larion:overworld/dunes_factor"
-            }
+            "argument2": "minecraft:overworld/factor"
           },
           "argument2": {
             "type": "minecraft:mul",
-            "argument1": "larion:overworld/minecraftness",
-            "argument2": 0.28
+            "argument1": "larion:overworld/dunes",
+            "argument2": "larion:overworld/dunes_factor"
           }
         },
-        "argument2": "minecraft:overworld/factor"
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": "larion:overworld/minecraftness",
+          "argument2": 1.0
+        }
       }
     }
   },

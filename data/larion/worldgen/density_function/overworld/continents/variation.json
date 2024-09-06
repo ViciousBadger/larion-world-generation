@@ -1,67 +1,35 @@
 {
-  "type": "minecraft:add",
+  "type": "minecraft:mul",
   "argument1": {
-    "type": "minecraft:mul",
-    "argument1": {
-      "type": "minecraft:abs",
-      "argument": {
-        "type": "minecraft:noise",
-        "noise": "larion:land/variation",
-        "xz_scale": 0.22,
-        "y_scale": 0
-      }
-    },
-    "argument2": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "larion:overworld/continents/shapes",
-        "points": [
-          {
-            "location": -0.3,
-            "derivative": 0.0,
-            "value": 1.0
-          },
-          {
-            "location": 0.3,
-            "derivative": 0.0,
-            "value": 0.0
-          }
-        ]
-      }
+    "type": "minecraft:abs",
+    "argument": {
+      "type": "minecraft:noise",
+      "noise": "larion:land/variation",
+      "xz_scale": 2.0,
+      "y_scale": 0
     }
   },
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": -1.0,
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:noise",
-          "noise": "larion:land/variation_negative",
-          "xz_scale": 0.22,
-          "y_scale": 0
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "larion:overworld/continents/shapes",
+      "points": [
+        {
+          "location": -0.3,
+          "derivative": 0.0,
+          "value": 1.0
+        },
+        {
+          "location": 0.3,
+          "derivative": 0.0,
+          "value": 0.4
+        },
+        {
+          "location": 0.9,
+          "derivative": 0.0,
+          "value": 0.2
         }
-      }
-    },
-    "argument2": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "larion:overworld/continents/shapes",
-        "points": [
-          {
-            "location": 0.0,
-            "derivative": 0.0,
-            "value": 0.0
-          },
-          {
-            "location": 0.6,
-            "derivative": 0.0,
-            "value": 1.0
-          }
-        ]
-      }
+      ]
     }
   }
 }
