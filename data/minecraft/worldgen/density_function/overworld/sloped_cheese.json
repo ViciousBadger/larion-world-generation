@@ -38,8 +38,8 @@
         },
         "argument2": {
           "type": "minecraft:mul",
-          "argument1": "larion:overworld/minecraftness",
-          "argument2": 1.0
+          "argument1": "larion:overworld/jank",
+          "argument2": "larion:overworld/jank_factor"
         }
       }
     }
