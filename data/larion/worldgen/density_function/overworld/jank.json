@@ -3,46 +3,11 @@
   "argument1": {
     "type": "minecraft:abs",
     "argument": {
-      "type": "minecraft:mul",
-      "argument1": {
-        "type": "more_dfs:sine",
-        "argument": {
-          "type": "minecraft:add",
-          "argument1": {
-            "type": "minecraft:mul",
-            "argument1": {
-              "type": "more_dfs:y"
-            },
-            "argument2": 0.06
-          },
-          "argument2": {
-            "type": "minecraft:mul",
-            "argument1": {
-              "type": "minecraft:noise",
-              "noise": "larion:jank_offset",
-              "xz_scale": 0.25,
-              "y_scale": 0
-            },
-            "argument2": 3.0
-          }
-        }
-      },
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:noise",
-          "noise": "larion:jank_amount",
-          "xz_scale": 0.25,
-          "y_scale": 0
-        }
-      }
+      "type": "minecraft:noise",
+      "noise": "larion:jank",
+      "xz_scale": 0.2,
+      "y_scale": 0.5
     }
   },
-  "argument2": {
-    "type": "y_clamped_gradient",
-    "from_y": 62,
-    "to_y": 92,
-    "from_value": 0.3,
-    "to_value": 1.0
-  }
+  "argument2": 0.77
 }
