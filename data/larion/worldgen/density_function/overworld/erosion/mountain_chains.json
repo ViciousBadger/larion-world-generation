@@ -10,7 +10,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:erosion/mountain_chains",
-            "xz_scale": 0.14,
+            "xz_scale": 0.24,
             "y_scale": 0.0
           }
         },
