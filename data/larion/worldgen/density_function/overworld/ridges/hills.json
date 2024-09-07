@@ -8,7 +8,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:ridges/hills_a",
-          "xz_scale": 0.35,
+          "xz_scale": 1.0,
           "y_scale": 0
         }
       },
@@ -17,7 +17,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:ridges/hills_b",
-          "xz_scale": 0.35,
+          "xz_scale": 1.0,
           "y_scale": 0
         }
       }
@@ -37,10 +37,15 @@
             {
               "location": -0.5,
               "derivative": 0.0,
-              "value": 0.15
+              "value": 0.12
             }
           ]
         }
+      },
+      {
+        "location": 0.4,
+        "derivative": 0.0,
+        "value": 0.6
       },
       {
         "location": 1.0,
