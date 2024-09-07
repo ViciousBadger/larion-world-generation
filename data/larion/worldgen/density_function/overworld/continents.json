@@ -1,9 +1,13 @@
 {
-  "type": "minecraft:add",
-  "argument1": "larion:overworld/continents/shapes",
+  "type": "minecraft:min",
+  "argument1": 1.0,
   "argument2": {
     "type": "minecraft:add",
-    "argument1": "larion:overworld/continents/variation",
-    "argument2": "larion:overworld/continents/mushroom"
+    "argument1": "larion:overworld/continents/shapes",
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": "larion:overworld/continents/variation",
+      "argument2": "larion:overworld/continents/mushroom"
+    }
   }
 }

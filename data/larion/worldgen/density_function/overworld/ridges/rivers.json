@@ -37,7 +37,7 @@
           "value": 1.0
         },
         {
-          "location": -0.08,
+          "location": -0.1,
           "derivative": 0.0,
           "value": 0.3
         },
@@ -47,7 +47,7 @@
           "value": 0.0
         },
         {
-          "location": 0.08,
+          "location": 0.1,
           "derivative": 0.0,
           "value": 0.3
         },

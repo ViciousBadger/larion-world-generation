@@ -3,60 +3,100 @@
   "argument": {
     "type": "minecraft:cache_2d",
     "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "minecraft:overworld/continents",
-        "points": [
-          {
-            "derivative": 0.0,
-            "location": -1.05,
-            "value": 0.0
-          },
-          {
-            "derivative": 0.0,
-            "location": -1.0,
-            "value": -0.22
-          },
-          {
-            "derivative": 0.0,
-            "location": -0.44,
-            "value": -0.04
-          },
-          {
-            "derivative": 0.0,
-            "location": -0.1,
-            "value": 0.0
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.6,
-            "value": {
-              "coordinate": "minecraft:overworld/ridges_folded",
-              "points": [
-                {
-                  "derivative": 0.0,
-                  "location": -1.0,
-                  "value": 0.0
-                },
-                {
-                  "derivative": 0.0,
-                  "location": -0.8,
-                  "value": 0.0
-                },
-                {
-                  "derivative": 0.0,
-                  "location": 0.0,
-                  "value": 0.3
-                }
-              ]
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "minecraft:overworld/continents",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -1.05,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -1.0,
+              "value": -0.22
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.44,
+              "value": -0.04
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.1,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.25,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.8,
+              "value": 0.5
             }
-          },
-          {
-            "derivative": 0.0,
-            "location": 1.0,
-            "value": 0.5
-          }
-        ]
+          ]
+        }
+      },
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "minecraft:overworld/continents",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -0.2,
+              "value": 1.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.15,
+              "value": {
+                "coordinate": "minecraft:overworld/erosion",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": -1.0,
+                    "value": 1.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.5,
+                    "value": 1.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.2,
+                    "value": {
+                      "coordinate": "larion:overworld/ridges/rivers",
+                      "points": [
+                        {
+                          "derivative": 0.0,
+                          "location": 0.0,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 0.3,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 1.0,
+                          "value": 1.0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     }
   }

@@ -40,17 +40,7 @@
                 "value": 0.7
               },
               {
-                "location": 150,
-                "derivative": 0.0,
-                "value": 0.53
-              },
-              {
-                "location": 200,
-                "derivative": 0.0,
-                "value": 0.43
-              },
-              {
-                "location": 300,
+                "location": 128,
                 "derivative": 0.0,
                 "value": 0.0
               }
