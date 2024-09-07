@@ -11,5 +11,13 @@
       48
     ],
     "description": "Epic fantasy world generation overhaul"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": [ 41, 48 ],
+        "directory": "1-20-5-overlay"
+      }
+    ]
   }
 }

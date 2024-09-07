@@ -5,11 +5,19 @@
     "from_value": 1.5,
     "from_y": -64,
     "to_value": -1.5,
-    "to_y": 320
+    "to_y": 448
   },
   "argument2": {
     "type": "minecraft:add",
-    "argument1": "minecraft:overworld/offset",
-    "argument2": "larion:overworld/extra_offset"
+    "argument1": -0.405,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type":"minecraft:mul",
+        "argument1": "minecraft:overworld/offset",
+        "argument2": 0.75
+      },
+      "argument2": "larion:overworld/extra_offset"
+    }
   }
 }

@@ -31,13 +31,18 @@
             },
             {
               "derivative": 0.0,
-              "location": 0.25,
+              "location": 0.2,
               "value": 0.0
             },
             {
               "derivative": 0.0,
+              "location": 0.5,
+              "value": 0.2
+            },
+            {
+              "derivative": 0.0,
               "location": 1.0,
-              "value": 0.45
+              "value": 0.6
             }
           ]
         }
