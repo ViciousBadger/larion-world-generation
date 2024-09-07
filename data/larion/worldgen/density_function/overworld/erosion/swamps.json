@@ -10,8 +10,8 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:erosion/swamps_a",
-            "xz_scale": 0.45,
-            "y_scale": 0.0
+            "xz_scale": 0.32,
+            "y_scale": 0
           }
         },
         "argument2": {
@@ -19,61 +19,82 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:erosion/swamps_b",
-            "xz_scale": 0.3,
-            "y_scale": 0.0
+            "xz_scale": 0.32,
+            "y_scale": 0
           }
         }
       },
       "points": [
         {
-          "location": 0.0,
-          "derivative": 0.0,
-          "value": -0.4
+          "location": 0,
+          "derivative": 0,
+          "value": 1
         },
         {
-          "location": 0.3,
-          "derivative": 0.0,
-          "value": 0.45
-        },
-        {
-          "location": 0.5,
-          "derivative": 0.0,
+          "location": 0.18,
+          "derivative": 0,
           "value": 0.55
         },
         {
-          "location": 1.0,
-          "derivative": 0.0,
-          "value": 1.0
+          "location": 0.42,
+          "derivative": 0,
+          "value": 0.45
+        },
+        {
+          "location": 1,
+          "derivative": 0,
+          "value": -0.4
         }
       ]
     }
   },
   "argument2": {
-    "type": "minecraft:spline",
-    "spline": {
-      "coordinate": "larion:overworld/temperature",
-      "points": [
-        {
-          "location": 0.15,
-          "derivative": 0.0,
-          "value": 1.0
-        },
-        {
-          "location": 0.25,
-          "derivative": 0.0,
-          "value": 0.7
-        },
-        {
-          "location": 0.50,
-          "derivative": 0.0,
-          "value": 0.7
-        },
-        {
-          "location": 0.60,
-          "derivative": 0.0,
-          "value": 1.2
-        }
-      ]
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/temperature",
+        "points": [
+          {
+            "location": 0.15,
+            "derivative": 0,
+            "value": 1.0
+          },
+          {
+            "location": 0.25,
+            "derivative": 0,
+            "value": 0.6
+          },
+          {
+            "location": 0.5,
+            "derivative": 0,
+            "value": 0.6
+          },
+          {
+            "location": 0.6,
+            "derivative": 0,
+            "value": 1.0
+          }
+        ]
+      }
+    },
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/ridges/rivers",
+        "points": [
+          {
+            "location": 0.0,
+            "derivative": 0,
+            "value": 1.0
+          },
+          {
+            "location": 1.0,
+            "derivative": 0,
+            "value": 0.8
+          }
+        ]
+      }
     }
   }
 }
