@@ -33,7 +33,7 @@
           "argument2": {
             "type": "minecraft:mul",
             "argument1": "minecraft:overworld/factor",
-            "argument2": 0.75
+            "argument2": "larion:overworld/factor_factor"
           }
         },
         "argument2": {
