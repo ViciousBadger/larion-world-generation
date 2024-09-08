@@ -1,13 +1,36 @@
 {
-  "type": "minecraft:min",
-  "argument1": 1.0,
-  "argument2": {
-    "type": "minecraft:add",
-    "argument1": "larion:overworld/continents/shapes",
-    "argument2": {
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
       "type": "minecraft:add",
-      "argument1": "larion:overworld/continents/variation",
-      "argument2": "larion:overworld/continents/mushroom"
-    }
+      "argument1": "larion:overworld/continents/shapes",
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": "larion:overworld/continents/variation",
+        "argument2": "larion:overworld/continents/mushroom"
+      }
+    },
+    "points": [
+      {
+        "location": -1.5,
+        "derivative": 0.0,
+        "value": -1.5
+      },
+      {
+        "location": 0.0,
+        "derivative": 0.0,
+        "value": 0.0
+      },
+      {
+        "location": 1.0,
+        "derivative": 0.0,
+        "value": 0.9
+      },
+      {
+        "location": 1.5,
+        "derivative": 0.0,
+        "value": 1.0
+      }
+    ]
   }
 }
