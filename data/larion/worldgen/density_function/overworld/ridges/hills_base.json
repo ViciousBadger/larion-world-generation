@@ -5,7 +5,7 @@
     "argument": {
       "type": "minecraft:noise",
       "noise": "larion:ridges/hills_a",
-      "xz_scale": 1.0,
+      "xz_scale": 0.3,
       "y_scale": 0
     }
   },
@@ -14,7 +14,7 @@
     "argument": {
       "type": "minecraft:noise",
       "noise": "larion:ridges/hills_b",
-      "xz_scale": 1.0,
+      "xz_scale": 0.3,
       "y_scale": 0
     }
   }
