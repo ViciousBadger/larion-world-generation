@@ -5,7 +5,7 @@
     "argument": "larion:overworld/ridges/rivers_base"
   },
   "argument2": {
-    "type": "minecraft:min",
+    "type": "minecraft:mul",
     "argument1": "larion:overworld/ridges/rivers",
     "argument2": {
       "type": "minecraft:add",
