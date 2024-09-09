@@ -11,6 +11,11 @@
           "points": [
             {
               "derivative": 0.0,
+              "location": -1.2,
+              "value": 0.2
+            },
+            {
+              "derivative": 0.0,
               "location": -1.0,
               "value": 0.0
             },
