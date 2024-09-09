@@ -173,7 +173,7 @@
     "fluid_level_floodedness": {
       "type": "range_choice",
       "min_inclusive": -1.2,
-      "max_exclusive": -0.5,
+      "max_exclusive": -0.3,
       "input": "larion:overworld/river_noodle_flood",
       "when_in_range": 1,
       "when_out_of_range": {
