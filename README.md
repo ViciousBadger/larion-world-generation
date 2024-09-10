@@ -6,7 +6,7 @@ Larion is a major overhaul of the overworld generation in Minecraft that
 drastically alters terrain shapes and biome placement.
 
 I wanted the terrain to be more visually stunning, reminiscent of what you'd
-find in epic fantasy worldbuilding, while still being dense and unpredictable
+find in epic fantasy worldbuilding, while still being small-scale and unpredictable
 enough to be interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
