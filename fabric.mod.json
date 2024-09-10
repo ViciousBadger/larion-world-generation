@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "larion",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "name": "Larion",
-  "description": "Epic fantasy style world generation overhaul",
+  "description": "Epic fantasy world generation overhaul",
   "authors": [
     "Badgerson"
   ],

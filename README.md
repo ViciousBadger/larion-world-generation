@@ -1,27 +1,69 @@
 ![Banner](images/banner.jpg)
 
-# Larion, for Minecraft 1.19.2-1.20.6
+# Larion, for Minecraft 1.19.2-1.21.1
 
-Larion is a major revamp of the overworld generation in Minecraft that aims to
-"scale up" the terrain generation to something closer to an epic fantasy game like
-Skyrim or World of Warcraft. To accomplish this, every "density function" used to
-distribute biomes and determine terrain height has been altered heavily. Worlds generated
-with Larion consist of huge continents, long winding mountain ranges and much more
-unpredictable biome placement.
+Larion is a major overhaul of the overworld generation in Minecraft that
+drastically alters terrain shapes and biome placement.
 
-In comparison to similar world generation datapacks, Larion does not aim to be
-completely realistic. Instead, terrain is much more vertical and uneven,
-making exploration more interesting and difficult.
+I wanted the terrain to be more visually stunning, reminiscent of what you'd
+find in epic fantasy worldbuilding, while still being dense and unpredictable
+enough to be interesting to explore in survival mode.
+
+The biomes themselves are not altered at all, making Larion fully compatible
+with most biome overhaul mods. I personally recommend [William Wyther's
+Overhauled Overworld](https://modrinth.com/mod/wwoo), it fits the altered
+terrain like a glove and is incredible for exploration.
+
+If you encounter issues when combining Larion with other world generation
+datapacks, try using Larion as a datapack and make sure it is loaded **after**
+any other datapacks using a tool like
+[Paxi](https://modrinth.com/mod/paxi). Unfortunately you have to do this with
+Overhauled Overworld, otherwise mountains will be "cut off" if they go beyond
+320 blocks.
+
+## Features
+
+- The world is split into large continents with plenty of smaller islands in-between. Continent sizes and
+shapes vary wildly.
+- Temperature changes as you move north or south (z-axis).
+    - If you travel far enough, it wraps back around.
+    - Travelling east or west lets you stay in roughly the same temperature.
+    - "Tropical" biomes (jungle, savanna etc) generate _within_ desert and
+    badland regions instead of around them.
+- Mountains form large "chains" roughly similar to continental plates in real life.
+    - They are also taller, usually between 200 and 300 blocks in height, but in rare cases even higher.
+    - Jagged peaks are less "jagged" than usual, shaped more like real mountains.
+- World height is increased from 384 to 512
+    - This ensures mountains never "plateau", even if they reach over 320 blocks.
+    - Build height limit is 448. Terrain doesn't really reach this height ever
+    (i think?) so there is always space to build.
+- Terrain is more hilly than before and slopes upwards as you go further
+inland.
+    - This is completely independent of how mountainous the terrain is, so even
+    a normal plains biome can be at Y=200 (however this is quite rare)
+- Smaller biomes with less predictable shapes and placement.
+    - "Humidity" zones are weirder, sometimes small, sometimes large.
+    - Swamps and mangroves can only appear along coasts and rivers.
+    - Windswept terrain is more common and can appear anywhere.
+- Long, winding rivers that carve though terrainhttps://modrinth.com/mod/paxi.
+    - In low terrain they form "saddle valleys"
+    - In tall terrain they will keep flowing as underground rivers.
+    - Sometimes rivers form strange "knots" that look like lakes.
+- Mushroom islands are more common, smaller and oddly shaped.
+- Numerous smaller tweaks
+    - Dunes in desert biomes
+    - Less ugly cliffs at coastlines
+    - Less taiga in frozen zones
+    - More jungle in tropical zones
+    - Badlands mountains have plateaus instead of peaks
+    - Probably more..!
 
 ## How to install
 
-Larion **requires** the [More Density
+Larion requires the [More Density
 Functions](https://modrinth.com/mod/more-density-functions) Fabric mod in order
-to function, as several important features make use of the "sine" and "x"
-functions added by this mod. (If anyone from Mojang reads this, please add these
-functions to the core game! It would be great to be able to distribute Larion
-as a pure vanilla data pack.)
-
+to function, as several important tweaks would be impossible to create without
+the extra features added by this mod.
 
 - Download **Version 1.0.5** of [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder - make sure to pick the one that matches the version of Minecraft you are using. 
 - Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
@@ -29,166 +71,21 @@ as a pure vanilla data pack.)
     directly to your world as a datapack, but More Density Functions is still
     required for it to work. Using the datapack .zip allows you to re-order
     Larion in relation to other datapacks.
+    - If you experience cut-off mountains or other weirdness when using Larion
+    with other datapacks, try making Larion load **after** other packs.
 
-# Features (Not yet updated for v2.0.0)
-
-## Continents and islands
-
-![Map of a continent](images/continent.jpg)
-
-Instead of an infinite mainland with small scattered "oceans" (more like big
-lakes), the overworld now consists of differently sized continents with many
-smaller islands between them. I felt like other world generation datapacks
-usually made continents way too big, so in Larion they are scaled down quite a
-bit so that they are easier to explore fully, but still large enough to feel vast. The continent pictured above is approximately 8500x2800 blocks in size.
-
-![A comparison of continental noise](images/vs-vanilla-continents.jpg)
-
-## Taller everything
-
-![A really really tall mountain](images/mountain.jpg)
-
-The world height has been raised from 384 to 512, meaning the world now
-stretches from Y=-64 to Y=448. The scale of the terrain has been extended as
-well, meaning pretty much every hill is taller than it usually would be, but
-stupidly tall mountains are of couse the key feature of this change.
-
-Oh yeah and of course oceans are also deeper. The deepest oceans reach down to around Y=0!
-
-## The Jank Factor
-
-![Jank](images/jank.jpg)
-
-There's not much interesting about a world with only smooth, easy-to-climb
-slopes. It may look "realistic" but where's the fun in that??
-
-This is why I added an entirely new layer of what I call "jank" or
-"minecraftness" to the terrain. It works similarily to the existing "windswept" effect. It tapers off at rivers, beaches, oceans and deserts, but other than that, every surface has been affected. This added noise creates more hills, more overhangs, floating islands and other strange phenomenon.
-
-## Temperature bands
-
-![Temperature bands](images/temp-bands.jpg)
-
-I felt like the temperature zones in Minecraft could use some extra size, but
-also a bit of predictability. To solve this, the temperature noise map has been
-replaced with what I call "temperature bands", meaning it gets colder as you go
-north and warmer as you go south. If you live on the southern hemisphere and
-feel offended by this, simply set your spawn point far enough to the south, as
-the bands warps back around like this picture shows:
-
-![Temperature bands, zoomed out](images/temp-bands-far.jpg)
-
-You may have noticed that desert-y and jungle-y biomes have been swapped
-compared to vanilla, as I felt this was somewhat more appropriate and
-Earth-like. Of course the Earth's biome distribution is way more complex - but deserts
-usually appear in subtropical latitudes (Sahara, Australia) while jungles and
-such appear at the equator (Central Africa, South America).
-
-## Coastal swamps and inland mountains
-
-![Example of different erosion levels](images/erosion.jpg)
-
-The "erosion" noise, determining if an area has "low erosion" (mountains) or
-"high erosion" (swamps, but also all windswept biomes), has been explicitly tied
-to the continents noise so that erosion will "lower" as you go further
-inland. The result is that continents usually have swamps and windswept biomes
-at the edges, normal biomes further in and mountains at the center.
-
-In some cases, continents would become TOO mountainous (even I have
-limits), so I made the erosion and continentalness taper off after a certain
-point, creating large valleys in the middle of some continents.
-
-![A comparison of erosion noise](images/vs-vanilla-erosion.jpg)
-
-## Rivers and ridges
-
-The "ridge" noise, also called weirdness, is what creates rivers, hills,
-mountain peaks and even "weird" biome variants. As you can imagine, it's one of
-the more difficult noise functions to get "right".
-
-Larion uses the same "ridge" noise as the
-[Eldor](https://www.planetminecraft.com/data-pack/eldor/) datapack, tweaked only
-slightly to make rivers a bit wider and longer. alkexr did such a fantastic job
-creating his ridge noise I could hardly imagine doing it any better, and the rivers and peaks it generates fit perfectly within the
-Larion world.
-
-![A comparison of ridge noise](images/vs-vanilla-ridges.jpg)
-
-An additional feature is that rivers can now flow underground in tunnels,
-meaning they will continue below mountains and hilly terrain! They will also
-rarely be obstructed by terrain outside of tunnels, making them much easier to
-sail though. This was a must-have feature with all the extra hills, without it
-rivers would be blocked all of the time.
-
-![A river tunnel](images/river-tunnel.jpg)
-
-## More vegetation, but sometimes less
-
-The vegetation/humidity noise is a bit more random (more layers of less uniform
-noise) and has been tweaked slightly to provoke my "favorite" biomes of each
-temperature band to appear. Icy zones are more dry (less snow-free taigas!),
-cold zones more humid (old growth pine forests!), subtropical zones dry
-(deserts!), tropical zones humid (jungles!).
-
-![A comparison of vegetation noise](images/vs-vanilla-vegetation.jpg)
-
-## Desert dunes
-
-![Dunes](images/dunes.jpg)
-
-All the above changes to erosion and continents meant deserts had become
-annoyingly rare and odd-looking. They didn't jive with the jank factor, and they
-usually only appeared along coastlines while inland terrain was exclusively
-badlands. Because if this I decided to make a special case - in subtropical
-temperature bands, a stripe of predictably high erosion (high erosion + subtropical =
-desert) will always appear and no "jank" will be applied. Instead of the jank,
-these zones are covered with large dunes.
-
-## Way weirder mushroom islands
-
-![Mushroom islands](images/mushroom.jpg)
-
-As a side effect of many of the other changes, mushroom islands are somewhat
-more common and generate as scattered islands or single small blobs. They are
-more hilly than usual with more varied terrain features - sometimes they even float.
-
-The island group pictured here is unusually large!
-
-# Known issues
+## Known issues
 
 - Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
 recommend using [World Preview](https://modrinth.com/mod/world-preview).
-- World generation performance is way worse due to the higher complexity of
-density functions and increased world height. The extra "jank" effect that
-creates overhangs seems to cause the largest reduction in speed because it adds
-two extra layers of full-3d noise to the mix. You can remedy this by using
-worldgen optimization mods - I recommend these:
+- World generation is not as fast as before because the new density functions
+are generally more complex. However, by using these Fabric mods you can still
+make generation way faster than vanilla:
     - [C2ME](https://modrinth.com/mod/c2me-fabric) (MAJOR performance boost, scales with CPU core count)
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
     - [FerriteCore](https://modrinth.com/mod/ferrite-core)
-- There seems to be some kind of incompability between **More Density
-Functions** and **Chunky** - in my experience, Chunky fails to generate any new
-chunks, which is unfortunate.. I experienced no such problems with the other
-chunk pre-generation methods I tried:
-    - [Distant Horizons](https://modrinth.com/mod/distanthorizons) (Only generates LODs, not real chunks)
-    - [Fabric/Quilt Chunk Pregenerator](https://modrinth.com/mod/distanthorizons) (Not as featureful as Chunky, but a working alternative for now)
-
-# Note on datapack compability
-
-Larion overwrites a lot of world generation data files. Unfortunately this can
-cause compability issues with several other datapacks that change the same
-files.
-
-Note that Larion does NOT change any of the biome files, so mods that only
-modify biomes (such as Arboria and Geophilic) should be fully compatible!
-
-[William Wyther's Overhauled Overworld](https://modrinth.com/mod/wwoo) is also
-fully compatible (and heavily recommended!!) as long as you delete
-`data/minecraft/dimension_type/overworld.json` from its .zip/.jar archive -
-otherwise tall mountains will be cut off at Y=320. I have no idea why WWOO
-overwrites this file, it seems no actual changes were made..
 
 ## Changes to vanilla data files
 
@@ -201,34 +98,39 @@ overwritten files along with descriptions what has been changed.
     - Changed `noise/height` to 512
     - Two changes inside the giant `final_density` function
         - Modified the `y_clamped_gradient` that previously limited mountain height
-          to 240-256 to be at 420-447 instead
+          to 240-256 to be at 420-447
         - Inject the `larion:overworld/river_noodle` density function inside/near `blend_density`
     - Changed `fluid_level_floodedness` and `fluid_level_spread` using `larion:overworld/river_noodle_flood` to make sure river caves are always "flooded" (full of water at sea level)
     - Changed `temperature` and `vegetation` to point at my own density
-    functions instead of just being simple noises
-- Six density functions in `overworld` have been overwritten
+    functions instead of inline code
+- Six density functions in `worldgen/density_functions/overworld` have been overwritten
     - `continents`, `erosion` and `ridges` have all been rewired to point at
     density functions in the `larion` scope
-    - `depth` is edited to increase max terrain height to 448 (from 320)
-    - `offset` has been modified to make sure the sea level aligns correctly
-    (The weirdly specific `-0.7437500262260437` number) and also to add
-    `larion:overworld/dunes` to terrain height. A large part of the function was
-    also multiplied by 0.9 to scale down everything just a bit..
-    - `sloped_cheese` has been modified to add `larion:overworld/minecraftness`
-    to overall terrain density, creating overhangs and weirdness
+    - `depth` was edited
+        - Max height changed to 448 from 320
+        - Also added an extra negative number to offset to make the sea align correctly
+        - Also "squashed" the offset function to 0.75 of its original height,
+        without this hills would be too tall (looks silly)
+        - Also added `extra_offset` (smooth continental hills) on top of vanilla offset
+    - `sloped_cheese` was been modified
+        - Changed "jaggedness" scale
+        - Injected "dunes" noise
+        - Added an extra "factor-factor" that reduces factor at mushroom islands (making terrain weirder)
 
 # Special thanks to
 
-- alkexr, creator of [Eldor](https://www.planetminecraft.com/data-pack/eldor/)
-- jacobsjo, creaor of [Saddle Valley Rivers](https://www.planetminecraft.com/data-pack/saddle-valley-rivers-canyons-and-underground-rivers-1-18-2-only/)
+- alkexr, creator of
+[Eldor](https://www.planetminecraft.com/data-pack/eldor/). Eldor was a major
+insipration for this pack and I used many of its clever density functions as a reference.
+for several changes.
+- jacobsjo, creator of [Saddle Valley Rivers](https://www.planetminecraft.com/data-pack/saddle-valley-rivers-canyons-and-underground-rivers-1-18-2-only/)
 - devpelux, creator of [X-Mountains](https://modrinth.com/datapack/xmountains)
 - Apollo, creator of [Deeper oceans](https://modrinth.com/datapack/deeper-oceans) and [Tectonic](https://modrinth.com/datapack/tectonic)
 
 # Footnotes
 
-All pictures in this readme were taken using the [Distant
-Horizons](https://modrinth.com/mod/distanthorizons) mod combined with [BSL
-shaders](https://modrinth.com/shader/bsl-shaders). 
+All pictures in this readme and on the modrinth page were taken using the
+[Distant Horizons](https://modrinth.com/mod/distanthorizons) mod.
 
 Larion is licensed under Apache 2.0, meaning you are free to modify and use the
 pack as you wish. You can freely use any individual parts in your own
@@ -242,5 +144,3 @@ If you like the project and want to send me a donation, here is a Paypal link:
 https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
 
 .. or perhaps send some Bitcoin: bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
-
-Thank you for reading <3
