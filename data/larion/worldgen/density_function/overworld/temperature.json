@@ -3,49 +3,41 @@
   "argument": {
     "type": "minecraft:cache_2d",
     "argument": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:spline",
-        "spline": {
-          "coordinate": "larion:overworld/temperature_sine",
-          "points": [
-            {
-              "location": -1.0,
-              "derivative": 0.0,
-              "value": -1.0
-            },
-            {
-              "location": -0.85,
-              "derivative": 0.0,
-              "value": -0.45
-            },
-            {
-              "location": -0.45,
-              "derivative": 0.0,
-              "value": -0.15
-            },
-            {
-              "location": 0.8,
-              "derivative": 0.0,
-              "value": 0.2
-            },
-            {
-              "location": 1.0,
-              "derivative": 0.0,
-              "value": 0.57
-            }
-          ]
-        }
-      },
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": 0.16,
-        "argument2": {
-          "type": "minecraft:noise",
-          "noise": "larion:temperature_variation",
-          "xz_scale": 0.3,
-          "y_scale": 0
-        }
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/temperature_sine",
+        "points": [
+          {
+            "location": -1.0,
+            "derivative": 0.0,
+            "value": -1.0
+          },
+          {
+            "location": -0.88,
+            "derivative": 0.0,
+            "value": -0.45
+          },
+          {
+            "location": -0.4,
+            "derivative": 0.0,
+            "value": -0.15
+          },
+          {
+            "location": 0.75,
+            "derivative": 0.0,
+            "value": 0.2
+          },
+          {
+            "location": 0.95,
+            "derivative": 0.0,
+            "value": 0.3
+          },
+          {
+            "location": 1.0,
+            "derivative": 0.0,
+            "value": 0.7
+          }
+        ]
       }
     }
   }
