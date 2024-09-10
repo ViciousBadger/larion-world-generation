@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "more_dfs:signum",
+    "argument": "larion:overworld/ridges/rivers_base"
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": "larion:overworld/ridges/rivers",
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": 0.33,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": 0.33,
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": "larion:overworld/ridges/hills",
+          "argument2": "larion:overworld/ridges/hills_factor"
+        }
+      }
+    }
+  }
+}

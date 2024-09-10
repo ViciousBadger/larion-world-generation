@@ -40,7 +40,7 @@
               "type": "minecraft:blend_density",
               "argument": {
                 "type": "minecraft:min",
-                "argument1": "larion:overworld/river_noodle",
+                "argument1": "larion:overworld/caves/river_noodle",
                 "argument2": {
                   "type": "minecraft:add",
                   "argument1": 0.1171875,
@@ -174,7 +174,7 @@
       "type": "range_choice",
       "min_inclusive": -1.2,
       "max_exclusive": -0.3,
-      "input": "larion:overworld/river_noodle_flood",
+      "input": "larion:overworld/caves/river_noodle_flood",
       "when_in_range": 1,
       "when_out_of_range": {
         "type": "noise",
@@ -187,7 +187,7 @@
       "type": "range_choice",
       "min_inclusive": -1.2,
       "max_exclusive": -0.6,
-      "input": "larion:overworld/river_noodle_flood",
+      "input": "larion:overworld/caves/river_noodle_flood",
       "when_in_range": 0.5,
       "when_out_of_range": {
         "type": "noise",
@@ -264,7 +264,7 @@
     },
     "ridges": "minecraft:overworld/ridges",
     "temperature": "larion:overworld/temperature_swapped",
-    "vegetation": "larion:overworld/vegetation_adjusted",
+    "vegetation": "larion:overworld/vegetation",
     "vein_gap": {
       "type": "minecraft:noise",
       "noise": "minecraft:ore_gap",

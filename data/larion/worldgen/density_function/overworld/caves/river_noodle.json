@@ -16,7 +16,7 @@
               "argument1": -63,
               "argument2": "minecraft:y"
             },
-            "divisor": "larion:overworld/river_noodle_height"
+            "divisor": "larion:overworld/caves/river_noodle_height"
           },
           "points": [
             {
