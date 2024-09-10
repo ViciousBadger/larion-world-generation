@@ -56,37 +56,22 @@
         {
           "location": 0.0,
           "derivative": 0.0,
-          "value": -1.2
+          "value": -1.12
         },
         {
-          "location": 0.07,
-          "derivative": 0.0,
-          "value": -1.0
-        },
-        {
-          "location": 0.14,
-          "derivative": 0.0,
-          "value": -0.75
-        },
-        {
-          "location": 0.22,
-          "derivative": 0.0,
-          "value": -0.5
-        },
-        {
-          "location": 0.54,
-          "derivative": 0.0,
-          "value": -0.18
+          "location": 0.2,
+          "derivative": 2.0,
+          "value": -0.45
         },
         {
           "location": 0.6,
-          "derivative": 0.0,
-          "value": 0.2
+          "derivative": 2.0,
+          "value": -0.18
         },
         {
           "location": 1.0,
-          "derivative": 0.0,
-          "value": 0.5
+          "derivative": 2.0,
+          "value": 0.6
         }
       ]
     }

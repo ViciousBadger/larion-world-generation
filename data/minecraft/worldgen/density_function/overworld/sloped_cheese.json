@@ -16,16 +16,12 @@
               "type": "minecraft:mul",
               "argument1": "minecraft:overworld/jaggedness",
               "argument2": {
-                "type": "minecraft:mul",
-                "argument1": 0.75,
-                "argument2": {
-                  "type": "minecraft:half_negative",
-                  "argument": {
-                    "type": "minecraft:noise",
-                    "noise": "minecraft:jagged",
-                    "xz_scale": 800.0,
-                    "y_scale": 0.0
-                  }
+                "type": "minecraft:half_negative",
+                "argument": {
+                  "type": "minecraft:noise",
+                  "noise": "minecraft:jagged",
+                  "xz_scale": 500.0,
+                  "y_scale": 0.0
                 }
               }
             }
