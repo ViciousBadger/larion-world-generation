@@ -25,12 +25,12 @@
                 },
                 {
                   "derivative": 0.0,
-                  "location": -0.5,
+                  "location": -0.2,
                   "value": 1.0
                 },
                 {
                   "derivative": 0.0,
-                  "location": -0.1,
+                  "location": 0.2,
                   "value": {
                     "coordinate": "larion:overworld/ridges/rivers",
                     "points": [
