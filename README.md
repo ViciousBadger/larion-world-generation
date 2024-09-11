@@ -88,6 +88,10 @@ make generation way faster than vanilla:
 
 **100% compatible**.
 
+### Arboria
+
+**100% compatible**.
+
 ### William Wyther's Overhauled Overworld
 
 **99% compatible**.
@@ -126,11 +130,11 @@ terrain features.
 **Incompatible**. Both overwrite density_function/overworld/continents.json, but
 you can still use them together if you prefer the continents of Continents.
 
-### Tectonic
+### Tectonic, Lithosphere, Cascades, Eldor
 
-**Incompatible**. Larion and Tectonic modify the same parts of world generation
-with different goals in mind. Whichever mod is loaded last will overwrite 99%
-of the features added by the other mod.
+**Incompatible**. All these packs modify the same core files as Larion, altering
+terrain generation with different goals in mind. Whichever mod is loaded last
+will overwrite 99% of the features added by any of the other mods.
 
 ## Changes to vanilla data files
 
