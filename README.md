@@ -10,16 +10,11 @@ find in epic fantasy worldbuilding, while still being small-scale and unpredicta
 enough to be interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
-with most biome overhaul mods. I personally recommend [William Wyther's
-Overhauled Overworld](https://modrinth.com/mod/wwoo), it fits the altered
-terrain like a glove and is incredible for exploration.
-
-If you encounter issues when combining Larion with other world generation
-datapacks, try using Larion as a datapack and make sure it is loaded **after**
-any other datapacks using a tool like
-[Paxi](https://modrinth.com/mod/paxi). Unfortunately you have to do this with
-Overhauled Overworld, otherwise mountains will be "cut off" if they go beyond
-320 blocks.
+with most biome overhauls. If you encounter issues when combining Larion with
+world generation datapacks, try using Larion as a datapack and make sure it is
+loaded **after** any other datapacks using a tool like
+[Paxi](https://modrinth.com/mod/paxi). See below for a list of compability notes
+and potential solutions.
 
 ## Features
 
@@ -86,6 +81,27 @@ make generation way faster than vanilla:
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
     - [FerriteCore](https://modrinth.com/mod/ferrite-core)
+
+## List of compability notes with other worldgen datapacks/mods
+
+### William Wyther's Overhauled Overworld
+
+**99% compatible**.
+
+So far this is my favorite worldgen mod to use with Larion, they go together
+perfectly.
+
+If WWOO is loaded **after** Larion, mountains taller than Y=320 will be
+"chopped" beacuse WWOO overwrites the file that determines world height. There
+are two ways to solve this:
+
+- By using both Larion and WWOO as datapacks instead of mods, you can manually
+change the load order so that Larion loads last and overwrites the world height
+correctly.
+- By unpacking the WWOO .zip file and removing **all three** files named
+overworld.json, the issue is now gone and load order is no longer important!
+- Be sure to also use **Cliffs and Coves** and **Navigable Rivers** by the same
+  author, as they can greatly improve coasts and rivers.
 
 ## Changes to vanilla data files
 
