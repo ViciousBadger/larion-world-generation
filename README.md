@@ -84,6 +84,10 @@ make generation way faster than vanilla:
 
 ## List of compability notes with other worldgen datapacks/mods
 
+### Geophilic
+
+**100% compatible**.
+
 ### William Wyther's Overhauled Overworld
 
 **99% compatible**.
@@ -102,6 +106,31 @@ correctly.
 overworld.json, the issue is now gone and load order is no longer important!
 - Be sure to also use **Cliffs and Coves** and **Navigable Rivers** by the same
   author, as they can greatly improve coasts and rivers.
+
+### William Wyther's Expanded Ecosphere
+
+**100% compatible**. WWEE only makes changes to files that Larion
+does not touch so they can be loaded together without issues.
+
+These go very well together, biome diversity is significantly better.
+
+### Terralith
+
+**50% compatible**. Terralith overwrites a few of the same files. By loading it
+before Larion you will get Terralith's new biomes and Larion's terrain, which is
+quite interesting, but you'll miss out on Terralith's impressive biome-specific
+terrain features.
+
+### Continents
+
+**Incompatible**. Both overwrite density_function/overworld/continents.json, but
+you can still use them together if you prefer the continents of Continents.
+
+### Tectonic
+
+**Incompatible**. Larion and Tectonic modify the same parts of world generation
+with different goals in mind. Whichever mod is loaded last will overwrite 99%
+of the features added by the other mod.
 
 ## Changes to vanilla data files
 
