@@ -1,5 +1,37 @@
 {
-  "type": "minecraft:add",
-  "argument1": "larion:overworld/continents/shapes",
-  "argument2": "larion:overworld/continents/variation"
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:add",
+      "argument1": "larion:overworld/continents/shapes",
+      "argument2": "larion:overworld/continents/variation"
+    },
+    "points": [
+      {
+        "location": 0.0,
+        "derivative": 0.0,
+        "value": -1.12
+      },
+      {
+        "location": 0.4,
+        "derivative": 0.0,
+        "value": -0.40
+      },
+      {
+        "location": 0.6,
+        "derivative": 2.0,
+        "value": -0.18
+      },
+      {
+        "location": 1.0,
+        "derivative": 2.0,
+        "value": 0.3
+      },
+      {
+        "location": 1.5,
+        "derivative": 0.2,
+        "value": 1.0
+      }
+    ]
+  }
 }
