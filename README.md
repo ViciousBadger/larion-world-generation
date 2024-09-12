@@ -30,12 +30,11 @@ shapes vary wildly.
     - Jagged peaks are less "jagged" than usual, shaped more like real mountains.
 - World height is increased from 384 to 512
     - This ensures mountains never "plateau", even if they reach over 320 blocks.
-    - Build height limit is 448. Terrain doesn't really reach this height ever
-    (i think?) so there is always space to build.
+    - Build height limit is 448, so there is always space to build, even on mountaintops.
 - Terrain is more hilly than before and slopes upwards as you go further
 inland.
     - This is completely independent of how mountainous the terrain is, so even
-    a normal plains biome can be at Y=200 (however this is quite rare)
+    a normal plains biome can be at Y=200
 - Smaller biomes with less predictable shapes and placement.
     - "Humidity" zones are weirder, sometimes small, sometimes large.
     - Swamps and mangroves can only appear along coasts and rivers.
@@ -192,4 +191,4 @@ If you like the project and want to send me a donation, here is a Paypal link:
 
 https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
 
-.. or perhaps send some Bitcoin: bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
+.. or alternatively send some Bitcoin to bc1qk5688pjsy228zkrda5e9w43wzn0zye4w0ygej4
