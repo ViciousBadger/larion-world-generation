@@ -28,7 +28,7 @@
             "value": 96
           },
           {
-            "location": 1.0,
+            "location": 0.8,
             "derivative": 0.0,
             "value": {
               "coordinate": "larion:overworld/erosion/mountain_chains",
@@ -39,14 +39,14 @@
                   "value": 128
                 },
                 {
-                  "location": 0.5,
+                  "location": 0.4,
                   "derivative": 0.0,
                   "value": 96
                 },
                 {
                   "location": 1.0,
                   "derivative": 0.0,
-                  "value": 48
+                  "value": 32
                 }
               ]
             }
