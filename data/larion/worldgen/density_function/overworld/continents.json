@@ -29,7 +29,7 @@
       },
       {
         "location": 1.5,
-        "derivative": 0.2,
+        "derivative": 1.0,
         "value": 1.0
       }
     ]
