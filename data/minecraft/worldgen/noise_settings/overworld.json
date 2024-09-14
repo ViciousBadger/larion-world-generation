@@ -219,9 +219,9 @@
               "argument1": {
                 "type": "minecraft:y_clamped_gradient",
                 "from_value": 1.0,
-                "from_y": 240,
+                "from_y": 420,
                 "to_value": 0.0,
-                "to_y": 256
+                "to_y": 447
               },
               "argument2": {
                 "type": "minecraft:add",
@@ -241,7 +241,11 @@
                           "argument1": "minecraft:overworld/depth",
                           "argument2": {
                             "type": "minecraft:cache_2d",
-                            "argument": "minecraft:overworld/factor"
+                            "argument": {
+                              "type": "minecraft:mul",
+                              "argument1": "minecraft:overworld/factor",
+                              "argument2": "larion:overworld/factor_factor"
+                            }
                           }
                         }
                       }
