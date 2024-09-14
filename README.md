@@ -39,7 +39,7 @@ inland.
     - "Humidity" zones are weirder, sometimes small, sometimes large.
     - Swamps and mangroves can only appear along coasts and rivers.
     - Windswept terrain is more common and can appear anywhere.
-- Long, winding rivers that carve though terrainhttps://modrinth.com/mod/paxi.
+- Long, winding rivers that carve though terrain.
     - In low terrain they form "saddle valleys"
     - In tall terrain they will keep flowing as underground rivers.
     - Sometimes rivers form strange "knots" that look like lakes.
