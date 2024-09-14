@@ -2,13 +2,7 @@
   "type": "more_dfs:sine",
   "argument": {
     "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": {
-        "type": "more_dfs:z"
-      },
-      "argument2": 0.0004485714286
-    },
+    "argument1": "larion:overworld/temperature_delta",
     "argument2": {
       "type": "minecraft:mul",
       "argument1": {
