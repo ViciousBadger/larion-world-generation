@@ -3,22 +3,49 @@
   "spline": {
     "coordinate": {
       "type": "minecraft:add",
-      "argument1": "larion:overworld/continents/shapes",
+      "argument1": {
+        "type": "minecraft:abs",
+        "argument": "larion:overworld/continents/shapes"
+      },
       "argument2": "larion:overworld/continents/variation"
     },
     "points": [
       {
         "location": 0.0,
         "derivative": 0.0,
-        "value": -1.2
+        "value": {
+          "coordinate": "larion:overworld/erosion/swamps_base",
+          "points": [
+            {
+              "location": 0.16,
+              "derivative": 0,
+              "value": -1.2
+            },
+            {
+              "location": 0.17,
+              "derivative": 0,
+              "value": -0.75
+            }
+          ]
+        }
+      },
+      {
+        "location": 0.16,
+        "derivative": 0.0,
+        "value": -0.75
+      },
+      {
+        "location": 0.32,
+        "derivative": 0.0,
+        "value": -0.35
+      },
+      {
+        "location": 0.38,
+        "derivative": 0.0,
+        "value": -0.24
       },
       {
         "location": 0.4,
-        "derivative": 0.0,
-        "value": -0.45
-      },
-      {
-        "location": 0.6,
         "derivative": 2.0,
         "value": -0.18
       },

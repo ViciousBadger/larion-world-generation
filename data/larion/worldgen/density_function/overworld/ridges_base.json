@@ -2,7 +2,7 @@
   "type": "minecraft:mul",
   "argument1": {
     "type": "more_dfs:signum",
-    "argument": "larion:overworld/ridges/rivers_base"
+    "argument": "larion:overworld/continents/shapes"
   },
   "argument2": {
     "type": "minecraft:mul",
