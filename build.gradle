@@ -86,3 +86,7 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+runClient {
+    jvmArgs "-Xms14G", "-Xmx14G"
+}
