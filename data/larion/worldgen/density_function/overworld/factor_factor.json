@@ -10,12 +10,26 @@
           {
             "derivative": 0.0,
             "location": -1.15,
-            "value": 0.3
+            "value": 0.8
           },
           {
             "derivative": 0.0,
             "location": -1.05,
-            "value": 1.0
+            "value": {
+              "coordinate": "minecraft:overworld/factor",
+              "points": [
+                {
+                  "derivative": 0.0,
+                  "location": 0.0625,
+                  "value": 2.0
+                },
+                {
+                  "derivative": 0.0,
+                  "location": 1.5,
+                  "value": 1.0
+                }
+              ]
+            }
           }
         ]
       }
