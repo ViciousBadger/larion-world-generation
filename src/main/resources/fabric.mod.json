@@ -3,23 +3,22 @@
 	"id": "larion",
 	"version": "${version}",
 	"name": "Larion World Generation",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Epic fantasy world generation overhaul",
 	"authors": [
-		"Me!"
+    "Badgerson"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/ViciousBadger/larion-world-generation"
 	},
-	"license": "CC0-1.0",
+  "license": "Apache-2.0",
 	"icon": "assets/larion/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"badgerson.larion.LarionWorldGeneration"
+			"badgerson.larion.Larion"
 		],
 		"client": [
-			"badgerson.larion.LarionWorldGenerationClient"
+			"badgerson.larion.LarionClient"
 		]
 	},
 	"mixins": [
@@ -33,9 +32,20 @@
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+    "more_density_functions": ">=1.0.5"
 	},
 	"suggests": {
-		"another-mod": "*"
-	}
+    "c2me": "*",
+    "noisium": "*",
+    "faster-random": "*",
+    "wwoo": "*"
+	},
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.source": "https://github.com/ViciousBadger/larion-world-generation"
+      }
+    }
+  }
 }
