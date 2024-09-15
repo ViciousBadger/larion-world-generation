@@ -116,8 +116,8 @@
                                             "argument2": {
                                               "type": "minecraft:noise",
                                               "noise": "minecraft:cave_cheese",
-                                              "xz_scale": 1.0,
-                                              "y_scale": 0.6666666666666666
+                                              "xz_scale": 3.0,
+                                              "y_scale": 0.333
                                             }
                                           },
                                           "max": 1.0,
@@ -219,9 +219,9 @@
               "argument1": {
                 "type": "minecraft:y_clamped_gradient",
                 "from_value": 1.0,
-                "from_y": 420,
+                "from_y": 360,
                 "to_value": 0.0,
-                "to_y": 447
+                "to_y": 380
               },
               "argument2": {
                 "type": "minecraft:add",
