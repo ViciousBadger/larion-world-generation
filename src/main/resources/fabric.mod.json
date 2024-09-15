@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "larion",
+	"version": "${version}",
+	"name": "Larion World Generation",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/larion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"badgerson.larion.LarionWorldGeneration"
+		],
+		"client": [
+			"badgerson.larion.LarionWorldGenerationClient"
+		]
+	},
+	"mixins": [
+		"larion.mixins.json",
+		{
+			"config": "larion.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

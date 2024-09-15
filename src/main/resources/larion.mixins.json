@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "badgerson.larion.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

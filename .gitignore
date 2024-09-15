@@ -1,1 +1,8 @@
 dist/
+
+.envrc
+.direnv/
+
+.gradle/
+build/
+run/
