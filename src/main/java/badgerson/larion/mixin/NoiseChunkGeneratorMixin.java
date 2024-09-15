@@ -7,26 +7,18 @@ import net.minecraft.world.gen.chunk.ChunkGeneratorSettings;
 import net.minecraft.world.gen.chunk.NoiseChunkGenerator;
 
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-import badgerson.larion.Larion;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(NoiseChunkGenerator.class)
 public class NoiseChunkGeneratorMixin {
-    /**
-	 * @author Badgerson
-	 * @reason Move the hardcoded -54 lava sea level to fit a -128 world depth
-	 */
-    @Overwrite
-    private static AquiferSampler.FluidLevelSampler createFluidLevelSampler(ChunkGeneratorSettings settings) {
+    @Inject(method = "createFluidLevelSampler", at = @At("HEAD"), cancellable = true)
+    private static void createFluidLevelSampler(ChunkGeneratorSettings settings, CallbackInfoReturnable<AquiferSampler.FluidLevelSampler> ci) {
 		AquiferSampler.FluidLevel fluidLevel = new AquiferSampler.FluidLevel(-118, Blocks.LAVA.getDefaultState());
 		int i = settings.seaLevel();
 		AquiferSampler.FluidLevel fluidLevel2 = new AquiferSampler.FluidLevel(i, settings.defaultFluid());
 		// AquiferSampler.FluidLevel fluidLevel3 = new AquiferSampler.FluidLevel(DimensionType.MIN_HEIGHT * 2, Blocks.AIR.getDefaultState());
-        Larion.LOGGER.info("we injected the codes");
-		return (x, y, z) -> y < Math.min(-118, i) ? fluidLevel : fluidLevel2;
+        ci.setReturnValue((x, y, z) -> y < Math.min(-118, i) ? fluidLevel : fluidLevel2);
     }
 }

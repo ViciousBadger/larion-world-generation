@@ -38,6 +38,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    //implementation(files("libs/more_density_functions_fabric_mc1.21_v1.0.5.jar"))
 	
 }
 
