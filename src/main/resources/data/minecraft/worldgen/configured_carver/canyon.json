@@ -1,6 +1,18 @@
 {
   "type": "minecraft:canyon",
   "config": {
+    "probability": 0,
+    "y": {
+      "type": "minecraft:constant",
+      "value": {
+        "absolute": 0
+      }
+    },
+    "yScale": 0,
+    "lava_level": {
+      "absolute": 0
+    },
+    "replaceable": "minecraft:air",
     "debug_settings": {
       "air_state": {
         "Name": "minecraft:warped_button",
@@ -10,12 +22,6 @@
           "powered": "false"
         }
       },
-      "barrier_state": {
-        "Name": "minecraft:glass"
-      },
-      "lava_state": {
-        "Name": "minecraft:orange_stained_glass"
-      },
       "water_state": {
         "Name": "minecraft:candle",
         "Properties": {
@@ -23,48 +29,23 @@
           "lit": "false",
           "waterlogged": "false"
         }
+      },
+      "lava_state": {
+        "Name": "minecraft:orange_stained_glass"
+      },
+      "barrier_state": {
+        "Name": "minecraft:glass"
       }
     },
-    "lava_level": {
-      "above_bottom": 8
-    },
-    "probability": 0.04,
-    "replaceable": "#minecraft:overworld_carver_replaceables",
+    "vertical_rotation": 0,
     "shape": {
-      "distance_factor": {
-        "type": "minecraft:uniform",
-        "max_exclusive": 1.5,
-        "min_inclusive": 0.75
-      },
-      "horizontal_radius_factor": {
-        "type": "minecraft:uniform",
-        "max_exclusive": 1.0,
-        "min_inclusive": 0.75
-      },
-      "thickness": {
-        "type": "minecraft:trapezoid",
-        "max": 10.0,
-        "min": 0.0,
-        "plateau": 2.0
-      },
-      "vertical_radius_center_factor": 0.0,
-      "vertical_radius_default_factor": 1.0,
-      "width_smoothness": 3
-    },
-    "vertical_rotation": {
-      "type": "minecraft:uniform",
-      "max_exclusive": 0.125,
-      "min_inclusive": -0.125
-    },
-    "y": {
-      "type": "minecraft:uniform",
-      "max_inclusive": {
-        "absolute": 67
-      },
-      "min_inclusive": {
-        "absolute": 10
-      }
-    },
-    "yScale": 5.0
+      "distance_factor": 0,
+      "thickness": 0,
+      "width_smoothness": 0,
+      "horizontal_radius_factor": 0,
+      "vertical_radius_default_factor": 0,
+      "vertical_radius_center_factor": 0
+    }
   }
 }
+
