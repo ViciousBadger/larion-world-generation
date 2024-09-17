@@ -2,6 +2,7 @@ package com.badgerson.larion.density_function_types;
 
 import com.badgerson.larion.Larion;
 import com.badgerson.larion.util.FastNoiseLite;
+import com.badgerson.larion.util.WorleyUtil;
 import com.badgerson.larion.util.FastNoiseLite.CellularDistanceFunction;
 import com.badgerson.larion.util.FastNoiseLite.CellularReturnType;
 import com.badgerson.larion.util.FastNoiseLite.DomainWarpType;
@@ -38,18 +39,23 @@ public record Cellular(int seed, float frequency, double yScale)
             Larion.LOGGER.info("initialized noise");
         }
     }
-    private static final CellNoiseWrapper noiseWrapper = new CellNoiseWrapper();
+    private static final WorleyUtil noiseWrapper = new WorleyUtil();
 
-    public Cellular {
-        noiseWrapper.noise.SetFrequency(frequency);
-        noiseWrapper.noise.SetSeed(seed);
-        // Larion.LOGGER.info("confiruged ceullular noise");
-    }
+    // public Cellular {
+    //     noiseWrapper.noise.SetFrequency(frequency);
+    //     noiseWrapper.noise.SetSeed(seed);
+    //     // Larion.LOGGER.info("confiruged ceullular noise");
+    // }
 
     @Override
     public double sample(NoisePos pos) {
         // Larion.LOGGER.info(Float.toString(result));
-        return noiseWrapper.noise.GetNoise(pos.blockX(), pos.blockY() * yScale, pos.blockZ());
+        float x = pos.blockX() * frequency;
+        float z = pos.blockZ() * frequency;
+        float y = pos.blockY() * frequency * (float)yScale;
+        float val =  noiseWrapper.SingleCellular3Edge(x,y,z);
+        //Larion.LOGGER.info(Float.toString(val));
+        return val;
         // return this.noise.sample((double)pos.blockX() * this.xzScale,
         // (double)pos.blockY() * this.yScale, (double)pos.blockZ() * this.xzScale);
     }

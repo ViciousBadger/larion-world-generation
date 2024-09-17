@@ -585,7 +585,7 @@ public class FastNoiseLite
 
     private static float FastSqrt(float f) { return (float)Math.sqrt(f); }
 
-    private static int FastFloor(/*FNLfloat*/ double f) { return f >= 0 ? (int)f : (int)f - 1; }
+    public static int FastFloor(/*FNLfloat*/ double f) { return f >= 0 ? (int)f : (int)f - 1; }
 
     private static int FastRound(/*FNLfloat*/ double f) { return f >= 0 ? (int)(f + 0.5f) : (int)(f - 0.5f); }
 
