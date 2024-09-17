@@ -30,7 +30,7 @@
         "min_inclusive": -120.0,
         "when_in_range": {
           "type": "minecraft:add",
-          "argument1": -0.07500000000000001,
+          "argument1": -0.17500000000000001,
           "argument2": {
             "type": "minecraft:mul",
             "argument1": -0.025,
