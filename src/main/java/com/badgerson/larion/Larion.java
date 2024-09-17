@@ -25,6 +25,7 @@ public class Larion implements ModInitializer {
         Registry.register(Registries.DENSITY_FUNCTION_TYPE, Identifier.of(MOD_ID, "signum"), Signum.CODEC.codec());
         Registry.register(Registries.DENSITY_FUNCTION_TYPE, Identifier.of(MOD_ID, "sine"), Sine.CODEC.codec());
         Registry.register(Registries.DENSITY_FUNCTION_TYPE, Identifier.of(MOD_ID, "z"), ZCoord.CODEC.codec());
+        Registry.register(Registries.DENSITY_FUNCTION_TYPE, Identifier.of(MOD_ID, "cellular"), Cellular.CODEC.codec());
         LOGGER.info("Registered extra density functions!");
     }
 }
