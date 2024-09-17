@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:interpolated",
-  "argument": {
-    "type": "minecraft:mul",
-    "argument1": -4.0,
+  "type": "minecraft:mul",
+  "argument1": -1.1,
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": 0.5,
     "argument2": {
       "type": "larion:cellular",
       "seed": 123,
-      "frequency": 0.1,
-      "xz_scale": 1.0,
+      "frequency": 0.02,
       "y_scale": 1.0
     }
   }
