@@ -11,12 +11,12 @@
         "spline": {
           "coordinate": {
             "type": "larion:div",
-            "dividend": {
+            "argument1": {
               "type": "minecraft:add",
               "argument1": -63,
               "argument2": "minecraft:y"
             },
-            "divisor": "larion:overworld/caves/river_noodle_height"
+            "argument2": "larion:overworld/caves/river_noodle_height"
           },
           "points": [
             {
