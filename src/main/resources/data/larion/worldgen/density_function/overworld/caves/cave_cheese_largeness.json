@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:y",
+    "points": [
+      {
+        "location": -128,
+        "derivative": 0.0,
+        "value": -0.33
+      },
+      {
+        "location": -64,
+        "derivative": 0.0,
+        "value": 0.18
+      },
+      {
+        "location": 0,
+        "derivative": 0.0,
+        "value": 0.27
+      },
+      {
+        "location": 128,
+        "derivative": 0.0,
+        "value": 0.35
+      },
+      {
+        "location": 320,
+        "derivative": 0.0,
+        "value": 0.50
+      }
+    ]
+  }
+}
