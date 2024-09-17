@@ -1,7 +1,7 @@
 {
   "type": "minecraft:mul",
   "argument1": {
-    "type": "more_dfs:signum",
+    "type": "larion:signum",
     "argument": "larion:overworld/continents/shapes"
   },
   "argument2": {

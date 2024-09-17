@@ -1,4 +1,4 @@
-package badgerson.larion;
+package com.badgerson.larion;
 
 import net.fabricmc.api.ClientModInitializer;
 

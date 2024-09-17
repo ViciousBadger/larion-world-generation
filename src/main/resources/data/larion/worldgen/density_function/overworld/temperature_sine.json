@@ -1,5 +1,5 @@
 {
-  "type": "more_dfs:sine",
+  "type": "larion:sine",
   "argument": {
     "type": "minecraft:add",
     "argument1": "larion:overworld/temperature_delta",

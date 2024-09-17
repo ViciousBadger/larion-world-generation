@@ -15,10 +15,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"badgerson.larion.Larion"
+			"com.badgerson.larion.Larion"
 		],
 		"client": [
-			"badgerson.larion.LarionClient"
+			"com.badgerson.larion.LarionClient"
 		]
 	},
 	"mixins": [
@@ -28,6 +28,7 @@
 			"environment": "client"
 		}
 	],
+  "accessWidener": "larion.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.21.1",

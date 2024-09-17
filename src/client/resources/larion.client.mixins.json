@@ -1,10 +1,8 @@
 {
 	"required": true,
-	"package": "badgerson.larion.mixin.client",
+	"package": "com.badgerson.larion.mixin.client",
 	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
+	"client": [],
 	"injectors": {
 		"defaultRequire": 1
 	}

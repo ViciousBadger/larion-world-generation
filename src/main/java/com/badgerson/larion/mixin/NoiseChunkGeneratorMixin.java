@@ -1,4 +1,4 @@
-package badgerson.larion.mixin;
+package com.badgerson.larion.mixin;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.world.dimension.DimensionType;

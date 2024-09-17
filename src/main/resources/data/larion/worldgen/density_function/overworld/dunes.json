@@ -5,13 +5,13 @@
     "argument1": {
       "type": "minecraft:mul",
       "argument1": {
-        "type": "more_dfs:sine",
+        "type": "larion:sine",
         "argument": {
           "type": "minecraft:add",
           "argument1": {
             "type": "minecraft:mul",
             "argument1": {
-              "type": "more_dfs:z"
+              "type": "larion:z"
             },
             "argument2": 0.07
           },

@@ -10,7 +10,7 @@
         "type": "minecraft:spline",
         "spline": {
           "coordinate": {
-            "type": "more_dfs:div",
+            "type": "larion:div",
             "dividend": {
               "type": "minecraft:add",
               "argument1": -63,
