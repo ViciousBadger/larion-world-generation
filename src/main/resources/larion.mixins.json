@@ -3,7 +3,8 @@
 	"package": "com.badgerson.larion.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"NoiseChunkGeneratorMixin"
+		"NoiseChunkGeneratorMixin",
+		"CaveCarverMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
