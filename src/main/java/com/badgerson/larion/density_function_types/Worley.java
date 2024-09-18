@@ -13,6 +13,8 @@ import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
 import de.articdive.jnoise.generators.noise_parameters.distance_functions.DistanceFunctionType;
+import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunction;
+import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunctionType;
 import de.articdive.jnoise.generators.noisegen.worley.WorleyNoiseGenerator;
 import de.articdive.jnoise.pipeline.JNoise;
 import net.minecraft.util.dynamic.CodecHolder;
@@ -43,13 +45,26 @@ public class Worley
                     .apply(instance, Worley::new));
     public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
 
+    record CoolDistanceFunction() implements ReturnDistanceFunction {
+        @Override
+        public double applyAsDouble(double[] value) {
+            return value[0] / value[2];
+        }
+
+        @Override
+        public boolean isValidArrayLength(int depth) {
+            return depth >= 3;
+        }
+    }
+
     public Worley(double frequency, double yScale) {
         this.frequency = frequency;
         this.yScale = yScale;
 
         this.sampler = JNoise.newBuilder()
                 .worley(WorleyNoiseGenerator.newBuilder().setSeed(12345).setDepth(3)
-                        .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED).build())
+                        .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED)
+                        .setReturnDistanceFunction(new CoolDistanceFunction()).build())
                 .scale(frequency).clamp(0.0, 1.0).build();
     }
 
