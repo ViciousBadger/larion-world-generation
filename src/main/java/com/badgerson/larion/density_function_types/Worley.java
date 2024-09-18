@@ -70,7 +70,8 @@ public record Worley(float frequency, float yScale, DensityFunction shiftX, Dens
 
     @Override
     public DensityFunction apply(DensityFunctionVisitor visitor) {
-        return visitor.apply(new Worley(this.frequency, this.yScale, this.shiftX, this.shiftY, this.shiftZ));
+        return visitor.apply(new Worley(this.frequency, this.yScale, this.shiftX.apply(visitor),
+                this.shiftY.apply(visitor), this.shiftZ.apply(visitor)));
     }
 
     @Override
