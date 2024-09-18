@@ -3,6 +3,7 @@ package com.badgerson.larion.density_function_types;
 import com.badgerson.larion.Larion;
 import com.badgerson.larion.util.FastNoiseLite;
 import com.badgerson.larion.util.WorleyUtil;
+import net.minecraft.world.gen.densityfunction.DensityFunction.DensityFunctionVisitor;
 import com.badgerson.larion.util.FastNoiseLite.CellularDistanceFunction;
 import com.badgerson.larion.util.FastNoiseLite.CellularReturnType;
 import com.badgerson.larion.util.FastNoiseLite.DomainWarpType;
@@ -15,63 +16,55 @@ import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
 
-public record Worley(float frequency, float yScale, DensityFunction shiftX, DensityFunction shiftY,
-        DensityFunction shiftZ)
-        implements DensityFunction {
+public class Worley
+        implements DensityFunction.Base {
+
+    private float frequency;
+
+    public float getFrequency() {
+        return frequency;
+    }
+
+    private float yScale;
+
+    public float getyScale() {
+        return yScale;
+    }
+
+    private FastNoiseLite sampler;
+
+    public Worley(float frequency, float yScale) {
+        this.frequency = frequency;
+        this.yScale = yScale;
+        this.sampler = new FastNoiseLite();
+        this.sampler.SetSeed(1234);
+        this.sampler.SetFrequency(frequency);
+        this.sampler.SetNoiseType(NoiseType.Cellular);
+        this.sampler.SetCellularDistanceFunction(CellularDistanceFunction.EuclideanSq);
+        this.sampler.SetCellularReturnType(CellularReturnType.Distance2Div);
+        this.sampler.SetDomainWarpType(DomainWarpType.OpenSimplex2);
+        this.sampler.SetDomainWarpAmp(30.0f);
+    }
 
     public static final MapCodec<Worley> MAP_CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    Codec.FLOAT.fieldOf("frequency").forGetter(Worley::frequency),
-                    Codec.FLOAT.fieldOf("y_scale").forGetter(Worley::yScale),
-                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_x").forGetter(Worley::shiftX),
-                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_y").forGetter(Worley::shiftY),
-                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_z").forGetter(Worley::shiftZ))
+                    Codec.FLOAT.fieldOf("frequency").forGetter(Worley::getFrequency),
+                    Codec.FLOAT.fieldOf("y_scale").forGetter(Worley::getyScale))
                     .apply(instance, Worley::new));
     public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
-
-    public static class CellNoiseWrapper {
-        public FastNoiseLite noise;
-
-        public CellNoiseWrapper() {
-            noise = new FastNoiseLite();
-            noise.SetNoiseType(NoiseType.Cellular);
-            noise.SetCellularDistanceFunction(CellularDistanceFunction.EuclideanSq);
-            noise.SetCellularReturnType(CellularReturnType.Distance2Div);
-            noise.SetDomainWarpType(DomainWarpType.OpenSimplex2);
-            noise.SetDomainWarpAmp(30.0f);
-            Larion.LOGGER.info("initialized noise");
-        }
-    }
-    private static final WorleyUtil noiseWrapper = new WorleyUtil();
-
-    // public Cellular {
-    // noiseWrapper.noise.SetFrequency(frequency);
-    // noiseWrapper.noise.SetSeed(seed);
-    // // Larion.LOGGER.info("confiruged ceullular noise");
-    // }
 
     @Override
     public double sample(NoisePos pos) {
         // Larion.LOGGER.info(Float.toString(result));
-        float x = (pos.blockX() + (float) shiftX.sample(pos)) * frequency;
-        float z = (pos.blockZ() + (float) shiftZ.sample(pos)) * frequency;
-        float y = (pos.blockY() + (float) shiftY.sample(pos)) * frequency * yScale;
-        float val = noiseWrapper.SingleCellular3Edge(x, y, z);
+        float x = pos.blockX() * frequency;
+        float z = pos.blockZ() * frequency;
+        float y = pos.blockY() * frequency * yScale;
+        return sampler.GetNoise(x, y, z);
+        // float val = noiseWrapper.SingleCellular3Edge(x, y, z);
         // Larion.LOGGER.info(Float.toString(val));
-        return val;
+        // return val;
         // return this.noise.sample((double)pos.blockX() * this.xzScale,
         // (double)pos.blockY() * this.yScale, (double)pos.blockZ() * this.xzScale);
-    }
-
-    @Override
-    public void fill(double[] densities, EachApplier applier) {
-        applier.fill(densities, this);
-    }
-
-    @Override
-    public DensityFunction apply(DensityFunctionVisitor visitor) {
-        return visitor.apply(new Worley(this.frequency, this.yScale, this.shiftX.apply(visitor),
-                this.shiftY.apply(visitor), this.shiftZ.apply(visitor)));
     }
 
     @Override
