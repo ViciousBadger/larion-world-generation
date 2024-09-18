@@ -41,8 +41,13 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    //implementation(files("libs/more_density_functions_fabric_mc1.21_v1.0.5.jar"))
-	
+    implementation("de.articdive:jnoise-pipeline:4.1.0")
+        include("de.articdive:jnoise-pipeline:4.1.0")
+        include("de.articdive:jnoise-core:4.1.0")
+        include("de.articdive:jnoise-transformers:4.1.0")
+        include("de.articdive:jnoise-generators:4.1.0")
+        include("de.articdive:jnoise-modules:4.1.0")
+        include("de.articdive:jnoise-modifiers:4.1.0")
 }
 
 processResources {

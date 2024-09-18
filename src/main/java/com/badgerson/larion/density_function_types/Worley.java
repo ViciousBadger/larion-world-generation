@@ -12,6 +12,9 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
+import de.articdive.jnoise.generators.noise_parameters.distance_functions.DistanceFunctionType;
+import de.articdive.jnoise.generators.noisegen.worley.WorleyNoiseGenerator;
+import de.articdive.jnoise.pipeline.JNoise;
 import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
@@ -19,47 +22,44 @@ import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
 public class Worley
         implements DensityFunction.Base {
 
-    private float frequency;
+    private double frequency;
 
-    public float getFrequency() {
+    public double getFrequency() {
         return frequency;
     }
 
-    private float yScale;
+    private double yScale;
 
-    public float getyScale() {
+    public double getyScale() {
         return yScale;
     }
 
-    private FastNoiseLite sampler;
-
-    public Worley(float frequency, float yScale) {
-        this.frequency = frequency;
-        this.yScale = yScale;
-        this.sampler = new FastNoiseLite();
-        this.sampler.SetSeed(1234);
-        this.sampler.SetFrequency(frequency);
-        this.sampler.SetNoiseType(NoiseType.Cellular);
-        this.sampler.SetCellularDistanceFunction(CellularDistanceFunction.EuclideanSq);
-        this.sampler.SetCellularReturnType(CellularReturnType.Distance2Div);
-        this.sampler.SetDomainWarpType(DomainWarpType.OpenSimplex2);
-        this.sampler.SetDomainWarpAmp(30.0f);
-    }
+    private JNoise sampler;
 
     public static final MapCodec<Worley> MAP_CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    Codec.FLOAT.fieldOf("frequency").forGetter(Worley::getFrequency),
-                    Codec.FLOAT.fieldOf("y_scale").forGetter(Worley::getyScale))
+                    Codec.DOUBLE.fieldOf("frequency").forGetter(Worley::getFrequency),
+                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Worley::getyScale))
                     .apply(instance, Worley::new));
     public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
+
+    public Worley(double frequency, double yScale) {
+        this.frequency = frequency;
+        this.yScale = yScale;
+
+        this.sampler = JNoise.newBuilder()
+                .worley(WorleyNoiseGenerator.newBuilder().setSeed(12345).setDepth(3)
+                        .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED).build())
+                .scale(frequency).clamp(0.0, 1.0).build();
+    }
 
     @Override
     public double sample(NoisePos pos) {
         // Larion.LOGGER.info(Float.toString(result));
-        float x = pos.blockX() * frequency;
-        float z = pos.blockZ() * frequency;
-        float y = pos.blockY() * frequency * yScale;
-        return sampler.GetNoise(x, y, z);
+        double x = pos.blockX() * frequency;
+        double z = pos.blockZ() * frequency;
+        double y = pos.blockY() * frequency * yScale;
+        return sampler.evaluateNoise(x, y, z);
         // float val = noiseWrapper.SingleCellular3Edge(x, y, z);
         // Larion.LOGGER.info(Float.toString(val));
         // return val;

@@ -107,21 +107,7 @@
                                     },
                                     "argument2": {
                                       "type": "minecraft:add",
-                                      "argument1": {
-                                        "type": "minecraft:clamp",
-                                        "input": {
-                                          "type": "minecraft:add",
-                                          "argument1": "larion:overworld/caves/cave_cheese_largeness",
-                                          "argument2": {
-                                            "type": "minecraft:noise",
-                                            "noise": "minecraft:cave_cheese",
-                                            "xz_scale": 1.0,
-                                            "y_scale": 0.6666666666666666
-                                          }
-                                        },
-                                        "max": 1.0,
-                                        "min": -1.0
-                                      },
+                                      "argument1": 0.0,
                                       "argument2": {
                                         "type": "minecraft:clamp",
                                         "input": {
@@ -138,11 +124,7 @@
                                       }
                                     }
                                   },
-                                  "argument2": {
-                                    "type": "minecraft:add",
-                                    "argument1": "minecraft:overworld/caves/spaghetti_2d",
-                                    "argument2": "minecraft:overworld/caves/spaghetti_roughness_function"
-                                  }
+                                  "argument2": 100
                                 }
                               },
                               "argument2": {
