@@ -15,16 +15,19 @@ import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
 
-public record Cellular(int seed, float frequency, double yScale)
+public record Worley(float frequency, float yScale, DensityFunction shiftX, DensityFunction shiftY,
+        DensityFunction shiftZ)
         implements DensityFunction {
 
-    public static final MapCodec<Cellular> MAP_CODEC = RecordCodecBuilder.mapCodec(
+    public static final MapCodec<Worley> MAP_CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    Codec.INT.fieldOf("seed").forGetter(Cellular::seed),
-                    Codec.FLOAT.fieldOf("frequency").forGetter(Cellular::frequency),
-                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Cellular::yScale))
-                    .apply(instance, Cellular::new));
-    public static final CodecHolder<Cellular> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
+                    Codec.FLOAT.fieldOf("frequency").forGetter(Worley::frequency),
+                    Codec.FLOAT.fieldOf("y_scale").forGetter(Worley::yScale),
+                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_x").forGetter(Worley::shiftX),
+                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_y").forGetter(Worley::shiftY),
+                    DensityFunction.FUNCTION_CODEC.fieldOf("shift_z").forGetter(Worley::shiftZ))
+                    .apply(instance, Worley::new));
+    public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
 
     public static class CellNoiseWrapper {
         public FastNoiseLite noise;
@@ -42,19 +45,19 @@ public record Cellular(int seed, float frequency, double yScale)
     private static final WorleyUtil noiseWrapper = new WorleyUtil();
 
     // public Cellular {
-    //     noiseWrapper.noise.SetFrequency(frequency);
-    //     noiseWrapper.noise.SetSeed(seed);
-    //     // Larion.LOGGER.info("confiruged ceullular noise");
+    // noiseWrapper.noise.SetFrequency(frequency);
+    // noiseWrapper.noise.SetSeed(seed);
+    // // Larion.LOGGER.info("confiruged ceullular noise");
     // }
 
     @Override
     public double sample(NoisePos pos) {
         // Larion.LOGGER.info(Float.toString(result));
-        float x = pos.blockX() * frequency;
-        float z = pos.blockZ() * frequency;
-        float y = pos.blockY() * frequency * (float)yScale;
-        float val =  noiseWrapper.SingleCellular3Edge(x,y,z);
-        //Larion.LOGGER.info(Float.toString(val));
+        float x = (pos.blockX() + (float) shiftX.sample(pos)) * frequency;
+        float z = (pos.blockZ() + (float) shiftZ.sample(pos)) * frequency;
+        float y = (pos.blockY() + (float) shiftY.sample(pos)) * frequency * yScale;
+        float val = noiseWrapper.SingleCellular3Edge(x, y, z);
+        // Larion.LOGGER.info(Float.toString(val));
         return val;
         // return this.noise.sample((double)pos.blockX() * this.xzScale,
         // (double)pos.blockY() * this.yScale, (double)pos.blockZ() * this.xzScale);
@@ -67,7 +70,7 @@ public record Cellular(int seed, float frequency, double yScale)
 
     @Override
     public DensityFunction apply(DensityFunctionVisitor visitor) {
-        return visitor.apply(new Cellular(this.seed, this.frequency, this.yScale));
+        return visitor.apply(new Worley(this.frequency, this.yScale, this.shiftX, this.shiftY, this.shiftZ));
     }
 
     @Override
