@@ -12,11 +12,15 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
+import de.articdive.jnoise.core.util.vectors.Vector4D;
 import de.articdive.jnoise.generators.noise_parameters.distance_functions.DistanceFunctionType;
 import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunction;
 import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunctionType;
+import de.articdive.jnoise.generators.noisegen.opensimplex.FastSimplexNoiseGenerator;
+import de.articdive.jnoise.generators.noisegen.opensimplex.SuperSimplexNoiseGenerator;
 import de.articdive.jnoise.generators.noisegen.worley.WorleyNoiseGenerator;
 import de.articdive.jnoise.pipeline.JNoise;
+import de.articdive.jnoise.transformers.domain_warp.DomainWarpTransformer;
 import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
@@ -65,21 +69,19 @@ public class Worley
                 .worley(WorleyNoiseGenerator.newBuilder().setSeed(12345).setDepth(3)
                         .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED)
                         .setReturnDistanceFunction(new CoolDistanceFunction()).build())
-                .scale(frequency).clamp(0.0, 1.0).build();
+                .scale(frequency)
+                .addDetailedTransformer(DomainWarpTransformer.newBuilder()
+                        .setNoiseSource(FastSimplexNoiseGenerator.newBuilder())
+                        .setWarpingVector(new Vector4D(0.77, 0.77, 0.77, 0.77)).build())
+                .clamp(0.0, 1.0).build();
     }
 
     @Override
     public double sample(NoisePos pos) {
-        // Larion.LOGGER.info(Float.toString(result));
-        double x = pos.blockX() * frequency;
-        double z = pos.blockZ() * frequency;
-        double y = pos.blockY() * frequency * yScale;
+        double x = pos.blockX();
+        double z = pos.blockZ();
+        double y = pos.blockY() * yScale;
         return sampler.evaluateNoise(x, y, z);
-        // float val = noiseWrapper.SingleCellular3Edge(x, y, z);
-        // Larion.LOGGER.info(Float.toString(val));
-        // return val;
-        // return this.noise.sample((double)pos.blockX() * this.xzScale,
-        // (double)pos.blockY() * this.yScale, (double)pos.blockZ() * this.xzScale);
     }
 
     @Override
