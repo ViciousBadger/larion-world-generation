@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:mul",
-  "argument1": {
-    "type": "more_dfs:z"
-  },
-  "argument2": 0.0004485714286
-}

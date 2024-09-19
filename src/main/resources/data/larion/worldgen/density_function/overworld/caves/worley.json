@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:mul",
+  "argument1": -3.849,
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": -0.6999,
+    "argument2": {
+      "type": "larion:worley",
+      "warp_scale": 1.116018234,
+      "warp_amount": 0.4412894895,
+      "xz_scale": 0.01124198,
+      "y_scale": 0.02731963
+    }
+  }
+}

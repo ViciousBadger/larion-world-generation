@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "larion:signum",
+    "argument": "larion:overworld/continents/shapes"
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": "larion:overworld/ridges/rivers",
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": 0.33,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": 0.33,
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": "larion:overworld/ridges/hills",
+          "argument2": "larion:overworld/ridges/hills_factor"
+        }
+      }
+    }
+  }
+}
