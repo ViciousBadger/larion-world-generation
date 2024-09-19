@@ -1,13 +1,5 @@
 package com.badgerson.larion.density_function_types;
 
-import com.badgerson.larion.Larion;
-import com.badgerson.larion.util.FastNoiseLite;
-import com.badgerson.larion.util.WorleyUtil;
-import net.minecraft.world.gen.densityfunction.DensityFunction.DensityFunctionVisitor;
-import com.badgerson.larion.util.FastNoiseLite.CellularDistanceFunction;
-import com.badgerson.larion.util.FastNoiseLite.CellularReturnType;
-import com.badgerson.larion.util.FastNoiseLite.DomainWarpType;
-import com.badgerson.larion.util.FastNoiseLite.NoiseType;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -15,12 +7,11 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import de.articdive.jnoise.core.util.vectors.Vector4D;
 import de.articdive.jnoise.generators.noise_parameters.distance_functions.DistanceFunctionType;
 import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunction;
-import de.articdive.jnoise.generators.noise_parameters.return_type_functions.ReturnDistanceFunctionType;
 import de.articdive.jnoise.generators.noisegen.opensimplex.FastSimplexNoiseGenerator;
-import de.articdive.jnoise.generators.noisegen.opensimplex.SuperSimplexNoiseGenerator;
 import de.articdive.jnoise.generators.noisegen.worley.WorleyNoiseGenerator;
 import de.articdive.jnoise.pipeline.JNoise;
 import de.articdive.jnoise.transformers.domain_warp.DomainWarpTransformer;
+import de.articdive.jnoise.transformers.scale.ScaleTransformer;
 import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
@@ -28,15 +19,24 @@ import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
 public class Worley
         implements DensityFunction.Base {
 
-    private double frequency;
-
-    public double getFrequency() {
-        return frequency;
-    }
-
+    private double warpScale;
+    private double warpAmount;
+    private double xzScale;
     private double yScale;
 
-    public double getyScale() {
+    public double getWarpScale() {
+        return warpScale;
+    }
+
+    public double getWarpAmount() {
+        return warpAmount;
+    }
+
+    public double getXZScale() {
+        return xzScale;
+    }
+
+    public double getYScale() {
         return yScale;
     }
 
@@ -44,8 +44,10 @@ public class Worley
 
     public static final MapCodec<Worley> MAP_CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    Codec.DOUBLE.fieldOf("frequency").forGetter(Worley::getFrequency),
-                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Worley::getyScale))
+                    Codec.DOUBLE.fieldOf("warp_scale").forGetter(Worley::getWarpScale),
+                    Codec.DOUBLE.fieldOf("warp_amount").forGetter(Worley::getWarpAmount),
+                    Codec.DOUBLE.fieldOf("xz_scale").forGetter(Worley::getXZScale),
+                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Worley::getYScale))
                     .apply(instance, Worley::new));
     public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
 
@@ -61,27 +63,28 @@ public class Worley
         }
     }
 
-    public Worley(double frequency, double yScale) {
-        this.frequency = frequency;
+    public Worley(double warpScale, double warpAmount, double xzScale, double yScale) {
+        this.warpScale = warpScale;
+        this.warpAmount = warpAmount;
+        this.xzScale = xzScale;
         this.yScale = yScale;
+
+        var domainWarp = JNoise.newBuilder().setNoiseSource(FastSimplexNoiseGenerator.newBuilder()).scale(warpScale);
 
         this.sampler = JNoise.newBuilder()
                 .worley(WorleyNoiseGenerator.newBuilder().setSeed(12345).setDepth(3)
                         .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED)
                         .setReturnDistanceFunction(new CoolDistanceFunction()).build())
-                .scale(frequency)
                 .addDetailedTransformer(DomainWarpTransformer.newBuilder()
-                        .setNoiseSource(FastSimplexNoiseGenerator.newBuilder())
-                        .setWarpingVector(new Vector4D(0.77, 0.77, 0.77, 0.77)).build())
+                        .setNoiseSource(domainWarp)
+                        .setWarpingVector(new Vector4D(warpAmount, warpAmount, warpAmount, 0.0)).build())
+                .addSimpleTransformer(new ScaleTransformer(xzScale, yScale, xzScale, 1.0))
                 .clamp(0.0, 1.0).build();
     }
 
     @Override
     public double sample(NoisePos pos) {
-        double x = pos.blockX();
-        double z = pos.blockZ();
-        double y = pos.blockY() * yScale;
-        return sampler.evaluateNoise(x, y, z);
+        return sampler.evaluateNoise(pos.blockX() + 0.13480, pos.blockY() - 0.6712478, pos.blockZ() + 0.84512);
     }
 
     @Override
