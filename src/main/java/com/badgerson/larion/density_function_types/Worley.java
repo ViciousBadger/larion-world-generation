@@ -84,7 +84,7 @@ public class Worley
 
     @Override
     public double sample(NoisePos pos) {
-        return sampler.evaluateNoise(pos.blockX() + 0.13480, pos.blockY() - 0.6712478, pos.blockZ() + 0.84512);
+        return sampler.evaluateNoise(pos.blockX(), pos.blockY(), pos.blockZ());
     }
 
     @Override
