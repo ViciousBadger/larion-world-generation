@@ -13,7 +13,7 @@
   "legacy_random_source": false,
   "noise": {
     "height": 512,
-    "min_y": -128,
+    "min_y": -96,
     "size_horizontal": 1,
     "size_vertical": 2
   },
@@ -62,9 +62,9 @@
         "argument1": {
           "type": "minecraft:y_clamped_gradient",
           "from_value": 0.0,
-          "from_y": -128,
+          "from_y": -96,
           "to_value": 1.0,
-          "to_y": -40
+          "to_y": -72
         },
         "argument2": {
           "type": "minecraft:add",
@@ -77,9 +77,9 @@
               "argument1": {
                 "type": "minecraft:y_clamped_gradient",
                 "from_value": 1.0,
-                "from_y": 360,
+                "from_y": 400,
                 "to_value": 0.0,
-                "to_y": 380
+                "to_y": 416
               },
               "argument2": {
                 "type": "minecraft:add",
