@@ -1,5 +1,8 @@
 package com.badgerson.larion.density_function_types;
 
+import org.jspecify.annotations.Nullable;
+
+import com.badgerson.larion.Larion;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -16,38 +19,15 @@ import net.minecraft.util.dynamic.CodecHolder;
 import net.minecraft.world.gen.densityfunction.DensityFunction;
 import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
 
-public class Worley
+public record Worley(double warpScale, double warpAmount, double xzScale, double yScale, @Nullable JNoise sampler)
         implements DensityFunction.Base {
-
-    private double warpScale;
-    private double warpAmount;
-    private double xzScale;
-    private double yScale;
-
-    public double getWarpScale() {
-        return warpScale;
-    }
-
-    public double getWarpAmount() {
-        return warpAmount;
-    }
-
-    public double getXZScale() {
-        return xzScale;
-    }
-
-    public double getYScale() {
-        return yScale;
-    }
-
-    private JNoise sampler;
 
     public static final MapCodec<Worley> MAP_CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    Codec.DOUBLE.fieldOf("warp_scale").forGetter(Worley::getWarpScale),
-                    Codec.DOUBLE.fieldOf("warp_amount").forGetter(Worley::getWarpAmount),
-                    Codec.DOUBLE.fieldOf("xz_scale").forGetter(Worley::getXZScale),
-                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Worley::getYScale))
+                    Codec.DOUBLE.fieldOf("warp_scale").forGetter(Worley::warpScale),
+                    Codec.DOUBLE.fieldOf("warp_amount").forGetter(Worley::warpAmount),
+                    Codec.DOUBLE.fieldOf("xz_scale").forGetter(Worley::xzScale),
+                    Codec.DOUBLE.fieldOf("y_scale").forGetter(Worley::yScale))
                     .apply(instance, Worley::new));
     public static final CodecHolder<Worley> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
 
@@ -64,15 +44,13 @@ public class Worley
     }
 
     public Worley(double warpScale, double warpAmount, double xzScale, double yScale) {
-        this.warpScale = warpScale;
-        this.warpAmount = warpAmount;
-        this.xzScale = xzScale;
-        this.yScale = yScale;
+        this(warpScale, warpAmount, xzScale, yScale, null);
+    }
 
+    public JNoise createSampler(long seed) {
         var domainWarp = JNoise.newBuilder().setNoiseSource(FastSimplexNoiseGenerator.newBuilder()).scale(warpScale);
-
-        this.sampler = JNoise.newBuilder()
-                .worley(WorleyNoiseGenerator.newBuilder().setSeed(12345).setDepth(3)
+        return JNoise.newBuilder()
+                .worley(WorleyNoiseGenerator.newBuilder().setSeed(seed).setDepth(3)
                         .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED)
                         .setReturnDistanceFunction(new CoolDistanceFunction()).build())
                 .addDetailedTransformer(DomainWarpTransformer.newBuilder()
@@ -84,12 +62,17 @@ public class Worley
 
     @Override
     public double sample(NoisePos pos) {
-        return sampler.evaluateNoise(pos.blockX(), pos.blockY(), pos.blockZ());
+        // if (sampler != null) {
+        //     Larion.LOGGER.info("Sampler is here");
+        // } else {
+        //     Larion.LOGGER.info("Sampler not is here");
+        // }
+        return sampler == null ? 0.0 : sampler.evaluateNoise(pos.blockX(), pos.blockY(), pos.blockZ());
     }
 
     @Override
     public double minValue() {
-        return -1.0;
+        return 0.0;
     }
 
     @Override

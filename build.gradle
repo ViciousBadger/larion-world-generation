@@ -41,6 +41,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+    implementation("org.jspecify:jspecify:1.0.0")
+
     implementation("de.articdive:jnoise-pipeline:4.1.0")
         include("de.articdive:jnoise-pipeline:4.1.0")
         include("de.articdive:jnoise-core:4.1.0")

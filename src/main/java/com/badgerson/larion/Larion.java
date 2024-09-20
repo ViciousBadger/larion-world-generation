@@ -11,8 +11,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import net.minecraft.world.gen.carver.CaveCarver;
-
 public class Larion implements ModInitializer {
     public static final String MOD_ID = "larion";
 

@@ -1,7 +1,6 @@
 package com.badgerson.larion.mixin;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.chunk.AquiferSampler;
 import net.minecraft.world.gen.chunk.ChunkGeneratorSettings;
 import net.minecraft.world.gen.chunk.NoiseChunkGenerator;
