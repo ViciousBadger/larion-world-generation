@@ -3,81 +3,116 @@
   "argument": {
     "type": "minecraft:cache_2d",
     "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "minecraft:overworld/continents",
-        "points": [
-          {
-            "derivative": 0.0,
-            "location": -0.98,
-            "value": 0.0
-          },
-          {
-            "derivative": 0.0,
-            "location": -0.9,
-            "value": -0.3
-          },
-          {
-            "derivative": 0.0,
-            "location": -0.44,
-            "value": -0.1
-          },
-          {
-            "derivative": 0.0,
-            "location": -0.2,
-            "value": 0.0
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.03,
-            "value": 0.0
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.15,
-            "value": 0.03
-          },
-          {
-            "derivative": 0.75,
-            "location": 0.3,
-            "value": 0.2
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.4,
-            "value": 0.22
-          },
-          {
-            "derivative": 0.75,
-            "location": 0.6,
-            "value": 0.35
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.7,
-            "value": 0.37
-          },
-          {
-            "derivative": 0.75,
-            "location": 0.8,
-            "value": 0.48
-          },
-          {
-            "derivative": 0.0,
-            "location": 0.9,
-            "value": 0.50
-          },
-          {
-            "derivative": 0.0,
-            "location": 1.0,
-            "value": 0.54
-          },
-          {
-            "derivative": -0.5,
-            "location": 1.1,
-            "value": 0.50
-          }
-        ]
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "minecraft:overworld/continents",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -0.98,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.9,
+              "value": -0.3
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.44,
+              "value": -0.1
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.2,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.03,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.15,
+              "value": 0.03
+            },
+            {
+              "derivative": 0.75,
+              "location": 0.3,
+              "value": 0.1
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.4,
+              "value": 0.11
+            },
+            {
+              "derivative": 0.75,
+              "location": 0.6,
+              "value": 0.25
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.7,
+              "value": 0.27
+            },
+            {
+              "derivative": 0.75,
+              "location": 0.8,
+              "value": 0.38
+            },
+            {
+              "derivative": 0.0,
+              "location": 0.9,
+              "value": 0.40
+            },
+            {
+              "derivative": 0.0,
+              "location": 1.0,
+              "value": 0.44
+            }
+          ]
+        }
+      },
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "minecraft:overworld/continents",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -0.18,
+              "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.1,
+              "value": {
+                "coordinate": "minecraft:overworld/erosion",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": -1.0,
+                    "value": 0.125
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.5,
+                    "value": 0.045
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.0,
+                    "value": 0.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     }
   }
