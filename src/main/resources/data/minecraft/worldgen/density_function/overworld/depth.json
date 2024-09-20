@@ -3,13 +3,13 @@
   "argument1": {
     "type": "minecraft:y_clamped_gradient",
     "from_value": 1.5,
-    "from_y": -96,
+    "from_y": -128,
     "to_value": -1.5,
-    "to_y": 416
+    "to_y": 384
   },
   "argument2": {
     "type": "minecraft:add",
-    "argument1": -0.1905,
+    "argument1": -0.0,
     "argument2": {
       "type": "minecraft:add",
       "argument1": {
