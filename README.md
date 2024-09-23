@@ -10,10 +10,7 @@ find in epic fantasy worldbuilding, while still being small-scale and unpredicta
 enough to be interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
-with most biome overhauls. If you encounter issues when combining Larion with
-world generation datapacks, try using Larion as a datapack and make sure it is
-loaded **after** any other datapacks using a tool like
-[Paxi](https://modrinth.com/mod/paxi). See below for a list of compability notes
+with most biome overhauls. See below for a list of compability notes
 and potential solutions.
 
 ## Features
@@ -23,18 +20,16 @@ shapes vary wildly.
 - Temperature changes as you move north or south (z-axis).
     - If you travel far enough, it wraps back around.
     - Travelling east or west lets you stay in roughly the same temperature.
-    - "Tropical" biomes (jungle, savanna etc) generate _within_ desert and
-    badland regions instead of around them.
+    - "Tropical" biomes (jungle, savanna etc) generate at the "equator" meaning
+    at the highest temperature zones.
 - Mountains form large "chains" roughly similar to continental plates in real life.
     - They are also taller, usually between 200 and 300 blocks in height, but in rare cases even higher.
     - Jagged peaks are less "jagged" than usual, shaped more like real mountains.
-- World height is increased from 384 to 512
-    - This ensures mountains never "plateau", even if they reach over 320 blocks.
-    - Build height limit is 448, so there is always space to build, even on mountaintops.
-- Terrain is more hilly than before and slopes upwards as you go further
-inland.
-    - This is completely independent of how mountainous the terrain is, so even
-    a normal plains biome can be at Y=200
+- World height is increased from 384 to 512 to fit the taller mountains and deeper caves
+    - Build height limit is 384.
+    - Lowest point is -128.
+- Terrain slopes gently upwards as you go further
+inland, on top of plenty small-scale height variations everywhere.
 - Smaller biomes with less predictable shapes and placement.
     - "Humidity" zones are weirder, sometimes small, sometimes large.
     - Swamps and mangroves can only appear along coasts and rivers.
@@ -44,6 +39,11 @@ inland.
     - In tall terrain they will keep flowing as underground rivers.
     - Sometimes rivers form strange "knots" that look like lakes.
 - Mushroom islands are more common, smaller and oddly shaped.
+- Caves are deeper and stranger.
+    - They use a different kind of noise, directly inspired by the abandoned
+    "Worley's Caves" mod.
+    - Caves are extremely labyrinthian and dead ends are common. Mostly narrow
+    paths and mid-sized chambers.. unless you venture deep enough..
 - Numerous smaller tweaks
     - Dunes in desert biomes
     - Less ugly cliffs at coastlines
@@ -52,30 +52,14 @@ inland.
     - Badlands mountains have plateaus instead of peaks
     - Probably more..!
 
-## How to install
-
-Larion requires the [More Density
-Functions](https://modrinth.com/mod/more-density-functions) Fabric mod in order
-to function, as several important tweaks would be impossible to create without
-the extra features added by this mod.
-
-- Download **Version 1.0.5** of [More Density Functions](https://modrinth.com/mod/more-density-functions) and move it to your `.minecraft/mods/` folder - make sure to pick the one that matches the version of Minecraft you are using. 
-- Download `Larion-xxxx-mcxxxx.jar` and move it to your `.minecraft/mods/` folder.
-    - Alternatively, you can download `Larion-xxxx-mcxxxx.zip` and add it
-    directly to your world as a datapack, but More Density Functions is still
-    required for it to work. Using the datapack .zip allows you to re-order
-    Larion in relation to other datapacks.
-    - If you experience cut-off mountains or other weirdness when using Larion
-    with other datapacks, try making Larion load **after** other packs.
-
 ## Known issues
 
 - Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
 recommend using [World Preview](https://modrinth.com/mod/world-preview).
-- World generation is not as fast as before because the new density functions
-are generally more complex. However, by using these Fabric mods you can still
-make generation way faster than vanilla:
+- World generation is not as fast as before (roughly 30% slower in my
+experience) because the new density functions are much more
+complex. However, by using these Fabric mods you can counterbalance the slowness:
     - [C2ME](https://modrinth.com/mod/c2me-fabric) (MAJOR performance boost, scales with CPU core count)
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
@@ -159,11 +143,14 @@ overwritten files along with descriptions what has been changed.
         - Also added an extra negative number to offset to make the sea align correctly
         - Also "squashed" the offset function to 0.75 of its original height,
         without this hills would be too tall (looks silly)
-        - Also added `extra_offset` (smooth continental hills) on top of vanilla offset
+        - Also added `extra_offset` (continental slopes) on top of vanilla offset
     - `sloped_cheese` was been modified
         - Changed "jaggedness" scale
         - Injected "dunes" noise
-        - Added an extra "factor-factor" that reduces factor at mushroom islands (making terrain weirder)
+        - Added an extra "factor-factor" that reduces factor at mushroom islands and increases it at windswept terrain 
+- `cave` and `cave_extra_underground` carvers modified
+- Ancient cities modified to move them further down and make them a bit rarer
+since mountains are more common.
 
 # Special thanks to
 
@@ -174,17 +161,18 @@ for several changes.
 - jacobsjo, creator of [Saddle Valley Rivers](https://www.planetminecraft.com/data-pack/saddle-valley-rivers-canyons-and-underground-rivers-1-18-2-only/)
 - devpelux, creator of [X-Mountains](https://modrinth.com/datapack/xmountains)
 - Apollo, creator of [Deeper oceans](https://modrinth.com/datapack/deeper-oceans) and [Tectonic](https://modrinth.com/datapack/tectonic)
+- Klinbee, creator of [More Density Functions](https://modrinth.com/mod/more-density-functions)
 
 # Footnotes
 
 All pictures in this readme and on the modrinth page were taken using the
-[Distant Horizons](https://modrinth.com/mod/distanthorizons) mod.
+[Distant Horizons](https://modrinth.com/mod/distanthorizons) mod to see very far.
 
 Larion is licensed under Apache 2.0, meaning you are free to modify and use the
 pack as you wish. You can freely use any individual parts in your own
-datapack. However, if you choose to redistribute Larion, please be sure to
+mod or datapack. However, if you choose to redistribute Larion, please be sure to
 include the copyright (LICENSE.md) file, a link to this page and also state any
-significant changes made to the datapack.
+significant changes made.
 
 The current version took about a month of precious free time to make.
 If you like the project and want to send me a donation, here is a Paypal link:
