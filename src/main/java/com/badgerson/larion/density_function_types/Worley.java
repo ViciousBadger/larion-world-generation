@@ -63,11 +63,6 @@ public record Worley(double warpScale, double warpAmount, double xzScale, double
 
     @Override
     public double sample(NoisePos pos) {
-        // if (sampler != null) {
-        // Larion.LOGGER.info("Sampler is here");
-        // } else {
-        // Larion.LOGGER.info("Sampler not is here");
-        // }
         return sampler == null ? 0.0 : sampler.evaluateNoise(pos.blockX(), pos.blockY(), pos.blockZ());
     }
 

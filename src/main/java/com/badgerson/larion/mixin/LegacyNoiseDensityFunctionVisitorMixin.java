@@ -20,7 +20,7 @@ public class LegacyNoiseDensityFunctionVisitorMixin {
         if (densityFunction instanceof Worley worley) {
                 var seed = NoiseConfigSeedHelper.LAST_SEED;
 
-            Larion.LOGGER.info("worley is found, and last seed is " + seed);
+            Larion.LOGGER.info("Worley noise has been seeded with " + seed);
             ci.setReturnValue(new Worley(worley.warpScale(), worley.warpAmount(), worley.xzScale(), worley.yScale(),
                     worley.createSampler(seed)));
 
