@@ -48,7 +48,8 @@ public record Worley(double warpScale, double warpAmount, double xzScale, double
     }
 
     public JNoise createSampler(long seed) {
-        var domainWarp = JNoise.newBuilder().setNoiseSource(FastSimplexNoiseGenerator.newBuilder()).scale(warpScale);
+        var domainWarp = JNoise.newBuilder().setNoiseSource(FastSimplexNoiseGenerator.newBuilder())
+                .addSimpleTransformer(new ScaleTransformer(1.0 / xzScale, 1.0 / yScale, 1.0 / xzScale, 1.0)).scale(warpScale);
         return JNoise.newBuilder()
                 .worley(WorleyNoiseGenerator.newBuilder().setSeed(seed).setDepth(3)
                         .setDistanceFunction(DistanceFunctionType.EUCLIDEAN_SQUARED)
@@ -63,9 +64,9 @@ public record Worley(double warpScale, double warpAmount, double xzScale, double
     @Override
     public double sample(NoisePos pos) {
         // if (sampler != null) {
-        //     Larion.LOGGER.info("Sampler is here");
+        // Larion.LOGGER.info("Sampler is here");
         // } else {
-        //     Larion.LOGGER.info("Sampler not is here");
+        // Larion.LOGGER.info("Sampler not is here");
         // }
         return sampler == null ? 0.0 : sampler.evaluateNoise(pos.blockX(), pos.blockY(), pos.blockZ());
     }

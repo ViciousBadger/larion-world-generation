@@ -1,15 +1,21 @@
 {
-  "type": "minecraft:mul",
-  "argument1": -8,
-  "argument2": {
-    "type": "minecraft:add",
-    "argument1": -0.85561,
+  "type": "minecraft:clamp",
+  "input": {
+    "type": "minecraft:mul",
+    "argument1": -4,
     "argument2": {
-      "type": "larion:worley",
-      "warp_scale": 1.116018234,
-      "warp_amount": 0.2412894895,
-      "xz_scale": 0.0055718,
-      "y_scale": 0.0223701
+      "type": "minecraft:add",
+      "argument1": -0.74,
+      "argument2": {
+        "type": "larion:worley",
+        "warp_scale": 0.018,
+        "warp_amount": 0.5,
+        "xz_scale": 0.015,
+        "y_scale": 0.025
+      }
     }
-  }
+  },
+  "min": -1.0,
+  "max": 1.0
 }
+
