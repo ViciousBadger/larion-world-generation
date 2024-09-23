@@ -6,15 +6,20 @@
       {
         "location": -128,
         "derivative": 0.0,
-        "value": -0.16
+        "value": -0.32
       },
       {
         "location": -64,
         "derivative": 0.0,
-        "value": 0.35
+        "value": 0.27
       },
       {
         "location": 0,
+        "derivative": 0.0,
+        "value": 0.35
+      },
+      {
+        "location": 64,
         "derivative": 0.0,
         "value": 0.45
       }
