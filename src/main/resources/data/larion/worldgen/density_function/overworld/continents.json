@@ -17,12 +17,12 @@
           "coordinate": "larion:overworld/erosion/swamps_base",
           "points": [
             {
-              "location": 0.16,
+              "location": 0.28,
               "derivative": 0,
               "value": -1.2
             },
             {
-              "location": 0.17,
+              "location": 0.30,
               "derivative": 0,
               "value": -0.75
             }
