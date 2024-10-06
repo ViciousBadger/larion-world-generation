@@ -65,12 +65,12 @@
           {
             "derivative": 0.0,
             "location": 0.9,
-            "value": 0.40
+            "value": 0.50
           },
           {
             "derivative": 0.0,
             "location": 1.0,
-            "value": 0.44
+            "value": 0.54
           }
         ]
       }
