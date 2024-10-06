@@ -57,40 +57,12 @@
       {
         "location": 0.9,
         "derivative": 2.0,
-        "value": {
-          "coordinate": "larion:overworld/ridges/rivers",
-          "points": [
-            {
-              "location": 0.0,
-              "derivative": 0,
-              "value": 0.3
-            },
-            {
-              "location": 0.5,
-              "derivative": 0,
-              "value": 0.5
-            }
-          ]
-        }
+        "value": 0.5
       },
       {
         "location": 1.2,
         "derivative": 0.35,
-        "value": {
-          "coordinate": "larion:overworld/ridges/rivers",
-          "points": [
-            {
-              "location": 0.0,
-              "derivative": 0,
-              "value": 0.5
-            },
-            {
-              "location": 0.5,
-              "derivative": 0,
-              "value": 1.0
-            }
-          ]
-        }
+        "value": 1.0
       }
     ]
   }
