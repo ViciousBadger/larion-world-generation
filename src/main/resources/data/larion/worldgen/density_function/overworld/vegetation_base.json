@@ -5,7 +5,7 @@
     "argument": {
       "type": "minecraft:noise",
       "noise": "larion:vegetation/wetness",
-      "xz_scale": 0.25,
+      "xz_scale": 0.24,
       "y_scale": 0
     }
   },
@@ -16,10 +16,10 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:vegetation/dryness",
-        "xz_scale": 0.35,
+        "xz_scale": 0.28,
         "y_scale": 0
       }
     },
-    "argument2": -0.75
+    "argument2": -1.0
   }
 }
