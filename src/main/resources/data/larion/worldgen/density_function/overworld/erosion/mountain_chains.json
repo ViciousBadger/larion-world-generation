@@ -15,7 +15,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:erosion/mountain_chains_a",
-                "xz_scale": 0.24,
+                "xz_scale": 0.20,
                 "y_scale": 0.0
               }
             },
@@ -24,7 +24,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:erosion/mountain_chains_b",
-                "xz_scale": 0.24,
+                "xz_scale": 0.20,
                 "y_scale": 0.0
               }
             }
@@ -37,12 +37,12 @@
             "value": 0.8
           },
           {
-            "location": 0.2,
+            "location": 0.14,
             "derivative": 0.0,
-            "value": 0.65
+            "value": 0.45
           },
           {
-            "location": 0.3,
+            "location": 0.34,
             "derivative": 0.0,
             "value": 0.0
           },
