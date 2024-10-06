@@ -5,12 +5,12 @@
     "argument1": -4,
     "argument2": {
       "type": "minecraft:add",
-      "argument1": -0.733,
+      "argument1": -0.689,
       "argument2": {
         "type": "larion:worley",
         "warp_scale": 0.02123,
         "warp_amount": 0.55,
-        "xz_scale": 0.015142,
+        "xz_scale": 0.012142,
         "y_scale": 0.0278234
       }
     }
