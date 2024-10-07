@@ -13,7 +13,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:erosion/swamps_a",
-              "xz_scale": 0.5,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           },
@@ -22,7 +22,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:erosion/swamps_b",
-              "xz_scale": 0.65,
+              "xz_scale": 0.325,
               "y_scale": 0
             }
           }
