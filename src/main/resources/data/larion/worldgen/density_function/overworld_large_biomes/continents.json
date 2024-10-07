@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:abs",
+        "argument": "larion:overworld_large_biomes/continents/shapes"
+      },
+      "argument2": "larion:overworld_large_biomes/continents/variation"
+    },
+    "points": [
+      {
+        "location": 0.0,
+        "derivative": 0.0,
+        "value": {
+          "coordinate": "larion:overworld_large_biomes/erosion/swamps_base",
+          "points": [
+            {
+              "location": 0.28,
+              "derivative": 0,
+              "value": -1.2
+            },
+            {
+              "location": 0.30,
+              "derivative": 0,
+              "value": -0.75
+            }
+          ]
+        }
+      },
+      {
+        "location": 0.16,
+        "derivative": 0.0,
+        "value": -0.75
+      },
+      {
+        "location": 0.38,
+        "derivative": 0.0,
+        "value": -0.35
+      },
+      {
+        "location": 0.46,
+        "derivative": 0.0,
+        "value": -0.24
+      },
+      {
+        "location": 0.48,
+        "derivative": 2.0,
+        "value": -0.18
+      },
+      {
+        "location": 0.7,
+        "derivative": 1.0,
+        "value": 0.3
+      },
+      {
+        "location": 0.9,
+        "derivative": 2.0,
+        "value": 0.5
+      },
+      {
+        "location": 1.2,
+        "derivative": 0.35,
+        "value": 1.0
+      }
+    ]
+  }
+}

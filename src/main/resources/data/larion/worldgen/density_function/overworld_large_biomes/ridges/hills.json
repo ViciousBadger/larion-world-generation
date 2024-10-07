@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "larion:overworld_large_biomes/ridges/hills_base",
+    "points": [
+      {
+        "location": 0.0,
+        "derivative": 0.0,
+        "value": 0.0
+      },
+      {
+        "location": 0.2,
+        "derivative": 0.0,
+        "value": 0.2
+      },
+      {
+        "location": 0.4,
+        "derivative": 0.0,
+        "value": 0.8
+      },
+      {
+        "location": 1.0,
+        "derivative": 0.0,
+        "value": 1.0
+      }
+    ]
+  }
+}

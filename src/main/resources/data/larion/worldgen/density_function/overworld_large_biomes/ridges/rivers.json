@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:abs",
+        "argument": "larion:overworld_large_biomes/ridges/rivers_base"
+      },
+      "points": [
+        {
+          "location": 0.0,
+          "derivative": 0.0,
+          "value": 0.0
+        },
+        {
+          "location": 0.08,
+          "derivative": 2.0,
+          "value": 0.3
+        },
+        {
+          "location": 1.0,
+          "derivative": 0.0,
+          "value": 1.0
+        }
+      ]
+    }
+  }
+}

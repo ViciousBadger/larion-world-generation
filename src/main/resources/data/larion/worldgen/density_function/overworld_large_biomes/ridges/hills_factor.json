@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "larion:overworld_large_biomes/temperature",
+    "points": [
+      {
+        "derivative": 0.0,
+        "location": 0.15,
+        "value": 1.0
+      },
+      {
+        "derivative": 0.0,
+        "location": 0.25,
+        "value": 0.0
+      },
+      {
+        "derivative": 0.0,
+        "location": 0.50,
+        "value": 0.0
+      },
+      {
+        "derivative": 0.0,
+        "location": 0.60,
+        "value": 1.0
+      }
+    ]
+  }
+}
