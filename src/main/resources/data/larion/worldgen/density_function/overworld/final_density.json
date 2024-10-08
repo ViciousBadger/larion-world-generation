@@ -58,8 +58,7 @@
                           "type": "minecraft:max",
                           "argument1": {
                             "type": "minecraft:min",
-                            "argument1": "larion:overworld/caves/worley",
-                            "argument2": {
+                            "argument1": {
                               "type": "minecraft:min",
                               "argument1": {
                                 "type": "minecraft:add",
@@ -109,11 +108,12 @@
                                   }
                                 }
                               },
-                              "argument2": {
-                                "type": "minecraft:add",
-                                "argument1": "minecraft:overworld/caves/spaghetti_2d",
-                                "argument2": "minecraft:overworld/caves/spaghetti_roughness_function"
-                              }
+                              "argument2": "minecraft:overworld/caves/entrances"
+                            },
+                            "argument2": {
+                              "type": "minecraft:add",
+                              "argument1": "minecraft:overworld/caves/spaghetti_2d",
+                              "argument2": "minecraft:overworld/caves/spaghetti_roughness_function"
                             }
                           },
                           "argument2": {
