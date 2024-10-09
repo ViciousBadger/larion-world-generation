@@ -46,32 +46,17 @@
       },
       "points": [
         {
-          "location": -1.0,
-          "derivative": 0.0,
-          "value": 1.5
-        },
-        {
           "location": 0.0,
-          "derivative": 0.0,
+          "derivative": -5.0,
           "value": 1.0
         },
         {
-          "location": 0.07,
+          "location": 0.42,
           "derivative": 0.0,
-          "value": 0.75
+          "value": -0.5
         },
         {
-          "location": 0.14,
-          "derivative": 0.0,
-          "value": 0.22
-        },
-        {
-          "location": 0.32,
-          "derivative": 0.0,
-          "value": -0.1
-        },
-        {
-          "location": 0.77,
+          "location": 0.52,
           "derivative": 0.0,
           "value": -2.0
         }
