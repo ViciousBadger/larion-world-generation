@@ -1,7 +1,20 @@
 {
-  "type": "minecraft:mul",
+  "type": "minecraft:add",
   "argument1": {
-    "type": "larion:z"
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "larion:z"
+    },
+    "argument2": 0.0003333333333
   },
-  "argument2": 0.0003333333333
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:noise",
+      "noise": "larion:temperature_major_shift",
+      "xz_scale": 0.25,
+      "y_scale": 0
+    },
+    "argument2": 12.0
+  }
 }
