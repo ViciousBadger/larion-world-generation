@@ -6,18 +6,18 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:erosion/windswept",
-        "xz_scale": 0.5,
+        "xz_scale": 0.28,
         "y_scale": 0
       }
     },
     "points": [
       {
-        "location": 0.3,
+        "location": 0.28,
         "derivative": 0,
         "value": -1.5
       },
       {
-        "location": 0.5,
+        "location": 0.52,
         "derivative": 0,
         "value": 0.45
       },
