@@ -30,15 +30,22 @@
     "final_density": "larion:overworld/final_density",
     "fluid_level_floodedness": {
       "type": "range_choice",
-      "min_inclusive": -1.2,
-      "max_exclusive": -0.3,
-      "input": "larion:overworld/caves/river_noodle_flood",
-      "when_in_range": 1,
+      "min_inclusive": 0.5,
+      "max_exclusive": 1.0,
+      "input": "larion:overworld/caves/lava_river_flood",
+      "when_in_range": -10.0,
       "when_out_of_range": {
-        "type": "noise",
-        "noise": "minecraft:aquifer_fluid_level_floodedness",
-        "xz_scale": 1,
-        "y_scale": 0.67
+        "type": "range_choice",
+        "min_inclusive": -1.2,
+        "max_exclusive": -0.3,
+        "input": "larion:overworld/caves/river_noodle_flood",
+        "when_in_range": 1,
+        "when_out_of_range": {
+          "type": "noise",
+          "noise": "minecraft:aquifer_fluid_level_floodedness",
+          "xz_scale": 1,
+          "y_scale": 0.67
+        }
       }
     },
     "fluid_level_spread": {
