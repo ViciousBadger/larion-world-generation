@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:abs",
+        "argument": "larion:overworld/caves/lava_rivers_base"
+      },
+      "points": [
+        {
+          "location": 0.0,
+          "derivative": 0.0,
+          "value": 1.0
+        },
+        {
+          "location": 0.05,
+          "derivative": -2.0,
+          "value": 0.9
+        },
+        {
+          "location": 1.0,
+          "derivative": 0.0,
+          "value": 0.0
+        }
+      ]
+    }
+  }
+}

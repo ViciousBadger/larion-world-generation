@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": 32,
+      "argument2": {
+        "type": "minecraft:noise",
+        "noise": "larion:caves/lava_river_noodle_height",
+        "xz_scale": 0.6,
+        "y_scale": 0
+      }
+    },
+    "argument2": 96
+  }
+}
