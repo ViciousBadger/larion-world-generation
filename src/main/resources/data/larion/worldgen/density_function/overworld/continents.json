@@ -13,22 +13,36 @@
       {
         "location": 0.0,
         "derivative": 0.0,
-        "value": -1.2
+        "value": {
+          "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "larion:shroomness",
+            "xz_scale": 0.25,
+            "y_scale": 0
+          },
+          "points": [
+            {
+              "location": 0.4,
+              "derivative": 0.0,
+              "value": -0.95
+            },
+            {
+              "location": 0.5,
+              "derivative": 0.0,
+              "value": -1.35
+            }
+          ]
+        }
       },
       {
-        "location": 0.06,
+        "location": 0.20,
         "derivative": 0.0,
-        "value": -0.95
-      },
-      {
-        "location": 0.16,
-        "derivative": 0.0,
-        "value": -0.75
+        "value": -0.85
       },
       {
         "location": 0.38,
         "derivative": 0.0,
-        "value": -0.35
+        "value": -0.42
       },
       {
         "location": 0.48,
