@@ -13,7 +13,26 @@
       {
         "location": 0.0,
         "derivative": 0.0,
-        "value": -1.0
+        "value": {
+          "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "larion:shroomness",
+            "xz_scale": 0.15,
+            "y_scale": 0
+          },
+          "points": [
+            {
+              "location": 0.5,
+              "derivative": 0.0,
+              "value": -0.95
+            },
+            {
+              "location": 0.55,
+              "derivative": 0.0,
+              "value": -1.35
+            }
+          ]
+        }
       },
       {
         "location": 0.18,
