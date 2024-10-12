@@ -38,12 +38,16 @@
           }
         },
         "argument2": {
-          "type": "minecraft:abs",
-          "argument": {
-            "type": "minecraft:noise",
-            "noise": "larion:continents/scattered",
-            "xz_scale": 0.25,
-            "y_scale": 0
+          "type": "minecraft:add",
+          "argument1": 0.25,
+          "argument2": {
+            "type": "minecraft:abs",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "larion:continents/scattered",
+              "xz_scale": 0.25,
+              "y_scale": 0
+            }
           }
         }
       }
