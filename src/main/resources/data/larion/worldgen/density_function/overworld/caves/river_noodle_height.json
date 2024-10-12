@@ -23,7 +23,12 @@
             "value": 32
           },
           {
-            "location": -0.0,
+            "location": -0.5,
+            "value": 96,
+            "derivative": 400
+          },
+          {
+            "location": -0.4,
             "derivative": 0.0,
             "value": 128
           }
