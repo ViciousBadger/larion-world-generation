@@ -1,48 +1,25 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:abs",
     "argument": {
-      "type": "minecraft:add",
-      "argument1": "larion:overworld/vegetation_base",
-      "argument2": {
-        "type": "minecraft:spline",
-        "spline": {
-          "coordinate": "larion:overworld/temperature",
-          "points": [
-            {
-              "location": -1.0,
-              "derivative": 3.0,
-              "value": -0.4
-            },
-            {
-              "location": -0.8,
-              "derivative": 0.0,
-              "value": -0.2
-            },
-            {
-              "location": -0.3,
-              "derivative": 0.0,
-              "value": 0.0
-            },
-            {
-              "location": -0.15,
-              "derivative": 0.0,
-              "value": 0.0
-            },
-            {
-              "location": 0.45,
-              "derivative": 0.0,
-              "value": -0.3
-            },
-            {
-              "location": 0.7,
-              "derivative": 0.0,
-              "value": 0.2
-            }
-          ]
-        }
-      }
+      "type": "minecraft:noise",
+      "noise": "larion:vegetation/wetness",
+      "xz_scale": 0.24,
+      "y_scale": 0
     }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:abs",
+      "argument": {
+        "type": "minecraft:noise",
+        "noise": "larion:vegetation/dryness",
+        "xz_scale": 0.28,
+        "y_scale": 0
+      }
+    },
+    "argument2": -1.0
   }
 }
