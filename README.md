@@ -2,12 +2,13 @@
 
 # Larion, for Minecraft 1.19.2-1.21.1
 
-Larion is a major overhaul of the overworld generation in Minecraft that
-drastically alters terrain shapes and biome placement.
+Larion overhauls the overworld generation in Minecraft by
+drastically altering terrain shapes and biome placement.
 
-I wanted the terrain to be more visually stunning, reminiscent of what you'd
-find in epic fantasy worldbuilding, while still being small-scale and unpredictable
-enough to be interesting to explore in survival mode.
+The world is larger in scale, more unpredictable and often more mountainous,
+reminiscent of what you'd find in epic fantasy worldbuilding. I tried my best to
+strike a balance between large- and small-scale features so that the worlds
+generated feel vast, but are still interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
 with most biome overhauls. See below for a list of compability notes
@@ -15,42 +16,24 @@ and potential solutions.
 
 ## Features
 
-- The world is split into large continents with plenty of smaller islands in-between. Continent sizes and
-shapes vary wildly.
+- The world is split into large continents with plenty of smaller islands in-between.
 - Temperature changes as you move north or south (z-axis).
     - If you travel far enough, it wraps back around.
     - Travelling east or west lets you stay in roughly the same temperature.
-    - "Tropical" biomes (jungle, savanna etc) generate at the "equator" meaning
-    at the highest temperature zones.
-- Mountains form large "chains" roughly similar to continental plates in real life.
-    - They are also taller, usually between 200 and 300 blocks in height, but in rare cases even higher.
-    - Jagged peaks are less "jagged" than usual, shaped more like real mountains.
+    - Tropical and subtropical temperature zones have been "swapped".
+- Mountains form large "chains" while often being broader and taller than vanilla.
 - World height is increased from 384 to 512 to fit the taller mountains and deeper caves
-    - Build height limit is 384.
-    - Lowest point is -128.
-- Terrain slopes gently upwards as you go further
-inland, on top of plenty small-scale height variations everywhere.
-- Smaller biomes with less predictable shapes and placement.
+    - Build height limit is 384, lowest point is -128.
+- An extra layer of gentle slopes on top of vanilla "offset" that makes flat areas sligthly hilly.
+- Less predictable biome shapes and placement.
     - "Humidity" zones are weirder, sometimes small, sometimes large.
-    - Swamps and mangroves can only appear along coasts and rivers.
+    - Swamps and mangroves can only appear near sea level (coasts and rivers).
     - Windswept terrain is more common and can appear anywhere.
 - Long, winding rivers that carve though terrain.
-    - In low terrain they form "saddle valleys"
-    - In tall terrain they will keep flowing as underground rivers.
     - Sometimes rivers form strange "knots" that look like lakes.
+    - Large lava rivers also flow near the bedrock layer..
 - Mushroom islands are more common, smaller and oddly shaped.
-- Caves are deeper and stranger.
-    - They use a different kind of noise, directly inspired by the abandoned
-    "Worley's Caves" mod.
-    - Caves are extremely labyrinthian and dead ends are common. Mostly narrow
-    paths and mid-sized chambers.. unless you venture deep enough..
-- Numerous smaller tweaks
-    - Dunes in desert biomes
-    - Less ugly cliffs at coastlines
-    - Less taiga in frozen zones
-    - More jungle in tropical zones
-    - Badlands mountains have plateaus instead of peaks
-    - Probably more..!
+- Numerous smaller tweaks!
 
 ## Known issues
 
@@ -60,7 +43,7 @@ recommend using [World Preview](https://modrinth.com/mod/world-preview).
 - World generation is not as fast as before (roughly 30% slower in my
 experience) because the new density functions are much more
 complex. However, by using these Fabric mods you can counterbalance the slowness:
-    - [C2ME](https://modrinth.com/mod/c2me-fabric) (MAJOR performance boost, scales with CPU core count)
+    - [C2ME](https://modrinth.com/mod/c2me-fabric) (Biggest performance boost, but can be unstable)
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
     - [FerriteCore](https://modrinth.com/mod/ferrite-core)
@@ -128,11 +111,12 @@ overwritten files along with descriptions what has been changed.
     - Changed `height` and `logical_height` to 512
 - `worldgen/noise_settings/overworld.json`
     - Changed `noise/height` to 512
-    - Two changes inside the giant `final_density` function
+    - Several changes inside the giant `final_density` function
         - Modified the `y_clamped_gradient` that previously limited mountain height
-          to 240-256 to be at 420-447
-        - Inject the `larion:overworld/river_noodle` density function inside/near `blend_density`
-    - Changed `fluid_level_floodedness` and `fluid_level_spread` using `larion:overworld/river_noodle_flood` to make sure river caves are always "flooded" (full of water at sea level)
+          to 240-256 to be at 420-447 (in `final_density` and
+        `initial_density_without_jaggedness`
+        - Inject the `larion:overworld/river_noodle` and `larion:overworld/caves/lava_river_noodle` density functions to `final_density` to make rivers carve and generate lava rivers.
+    - Changed `fluid_level_floodedness` and `fluid_level_spread` using `larion:overworld/river_noodle_flood` to make sure river caves are always "flooded" (full of water at sea level) and also remove most aquifers near lava rivers.
     - Changed `temperature` and `vegetation` to point at my own density
     functions instead of inline code
 - Six density functions in `worldgen/density_functions/overworld` have been overwritten
@@ -148,9 +132,7 @@ overwritten files along with descriptions what has been changed.
         - Changed "jaggedness" scale
         - Injected "dunes" noise
         - Added an extra "factor-factor" that reduces factor at mushroom islands and increases it at windswept terrain 
-- `cave` and `cave_extra_underground` carvers modified
-- Ancient cities modified to move them further down and make them a bit rarer
-since mountains are more common.
+- `entrances`, `noodle` and `spaghetti_2d` caves were modified
 
 # Special thanks to
 
@@ -174,7 +156,7 @@ mod or datapack. However, if you choose to redistribute Larion, please be sure t
 include the copyright (LICENSE.md) file, a link to this page and also state any
 significant changes made.
 
-The current version took about a month of precious free time to make.
+The current version took several months of precious free time to make.
 If you like the project and want to send me a donation, here is a Paypal link:
 
 https://www.paypal.com/donate/?hosted_button_id=L2WKHTDJ4DANU
