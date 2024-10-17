@@ -1,22 +1,36 @@
 {
   "type": "minecraft:spline",
   "spline": {
-    "coordinate": "larion:overworld/ridges/hills_base",
+    "coordinate": "minecraft:overworld/erosion",
     "points": [
       {
-        "location": 0.0,
-        "derivative": 0.0,
-        "value": 0.0
-      },
-      {
-        "location": 0.6,
-        "derivative": 0.0,
-        "value": 0.8
-      },
-      {
-        "location": 1.0,
+        "location": -1.0,
         "derivative": 0.0,
         "value": 1.0
+      },
+      {
+        "location": -0.72,
+        "derivative": 0.0,
+        "value": {
+          "coordinate": "larion:overworld/ridges/hills_base",
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": 0.0,
+              "value": 0.0
+            },
+            {
+              "location": 0.6,
+              "derivative": 0.0,
+              "value": 0.8
+            },
+            {
+              "location": 1.0,
+              "derivative": 0.0,
+              "value": 1.0
+            }
+          ]
+        }
       }
     ]
   }
