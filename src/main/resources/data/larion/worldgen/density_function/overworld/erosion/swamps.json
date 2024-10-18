@@ -39,12 +39,12 @@
           "coordinate": "minecraft:overworld/continents",
           "points": [
             {
-              "location": -0.18,
+              "location": 0.14,
               "derivative": 0,
               "value": 1.0
             },
             {
-              "location": 0.1,
+              "location": 0.24,
               "derivative": 0,
               "value": {
                 "coordinate": "larion:overworld/ridges/rivers",
