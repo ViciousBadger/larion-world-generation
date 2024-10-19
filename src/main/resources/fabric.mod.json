@@ -31,6 +31,7 @@
   "accessWidener": "larion.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.16.5",
+		"fabric-api": "*",
 		"minecraft": "~1.21.1",
 		"java": ">=21"
 	},
