@@ -30,7 +30,7 @@
     "final_density": "larion:overworld/final_density",
     "fluid_level_floodedness": {
       "type": "range_choice",
-      "min_inclusive": 0.5,
+      "min_inclusive": 0.35,
       "max_exclusive": 1.0,
       "input": "larion:overworld/caves/lava_river_flood",
       "when_in_range": -10.0,
