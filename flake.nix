@@ -20,9 +20,9 @@
 
       devShells.default = pkgs.mkShell rec {
         buildInputs = with pkgs; [
-          jdk21
+          jdk17
           libGL
-          (jdt-language-server.override { jdk = jdk21; })
+          (jdt-language-server.override { jdk = jdk17; })
         ];
         LD_LIBRARY_PATH = "${nixpkgs.lib.makeLibraryPath buildInputs}";
         # LD_LIBRARY_PATH="/run/opengl-driver/lib:/run/opengl-driver-32/lib";
