@@ -1,20 +1,100 @@
 {
-  "type": "minecraft:min",
-  "argument1": {
-    "type": "minecraft:mul",
-    "argument1": "larion:overworld/erosion/mountain_chains",
-    "argument2": -1.0
-  },
-  "argument2": {
-    "type": "minecraft:max",
-    "argument1": "larion:overworld/erosion/windswept",
-    "argument2": {
-      "type": "minecraft:range_choice",
-      "input": "larion:overworld/erosion/swamps",
-      "min_inclusive": 0.40,
-      "max_exclusive": 0.60,
-      "when_in_range": 0.40,
-      "when_out_of_range": "larion:overworld/erosion/swamps"
-    }
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "larion:overworld/mountain_chains",
+    "points": [
+      {
+        "location": 0.0,
+        "derivative": -1.0,
+        "value": -0.95
+      },
+      {
+        "location": 0.17,
+        "derivative": -0.3,
+        "value": -0.5
+      },
+      {
+        "location": 0.27,
+        "derivative": -0.2,
+        "value": -0.32
+      },
+      {
+        "location": 0.32,
+        "derivative": -0.2,
+        "value": -0.28
+      },
+      {
+        "location": 0.55,
+        "derivative": 0.0,
+        "value": {
+          "coordinate": "larion:overworld/erosion/swamps",
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": 0.0,
+              "value": {
+                "coordinate": "larion:overworld/erosion/windswept",
+                "points": [
+                  {
+                    "location": 0.0,
+                    "derivative": 0.0,
+                    "value": 0.2
+                  },
+                  {
+                    "location": 0.125,
+                    "derivative": 0.0,
+                    "value": 0.45
+                  },
+                  {
+                    "location": 1.0,
+                    "derivative": 0.0,
+                    "value": 0.54
+                  }
+                ]
+              }
+            },
+            {
+              "location": 0.4,
+              "derivative": 0.0,
+              "value": {
+                "coordinate": "larion:overworld/erosion/windswept",
+                "points": [
+                  {
+                    "location": 0.0,
+                    "derivative": 0.0,
+                    "value": 0.2
+                  },
+                  {
+                    "location": 0.125,
+                    "derivative": 0.0,
+                    "value": 0.45
+                  },
+                  {
+                    "location": 1.0,
+                    "derivative": 0.0,
+                    "value": 0.54
+                  }
+                ]
+              }
+            },
+            {
+              "location": 0.4999,
+              "derivative": 0.0,
+              "value": 0.40
+            },
+            {
+              "location": 0.5,
+              "derivative": 0.0,
+              "value": 0.65
+            },
+            {
+              "location": 1.0,
+              "derivative": 0.0,
+              "value": 1.0
+            }
+          ]
+        }
+      }
+    ]
   }
 }
