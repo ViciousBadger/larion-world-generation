@@ -12,9 +12,9 @@
       "argument1": 0.33,
       "argument2": {
         "type": "minecraft:mul",
-        "argument1": 0.33,
+        "argument1": "larion:overworld/ridges/peak_scale",
         "argument2": {
-            "type": "minecraft:spline",
+          "type": "minecraft:spline",
           "spline": {
             "coordinate": "larion:overworld/mountain_chains",
             "points": [
