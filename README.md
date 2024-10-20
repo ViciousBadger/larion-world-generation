@@ -1,6 +1,6 @@
 ![Banner](images/banner.jpg)
 
-# Larion, for Minecraft 1.19.2-1.21.1
+# Larion, for Minecraft 1.20-1.21.1
 
 Larion overhauls the overworld generation in Minecraft by
 drastically altering terrain shapes and biome placement.
