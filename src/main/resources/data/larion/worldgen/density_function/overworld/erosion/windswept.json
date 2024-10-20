@@ -1,32 +1,12 @@
 {
-  "type": "minecraft:mul",
-  "argument1": "larion:overworld/erosion/windswept_base",
-  "argument2": {
-    "type": "minecraft:spline",
-    "spline": {
-      "coordinate": "larion:overworld/temperature",
-      "points": [
-        {
-          "location": 0.15,
-          "derivative": 0,
-          "value": 1.0
-        },
-        {
-          "location": 0.25,
-          "derivative": 0,
-          "value": 0.0
-        },
-        {
-          "location": 0.5,
-          "derivative": 0,
-          "value": 0.0
-        },
-        {
-          "location": 0.6,
-          "derivative": 0,
-          "value": 1.0
-        }
-      ]
+  "type": "minecraft:abs",
+  "argument": {
+    "type": "minecraft:square",
+    "argument": {
+      "type": "minecraft:noise",
+      "noise": "larion:erosion/windswept",
+      "xz_scale": 0.28,
+      "y_scale": 0
     }
   }
 }

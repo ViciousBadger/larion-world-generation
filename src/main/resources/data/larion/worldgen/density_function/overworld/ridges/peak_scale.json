@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "larion:overworld/temperature",
+      "points": [
+        {
+          "location": 0.15,
+          "derivative": 0,
+          "value": 0.33
+        },
+        {
+          "location": 0.25,
+          "derivative": 0,
+          "value": 0.24
+        },
+        {
+          "location": 0.45,
+          "derivative": 0,
+          "value": 0.24
+        },
+        {
+          "location": 0.65,
+          "derivative": 0,
+          "value": 0.30
+        }
+      ]
+    }
+  }
+}
