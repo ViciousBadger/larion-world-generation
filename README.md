@@ -9,7 +9,7 @@ The name is a reference to the "Kingdom of Larion" in AI Dungeon stories, a
 mysterious land with no pre-existing lore. In other words, it is a land where
 every story must be imagined by you.
 
-The world is more unpredictable, more mountainous and split into continents,
+The world is less predictable, more mountainous and split into continents,
 reminiscent of something you'd find in epic fantasy worldbuilding. I tried my
 best to strike a balance between large- and small-scale features so that the
 worlds generated feel vast, but are still interesting to explore in survival mode.
