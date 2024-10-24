@@ -49,12 +49,12 @@ Please note that the mod is still in active development, future updates are near
 - Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
 recommend using [World Preview](https://modrinth.com/mod/world-preview).
+- There are a lot of mountains and limited flat terrain. This is intentional. If
+you want more flat, look for areas far from mountain ranges and stay near the
+coastline.
 - World generation is not as fast as before (roughly 30% slower in my
 experience) because the new density functions are much more
 complex and the generated terrain is "taller".
-- There are a lot of mountains and limited flat terrain. This is intentional. If
-you want more flat, go for the areas between mountain ranges and stay near the
-coastline.
 By using these Fabric mods you can counterbalance the slowness:
     - [C2ME](https://modrinth.com/mod/c2me-fabric) (Biggest performance boost, but can be unstable)
     - [Noisium](https://modrinth.com/mod/noisium)
