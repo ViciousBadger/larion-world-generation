@@ -16,17 +16,36 @@
         "argument2": {
           "type": "minecraft:spline",
           "spline": {
-            "coordinate": "larion:overworld/ridges/peaks",
+            "coordinate": "larion:overworld/mountain_chains",
             "points": [
               {
-                "location": -0.0,
+                "location": 0.0,
                 "derivative": 0.0,
                 "value": 1.0
               },
               {
-                "location": 0.75,
+                "location": 0.15,
                 "derivative": 0.0,
-                "value": 0.0
+                "value": {
+                  "coordinate": "larion:overworld/ridges/peaks",
+                  "points": [
+                    {
+                      "location": -0.0,
+                      "derivative": 0.0,
+                      "value": 1.0
+                    },
+                    {
+                      "location": 0.25,
+                      "derivative": 0.0,
+                      "value": 0.2
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0.0,
+                      "value": 0.0
+                    }
+                  ]
+                }
               }
             ]
           }

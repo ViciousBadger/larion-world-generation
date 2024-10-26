@@ -4,7 +4,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": 0.24,
+      "argument1": 0.32,
       "argument2": {
         "type": "minecraft:abs",
         "argument": {
@@ -36,7 +36,7 @@
     },
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": 0.20,
+      "argument1": 0.24,
       "argument2": {
         "type": "minecraft:abs",
         "argument": {
@@ -71,7 +71,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": 0.14,
+      "argument1": 0.18,
       "argument2": {
         "type": "minecraft:abs",
         "argument": {
@@ -103,7 +103,7 @@
     },
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": 0.05,
+      "argument1": 0.00,
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:continents/fine",

@@ -19,7 +19,7 @@
         "value": -0.28
       },
       {
-        "location": 0.8,
+        "location": 0.7,
         "derivative": 0.0,
         "value": {
           "coordinate": "larion:overworld/erosion/swamps",

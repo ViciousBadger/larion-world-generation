@@ -4,7 +4,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": 24,
+      "argument1": 18,
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:caves/river_noodle_height",
@@ -18,19 +18,14 @@
         "coordinate": "minecraft:overworld/erosion",
         "points": [
           {
-            "location": -1.0,
+            "location": -0.7,
             "derivative": 0.0,
             "value": 32
           },
           {
-            "location": -0.5,
+            "location": -0.6,
             "derivative": 0.0,
-            "value": 48
-          },
-          {
-            "location": -0.35,
-            "derivative": 0.0,
-            "value": 128
+            "value": 196
           }
         ]
       }
