@@ -2,7 +2,7 @@
   "type": "minecraft:cache_once",
   "argument": {
     "type": "minecraft:mul",
-    "argument1": 0.45,
+    "argument1": 0.65,
     "argument2": {
       "type": "minecraft:add",
       "argument1": {

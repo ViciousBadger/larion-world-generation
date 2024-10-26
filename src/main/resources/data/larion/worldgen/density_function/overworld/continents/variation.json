@@ -103,7 +103,7 @@
     },
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": 0.00,
+      "argument1": 0.08,
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:continents/fine",
