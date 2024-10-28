@@ -2,7 +2,7 @@
   "type": "minecraft:mul",
   "argument1": {
     "type": "larion:signum",
-    "argument": "larion:overworld/continents/shapes"
+    "argument": "larion:overworld/ridges/rivers_base"
   },
   "argument2": {
     "type": "minecraft:spline",
@@ -18,7 +18,7 @@
           "value": 0.0
         },
         {
-          "location": 0.05,
+          "location": 0.04,
           "derivative": 2.0,
           "value": 0.05
         },

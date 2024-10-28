@@ -3,10 +3,7 @@
   "spline": {
     "coordinate": {
       "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:abs",
-        "argument": "larion:overworld/continents/shapes"
-      },
+      "argument1": "larion:overworld/continents/worleyshapes",
       "argument2": "larion:overworld/continents/variation"
     },
     "points": [
@@ -16,22 +13,22 @@
         "value": -1.2
       },
       {
-        "location": 0.12,
+        "location": 0.10,
         "derivative": 2.0,
         "value": -1
       },
       {
-        "location": 0.4,
-        "derivative": 0.36,
-        "value": -0.45
-      },
-      {
-        "location": 0.7,
-        "derivative": 0.5,
+        "location": 0.5,
+        "derivative": 1.5,
         "value": -0.15
       },
       {
-        "location": 4.0,
+        "location": 0.85,
+        "value": 0.6,
+        "derivative": 1.22
+      },
+      {
+        "location": 1.5,
         "derivative": 0.2,
         "value": 1.0
       }

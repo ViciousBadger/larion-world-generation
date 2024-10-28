@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:cube",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": 0.85,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": 1.0,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": -1.0,
+        "argument2": {
+          "type": "larion:worley",
+          "xz_scale": 0.0004,
+          "y_scale": 0.0,
+          "x_shift": {
+            "type": "minecraft:mul",
+            "argument1": 0.4,
+            "argument2": {
+              "type": "minecraft:noise",
+              "noise": "larion:continents/xoff",
+              "xz_scale": 0.25,
+              "y_scale": 0.0
+            }
+          },
+          "z_shift": {
+            "type": "minecraft:mul",
+            "argument1": 0.4,
+            "argument2": {
+              "type": "minecraft:noise",
+              "noise": "larion:continents/zoff",
+              "xz_scale": 0.25,
+              "y_scale": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}
