@@ -11,7 +11,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:ridges/peaks_a",
-            "xz_scale": 0.2,
+            "xz_scale": 0.25,
             "y_scale": 0.0
           }
         }
@@ -23,7 +23,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:ridges/peaks_b",
-            "xz_scale": 0.2,
+            "xz_scale": 0.25,
             "y_scale": 0.0
           }
         }

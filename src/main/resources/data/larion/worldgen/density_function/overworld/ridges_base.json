@@ -5,38 +5,62 @@
     "argument": "larion:overworld/continents/shapes"
   },
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": "larion:overworld/ridges/rivers",
-    "argument2": {
-      "type": "minecraft:add",
-      "argument1": 0.33,
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": 0.33,
-        "argument2": {
-          "type": "minecraft:spline",
-          "spline": {
-            "coordinate": "larion:overworld/mountain_chains",
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:abs",
+        "argument": "larion:overworld/ridges/rivers_base"
+      },
+      "points": [
+        {
+          "location": 0.0,
+          "derivative": 0.0,
+          "value": 0.0
+        },
+        {
+          "location": 0.05,
+          "derivative": 2.0,
+          "value": 0.05
+        },
+        {
+          "location": 0.3,
+          "derivative": 0.0,
+          "value": 0.33
+        },
+        {
+          "location": 1.0,
+          "derivative": 0.0,
+          "value": {
+            "coordinate": {
+              "type": "minecraft:abs",
+              "argument": "larion:overworld/ridges/peaks"
+            },
             "points": [
               {
                 "location": 0.0,
                 "derivative": 0.0,
-                "value": 1.0
+                "value": 0.66
               },
               {
-                "location": 0.38,
+                "location": 0.35,
                 "derivative": 0.0,
-                "value": 0.5
+                "value": 0.44
               },
               {
                 "location": 1.0,
                 "derivative": 0.0,
-                "value": 0.0
+                "value": 0.33
+              },
+              {
+                "location": 2.0,
+                "derivative": 0.0,
+                "value": 0.22
               }
+              
             ]
           }
         }
-      }
+      ]
     }
   }
 }
