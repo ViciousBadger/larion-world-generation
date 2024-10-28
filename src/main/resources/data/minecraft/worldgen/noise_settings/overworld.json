@@ -550,7 +550,7 @@
                             "type": "minecraft:y_above",
                             "add_stone_depth": true,
                             "anchor": {
-                              "absolute": 96
+                              "absolute": 74
                             },
                             "surface_depth_multiplier": 1
                           },
@@ -735,7 +735,7 @@
                                 "type": "minecraft:y_above",
                                 "add_stone_depth": true,
                                 "anchor": {
-                                  "absolute": 96
+                                  "absolute": 74
                                 },
                                 "surface_depth_multiplier": 1
                               }

@@ -4,7 +4,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": 0.32,
+      "argument1": 0.24,
       "argument2": {
         "type": "minecraft:abs",
         "argument": {
@@ -14,7 +14,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:continents/variation_a1",
-              "xz_scale": 0.35,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           },
@@ -26,7 +26,7 @@
               "argument2": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/variation_a2",
-                "xz_scale": 0.35,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             }
@@ -36,7 +36,7 @@
     },
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": 0.24,
+      "argument1": 0.12,
       "argument2": {
         "type": "minecraft:abs",
         "argument": {
@@ -46,7 +46,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:continents/variation_b1",
-              "xz_scale": 0.35,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           },
@@ -58,7 +58,7 @@
               "argument2": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/variation_b2",
-                "xz_scale": 0.35,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             }
@@ -68,47 +68,34 @@
     }
   },
   "argument2": {
-    "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": 0.18,
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:add",
-          "argument1": {
-            "type": "minecraft:square",
-            "argument": {
+    "type": "minecraft:mul",
+    "argument1": 0.06,
+    "argument2": {
+      "type": "minecraft:abs",
+      "argument": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "larion:continents/variation_c1",
+            "xz_scale": 0.25,
+            "y_scale": 0
+          }
+        },
+        "argument2": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": {
               "type": "minecraft:noise",
-              "noise": "larion:continents/variation_c1",
-              "xz_scale": 0.35,
+              "noise": "larion:continents/variation_c2",
+              "xz_scale": 0.25,
               "y_scale": 0
-            }
-          },
-          "argument2": {
-            "type": "minecraft:square",
-            "argument": {
-              "type": "minecraft:mul",
-              "argument1": -1.0,
-              "argument2": {
-                "type": "minecraft:noise",
-                "noise": "larion:continents/variation_c2",
-                "xz_scale": 0.35,
-                "y_scale": 0
-              }
             }
           }
         }
-      }
-    },
-    "argument2": {
-      "type": "minecraft:mul",
-      "argument1": 0.08,
-      "argument2": {
-        "type": "minecraft:noise",
-        "noise": "larion:continents/fine",
-        "xz_scale": 0.25,
-        "y_scale": 0
       }
     }
   }

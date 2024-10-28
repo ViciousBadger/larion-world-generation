@@ -1,7 +1,7 @@
 {
   "type": "minecraft:spline",
   "spline": {
-    "coordinate": "larion:overworld/mountain_chains",
+    "coordinate": "larion:overworld/erosion/mountain_ranges",
     "points": [
       {
         "location": 0.0,
@@ -9,17 +9,17 @@
         "value": -1.0
       },
       {
-        "location": 0.28,
+        "location": 0.6,
         "derivative": 0.0,
         "value": -0.5
       },
       {
-        "location": 0.44,
+        "location": 0.8,
         "derivative": 0.0,
         "value": -0.28
       },
       {
-        "location": 0.7,
+        "location": 1.2,
         "derivative": 0.0,
         "value": {
           "coordinate": "larion:overworld/erosion/swamps",
@@ -73,12 +73,12 @@
               }
             },
             {
-              "location": 0.4999,
+              "location": 0.5999,
               "derivative": 0.0,
               "value": 0.40
             },
             {
-              "location": 0.5,
+              "location": 0.6,
               "derivative": 0.0,
               "value": 0.65
             },
