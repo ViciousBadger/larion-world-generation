@@ -5,7 +5,7 @@
     "argument": {
       "type": "minecraft:noise",
       "noise": "larion:erosion/windswept",
-      "xz_scale": 0.28,
+      "xz_scale": 0.23,
       "y_scale": 0
     }
   }
