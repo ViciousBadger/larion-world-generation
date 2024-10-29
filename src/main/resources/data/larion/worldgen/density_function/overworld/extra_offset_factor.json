@@ -28,12 +28,12 @@
                 "points": [
                   {
                     "derivative": 0.0,
-                    "location": -0.6,
+                    "location": -0.375,
                     "value": 1.0
                   },
                   {
                     "derivative": 0.0,
-                    "location": -0.3,
+                    "location": -0.2225,
                     "value": {
                       "coordinate": "minecraft:overworld/ridges_folded",
                       "points": [
@@ -59,6 +59,40 @@
                         }
                       ]
                     }
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.45,
+                    "value": {
+                      "coordinate": "minecraft:overworld/ridges_folded",
+                      "points": [
+                        {
+                          "derivative": 0.0,
+                          "location": -1.0,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": -0.8,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 3.4,
+                          "location": -0.05,
+                          "value": 0.9
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 0.0,
+                          "value": 1.0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.55,
+                    "value": 0.0
                   }
                 ]
               }

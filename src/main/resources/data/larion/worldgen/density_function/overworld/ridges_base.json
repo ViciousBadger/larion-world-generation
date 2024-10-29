@@ -23,12 +23,17 @@
           "value": 0.05
         },
         {
-          "location": 0.3,
-          "derivative": 0.0,
-          "value": 0.33
+          "location": 0.11,
+          "derivative": 0.625,
+          "value": 0.12
         },
         {
-          "location": 1.0,
+          "location": 0.3,
+          "derivative": 0.3,
+          "value": 0.2
+        },
+        {
+          "location": 0.8,
           "derivative": 0.0,
           "value": {
             "coordinate": {
@@ -56,7 +61,6 @@
                 "derivative": 0.0,
                 "value": 0.22
               }
-              
             ]
           }
         }
