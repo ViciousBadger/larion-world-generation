@@ -11,7 +11,7 @@
           "type": "minecraft:square",
           "argument": {
             "type": "minecraft:noise",
-            "noise": "larion:continents/variation_a1",
+            "noise": "larion:continents/detail_a1",
             "xz_scale": 0.35,
             "y_scale": 0
           }
@@ -23,7 +23,7 @@
             "argument1": -1.0,
             "argument2": {
               "type": "minecraft:noise",
-              "noise": "larion:continents/variation_a2",
+              "noise": "larion:continents/detail_a2",
               "xz_scale": 0.35,
               "y_scale": 0
             }
@@ -48,7 +48,7 @@
               "type": "minecraft:square",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:continents/variation_b1",
+                "noise": "larion:continents/detail_b1",
                 "xz_scale": 0.35,
                 "y_scale": 0
               }
@@ -60,7 +60,7 @@
                 "argument1": -1.0,
                 "argument2": {
                   "type": "minecraft:noise",
-                  "noise": "larion:continents/variation_b2",
+                  "noise": "larion:continents/detail_b2",
                   "xz_scale": 0.35,
                   "y_scale": 0
                 }
@@ -80,7 +80,7 @@
               "type": "minecraft:square",
               "argument": {
                 "type": "minecraft:noise",
-                "noise": "larion:continents/variation_c1",
+                "noise": "larion:continents/detail_c1",
                 "xz_scale": 0.35,
                 "y_scale": 0
               }
@@ -92,7 +92,7 @@
                 "argument1": -1.0,
                 "argument2": {
                   "type": "minecraft:noise",
-                  "noise": "larion:continents/variation_c2",
+                  "noise": "larion:continents/detail_c2",
                   "xz_scale": 0.35,
                   "y_scale": 0
                 }

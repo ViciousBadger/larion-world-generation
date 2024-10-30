@@ -5,9 +5,9 @@
       "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:square",
-        "argument": "larion:overworld/continents/shapes"
+        "argument": "larion:overworld/continents/shape"
       },
-      "argument2": "larion:overworld/continents/variation"
+      "argument2": "larion:overworld/continents/detail"
     },
     "points": [
       {

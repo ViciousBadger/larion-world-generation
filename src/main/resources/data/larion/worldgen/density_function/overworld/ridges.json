@@ -9,7 +9,7 @@
     "spline": {
       "coordinate": {
         "type": "minecraft:abs",
-        "argument": "larion:overworld/ridges/rivers_base"
+        "argument": "larion:overworld/ridges/rivers"
       },
       "points": [
         {
