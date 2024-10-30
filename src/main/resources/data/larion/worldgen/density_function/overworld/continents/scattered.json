@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:square",
+      "argument": {
+      "type": "minecraft:noise",
+      "noise": "larion:continents/scattered",
+      "xz_scale": 0.25,
+      "y_scale": 0
+      }
+    },
+    "points": [
+      {
+        "location": 0.0,
+        "derivative": 0.0,
+        "value": 0.8
+      },
+      {
+        "location": 1.4,
+        "derivative": 0.0,
+        "value": 2.0
+      }
+    ]
+  }
+}
