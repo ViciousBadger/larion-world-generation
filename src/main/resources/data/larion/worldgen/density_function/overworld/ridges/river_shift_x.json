@@ -2,7 +2,7 @@
   "type": "minecraft:cache_once",
   "argument": {
     "type": "minecraft:mul",
-    "argument1": 28,
+    "argument1": 36,
     "argument2": {
       "type": "minecraft:noise",
       "noise": "larion:ridges/river_shift_x",

@@ -1,11 +1,13 @@
 {
+  "type": "minecraft:add",
+  "argument1": {
   "type": "minecraft:spline",
   "spline": {
     "coordinate": {
       "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:square",
-        "argument": "larion:overworld/continents/shape"
+        "argument": "larion:overworld/continents/shapes"
       },
       "argument2": "larion:overworld/continents/detail"
     },
@@ -13,12 +15,7 @@
       {
         "location": 0.0,
         "derivative": 0.0,
-        "value": -1.2
-      },
-      {
-        "location": 0.07,
-        "derivative": 0.0,
-        "value": -0.95
+        "value": -1.0
       },
       {
         "location": 0.39,
@@ -32,4 +29,6 @@
       }
     ]
   }
+  },
+  "argument2": "larion:overworld/continents/holes"
 }
