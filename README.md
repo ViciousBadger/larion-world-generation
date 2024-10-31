@@ -5,14 +5,23 @@
 Larion overhauls the overworld generation in Minecraft by
 drastically altering terrain shapes and biome placement.
 
-The world is larger in scale, more unpredictable and often more mountainous,
-reminiscent of what you'd find in epic fantasy worldbuilding. I tried my best to
-strike a balance between large- and small-scale features so that the worlds
-generated feel vast, but are still interesting to explore in survival mode.
+The name is a reference to the "Kingdom of Larion" in AI Dungeon stories, a
+mysterious land with no pre-existing lore. In other words, it is a land where
+every story must be imagined by you.
+
+The world is less predictable, more mountainous and split into continents,
+reminiscent of something you'd find in epic fantasy worldbuilding. I tried my
+best to strike a balance between large- and small-scale features so that the
+worlds generated feel vast, but are still interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
 with most biome overhauls. See below for a list of compability notes
 and potential solutions.
+
+If you want a limited world size, check out the [Disc
+World](https://modrinth.com/datapack/larion-one-continent) add-on datapack!
+
+Please note that the mod is still in active development, future updates are nearly guaranteed to change how the world is generated. I would suggest not updating the mod on existing worlds unless your are okay with weird chunk borders.
 
 ## Features
 
@@ -40,9 +49,13 @@ and potential solutions.
 - Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
 recommend using [World Preview](https://modrinth.com/mod/world-preview).
+- There are a lot of mountains and limited flat terrain. This is intentional. If
+you want more flat, look for areas far from mountain ranges and stay near the
+coastline.
 - World generation is not as fast as before (roughly 30% slower in my
 experience) because the new density functions are much more
-complex. However, by using these Fabric mods you can counterbalance the slowness:
+complex and the generated terrain is "taller".
+By using these Fabric mods you can counterbalance the slowness:
     - [C2ME](https://modrinth.com/mod/c2me-fabric) (Biggest performance boost, but can be unstable)
     - [Noisium](https://modrinth.com/mod/noisium)
     - [Faster Random](https://modrinth.com/mod/faster-random)
@@ -65,17 +78,17 @@ complex. However, by using these Fabric mods you can counterbalance the slowness
 So far this is my favorite worldgen mod to use with Larion, they go together
 perfectly.
 
-If WWOO is loaded **after** Larion, mountains taller than Y=320 will be
-"chopped" beacuse WWOO overwrites the file that determines world height. There
-are two ways to solve this:
+If WWOO is loaded **after** Larion, which is not easy to predict, mountains
+taller than Y=320 will be "chopped" beacuse WWOO overwrites the file that
+determines world height. 
 
-- By using both Larion and WWOO as datapacks instead of mods, you can manually
-change the load order so that Larion loads last and overwrites the world height
-correctly.
-- By unpacking the WWOO .zip file and removing **all three** files named
+By unpacking the WWOO .zip/.jar file and removing **all three** files named
 overworld.json, the issue is now gone and load order is no longer important!
-- Be sure to also use **Cliffs and Coves** and **Navigable Rivers** by the same
-  author, as they can greatly improve coasts and rivers.
+
+Be sure to also use **Cliffs and Coves**  by the same
+author, as it can greatly improve the look of coasts and beaches. There is
+also Navigable Rivers, but it's not important as Larion does pretty much the
+same thing with its river tunnels.
 
 ### William Wyther's Expanded Ecosphere
 
@@ -83,6 +96,9 @@ overworld.json, the issue is now gone and load order is no longer important!
 does not touch so they can be loaded together without issues.
 
 These go very well together, biome diversity is significantly better.
+
+There is one caveat, the new "island" biomes that replace mushroom islands are
+going to be very small and weird looking. Sorry!
 
 ### Terralith
 

@@ -18,24 +18,24 @@
         "coordinate": "minecraft:overworld/erosion",
         "points": [
           {
-            "location": -1.0,
+            "location": -0.78,
             "derivative": 0.0,
             "value": 32
           },
           {
-            "location": -0.72,
+            "location": -0.375,
             "derivative": 0.0,
-            "value": 48
+            "value": 196
           },
           {
-            "location": -0.35,
+            "location": 0.45,
             "derivative": 0.0,
-            "value": 96
+            "value": 196
           },
           {
-            "location": -0.0,
+            "location": 0.55,
             "derivative": 0.0,
-            "value": 128
+            "value": 0
           }
         ]
       }

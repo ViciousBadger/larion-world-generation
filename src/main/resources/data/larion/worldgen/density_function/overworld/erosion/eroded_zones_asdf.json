@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:abs",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": 0.65,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "larion:erosion/eroded_a1",
+            "xz_scale": 0.25,
+            "y_scale": 0
+          }
+        },
+        "argument2": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": {
+              "type": "minecraft:noise",
+              "noise": "larion:erosion/eroded_a2",
+              "xz_scale": 0.25,
+              "y_scale": 0
+            }
+          }
+        }
+      }
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 0.85,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "larion:erosion/eroded_b1",
+            "xz_scale": 0.25,
+            "y_scale": 0
+          }
+        },
+        "argument2": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": {
+              "type": "minecraft:noise",
+              "noise": "larion:erosion/eroded_b2",
+              "xz_scale": 0.25,
+              "y_scale": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
