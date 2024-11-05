@@ -1,60 +1,64 @@
 {
-  "type": "minecraft:add",
-  "argument1": {
-    "type": "minecraft:mul",
-    "argument1": 0.65,
-    "argument2": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:square",
-        "argument": {
-          "type": "minecraft:noise",
-          "noise": "larion:vegetation/a1",
-          "xz_scale": 0.2,
-          "y_scale": 0
-        }
-      },
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": {
-          "type": "minecraft:square",
-          "argument": {
-            "type": "minecraft:noise",
-            "noise": "larion:vegetation/a2",
-            "xz_scale": 0.2,
-            "y_scale": 0
-          }
-        },
-        "argument2": -1.0
-      }
-    }
-  },
+  "type": "minecraft:mul",
+  "argument1": "larion:overworld/vegetation_extremity",
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": 0.12,
-    "argument2": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:square",
-        "argument": {
-          "type": "minecraft:noise",
-          "noise": "larion:vegetation/b1",
-          "xz_scale": 0.2,
-          "y_scale": 0
-        }
-      },
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": 0.65,
       "argument2": {
-        "type": "minecraft:mul",
+        "type": "minecraft:add",
         "argument1": {
           "type": "minecraft:square",
           "argument": {
             "type": "minecraft:noise",
-            "noise": "larion:vegetation/b2",
+            "noise": "larion:vegetation/a1",
             "xz_scale": 0.2,
             "y_scale": 0
           }
         },
-        "argument2": -1.0
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:square",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "larion:vegetation/a2",
+              "xz_scale": 0.2,
+              "y_scale": 0
+            }
+          },
+          "argument2": -1.0
+        }
+      }
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 0.12,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "larion:vegetation/b1",
+            "xz_scale": 0.2,
+            "y_scale": 0
+          }
+        },
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:square",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "larion:vegetation/b2",
+              "xz_scale": 0.2,
+              "y_scale": 0
+            }
+          },
+          "argument2": -1.0
+        }
       }
     }
   }
