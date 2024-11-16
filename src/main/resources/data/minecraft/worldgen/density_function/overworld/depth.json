@@ -8,16 +8,8 @@
     "to_y": 384
   },
   "argument2": {
-    "type": "minecraft:add",
-    "argument1": {
       "type": "minecraft:mul",
       "argument1": "minecraft:overworld/offset",
       "argument2": 0.75
-    },
-    "argument2": {
-      "type": "minecraft:mul",
-      "argument1": "larion:overworld/extra_offset",
-      "argument2": "larion:overworld/extra_offset_factor"
-    }
   }
 }
