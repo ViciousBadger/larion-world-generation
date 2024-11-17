@@ -14,7 +14,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:continents/shapes_a1",
-              "xz_scale": 0.45,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           },
@@ -26,7 +26,7 @@
               "argument2": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/shapes_a2",
-                "xz_scale": 0.45,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             }
@@ -43,7 +43,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:continents/shapes_b1",
-              "xz_scale": 0.45,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           },
@@ -55,7 +55,7 @@
               "argument2": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/shapes_b2",
-                "xz_scale": 0.45,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             }
@@ -77,7 +77,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/shapes_c1",
-                "xz_scale": 0.45,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             },
@@ -89,7 +89,7 @@
                 "argument2": {
                   "type": "minecraft:noise",
                   "noise": "larion:continents/shapes_c2",
-                  "xz_scale": 0.45,
+                  "xz_scale": 0.25,
                   "y_scale": 0
                 }
               }
@@ -109,7 +109,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:continents/shapes_d1",
-                "xz_scale": 0.45,
+                "xz_scale": 0.25,
                 "y_scale": 0
               }
             },
@@ -121,7 +121,7 @@
                 "argument2": {
                   "type": "minecraft:noise",
                   "noise": "larion:continents/shapes_d2",
-                  "xz_scale": 0.45,
+                  "xz_scale": 0.25,
                   "y_scale": 0
                 }
               }

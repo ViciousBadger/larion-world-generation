@@ -1,33 +1,44 @@
 {
-  "type": "minecraft:spline",
-  "spline": {
-    "coordinate": "larion:overworld/continents/shapes",
-    "points": [
-      {
-        "location": 0.00,
-        "derivative": 3.0,
-        "value": -1.4
-      },
-      {
-        "location": 0.07,
-        "derivative": 2.0,
-        "value": -1.0
-      },
-      {
-        "location": 0.27,
-        "derivative": 0.0,
-        "value": -0.45
-      },
-      {
-        "location": 0.54,
-        "derivative": 1.5,
-        "value": -0.15
-      },
-      {
-        "location": 2.0,
-        "derivative": 0.2,
-        "value": 1.0
-      }
-    ]
+  "type": "minecraft:min",
+  "argument1": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "larion:overworld/continents/shapes",
+      "points": [
+        {
+          "location": 0.00,
+          "derivative": 3.0,
+          "value": -1.4
+        },
+        {
+          "location": 0.07,
+          "derivative": 2.0,
+          "value": -1.0
+        },
+        {
+          "location": 0.27,
+          "derivative": 0.0,
+          "value": -0.45
+        },
+        {
+          "location": 0.47,
+          "derivative": 1.5,
+          "value": -0.15
+        },
+        {
+          "location": 2.0,
+          "derivative": 0.2,
+          "value": 1.0
+        }
+      ]
+    }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": 2.0,
+    "argument2": {
+      "type": "minecraft:abs",
+      "argument": "larion:overworld/ridges/rivers"
+    }
   }
 }
