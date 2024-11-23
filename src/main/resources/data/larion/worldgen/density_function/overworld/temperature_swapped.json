@@ -4,9 +4,13 @@
   "min_inclusive": 0.55,
   "max_exclusive": 2.0,
   "when_in_range": {
-    "type": "minecraft:add",
-    "argument1": "larion:overworld/temperature",
-    "argument2": -0.35
+    "type": "minecraft:min",
+    "argument1": 0.54,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": "larion:overworld/temperature",
+      "argument2": -0.35
+    }
   },
   "when_out_of_range": {
     "type": "minecraft:range_choice",
