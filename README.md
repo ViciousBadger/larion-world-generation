@@ -5,14 +5,13 @@
 Larion overhauls the overworld generation in Minecraft by
 drastically altering terrain shapes and biome placement.
 
-The name is a reference to the "Kingdom of Larion" in AI Dungeon stories, a
-mysterious land with no pre-existing lore. In other words, it is a land where
-every story must be imagined by you.
+The main characteristics are more mountainous terrain, very different biome
+distribution and many landmasses separated by a vast ocean.
 
-The world is less predictable, more mountainous and split into continents,
-reminiscent of something you'd find in epic fantasy worldbuilding. I tried my
-best to strike a balance between large- and small-scale features so that the
-worlds generated feel vast, but are still interesting to explore in survival mode.
+In contrast to many of the popular terrain generation datapacks, Larion is not
+that far from vanilla Minecraft in scale and does not aim for realism, instead
+focusing on fantasy-inspired worlds and being small-scale enough to be
+interesting to explore in survival mode.
 
 The biomes themselves are not altered at all, making Larion fully compatible
 with most biome overhauls. See below for a list of compability notes
@@ -21,26 +20,30 @@ and potential solutions.
 If you want a limited world size, check out the [Disc
 World](https://modrinth.com/datapack/larion-one-continent) add-on datapack!
 
-Please note that the mod is still in active development, future updates are nearly guaranteed to change how the world is generated. I would suggest not updating the mod on existing worlds unless your are okay with weird chunk borders.
+Please note that the mod is still in active development, future updates are
+nearly guaranteed to change how the world is generated. I would suggest not
+updating the mod on existing worlds unless your are okay with weird chunk
+borders.
 
 ## Features
 
-- The world is split into large continents with plenty of smaller islands in-between.
+- The world is split into landmasses of varying sizes with plenty of islands
+inbetween.
 - Temperature changes as you move north or south (z-axis).
     - If you travel far enough, it wraps back around.
     - Travelling east or west lets you stay in roughly the same temperature.
-    - Tropical and subtropical temperature zones have been "swapped".
-- Mountains form large "chains" while often being broader and taller than vanilla.
-- World height is increased from 384 to 512 to fit the taller mountains and deeper caves
+    - Tropical and subtropical temperature zones have been swapped so that
+    jungle/savanna generates within deserts. (This is to closer match Earth's
+    actual "biome layout" around the equator)
+- Mountains are a more prominent terrian feature, forming massive ranges and
+often being broader and taller than vanilla.
+- World height is increased from 384 to 512 to allow for taller mountains and deeper caves
     - Build height limit is 384, lowest point is -128.
-- An extra layer of gentle slopes on top of vanilla "offset" that makes flat areas sligthly hilly.
-- Less predictable biome shapes and placement.
-    - "Humidity" zones are weirder, sometimes small, sometimes large.
-    - Swamps and mangroves can only appear near sea level (coasts and rivers).
-    - Windswept terrain is more common and can appear anywhere.
 - Long, winding rivers that carve though terrain.
     - Sometimes rivers form strange "knots" that look like lakes.
     - Large lava rivers also flow near the bedrock layer..
+- Swamps and windswept terrain are somewhat more common and often appear in
+oblong patches instead of blobs.
 - Mushroom islands are more common, smaller and oddly shaped.
 - Numerous smaller tweaks!
 
@@ -49,9 +52,6 @@ Please note that the mod is still in active development, future updates are near
 - Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
 recommend using [World Preview](https://modrinth.com/mod/world-preview).
-- There are a lot of mountains and limited flat terrain. This is intentional. If
-you want more flat, look for areas far from mountain ranges and stay near the
-coastline.
 - World generation is not as fast as before (roughly 30% slower in my
 experience) because the new density functions are much more
 complex and the generated terrain is "taller".
