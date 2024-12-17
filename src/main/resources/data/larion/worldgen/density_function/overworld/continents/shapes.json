@@ -68,31 +68,66 @@
     }
   },
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": 0.18,
-    "argument2": {
-      "type": "minecraft:abs",
-      "argument": {
-        "type": "minecraft:add",
-        "argument1": {
-          "type": "minecraft:square",
-          "argument": {
-            "type": "minecraft:noise",
-            "noise": "larion:continents/c1",
-            "xz_scale": 0.3,
-            "y_scale": 0
-          }
-        },
-        "argument2": {
-          "type": "minecraft:mul",
-          "argument1": -1.0,
-          "argument2": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": 0.18,
+      "argument2": {
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:add",
+          "argument1": {
             "type": "minecraft:square",
             "argument": {
               "type": "minecraft:noise",
-              "noise": "larion:continents/c2",
+              "noise": "larion:continents/c1",
               "xz_scale": 0.3,
               "y_scale": 0
+            }
+          },
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:continents/c2",
+                "xz_scale": 0.3,
+                "y_scale": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 0.08,
+      "argument2": {
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:square",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "larion:continents/d1",
+              "xz_scale": 0.3,
+              "y_scale": 0
+            }
+          },
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:continents/d2",
+                "xz_scale": 0.3,
+                "y_scale": 0
+              }
             }
           }
         }
