@@ -47,7 +47,7 @@
         "points": [
           {
             "location": 0.0,
-            "derivative": 0.0,
+            "derivative": -0.16,
             "value": {
               "coordinate": "larion:overworld/temperature",
               "points": [
@@ -76,7 +76,7 @@
           },
           {
             "location": 3.0,
-            "derivative": 0.0,
+            "derivative": -0.1,
             "value": 0.00
           }
         ]
