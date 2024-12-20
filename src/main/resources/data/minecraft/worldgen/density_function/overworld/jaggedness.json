@@ -20,12 +20,12 @@
               "points": [
                 {
                   "derivative": 0.0,
-                  "location": -0.11,
+                  "location": -0.22,
                   "value": 0.0
                 },
                 {
                   "derivative": 0.0,
-                  "location": 0.03,
+                  "location": -0.04,
                   "value": {
                     "coordinate": "minecraft:overworld/erosion",
                     "points": [
@@ -37,13 +37,18 @@
                           "points": [
                             {
                               "derivative": 0.0,
-                              "location": 0.2,
+                              "location": -0.33,
                               "value": 0.0
                             },
                             {
                               "derivative": 0.0,
+                              "location": 0.66,
+                              "value": 0.32
+                            },
+                            {
+                              "derivative": 0.0,
                               "location": 1.0,
-                              "value": 0.63
+                              "value": 0.77
                             }
                           ]
                         }
@@ -62,7 +67,7 @@
                             {
                               "derivative": 0.0,
                               "location": 1.0,
-                              "value": 0.35
+                              "value": 0.63
                             }
                           ]
                         }
@@ -70,6 +75,25 @@
                       {
                         "derivative": 0.0,
                         "location": -0.375,
+                        "value": {
+                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "points": [
+                            {
+                              "derivative": 0.0,
+                              "location": 0.2,
+                              "value": 0.0
+                            },
+                            {
+                              "derivative": 0.0,
+                              "location": 1.0,
+                              "value": 0.32
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "derivative": 0.0,
+                        "location": -0.0,
                         "value": 0.0
                       }
                     ]
@@ -83,4 +107,3 @@
     }
   }
 }
-
