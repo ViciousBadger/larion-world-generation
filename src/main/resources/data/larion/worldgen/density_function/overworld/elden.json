@@ -1,49 +1,54 @@
 {
-  "type": "minecraft:cache_2d",
+  "type": "minecraft:flat_cache",
   "argument": {
-    "type": "minecraft:min",
-    "argument1": {
+    "type": "minecraft:cache_2d",
+    "argument": {
       "type": "minecraft:spline",
       "spline": {
         "coordinate": {
-          "type": "minecraft:noise",
-          "noise": "larion:elden_a",
-          "xz_scale": 0.25,
-          "y_scale": 0
-        },
-        "points": [
-          {
-            "location": 0.0,
-            "derivative": 0.0,
-            "value": 0.0
+          "type": "minecraft:min",
+          "argument1": {
+            "type": "minecraft:mul",
+            "argument1": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:elden_a",
+                "xz_scale": 0.1,
+                "y_scale": 0
+              }
+            },
+            "argument2": 1.25
           },
-          {
-            "location": 0.33,
-            "derivative": 0.0,
-            "value": 1.0
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:elden_b",
+                "xz_scale": 0.1,
+                "y_scale": 0
+              }
+            },
+            "argument2": 0.15
           }
-        ]
-      }
-    },
-    "argument2": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": {
-          "type": "minecraft:noise",
-          "noise": "larion:elden_b",
-          "xz_scale": 0.25,
-          "y_scale": 0
         },
         "points": [
           {
-            "location": 0.0,
-            "derivative": 0.0,
-            "value": 0.0
+            "location": 0,
+            "derivative": 0,
+            "value": 0
           },
           {
-            "location": 0.33,
-            "derivative": 0.0,
-            "value": 1.0
+            "location": 0.005,
+            "derivative": 4,
+            "value": 0.25
+          },
+          {
+            "location": 0.02,
+            "derivative": 0,
+            "value": 1
           }
         ]
       }
