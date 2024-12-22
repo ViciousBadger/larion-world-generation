@@ -14,8 +14,84 @@
           "points": [
             {
               "derivative": 0.0,
-              "location": -0.3,
+              "location": -1.0,
               "value": 0.0
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.4,
+              "value": {
+                "coordinate": "minecraft:overworld/erosion",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": -1.0,
+                    "value": {
+                      "coordinate": "minecraft:overworld/ridges_folded",
+                      "points": [
+                        {
+                          "derivative": 0.0,
+                          "location": -0.33,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 0.66,
+                          "value": -0.08
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 1.0,
+                          "value": -0.33
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.72,
+                    "value": {
+                      "coordinate": "minecraft:overworld/ridges_folded",
+                      "points": [
+                        {
+                          "derivative": 0.0,
+                          "location": 0.2,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 1.0,
+                          "value": -0.12
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.375,
+                    "value": {
+                      "coordinate": "minecraft:overworld/ridges_folded",
+                      "points": [
+                        {
+                          "derivative": 0.0,
+                          "location": 0.2,
+                          "value": 0.0
+                        },
+                        {
+                          "derivative": 0.0,
+                          "location": 1.0,
+                          "value": -0.09
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": -0.0,
+                    "value": 0.0
+                  }
+                ]
+              }
             },
             {
               "derivative": 0.0,
@@ -37,12 +113,12 @@
                         {
                           "derivative": 0.0,
                           "location": 0.66,
-                          "value": 0.32
+                          "value": 0.22
                         },
                         {
                           "derivative": 0.0,
                           "location": 1.0,
-                          "value": 0.77
+                          "value": 0.44
                         }
                       ]
                     }
@@ -55,13 +131,18 @@
                       "points": [
                         {
                           "derivative": 0.0,
-                          "location": 0.2,
+                          "location": 0.0,
                           "value": 0.0
                         },
                         {
                           "derivative": 0.0,
+                          "location": 0.66,
+                          "value": 0.12
+                        },
+                        {
+                          "derivative": 0.0,
                           "location": 1.0,
-                          "value": 0.63
+                          "value": 0.33
                         }
                       ]
                     }
@@ -74,13 +155,13 @@
                       "points": [
                         {
                           "derivative": 0.0,
-                          "location": 0.2,
+                          "location": 0.0,
                           "value": 0.0
                         },
                         {
                           "derivative": 0.0,
                           "location": 1.0,
-                          "value": 0.32
+                          "value": 0.22
                         }
                       ]
                     }

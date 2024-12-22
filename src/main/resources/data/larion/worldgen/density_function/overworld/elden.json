@@ -10,17 +10,17 @@
           "coordinate": {
             "type": "minecraft:noise",
             "noise": "larion:elden_a",
-            "xz_scale": 0.25,
+            "xz_scale": 0.35,
             "y_scale": 0
           },
           "points": [
             {
-              "location": -0.1,
+              "location": 0.2,
               "derivative": 0.0,
               "value": 0.0
             },
             {
-              "location": 0.11,
+              "location": 0.22,
               "derivative": 0.0,
               "value": 1.0
             }
@@ -38,12 +38,12 @@
           },
           "points": [
             {
-              "location": 0.2,
+              "location": 0.4,
               "derivative": 0.0,
               "value": 0.0
             },
             {
-              "location": 0.21,
+              "location": 0.44,
               "derivative": 0.0,
               "value": 1.0
             }
