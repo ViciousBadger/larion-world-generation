@@ -5,7 +5,7 @@
     "argument1": {
       "type": "larion:z"
     },
-    "argument2": 0.00025
+    "argument2": 0.00035
   },
   "argument2": {
     "type": "minecraft:mul",
