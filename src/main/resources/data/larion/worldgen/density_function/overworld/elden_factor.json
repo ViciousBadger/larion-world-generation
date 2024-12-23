@@ -19,7 +19,7 @@
               "coordinate": "minecraft:overworld/ridges_folded",
               "points": [
                 {
-                  "location": -1.0,
+                  "location": -0.66,
                   "derivative": 0.0,
                   "value": 0.0
                 },
