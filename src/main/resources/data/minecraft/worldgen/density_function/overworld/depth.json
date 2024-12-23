@@ -17,7 +17,7 @@
     "argument2": {
       "type": "minecraft:mul",
       "argument1": {
-        "type": "minecraft:max",
+        "type": "minecraft:add",
         "argument1": {
           "type": "minecraft:mul",
           "argument1": "larion:overworld/dunes",
