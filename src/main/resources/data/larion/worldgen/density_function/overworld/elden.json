@@ -14,7 +14,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:elden_a",
-                "xz_scale": 0.1,
+                "xz_scale": 0.12,
                 "y_scale": 0
               }
             },
@@ -27,7 +27,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:elden_b",
-                "xz_scale": 0.1,
+                "xz_scale": 0.12,
                 "y_scale": 0
               }
             },
