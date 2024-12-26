@@ -8,23 +8,23 @@
         "coordinate": "minecraft:overworld/continents",
         "points": [
           {
-            "location": -0.1,
+            "location": -0.08,
             "derivative": 0.0,
             "value": 0.0
           },
           {
-            "location": 0.33,
+            "location": 0.12,
             "derivative": 0.0,
             "value": {
               "coordinate": "minecraft:overworld/ridges_folded",
               "points": [
                 {
-                  "location": 0.0,
+                  "location": -0.33,
                   "derivative": 0.0,
                   "value": 0.0
                 },
                 {
-                  "location": 1.0,
+                  "location": 0.88,
                   "derivative": 0.0,
                   "value": {
                     "coordinate": "minecraft:overworld/erosion",
