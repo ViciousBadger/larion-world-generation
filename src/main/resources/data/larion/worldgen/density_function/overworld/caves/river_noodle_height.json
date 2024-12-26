@@ -4,7 +4,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": 48,
+      "argument1": 16,
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:caves/river_noodle_height",
@@ -12,6 +12,6 @@
         "y_scale": 0
       }
     },
-    "argument2": 72
+    "argument2": 32
   }
 }

@@ -8,40 +8,8 @@
     "to_y": 384
   },
   "argument2": {
-    "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": "minecraft:overworld/offset",
-      "argument2": 0.75
-    },
-    "argument2": {
-      "type": "minecraft:mul",
-      "argument1": {
-        "type": "minecraft:add",
-        "argument1": {
-          "type": "minecraft:mul",
-          "argument1": "larion:overworld/dunes",
-          "argument2": "larion:overworld/dunes_factor"
-        },
-        "argument2": {
-          "type": "minecraft:mul",
-          "argument1": "larion:overworld/elden",
-          "argument2": {
-            "type": "minecraft:mul",
-            "argument1": "larion:overworld/elden_factor",
-            "argument2": {
-              "type": "minecraft:add",
-              "argument1": 1.0,
-              "argument2": {
-                "type": "minecraft:mul",
-                "argument1": -1.0,
-                "argument2": "larion:overworld/dunes_factor"
-              }
-            }
-          }
-        }
-      },
-      "argument2": 0.25
-    }
+    "type": "minecraft:mul",
+    "argument1": "minecraft:overworld/offset",
+    "argument2": 0.75
   }
 }
