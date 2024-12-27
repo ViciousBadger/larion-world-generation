@@ -1,76 +1,73 @@
 {
-  "type": "minecraft:flat_cache",
+  "type": "minecraft:cache_once",
   "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "minecraft:overworld/continents",
-        "points": [
-          {
-            "location": -0.08,
-            "derivative": 0.0,
-            "value": 0.0
-          },
-          {
-            "location": 0.0,
-            "derivative": 0.0,
-            "value": {
-              "coordinate": "minecraft:overworld/erosion",
-              "points": [
-                {
-                  "location": 0.0,
-                  "derivative": 0.0,
-                  "value": 0.0
-                },
-                {
-                  "location": 0.1,
-                  "derivative": 0.0,
-                  "value": {
-                    "coordinate": "minecraft:overworld/ridges_folded",
-                    "points": [
-                      {
-                        "location": -0.8,
-                        "derivative": 0.0,
-                        "value": 0.0
-                      },
-                      {
-                        "location": 0.2,
-                        "derivative": 0.0,
-                        "value": {
-                          "coordinate": "larion:overworld/temperature",
-                          "points": [
-                            {
-                              "location": 0.15,
-                              "derivative": 0.0,
-                              "value": 0.0
-                            },
-                            {
-                              "location": 0.25,
-                              "derivative": 0.0,
-                              "value": 1.0
-                            },
-                            {
-                              "location": 0.50,
-                              "derivative": 0.0,
-                              "value": 1.0
-                            },
-                            {
-                              "location": 0.60,
-                              "derivative": 0.0,
-                              "value": 0.0
-                            }
-                          ]
-                        }
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "minecraft:overworld/continents",
+      "points": [
+        {
+          "location": -0.08,
+          "derivative": 0.0,
+          "value": 0.0
+        },
+        {
+          "location": 0.0,
+          "derivative": 0.0,
+          "value": {
+            "coordinate": "minecraft:overworld/erosion",
+            "points": [
+              {
+                "location": 0.0,
+                "derivative": 0.0,
+                "value": 0.0
+              },
+              {
+                "location": 0.1,
+                "derivative": 0.0,
+                "value": {
+                  "coordinate": "minecraft:overworld/ridges_folded",
+                  "points": [
+                    {
+                      "location": -0.8,
+                      "derivative": 0.0,
+                      "value": 0.0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0.0,
+                      "value": {
+                        "coordinate": "larion:overworld/temperature",
+                        "points": [
+                          {
+                            "location": 0.15,
+                            "derivative": 0.0,
+                            "value": 0.0
+                          },
+                          {
+                            "location": 0.25,
+                            "derivative": 0.0,
+                            "value": 1.0
+                          },
+                          {
+                            "location": 0.50,
+                            "derivative": 0.0,
+                            "value": 1.0
+                          },
+                          {
+                            "location": 0.60,
+                            "derivative": 0.0,
+                            "value": 0.0
+                          }
+                        ]
                       }
-                    ]
-                  }
+                    }
+                  ]
                 }
-              ]
-            }
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     }
   }
 }
