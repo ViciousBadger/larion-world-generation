@@ -12,6 +12,23 @@
         "y_scale": 0
       }
     },
-    "argument2": 32
+    "argument2": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "minecraft:overworld/erosion",
+        "points": [
+          {
+            "derivative": 0.0,
+            "location": -0.48,
+            "value": 32
+          },
+          {
+            "derivative": 0.0,
+            "location": -0.24,
+            "value": 96
+          }
+        ]
+      }
+    }
   }
 }
