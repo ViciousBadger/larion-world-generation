@@ -37,7 +37,7 @@
       "when_out_of_range": {
         "type": "range_choice",
         "min_inclusive": -0.2,
-        "max_exclusive": 0.3,
+        "max_exclusive": 0.35,
         "input": "larion:overworld/caves/river_noodle_flood",
         "when_in_range": 1,
         "when_out_of_range": {
@@ -51,7 +51,7 @@
     "fluid_level_spread": {
       "type": "range_choice",
       "min_inclusive": -0.2,
-      "max_exclusive": 0.3,
+      "max_exclusive": 0.35,
       "input": "larion:overworld/caves/river_noodle_flood",
       "when_in_range": 0.5,
       "when_out_of_range": {

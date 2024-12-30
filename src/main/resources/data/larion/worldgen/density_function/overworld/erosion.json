@@ -1,65 +1,66 @@
 {
-  "type": "minecraft:add",
-  "argument1": {
-    "type": "minecraft:mul",
-    "argument1": 0.34,
-    "argument2": {
-      "type": "minecraft:noise",
-      "noise": "larion:erosion/v",
-      "xz_scale": 0.25,
-      "y_scale": 0.0
-    }
-  },
-  "argument2": {
-    "type": "minecraft:spline",
-    "spline": {
-      "coordinate": "larion:overworld/erosion/mountain_ranges",
-      "points": [
-        {
-          "location": -0.0,
-          "derivative": 1.0,
-          "value": -0.72
-        },
-        {
-          "location": 0.55,
-          "derivative": 1.0,
-          "value": -0.32
-        },
-        {
-          "location": 1.27,
-          "derivative": 1.0,
-          "value": -0.02
-        },
-        {
-          "location": 2.0,
-          "derivative": 0.0,
-          "value": {
-            "coordinate": "larion:overworld/erosion/eroded_zones",
-            "points": [
-              {
-                "location": 0.0,
-                "derivative": 0.0,
-                "value": 1.0
-              },
-              {
-                "location": 0.45,
-                "derivative": -0.17,
-                "value": 0.545
-              },
-              {
-                "location": 0.75,
-                "derivative": -0.14,
-                "value": 0.44
-              },
-              {
-                "location": 4.0,
-                "derivative": 0.0,
-                "value": 0.0
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "larion:overworld/erosion/mountain_ranges",
+    "points": [
+      {
+        "location": 0,
+        "derivative": 3,
+        "value": -1
+      },
+      {
+        "location": 0.5,
+        "derivative": 1,
+        "value": -0.32
+      },
+      {
+        "location": 1,
+        "derivative": 1,
+        "value": -0.02
+      },
+      {
+        "location": 3,
+        "derivative": 0,
+        "value": {
+          "coordinate": "larion:overworld/erosion/eroded_zones",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 0.78,
+              "derivative": -0.3,
+              "value": 0.545
+            },
+            {
+              "location": 1.5,
+              "derivative": -0.5,
+              "value": 0.44
+            },
+            {
+              "location": 3,
+              "derivative": 0,
+              "value": {
+                "coordinate": "larion:overworld/erosion/base",
+                "points": [
+                  {
+                    "location": -1,
+                    "derivative": 0,
+                    "value": 0
+                  },
+                  {
+                    "location": 1,
+                    "derivative": 0,
+                    "value": 0.4
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ]
         }
-      ]
-    }
+      }
+    ]
   }
 }

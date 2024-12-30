@@ -37,12 +37,7 @@
                         {
                           "derivative": 0.0,
                           "location": 0.66,
-                          "value": 0.55
-                        },
-                        {
-                          "derivative": 0.0,
-                          "location": 1.0,
-                          "value": 0.77
+                          "value": 0.72
                         }
                       ]
                     }
@@ -68,7 +63,7 @@
                   },
                   {
                     "derivative": 0.0,
-                    "location": -0.375,
+                    "location": -0.48,
                     "value": {
                       "coordinate": "minecraft:overworld/ridges_folded",
                       "points": [
@@ -87,7 +82,7 @@
                   },
                   {
                     "derivative": 0.0,
-                    "location": -0.0,
+                    "location": -0.375,
                     "value": 0.0
                   }
                 ]

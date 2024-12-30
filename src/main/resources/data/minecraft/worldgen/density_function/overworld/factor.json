@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/continents",
+    "points": [
+      {
+        "derivative": 0,
+        "location": -1.1,
+        "value": 3.2
+      },
+      {
+        "derivative": 0,
+        "location": -1.0,
+        "value": 3.95
+      },
+      {
+        "derivative": 0,
+        "location": -0.30,
+        "value": 3.95
+      },
+      {
+        "derivative": 0,
+        "location": -0.18,
+        "value": 7.2
+      },
+      {
+        "derivative": 0,
+        "location": -0.08,
+        "value": 6.3
+      }
+    ]
+  }
+}

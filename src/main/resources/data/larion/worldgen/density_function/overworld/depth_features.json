@@ -1,29 +1,45 @@
 {
-  "type": "minecraft:mul",
+  "type": "minecraft:add",
   "argument1": {
-    "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": "larion:overworld/dunes",
-      "argument2": "larion:overworld/dunes_factor"
-    },
+    "type": "minecraft:mul",
+    "argument1": "minecraft:overworld/jaggedness",
     "argument2": {
-      "type": "minecraft:mul",
-      "argument1": "larion:overworld/elden",
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": "larion:overworld/elden_factor",
-        "argument2": {
-          "type": "minecraft:add",
-          "argument1": 1.0,
-          "argument2": {
-            "type": "minecraft:mul",
-            "argument1": -1.0,
-            "argument2": "larion:overworld/dunes_factor"
-          }
-        }
+      "type": "minecraft:abs",
+      "argument": {
+        "type": "minecraft:noise",
+        "noise": "minecraft:jagged",
+        "xz_scale": 500.0,
+        "y_scale": 0.0
       }
     }
   },
-  "argument2": 0.37
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": "larion:overworld/dunes",
+        "argument2": "larion:overworld/dunes_factor"
+      },
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": "larion:overworld/elden",
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": "larion:overworld/elden_factor",
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": 1.0,
+            "argument2": {
+              "type": "minecraft:mul",
+              "argument1": -1.0,
+              "argument2": "larion:overworld/dunes_factor"
+            }
+          }
+        }
+      }
+    },
+    "argument2": 0.37
+  }
 }
