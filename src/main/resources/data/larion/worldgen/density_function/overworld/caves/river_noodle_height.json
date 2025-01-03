@@ -20,21 +20,7 @@
           {
             "derivative": 0.0,
             "location": -0.48,
-            "value": {
-              "coordinate": "minecraft:overworld/continents",
-              "points": [
-                {
-                  "derivative": 0.0,
-                  "location": -0.08,
-                  "value": 96
-                },
-                {
-                  "derivative": 0.0,
-                  "location": 0.33,
-                  "value": 32
-                }
-              ]
-            }
+            "value": 32
           },
           {
             "derivative": 0.0,
