@@ -30,7 +30,7 @@
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:erosion/ranges_c",
-          "xz_scale": 0.25,
+          "xz_scale": 0.30,
           "y_scale": 0.0
         }
       }

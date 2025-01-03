@@ -2,7 +2,7 @@
   "type": "minecraft:add",
   "argument1": {
     "type": "minecraft:mul",
-    "argument1": 0.80,
+    "argument1": 0.8,
     "argument2": {
       "type": "minecraft:noise",
       "noise": "larion:vegetation/a",
@@ -11,13 +11,20 @@
     }
   },
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": 0.20,
+    "type": "minecraft:add",
+    "argument1": -0.1,
     "argument2": {
-      "type": "minecraft:noise",
-      "noise": "larion:vegetation/b",
-      "xz_scale": 0.2,
-      "y_scale": 0
+      "type": "minecraft:mul",
+      "argument1": 0.2,
+      "argument2": {
+        "type": "minecraft:square",
+        "argument": {
+          "type": "minecraft:noise",
+          "noise": "larion:vegetation/b",
+          "xz_scale": 0.25,
+          "y_scale": 0
+        }
+      }
     }
   }
 }
