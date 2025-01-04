@@ -5,11 +5,25 @@
     "from_value": 1.5,
     "from_y": -128,
     "to_value": -1.5,
-    "to_y": 384
+    "to_y": 512
   },
   "argument2": {
-    "type": "minecraft:mul",
-    "argument1": "minecraft:overworld/offset",
-    "argument2": 0.75
+    "type": "minecraft:flat_cache",
+    "argument": {
+      "type": "minecraft:cache_2d",
+      "argument": {
+        "type": "minecraft:mul",
+        "argument1": 0.0046875,
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:add",
+            "argument1": "larion:overworld/terrain_height",
+            "argument2": -192
+          },
+          "argument2": "larion:overworld/terrain_features"
+        }
+      }
+    }
   }
 }

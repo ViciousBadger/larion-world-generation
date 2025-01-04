@@ -32,24 +32,9 @@
         "value": -0.18
       },
       {
-        "location": 0.40,
-        "derivative": 3.0,
-        "value": -0.10
-      },
-      {
-        "location": 0.41,
-        "derivative": 0.30,
-        "value": -0.08
-      },
-      {
         "location": 0.50,
-        "derivative": 3.8,
-        "value": 0.115
-      },
-      {
-        "location": 0.52,
-        "derivative": 0.8,
-        "value": 0.22
+        "derivative": 0.90,
+        "value": 0.10
       },
       {
         "location": 1.5,

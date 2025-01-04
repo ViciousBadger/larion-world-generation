@@ -28,7 +28,7 @@
         "type": "minecraft:mul",
         "argument1": {
           "type": "minecraft:add",
-          "argument1": "larion:overworld/depth_features",
+          "argument1": "larion:overworld/terrain_features",
           "argument2": {
             "type": "minecraft:add",
             "argument1": -0.5037500262260437,
