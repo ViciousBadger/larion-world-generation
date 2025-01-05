@@ -9,7 +9,11 @@
         "type": "minecraft:quarter_negative",
         "argument": {
           "type": "minecraft:mul",
-          "argument1": "minecraft:overworld/depth",
+          "argument1": {
+            "type": "minecraft:add",
+            "argument1": "minecraft:overworld/depth",
+            "argument2": "larion:overworld/terrain_features"
+          },
           "argument2": "minecraft:overworld/factor"
         }
       }
