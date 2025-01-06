@@ -6,7 +6,7 @@
       "type": "minecraft:spline",
       "spline": {
         "coordinate": {
-          "type": "minecraft:max",
+          "type": "minecraft:min",
           "argument1": {
             "type": "minecraft:abs",
             "argument": {

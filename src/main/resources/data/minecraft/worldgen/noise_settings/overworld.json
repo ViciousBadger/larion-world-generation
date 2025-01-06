@@ -132,7 +132,7 @@
       "y_scale": 1.0
     },
     "ridges": "minecraft:overworld/ridges",
-    "temperature": "larion:overworld/temperature_swapped",
+    "temperature": "larion:overworld/temperature",
     "vegetation": "larion:overworld/vegetation",
     "vein_gap": {
       "type": "minecraft:noise",

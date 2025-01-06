@@ -14,12 +14,12 @@
         "value": -0.32
       },
       {
-        "location": 1,
+        "location": 0.9,
         "derivative": 0.0,
         "value": -0.02
       },
       {
-        "location": 2,
+        "location": 2.2,
         "derivative": 0,
         "value": {
           "coordinate": "larion:overworld/erosion/eroded_zones",
