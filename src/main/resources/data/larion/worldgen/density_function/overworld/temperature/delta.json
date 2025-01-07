@@ -11,7 +11,7 @@
     "type": "minecraft:mul",
     "argument1": {
       "type": "minecraft:noise",
-      "noise": "larion:temperature_major_shift",
+      "noise": "larion:temperature/major_shift",
       "xz_scale": 0.25,
       "y_scale": 0
     },

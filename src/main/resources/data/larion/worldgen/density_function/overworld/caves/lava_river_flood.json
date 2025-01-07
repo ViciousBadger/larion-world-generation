@@ -1,11 +1,8 @@
 {
-  "type": "minecraft:cache_once",
-  "argument": {
-    "type": "range_choice",
-    "input": "minecraft:y",
-    "min_inclusive": -128,
-    "max_exclusive": -64,
-    "when_in_range": "larion:overworld/caves/lava_rivers",
-    "when_out_of_range": 0.0
-  }
+  "type": "range_choice",
+  "input": "minecraft:y",
+  "min_inclusive": -128,
+  "max_exclusive": -64,
+  "when_in_range": "larion:overworld/caves/lava_rivers",
+  "when_out_of_range": 0.0
 }

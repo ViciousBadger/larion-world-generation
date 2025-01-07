@@ -55,10 +55,7 @@
       "argument2": {
         "type": "minecraft:spline",
         "spline": {
-          "coordinate": {
-            "type": "minecraft:abs",
-            "argument": "larion:overworld/ridges/rivers"
-          },
+          "coordinate": "larion:overworld/ridges/rivers",
           "points": [
             {
               "location": 0.0,

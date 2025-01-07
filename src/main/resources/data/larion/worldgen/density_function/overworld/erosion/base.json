@@ -1,6 +1,6 @@
 {
   "type": "minecraft:noise",
-  "noise": "larion:erosion/v",
+  "noise": "larion:erosion/base",
   "xz_scale": 0.25,
   "y_scale": 0.0
 }

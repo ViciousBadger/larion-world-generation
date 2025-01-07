@@ -5,10 +5,7 @@
     "input": "minecraft:y",
     "min_inclusive": 50,
     "max_exclusive": 120,
-    "when_in_range": {
-      "type": "minecraft:abs",
-      "argument": "larion:overworld/ridges/rivers"
-    },
+    "when_in_range": "larion:overworld/ridges/rivers",
     "when_out_of_range": 0.0
   }
 }

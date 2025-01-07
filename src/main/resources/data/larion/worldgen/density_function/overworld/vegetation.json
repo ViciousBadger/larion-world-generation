@@ -6,7 +6,7 @@
       "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:mul",
-        "argument1": "larion:overworld/vegetation_modifier",
+        "argument1": "larion:overworld/vegetation_multiplier",
         "argument2": {
           "type": "minecraft:noise",
           "noise": "larion:vegetation/a",

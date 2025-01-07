@@ -12,6 +12,7 @@
   "disable_mob_generation": false,
   "legacy_random_source": false,
   "noise": {
+    "note": "Modified for Larion - adjusts noise to fit new world height.",
     "height": 640,
     "min_y": -128,
     "size_horizontal": 1,
@@ -29,6 +30,7 @@
     "erosion": "minecraft:overworld/erosion",
     "final_density": "larion:overworld/final_density",
     "fluid_level_floodedness": {
+      "note": "Modified for Larion - enables flooding of river caves and removes (most) flooding of lava rivers.",
       "type": "range_choice",
       "min_inclusive": 0.35,
       "max_exclusive": 1.0,
@@ -49,6 +51,7 @@
       }
     },
     "fluid_level_spread": {
+      "note": "Modified for Larion - enables flooding of river caves.",
       "type": "range_choice",
       "min_inclusive": -0.2,
       "max_exclusive": 0.35,
@@ -82,6 +85,7 @@
             "argument2": {
               "type": "minecraft:mul",
               "argument1": {
+                "note": "Modified for Larion - allows terrain height to go above vanilla limits.",
                 "type": "minecraft:y_clamped_gradient",
                 "from_value": 1.0,
                 "from_y": 448,
@@ -106,11 +110,7 @@
                           "argument1": "minecraft:overworld/depth",
                           "argument2": {
                             "type": "minecraft:cache_2d",
-                            "argument": {
-                              "type": "minecraft:mul",
-                              "argument1": "minecraft:overworld/factor",
-                              "argument2": "larion:overworld/factor_factor"
-                            }
+                            "argument": "minecraft:overworld/factor"
                           }
                         }
                       }
