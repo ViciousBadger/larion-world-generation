@@ -15,17 +15,31 @@
     "argument2": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": "minecraft:overworld/erosion",
+        "coordinate": "minecraft:overworld/continents",
         "points": [
-          {
-            "derivative": 0.0,
-            "location": -0.48,
-            "value": 32
-          },
           {
             "derivative": 0.0,
             "location": -0.24,
             "value": 96
+          },
+          {
+            "derivative": 0.0,
+            "location": -0.08,
+            "value": {
+              "coordinate": "minecraft:overworld/erosion",
+              "points": [
+                {
+                  "derivative": 0.0,
+                  "location": -0.48,
+                  "value": 32
+                },
+                {
+                  "derivative": 0.0,
+                  "location": -0.24,
+                  "value": 96
+                }
+              ]
+            }
           }
         ]
       }
