@@ -84,7 +84,7 @@
                                   "note": "Valleys",
                                   "derivative": 0.0,
                                   "location": -1.0,
-                                  "value": 340
+                                  "value": 320
                                 },
                                 {
                                   "derivative": 0.0,
@@ -136,7 +136,7 @@
                                   "note": "Valleys",
                                   "derivative": 0.0,
                                   "location": -1.0,
-                                  "value": 230
+                                  "value": 210
                                 },
                                 {
                                   "derivative": 0.0,
@@ -212,6 +212,12 @@
                                   "value": 50
                                 },
                                 {
+                                  "note": "Steep lowland slope",
+                                  "derivative": 0.0,
+                                  "location": -0.2,
+                                  "value": 124
+                                },
+                                {
                                   "derivative": 0.0,
                                   "location": 0.0,
                                   "value": 180
@@ -223,7 +229,7 @@
                       }
                     },
                     {
-                      "note": "Highlands start E=3",
+                      "note": "Hills E=3",
                       "derivative": 0.0,
                       "location": -0.1,
                       "value": {
@@ -283,6 +289,12 @@
                                   "derivative": 0.0,
                                   "location": -1.0,
                                   "value": 50
+                                },
+                                {
+                                  "note": "Steep lowland slope",
+                                  "derivative": 0.0,
+                                  "location": -0.2,
+                                  "value": 94
                                 },
                                 {
                                   "derivative": 0.0,
@@ -438,6 +450,17 @@
                             "derivative": 0.0,
                             "location": 0.33,
                             "value": 64
+                          },
+                          {
+                            "derivative": 0.0,
+                            "location": 0.66,
+                            "value": 64
+                          },
+                          {
+                            "note": "Weird hills",
+                            "derivative": 0.0,
+                            "location": 1.0,
+                            "value": 128
                           }
                         ]
                       }

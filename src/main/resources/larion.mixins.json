@@ -4,7 +4,8 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"NoiseChunkGeneratorMixin",
-		"SteepSlopePredicateMixin"
+		"SteepSlopePredicateMixin",
+		"MaterialRuleContextMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
