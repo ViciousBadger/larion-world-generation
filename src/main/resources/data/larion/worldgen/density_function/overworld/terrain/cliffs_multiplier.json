@@ -46,24 +46,9 @@
                     "value": 18
                   },
                   {
-                    "location": 0.47,
-                    "derivative": 1.0,
-                    "value": 24
-                  },
-                  {
-                    "location": 0.50,
-                    "derivative": 0.0,
-                    "value": 38
-                  },
-                  {
-                    "location": 0.53,
-                    "derivative": -1.0,
-                    "value": 24
-                  },
-                  {
                     "location": 0.55,
                     "derivative": 0.0,
-                    "value": 18
+                    "value": 38
                   }
                 ]
               }

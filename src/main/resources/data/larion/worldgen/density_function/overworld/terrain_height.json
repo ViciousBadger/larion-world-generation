@@ -212,9 +212,9 @@
                                   "value": 50
                                 },
                                 {
-                                  "note": "Steep lowland slope",
+                                  "note": "Steep slope",
                                   "derivative": 0.0,
-                                  "location": -0.2,
+                                  "location": -0.6,
                                   "value": 124
                                 },
                                 {
@@ -291,12 +291,6 @@
                                   "value": 50
                                 },
                                 {
-                                  "note": "Steep lowland slope",
-                                  "derivative": 0.0,
-                                  "location": -0.2,
-                                  "value": 94
-                                },
-                                {
                                   "derivative": 0.0,
                                   "location": 0.0,
                                   "value": 145
@@ -371,6 +365,11 @@
                                 },
                                 {
                                   "derivative": 0.0,
+                                  "location": -0.7,
+                                  "value": 64
+                                },
+                                {
+                                  "derivative": 0.0,
                                   "location": 0.0,
                                   "value": 84
                                 }
@@ -423,6 +422,11 @@
                                 },
                                 {
                                   "derivative": 0.0,
+                                  "location": -0.7,
+                                  "value": 64
+                                },
+                                {
+                                  "derivative": 0.0,
                                   "location": 0.0,
                                   "value": 70
                                 }
@@ -446,21 +450,10 @@
                             "value": 58
                           },
                           {
-                            "note": "Low lands",
+                            "note": "Eroded lands",
                             "derivative": 0.0,
                             "location": 0.33,
                             "value": 64
-                          },
-                          {
-                            "derivative": 0.0,
-                            "location": 0.66,
-                            "value": 64
-                          },
-                          {
-                            "note": "Weird hills",
-                            "derivative": 0.0,
-                            "location": 1.0,
-                            "value": 128
                           }
                         ]
                       }
