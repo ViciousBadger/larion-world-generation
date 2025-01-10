@@ -36,7 +36,7 @@
               },
               {
                 "derivative": 0.0,
-                "location": -0.24,
+                "location": -0.22,
                 "value": 42
               },
               {
@@ -60,10 +60,10 @@
                               "coordinate": "minecraft:overworld/ridges_folded",
                               "points": [
                                 {
-                                  "note": "Coast valleys",
+                                  "note": "Rivers/lakes",
                                   "derivative": 0.0,
                                   "location": -1.0,
-                                  "value": 130
+                                  "value": 46
                                 },
                                 {
                                   "derivative": 0.0,
@@ -112,10 +112,10 @@
                               "coordinate": "minecraft:overworld/ridges_folded",
                               "points": [
                                 {
-                                  "note": "Coast valleys",
+                                  "note": "Rivers/lakes",
                                   "derivative": 0.0,
                                   "location": -1.0,
-                                  "value": 90
+                                  "value": 46
                                 },
                                 {
                                   "derivative": 0.0,
