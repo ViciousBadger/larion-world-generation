@@ -36,7 +36,7 @@
               },
               {
                 "derivative": 0.0,
-                "location": -0.22,
+                "location": -0.28,
                 "value": 42
               },
               {
@@ -105,6 +105,11 @@
                         "coordinate": "minecraft:overworld/continents",
                         "points": [
                           {
+                            "derivative": 0.0,
+                            "location": -0.25,
+                            "value": 48
+                          },
+                          {
                             "note": "Mountainous coastal cliff",
                             "derivative": 0.0,
                             "location": -0.18,
@@ -156,6 +161,11 @@
                       "value": {
                         "coordinate": "minecraft:overworld/continents",
                         "points": [
+                          {
+                            "derivative": 0.0,
+                            "location": -0.22,
+                            "value": 48
+                          },
                           {
                             "note": "Hilly coast start",
                             "derivative": 0.0,

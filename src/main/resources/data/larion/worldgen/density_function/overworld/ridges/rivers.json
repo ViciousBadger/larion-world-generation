@@ -3,48 +3,32 @@
   "argument": {
     "type": "minecraft:cache_2d",
     "argument": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:mul",
-        "argument1": -0.07,
-        "argument2": {
+      "type": "minecraft:abs",
+      "argument": {
+        "type": "minecraft:min",
+        "argument1": {
           "type": "minecraft:abs",
           "argument": {
-            "type": "minecraft:noise",
-            "noise": "larion:ridges/rivers_base",
-            "xz_scale": 0.25,
-            "y_scale": 0.0
-          }
-        }
-      },
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:min",
-          "argument1": {
-            "type": "minecraft:abs",
-            "argument": {
-              "type": "minecraft:add",
-              "argument1": "larion:overworld/ridges/rivers_a",
-              "argument2": {
-                "type": "minecraft:mul",
-                "argument1": -1.0,
-                "argument2": "larion:overworld/ridges/rivers_b"
-              }
-            }
-          },
-          "argument2": {
             "type": "minecraft:add",
-            "argument1": {
+            "argument1": "larion:overworld/ridges/rivers_a",
+            "argument2": {
               "type": "minecraft:mul",
               "argument1": -1.0,
-              "argument2": "larion:overworld/ridges/rivers_c"
-            },
-            "argument2": {
-              "type": "minecraft:max",
-              "argument1": "larion:overworld/ridges/rivers_a",
               "argument2": "larion:overworld/ridges/rivers_b"
             }
+          }
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:mul",
+            "argument1": -1.0,
+            "argument2": "larion:overworld/ridges/rivers_c"
+          },
+          "argument2": {
+            "type": "minecraft:max",
+            "argument1": "larion:overworld/ridges/rivers_a",
+            "argument2": "larion:overworld/ridges/rivers_b"
           }
         }
       }
