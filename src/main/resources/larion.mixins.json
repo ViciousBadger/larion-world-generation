@@ -3,7 +3,9 @@
 	"package": "com.badgerson.larion.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"NoiseChunkGeneratorMixin"
+		"NoiseChunkGeneratorMixin",
+		"SteepSlopePredicateMixin",
+		"MaterialRuleContextMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

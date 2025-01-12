@@ -4,3 +4,9 @@ accessible method net/minecraft/world/gen/densityfunction/DensityFunctionTypes h
 accessible field net/minecraft/world/gen/densityfunction/DensityFunctionTypes CONSTANT_RANGE Lcom/mojang/serialization/Codec;
 accessible class net/minecraft/world/gen/densityfunction/DensityFunctionTypes$Unary
 
+accessible class net/minecraft/world/gen/surfacebuilder/MaterialRules$HorizontalLazyAbstractPredicate
+accessible class net/minecraft/world/gen/surfacebuilder/MaterialRules$BooleanSupplier
+accessible class net/minecraft/world/gen/surfacebuilder/MaterialRules$MaterialRuleContext$SteepSlopePredicate
+accessible field net/minecraft/world/gen/surfacebuilder/MaterialRules$MaterialRuleContext blockX I
+accessible field net/minecraft/world/gen/surfacebuilder/MaterialRules$MaterialRuleContext blockZ I
+accessible field net/minecraft/world/gen/surfacebuilder/MaterialRules$MaterialRuleContext chunk Lnet/minecraft/world/chunk/Chunk;

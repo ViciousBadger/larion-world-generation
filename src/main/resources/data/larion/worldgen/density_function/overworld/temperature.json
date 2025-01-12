@@ -5,7 +5,7 @@
     "argument": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": "larion:overworld/temperature_sine",
+        "coordinate": "larion:overworld/temperature/sine",
         "points": [
           {
             "location": -1.0,

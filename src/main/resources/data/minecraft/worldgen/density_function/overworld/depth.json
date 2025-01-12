@@ -5,15 +5,7 @@
     "from_value": 1.5,
     "from_y": -128,
     "to_value": -1.5,
-    "to_y": 384
+    "to_y": 512
   },
-  "argument2": {
-    "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": "minecraft:overworld/offset",
-      "argument2": 0.75
-    },
-    "argument2": "larion:overworld/extra_offset"
-  }
+  "argument2": "larion:overworld/terrain_height"
 }

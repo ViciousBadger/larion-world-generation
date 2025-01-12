@@ -5,13 +5,13 @@
     "argument1": {
       "type": "larion:z"
     },
-    "argument2": 0.00025
+    "argument2": 0.0002
   },
   "argument2": {
     "type": "minecraft:mul",
     "argument1": {
       "type": "minecraft:noise",
-      "noise": "larion:temperature_major_shift",
+      "noise": "larion:temperature/major_shift",
       "xz_scale": 0.25,
       "y_scale": 0
     },

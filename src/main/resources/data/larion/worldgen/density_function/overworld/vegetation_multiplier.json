@@ -4,19 +4,24 @@
     "coordinate": "larion:overworld/temperature",
     "points": [
       {
-        "location": -1.0,
+        "location": -0.20,
         "derivative": 0.0,
-        "value": 0.5
+        "value": -1.0
       },
       {
-        "location": 0.0,
+        "location": -0.10,
         "derivative": 0.0,
         "value": 1.0
       },
       {
-        "location": 1.0,
+        "location": 0.15,
         "derivative": 0.0,
-        "value": 1.5
+        "value": 1.0
+      },
+      {
+        "location": 0.25,
+        "derivative": 0.0,
+        "value": -1.0
       }
     ]
   }

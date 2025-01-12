@@ -5,12 +5,12 @@
 	"name": "Larion World Generation",
 	"description": "Epic fantasy world generation overhaul",
 	"authors": [
-    "Badgerson"
+		"Badgerson"
 	],
 	"contact": {
-    "homepage": "https://github.com/ViciousBadger/larion-world-generation"
+		"homepage": "https://github.com/ViciousBadger/larion-world-generation"
 	},
-  "license": "Apache-2.0",
+	"license": "Apache-2.0",
 	"icon": "assets/larion/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -28,7 +28,7 @@
 			"environment": "client"
 		}
 	],
-  "accessWidener": "larion.accesswidener",
+	"accessWidener": "larion.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.16.5",
 		"fabric-api": "*",
@@ -36,16 +36,16 @@
 		"java": ">=17"
 	},
 	"suggests": {
-    "c2me": "*",
-    "noisium": "*",
-    "faster-random": "*",
-    "wwoo": "*"
+		"c2me": "*",
+		"noisium": "*",
+		"faster-random": "*",
+		"wwoo": "*"
 	},
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.source": "https://github.com/ViciousBadger/larion-world-generation"
-      }
-    }
-  }
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.source": "https://github.com/ViciousBadger/larion-world-generation"
+			}
+		}
+	}
 }

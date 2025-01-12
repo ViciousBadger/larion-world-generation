@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:mul",
+      "note": "3 / 640, aka depth divided by world height in blocks",
+      "argument1": 0.0046875,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:mul",
+          "argument1": "minecraft:overworld/jaggedness",
+          "argument2": {
+            "type": "minecraft:max",
+            "argument1": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "minecraft:jagged",
+                "xz_scale": 500.0,
+                "y_scale": 0.0
+              }
+            },
+            "argument2": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:jagged_b",
+                "xz_scale": 250.0,
+                "y_scale": 0.0
+              }
+            }
+          }
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:mul",
+            "argument1": "larion:overworld/terrain/dunes",
+            "argument2": "larion:overworld/terrain/dunes_multiplier"
+          },
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": "larion:overworld/terrain/cliffs",
+            "argument2": {
+              "type": "minecraft:mul",
+              "argument1": "larion:overworld/terrain/cliffs_multiplier",
+              "argument2": {
+                "type": "minecraft:add",
+                "argument1": 1.0,
+                "argument2": {
+                  "type": "minecraft:mul",
+                  "argument1": -1.0,
+                  "argument2": "larion:overworld/terrain/dunes_multiplier"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/continents",
+    "points": [
+      {
+        "derivative": 0.0,
+        "location": -0.24,
+        "value": 0.0
+      },
+      {
+        "derivative": 0.0,
+        "location": -0.18,
+        "value": {
+          "coordinate": "minecraft:overworld/erosion",
+          "points": [
+            {
+              "derivative": 0.0,
+              "location": -0.72,
+              "value": {
+                "coordinate": "minecraft:overworld/ridges_folded",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": -0.33,
+                    "value": 0.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 0.66,
+                    "value": 72
+                  }
+                ]
+              }
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.48,
+              "value": {
+                "coordinate": "minecraft:overworld/ridges_folded",
+                "points": [
+                  {
+                    "derivative": 0.0,
+                    "location": 0.0,
+                    "value": 0.0
+                  },
+                  {
+                    "derivative": 0.0,
+                    "location": 1.0,
+                    "value": 48
+                  }
+                ]
+              }
+            },
+            {
+              "derivative": 0.0,
+              "location": -0.375,
+              "value": 0.0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
