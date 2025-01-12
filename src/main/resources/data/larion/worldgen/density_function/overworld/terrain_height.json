@@ -1,0 +1,480 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:mul",
+      "note": "3 / 640, aka depth divided by world height in blocks",
+      "argument1": 0.0046875,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": -192,
+        "argument2": {
+          "type": "minecraft:spline",
+          "spline": {
+            "coordinate": "minecraft:overworld/continents",
+            "points": [
+              {
+                "derivative": -200.0,
+                "location": -1.3,
+                "value": 96
+              },
+              {
+                "derivative": 0.0,
+                "location": -1.1,
+                "value": 64
+              },
+              {
+                "derivative": 0.0,
+                "location": -0.85,
+                "value": 0
+              },
+              {
+                "derivative": 0.0,
+                "location": -0.44,
+                "value": 28
+              },
+              {
+                "derivative": 0.0,
+                "location": -0.28,
+                "value": 42
+              },
+              {
+                "derivative": 0.0,
+                "location": -0.18,
+                "value": {
+                  "coordinate": "minecraft:overworld/erosion",
+                  "points": [
+                    {
+                      "note": "Mountain peaks E=0",
+                      "derivative": 0.0,
+                      "location": -1.0,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "note": "Mountainous coastal cliff",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 180
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.33,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Valleys",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 320
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 380
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Mountains E=1",
+                      "derivative": 0.0,
+                      "location": -0.72,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "derivative": 0.0,
+                            "location": -0.25,
+                            "value": 48
+                          },
+                          {
+                            "note": "Mountainous coastal cliff",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 120
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.33,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Valleys",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 210
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 270
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Highlands E=2",
+                      "derivative": 0.0,
+                      "location": -0.32,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "derivative": 0.0,
+                            "location": -0.22,
+                            "value": 48
+                          },
+                          {
+                            "note": "Hilly coast start",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth start",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 74
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Hilly coast end",
+                            "derivative": 0.0,
+                            "location": -0.08,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth end",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 94
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": -0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "note": "Steep slope",
+                                  "derivative": 0.0,
+                                  "location": -0.6,
+                                  "value": 124
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 180
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Hills E=3",
+                      "derivative": 0.0,
+                      "location": -0.1,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "note": "Coast start",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth start",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 62
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Coast end",
+                            "derivative": 0.0,
+                            "location": -0.08,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth end",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 74
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 145
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Midland E=4",
+                      "derivative": 0.0,
+                      "location": 0.25,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "note": "Coast start",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth start",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 62
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Coast end",
+                            "derivative": 0.0,
+                            "location": -0.08,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth end",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 66
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.7,
+                                  "value": 64
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 84
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Windswept E=5",
+                      "derivative": 0.0,
+                      "location": 0.45,
+                      "value": {
+                        "coordinate": "minecraft:overworld/continents",
+                        "points": [
+                          {
+                            "note": "Coast start",
+                            "derivative": 0.0,
+                            "location": -0.18,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "River mouth start",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 46
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.33,
+                                  "value": 62
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": -0.7,
+                                  "value": 64
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 70
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "note": "Eroded E=6",
+                      "derivative": 0.0,
+                      "location": 0.55,
+                      "value": {
+                        "coordinate": "minecraft:overworld/ridges_folded",
+                        "points": [
+                          {
+                            "note": "Swamps",
+                            "derivative": 0.0,
+                            "location": -0.33,
+                            "value": 58
+                          },
+                          {
+                            "note": "Eroded lands",
+                            "derivative": 0.0,
+                            "location": 0.33,
+                            "value": 64
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
