@@ -209,9 +209,30 @@
                             }
                           },
                           {
+                            "note": "Coast cliff",
+                            "derivative": 0.0,
+                            "location": 0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 135
+                                }
+                              ]
+                            }
+                          },
+                          {
                             "note": "Inland",
                             "derivative": 0.0,
-                            "location": -0.0,
+                            "location": 0.33,
                             "value": {
                               "coordinate": "minecraft:overworld/ridges_folded",
                               "points": [
@@ -230,7 +251,7 @@
                                 {
                                   "derivative": 0.0,
                                   "location": 0.0,
-                                  "value": 180
+                                  "value": 170
                                 }
                               ]
                             }
@@ -288,9 +309,30 @@
                             }
                           },
                           {
-                            "note": "Inland",
+                            "note": "Coast cliff",
                             "derivative": 0.0,
                             "location": 0.0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/ridges_folded",
+                              "points": [
+                                {
+                                  "note": "Rivers/lakes",
+                                  "derivative": 0.0,
+                                  "location": -1.0,
+                                  "value": 50
+                                },
+                                {
+                                  "derivative": 0.0,
+                                  "location": 0.0,
+                                  "value": 105
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "note": "Inland",
+                            "derivative": 0.0,
+                            "location": 0.33,
                             "value": {
                               "coordinate": "minecraft:overworld/ridges_folded",
                               "points": [
