@@ -17,7 +17,11 @@ Please note that the mod is still in active development, future updates are near
 
 I can heavily recommend playing with [Distant Horizons](https://modrinth.com/mod/distanthorizons) and pre-generating your world to allow the scale of the terrain to strike awe from the get-go.
 
-I also recommend using [William Wyther's Overhauled Overworld](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) as a complimentary worldgen datapack as it is frankly a work of art and its visual style fits Larion perfectly. Be sure to use the datapack version, if you use WWOO as a mod you may run into issues with load order.
+I also recommend using [William Wyther's Overhauled Overworld](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) as a complimentary worldgen datapack as it is frankly a work of art and its visual style fits Larion perfectly. Be sure to use the datapack version, if you use WWOO as a mod you may run into issues with load order. If you find that mountains are "chopped off" at around Y=320, please open the WWOO .zip archive in for example 7zip and delete the files at these locations:
+- `1-20-5-overlay/data/minecraft/dimension_type/overworld.json`
+- `1-21-overlay/data/minecraft/dimension_type/overworld.json`
+- `data/minecraft/dimension_type/overworld.json`
+
 
 Some seeds will spawn you in water or on a tiny island in the middle of
 nowhere. If you want a bit more predictability when creating a world, I would
