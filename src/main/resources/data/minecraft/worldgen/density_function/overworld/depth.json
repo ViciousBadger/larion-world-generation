@@ -2,9 +2,9 @@
   "type": "minecraft:add",
   "argument1": {
     "type": "minecraft:y_clamped_gradient",
-    "from_value": 1.5,
+    "from_value": 1.2,
     "from_y": -128,
-    "to_value": -1.5,
+    "to_value": -1.2,
     "to_y": 512
   },
   "argument2": "larion:overworld/terrain_height"

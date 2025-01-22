@@ -4,8 +4,8 @@
     "type": "minecraft:cache_2d",
     "argument": {
       "type": "minecraft:mul",
-      "note": "3 / 640, aka depth divided by world height in blocks",
-      "argument1": 0.0046875,
+      "note": "Depth range divided by world height in blocks",
+      "argument1": 0.00375,
       "argument2": {
         "type": "minecraft:add",
         "argument1": -192,
