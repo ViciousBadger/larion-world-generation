@@ -30,7 +30,7 @@
     "erosion": "minecraft:overworld/erosion",
     "final_density": "larion:overworld/final_density",
     "fluid_level_floodedness": {
-      "note": "Modified for Larion - enables flooding of river caves and removes (most) flooding of lava rivers.",
+      "note": "Modified for Larion - enables flooding of river tunnels and removes (most) flooding of lava rivers.",
       "type": "range_choice",
       "min_inclusive": 0.35,
       "max_exclusive": 1.0,
@@ -38,7 +38,7 @@
       "when_in_range": -10.0,
       "when_out_of_range": {
         "type": "range_choice",
-        "min_inclusive": -0.2,
+        "min_inclusive": 0.0,
         "max_exclusive": 0.35,
         "input": "larion:overworld/caves/river_noodle_flood",
         "when_in_range": 1,
@@ -53,7 +53,7 @@
     "fluid_level_spread": {
       "note": "Modified for Larion - enables flooding of river caves.",
       "type": "range_choice",
-      "min_inclusive": -0.2,
+      "min_inclusive": 0.0,
       "max_exclusive": 0.35,
       "input": "larion:overworld/caves/river_noodle_flood",
       "when_in_range": 0.5,
