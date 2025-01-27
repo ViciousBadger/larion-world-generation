@@ -1,12 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "com.badgerson.larion.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [
-    "MixinTitleScreen"
-  ],
+  "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1

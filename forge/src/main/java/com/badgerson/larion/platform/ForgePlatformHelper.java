@@ -1,6 +1,6 @@
-package com.example.examplemod.platform;
+package com.badgerson.larion.platform;
 
-import com.example.examplemod.platform.services.IPlatformHelper;
+import com.badgerson.larion.platform.services.IPlatformHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 

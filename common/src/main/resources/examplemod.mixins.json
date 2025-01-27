@@ -1,10 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "com.badgerson.larion.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "NoiseChunkGeneratorMixin",
+    "SteepSlopePredicateMixin",
+    "MaterialRuleContextMixin"
+  ],
   "client": [
     "MixinMinecraft"
   ],
@@ -13,4 +17,3 @@
     "defaultRequire": 1
   }
 }
-

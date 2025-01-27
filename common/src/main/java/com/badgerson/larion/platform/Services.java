@@ -1,7 +1,7 @@
-package com.example.examplemod.platform;
+package com.badgerson.larion.platform;
 
-import com.example.examplemod.Constants;
-import com.example.examplemod.platform.services.IPlatformHelper;
+import com.badgerson.larion.Constants;
+import com.badgerson.larion.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 

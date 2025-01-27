@@ -1,8 +1,8 @@
-package com.example.examplemod;
+package com.badgerson.larion;
 
 import net.fabricmc.api.ModInitializer;
 
-public class ExampleMod implements ModInitializer {
+public class LarionMod implements ModInitializer {
     
     @Override
     public void onInitialize() {

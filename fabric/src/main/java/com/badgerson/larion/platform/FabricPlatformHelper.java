@@ -1,6 +1,6 @@
-package com.example.examplemod.platform;
+package com.badgerson.larion.platform;
 
-import com.example.examplemod.platform.services.IPlatformHelper;
+import com.badgerson.larion.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {
