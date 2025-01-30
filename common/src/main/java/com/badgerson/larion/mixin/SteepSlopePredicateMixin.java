@@ -6,9 +6,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 
-import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
-
-@Mixin(SurfaceRules.MaterialRuleContext.SteepSlopePredicate.class)
+@Mixin(SurfaceRules.Context.SteepSlopePredicate.class)
 public class SteepSlopePredicateMixin extends SurfaceRules.LazyXZCondition{
  protected SteepSlopePredicateMixin(SurfaceRules.Context materialRuleContext) {
   super(materialRuleContext);
