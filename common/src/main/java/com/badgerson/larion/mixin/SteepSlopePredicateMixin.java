@@ -2,43 +2,43 @@ package com.badgerson.larion.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 
-import net.minecraft.world.chunk.Chunk;
-import net.minecraft.world.gen.surfacebuilder.MaterialRules;
-import net.minecraft.world.Heightmap;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.chunk.ChunkAccess;
+import net.minecraft.world.level.levelgen.SurfaceRules;
 
 import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
 
-@Mixin(MaterialRules.MaterialRuleContext.SteepSlopePredicate.class)
-public class SteepSlopePredicateMixin extends MaterialRules.HorizontalLazyAbstractPredicate {
- protected SteepSlopePredicateMixin(MaterialRules.MaterialRuleContext materialRuleContext) {
+@Mixin(SurfaceRules.MaterialRuleContext.SteepSlopePredicate.class)
+public class SteepSlopePredicateMixin extends SurfaceRules.LazyXZCondition{
+ protected SteepSlopePredicateMixin(SurfaceRules.Context materialRuleContext) {
   super(materialRuleContext);
  }
 
  @Override
- protected boolean test() {
+ protected boolean compute() {
   int x = this.context.blockX & 15;
   int z = this.context.blockZ & 15;
 
-  Chunk chunk = this.context.chunk;
+  ChunkAccess chunk = this.context.chunk;
 
-  int here = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, x, z);
+  int here = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x, z);
 
   final int STEEP_THRESHOLD = 3;
 
-	int south = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, x, Math.max(z - 1, 0));
+	int south = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x, Math.max(z - 1, 0));
 	if (here - south > STEEP_THRESHOLD) {
 		return true;
 	} else {
-		int north = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, x, Math.min(z + 1, 15));
+		int north = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, x, Math.min(z + 1, 15));
 		if (here - north > STEEP_THRESHOLD) {
 			return true;
 		} else {
 
-			int west = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, Math.max(x - 1, 0), z);
+			int west = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, Math.max(x - 1, 0), z);
 			if (here - west > STEEP_THRESHOLD) {
 				return true;
 			} else {
-				int east = chunk.sampleHeightmap(Heightmap.Type.WORLD_SURFACE_WG, Math.min(x + 1, 15), z);
+				int east = chunk.getHeight(Heightmap.Types.WORLD_SURFACE_WG, Math.min(x + 1, 15), z);
 				return here - east > STEEP_THRESHOLD;
 			}
 		}

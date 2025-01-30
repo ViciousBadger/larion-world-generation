@@ -1,7 +1,7 @@
 package com.badgerson.larion;
 
-import net.minecraft.world.gen.surfacebuilder.MaterialRules;
+import net.minecraft.world.level.levelgen.SurfaceRules;
 
 public interface MaterialRuleContextExtensions {
-  public MaterialRules.BooleanSupplier getSomewhatSteepSlopePredicate();
+  public SurfaceRules.Condition getSomewhatSteepSlopePredicate();
 }

@@ -2,16 +2,16 @@
 package com.badgerson.larion.density_function_types;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.util.dynamic.CodecHolder;
-import net.minecraft.world.gen.densityfunction.DensityFunction;
+import net.minecraft.util.KeyDispatchDataCodec;
+import net.minecraft.world.level.levelgen.DensityFunction;
 
-public record XCoord() implements DensityFunction.Base {
+public record XCoord() implements DensityFunction.SimpleFunction {
 
-    public static final CodecHolder<XCoord> CODEC = CodecHolder.of(MapCodec.unit(new XCoord()));
+    public static final KeyDispatchDataCodec<XCoord> CODEC = KeyDispatchDataCodec.of(MapCodec.unit(new XCoord()));
 
     @Override
-    public double sample(DensityFunction.NoisePos pos) {
-        return Math.min(Math.max(pos.blockX(), minValue()), maxValue());
+    public double compute(DensityFunction.FunctionContext context) {
+        return Math.min(Math.max(context.blockX(), minValue()), maxValue());
     }
 
     @Override
@@ -24,7 +24,7 @@ public record XCoord() implements DensityFunction.Base {
         return 30_000_000;
     }
 
-    public CodecHolder<? extends DensityFunction> getCodecHolder() {
+    public KeyDispatchDataCodec<? extends DensityFunction> codec() {
         return CODEC;
     }
 }

@@ -3,14 +3,14 @@ package com.badgerson.larion.density_function_types;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.util.dynamic.CodecHolder;
-import net.minecraft.world.gen.densityfunction.DensityFunction;
-import net.minecraft.world.gen.densityfunction.DensityFunctionTypes;
+import net.minecraft.util.KeyDispatchDataCodec;
+import net.minecraft.world.level.levelgen.DensityFunction;
+import net.minecraft.world.level.levelgen.DensityFunctions;
 
-public record Signum(DensityFunction df) implements DensityFunctionTypes.Unary {
+public record Signum(DensityFunction df) implements DensityFunctions.PureTransformer {
 
-    private static final MapCodec<Signum> MAP_CODEC = RecordCodecBuilder.mapCodec((instance) -> instance.group(DensityFunction.FUNCTION_CODEC.fieldOf("argument").forGetter(Signum::df)).apply(instance, (Signum::new)));
-    public static final CodecHolder<Signum> CODEC = DensityFunctionTypes.holderOf(MAP_CODEC);
+    private static final MapCodec<Signum> MAP_CODEC = RecordCodecBuilder.mapCodec((instance) -> instance.group(DensityFunction.HOLDER_HELPER_CODEC.fieldOf("argument").forGetter(Signum::df)).apply(instance, (Signum::new)));
+    public static final KeyDispatchDataCodec<Signum> CODEC = DensityFunctions.makeCodec(MAP_CODEC);
 
     @Override
     public DensityFunction input() {
@@ -18,27 +18,27 @@ public record Signum(DensityFunction df) implements DensityFunctionTypes.Unary {
     }
 
     @Override
-    public double apply(double density) {
+    public double transform(double density) {
         return Math.signum(density);
     }
 
     @Override
-    public DensityFunction apply(DensityFunctionVisitor visitor) {
-        return new Signum(this.df.apply(visitor));
+    public DensityFunction mapAll(Visitor visitor) {
+        return new Signum(this.df.mapAll(visitor));
     }
 
     @Override
     public double minValue() {
-        return apply(this.df.minValue());
+        return transform(this.df.minValue());
     }
 
     @Override
     public double maxValue() {
-        return apply(this.df.maxValue());
+        return transform(this.df.maxValue());
     }
 
     @Override
-    public CodecHolder<? extends DensityFunction> getCodecHolder() {
+    public KeyDispatchDataCodec<? extends DensityFunction> codec() {
         return CODEC;
     }
 }
