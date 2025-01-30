@@ -6,6 +6,7 @@ accessible class net/minecraft/world/level/levelgen/DensityFunctions$PureTransfo
 
 accessible class net/minecraft/world/level/levelgen/SurfaceRules$LazyXZCondition
 accessible class net/minecraft/world/level/levelgen/SurfaceRules$Condition
+accessible class net/minecraft/world/level/levelgen/SurfaceRules$Context
 accessible class net/minecraft/world/level/levelgen/SurfaceRules$Context$SteepMaterialCondition
 accessible field net/minecraft/world/level/levelgen/SurfaceRules$Context blockX I
 accessible field net/minecraft/world/level/levelgen/SurfaceRules$Context blockZ I

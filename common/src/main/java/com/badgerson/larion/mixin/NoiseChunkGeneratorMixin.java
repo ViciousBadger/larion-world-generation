@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(NoiseBasedChunkGenerator.class)
 public class NoiseChunkGeneratorMixin {
-    @Inject(method = "createFluidLevelSampler", at = @At("HEAD"), cancellable = true)
-    private static void createFluidLevelSampler(NoiseGeneratorSettings settings, CallbackInfoReturnable<Aquifer.FluidPicker> ci) {
+    @Inject(method = "createFluidPicker", at = @At("HEAD"), cancellable = true)
+    private static void createFluidPicker(NoiseGeneratorSettings settings, CallbackInfoReturnable<Aquifer.FluidPicker> ci) {
         // This mixin modifies the aquifer generator so that the "bedrock lava
         // level" (in vanilla hardcoded to -54) is instead determined by the world's
         // minimum Y level, allowing for deeper caves without them being flooded.
