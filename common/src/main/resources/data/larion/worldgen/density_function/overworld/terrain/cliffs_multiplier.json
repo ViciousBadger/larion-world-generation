@@ -28,17 +28,22 @@
                   {
                     "location": -0.72,
                     "derivative": 0.0,
-                    "value": 42
+                    "value": 37
                   },
                   {
                     "location": -0.35,
                     "derivative": 0.0,
-                    "value": 34
+                    "value": 28
                   },
                   {
                     "location": -0.1,
                     "derivative": 0.0,
-                    "value": 22
+                    "value": 18
+                  },
+                  {
+                    "location": 0.25,
+                    "derivative": 0.0,
+                    "value": 0
                   },
                   {
                     "location": 0.45,
@@ -48,7 +53,7 @@
                   {
                     "location": 0.55,
                     "derivative": 0.0,
-                    "value": 38
+                    "value": 28
                   }
                 ]
               }

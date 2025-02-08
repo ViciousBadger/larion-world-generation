@@ -30,12 +30,12 @@
             "coordinate": "minecraft:overworld/erosion",
             "points": [
               {
-                "location": -0.42,
+                "location": -0.72,
                 "derivative": 0.0,
                 "value": 1.0
               },
               {
-                "location": -0.1,
+                "location": -0.04,
                 "derivative": 0.0,
                 "value": {
                   "coordinate": "larion:overworld/ridges/rivers",

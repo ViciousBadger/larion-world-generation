@@ -21,13 +21,18 @@
       {
         "derivative": 0,
         "location": -0.18,
+        "value": 7.5
+      },
+      {
+        "derivative": 0,
+        "location": -0.08,
         "value": {
           "coordinate": "minecraft:overworld/erosion",
           "points": [
             {
               "derivative": 0,
               "location": 0.40,
-              "value": 7.3
+              "value": 7.5
             },
             {
               "derivative": 0,
@@ -90,12 +95,12 @@
                   {
                     "derivative": 0,
                     "location": -0.25,
-                    "value": 6.6
+                    "value": 7.2
                   },
                   {
                     "derivative": 0,
                     "location": 0.25,
-                    "value": 5.8
+                    "value": 6.2
                   }
                 ]
               }
@@ -108,12 +113,12 @@
                 "points": [
                   {
                     "derivative": 0,
-                    "location": -0.1,
+                    "location": -0.4,
                     "value": 6.6
                   },
                   {
                     "derivative": 0,
-                    "location": 0.1,
+                    "location": 0.0,
                     "value": 3.2
                   }
                 ]
