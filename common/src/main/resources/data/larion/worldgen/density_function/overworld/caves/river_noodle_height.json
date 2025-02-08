@@ -21,8 +21,8 @@
           "points": [
             {
               "derivative": 0.0,
-              "location": -0.24,
-              "value": 128
+              "location": -0.18,
+              "value": 160
             },
             {
               "derivative": 0.0,
@@ -32,13 +32,13 @@
                 "points": [
                   {
                     "derivative": 0.0,
-                    "location": -0.48,
+                    "location": -0.38,
                     "value": 32
                   },
                   {
                     "derivative": 0.0,
-                    "location": -0.24,
-                    "value": 96
+                    "location": -0.14,
+                    "value": 74
                   }
                 ]
               }

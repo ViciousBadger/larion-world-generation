@@ -1324,31 +1324,6 @@
                               }
                             },
                             {
-                              "note": "Larion river mud (top layer)",
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:biome",
-                                "biome_is": [
-                                  "minecraft:river"
-                                ]
-                              },
-                              "then_run": {
-                                "type": "minecraft:condition",
-                                "if_true": {
-                                  "type": "minecraft:noise_threshold",
-                                  "min_threshold": -0.4,
-                                  "max_threshold": 0.4,
-                                  "noise": "minecraft:surface"
-                                },
-                                "then_run": {
-                                  "type": "minecraft:block",
-                                  "result_state": {
-                                    "Name": "minecraft:mud"
-                                  }
-                                }
-                              }
-                            },
-                            {
                               "type": "minecraft:condition",
                               "if_true": {
                                 "type": "minecraft:biome",
@@ -1845,31 +1820,6 @@
                                   }
                                 }
                               ]
-                            }
-                          }
-                        },
-                        {
-                          "note": "Larion river mud (below)",
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:biome",
-                            "biome_is": [
-                              "minecraft:river"
-                            ]
-                          },
-                          "then_run": {
-                            "type": "minecraft:condition",
-                            "if_true": {
-                              "type": "minecraft:noise_threshold",
-                              "min_threshold": -0.4,
-                              "max_threshold": 0.4,
-                              "noise": "minecraft:surface"
-                            },
-                            "then_run": {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "minecraft:mud"
-                              }
                             }
                           }
                         },

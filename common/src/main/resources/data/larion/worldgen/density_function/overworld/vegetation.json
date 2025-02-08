@@ -10,7 +10,7 @@
         "argument2": {
           "type": "minecraft:noise",
           "noise": "larion:vegetation/a",
-          "xz_scale": 0.4,
+          "xz_scale": 0.5,
           "y_scale": 0
         }
       },
@@ -25,7 +25,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:vegetation/b",
-              "xz_scale": 0.3,
+              "xz_scale": 0.25,
               "y_scale": 0
             }
           }
