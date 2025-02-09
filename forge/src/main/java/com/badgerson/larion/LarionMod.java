@@ -49,6 +49,11 @@ public class LarionMod {
 				return ZCoord.CODEC.codec();
 			});
 
+	public static final RegistryObject<MapCodec<? extends DensityFunction>> FLAT_DOMAIN_WARP = DENSITY_FUNCTION_TYPES
+			.register("flat_domain_warp", () -> {
+				return FlatDomainWarp.CODEC.codec();
+			});
+
 	private static final DeferredRegister<MapCodec<? extends ConditionSource>> MATERIAL_CONDITIONS = DeferredRegister
 			.create(Registries.MATERIAL_CONDITION, Constants.MOD_ID);
 
