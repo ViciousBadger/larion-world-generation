@@ -7,12 +7,12 @@
       "points": [
         {
           "location": 0,
-          "derivative": 3,
+          "derivative": 3.0,
           "value": -1
         },
         {
           "location": 0.5,
-          "derivative": 1,
+          "derivative": 1.0,
           "value": -0.32
         },
         {
@@ -21,8 +21,8 @@
           "value": -0.02
         },
         {
-          "location": 2.2,
-          "derivative": 0,
+          "location": 3.0,
+          "derivative": 0.0,
           "value": 1.0
         }
       ]
@@ -36,17 +36,22 @@
         "coordinate": "larion:overworld/erosion/eroded_zones",
         "points": [
           {
-            "location": 0.56,
+            "location": 0,
+            "derivative": 0,
+            "value": -1.0
+          },
+          {
+            "location": 0.46,
             "derivative": 0,
             "value": 0.0
           },
           {
-            "location": 0.74,
+            "location": 0.87,
             "derivative": 0.0,
             "value": 0.44
           },
           {
-            "location": 0.92,
+            "location": 0.96,
             "derivative": 0.0,
             "value": 0.54
           },
