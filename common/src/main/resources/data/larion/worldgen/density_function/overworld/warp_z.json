@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": 1000,
+    "argument2": {
+      "type": "minecraft:noise",
+      "noise": "larion:warp_z",
+      "xz_scale": 0.25,
+      "y_scale": 0.0
+    }
+  }
+}

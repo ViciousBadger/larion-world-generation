@@ -1,7 +1,12 @@
 {
   "type": "minecraft:spline",
   "spline": {
-    "coordinate": "larion:overworld/continents/shapes",
+    "coordinate": {
+      "type": "larion:flat_domain_warp",
+      "input": "larion:overworld/continents/shapes",
+      "warp_x": "larion:overworld/warp_x",
+      "warp_z": "larion:overworld/warp_z"
+    },
     "points": [
       {
         "location": 0.0,
