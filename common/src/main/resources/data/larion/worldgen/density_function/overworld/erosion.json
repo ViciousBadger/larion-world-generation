@@ -3,12 +3,7 @@
   "argument1": {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": {
-        "type": "larion:flat_domain_warp",
-        "input": "larion:overworld/erosion/mountain_ranges",
-        "warp_x": "larion:overworld/warp_x",
-        "warp_z": "larion:overworld/warp_z"
-      },
+      "coordinate": "larion:overworld/erosion/mountain_ranges",
       "points": [
         {
           "location": 0,
