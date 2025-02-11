@@ -32,22 +32,22 @@
         "points": [
           {
             "location": 0,
-            "derivative": 0,
+            "derivative": 0.0,
             "value": -1.0
           },
           {
             "location": 0.56,
-            "derivative": 0,
+            "derivative": 1.0,
             "value": 0.0
           },
           {
             "location": 0.87,
-            "derivative": 0.0,
-            "value": 0.44
+            "derivative": 2.0,
+            "value": 0.54
           },
           {
             "location": 1,
-            "derivative": 0.0,
+            "derivative": 10.0,
             "value": 1.0
           }
         ]
