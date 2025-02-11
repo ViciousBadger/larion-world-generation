@@ -38,7 +38,7 @@
                 "argument2": {
                   "type": "minecraft:noise",
                   "noise": "minecraft:spaghetti_2d_elevation",
-                  "xz_scale": 0.72,
+                  "xz_scale": 0.85,
                   "y_scale": 0.0
                 }
               }
