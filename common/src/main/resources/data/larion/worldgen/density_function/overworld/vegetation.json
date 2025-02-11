@@ -3,30 +3,35 @@
   "argument": {
     "type": "minecraft:cache_2d",
     "argument": {
-      "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:mul",
-        "argument1": "larion:overworld/vegetation_multiplier",
-        "argument2": {
-          "type": "minecraft:noise",
-          "noise": "larion:vegetation/a",
-          "xz_scale": 0.5,
-          "y_scale": 0
-        }
-      },
-      "argument2": {
+      "type": "larion:flat_domain_warp",
+      "warp_x": "larion:overworld/vegetation/warp_x",
+      "warp_z": "larion:overworld/vegetation/warp_z",
+      "input": {
         "type": "minecraft:add",
-        "argument1": -0.1,
-        "argument2": {
+        "argument1": {
           "type": "minecraft:mul",
-          "argument1": 0.2,
+          "argument1": "larion:overworld/vegetation_multiplier",
           "argument2": {
-            "type": "minecraft:square",
-            "argument": {
-              "type": "minecraft:noise",
-              "noise": "larion:vegetation/b",
-              "xz_scale": 0.25,
-              "y_scale": 0
+            "type": "minecraft:noise",
+            "noise": "larion:vegetation/a",
+            "xz_scale": 0.5,
+            "y_scale": 0
+          }
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": -0.1,
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": 0.3,
+            "argument2": {
+              "type": "minecraft:square",
+              "argument": {
+                "type": "minecraft:noise",
+                "noise": "larion:vegetation/b",
+                "xz_scale": 0.22,
+                "y_scale": 0
+              }
             }
           }
         }

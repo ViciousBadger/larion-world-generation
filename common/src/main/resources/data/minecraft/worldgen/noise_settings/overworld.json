@@ -88,7 +88,7 @@
                 "note": "Modified for Larion - allows terrain height to go above vanilla limits.",
                 "type": "minecraft:y_clamped_gradient",
                 "from_value": 1.0,
-                "from_y": 448,
+                "from_y": 500,
                 "to_value": 0.0,
                 "to_y": 512
               },
@@ -105,14 +105,7 @@
                       "argument1": 4.0,
                       "argument2": {
                         "type": "minecraft:quarter_negative",
-                        "argument": {
-                          "type": "minecraft:mul",
-                          "argument1": "minecraft:overworld/depth",
-                          "argument2": {
-                            "type": "minecraft:cache_2d",
-                            "argument": "minecraft:overworld/factor"
-                          }
-                        }
+                        "argument": "minecraft:overworld/depth"
                       }
                     }
                   },
