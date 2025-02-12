@@ -372,6 +372,11 @@
                     {
                       "derivative": 0.0,
                       "location": 0.0,
+                      "value": 76
+                    },
+                    {
+                      "derivative": 0.0,
+                      "location": 1.0,
                       "value": 84
                     }
                   ]
