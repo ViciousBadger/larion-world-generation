@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:mul",
+      "note": "Depth range divided by world height in blocks",
+      "argument1": 0.003125,
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": "larion:overworld/terrain/base_height",
+        "argument2": "larion:overworld/terrain/features"
+      }
+    }
+  }
+}

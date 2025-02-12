@@ -1,14 +1,6 @@
 {
-  "type": "minecraft:min",
-  "argument1": {
-    "type": "range_choice",
-    "input": "larion:overworld/ridges/rivers",
-    "min_inclusive": -10,
-    "max_exclusive": 0.22,
-    "when_in_range": "larion:overworld/caves/river_noodle",
-    "when_out_of_range": 10000
-  },
-  "argument2": {
+  "type": "minecraft:cache_once",
+  "argument": {
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:y_clamped_gradient",
@@ -17,21 +9,6 @@
       "to_value": -1.0,
       "to_y": 512
     },
-    "argument2": {
-      "type": "minecraft:flat_cache",
-      "argument": {
-        "type": "minecraft:cache_2d",
-        "argument": {
-          "type": "larion:flat_domain_warp",
-          "input": {
-            "type": "minecraft:add",
-            "argument1": "larion:overworld/terrain_height",
-            "argument2": "larion:overworld/terrain_features"
-          },
-          "warp_x": "larion:overworld/terrain/warp_x",
-          "warp_z": "larion:overworld/terrain/warp_z"
-        }
-      }
-    }
+    "argument2": "larion:overworld/terrain/offset"
   }
 }

@@ -3,6 +3,29 @@
   "argument1": 48.0,
   "argument2": {
     "type": "minecraft:quarter_negative",
-    "argument": "minecraft:overworld/depth"
+    "argument": {
+      "type": "larion:flat_domain_warp",
+      "input": {
+        "type": "minecraft:min",
+        "argument1": {
+          "type": "range_choice",
+          "input": "larion:overworld/ridges/rivers",
+          "min_inclusive": -10,
+          "max_exclusive": 0.22,
+          "when_in_range": {
+            "type": "range_choice",
+            "input": "minecraft:y",
+            "min_inclusive": 40,
+            "max_exclusive": 256,
+            "when_out_of_range": 10000,
+            "when_in_range": "larion:overworld/caves/river_noodle"
+          },
+          "when_out_of_range": 10000
+        },
+        "argument2": "minecraft:overworld/depth"
+      },
+      "warp_x": "larion:overworld/terrain/warp_x",
+      "warp_z": "larion:overworld/terrain/warp_z"
+    }
   }
 }

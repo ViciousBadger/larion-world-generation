@@ -2,12 +2,12 @@
   "type": "minecraft:cache_once",
   "argument": {
     "type": "minecraft:mul",
-    "argument1": 24,
+    "argument1": 28,
     "argument2": {
       "type": "minecraft:noise",
       "noise": "larion:terrain/warp_z",
-      "xz_scale": 0.7,
-      "y_scale": 0.0
+      "xz_scale": 0.6,
+      "y_scale": 0.3
     }
   }
 }

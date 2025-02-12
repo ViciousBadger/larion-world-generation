@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:min",
+  "type": "minecraft:add",
   "argument1": {
     "type": "minecraft:spline",
     "spline": {
@@ -7,48 +7,43 @@
       "points": [
         {
           "location": 0,
-          "derivative": 3.0,
-          "value": -1
+          "derivative": 0.56,
+          "value": -0.72
         },
         {
-          "location": 0.5,
-          "derivative": 1.0,
-          "value": -0.32
-        },
-        {
-          "location": 3.0,
+          "location": 2.0,
           "derivative": 0.0,
-          "value": 1.0
+          "value": 0.4
         }
       ]
     }
   },
   "argument2": {
-    "type": "minecraft:max",
+    "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:spline",
       "spline": {
         "coordinate": "larion:overworld/erosion/eroded_zones",
         "points": [
           {
-            "location": 0,
+            "location": 0.0,
             "derivative": 0.0,
-            "value": -1.0
-          },
-          {
-            "location": 0.56,
-            "derivative": 1.0,
             "value": 0.0
           },
           {
-            "location": 0.87,
-            "derivative": 2.0,
-            "value": 0.54
+            "location": 0.33,
+            "derivative": 0.0,
+            "value": 0.25
+          },
+          {
+            "location": 0.66,
+            "derivative": 0.0,
+            "value": 0.35
           },
           {
             "location": 1,
-            "derivative": 10.0,
-            "value": 1.0
+            "derivative": 0.0,
+            "value": 0.65
           }
         ]
       }
@@ -66,7 +61,7 @@
           {
             "location": 1,
             "derivative": 0.0,
-            "value": 0.45
+            "value": 0.0
           }
         ]
       }
