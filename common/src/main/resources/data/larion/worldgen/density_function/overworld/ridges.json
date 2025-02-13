@@ -12,12 +12,12 @@
         "coordinate": "minecraft:overworld/erosion",
         "points": [
           {
-            "location": -0.52,
-            "derivative": 0.0,
+            "location": -0.72,
+            "derivative": -3.0,
             "value": 1.0
           },
           {
-            "location": -0.02,
+            "location": -0.22,
             "derivative": 0.0,
             "value": {
               "coordinate": "larion:overworld/ridges/rivers",
@@ -58,7 +58,7 @@
         "points": [
           {
             "location": 0.0,
-            "derivative": -0.16,
+            "derivative": -0.15,
             "value": 0.66
           },
           {
@@ -68,8 +68,8 @@
           },
           {
             "location": 4.0,
-            "derivative": 0.0,
-            "value": 0.0
+            "derivative": -0.15,
+            "value": 0.1
           }
         ]
       }

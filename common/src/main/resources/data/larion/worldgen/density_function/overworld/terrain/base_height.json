@@ -64,7 +64,7 @@
                       "note": "Tall coastal cliff",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 160
+                      "value": 180
                     }
                   ]
                 }
@@ -91,7 +91,7 @@
                       "note": "Low coastal cliff",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 100
+                      "value": 120
                     }
                   ]
                 }
@@ -118,7 +118,7 @@
                       "note": "Highlands coast",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 74
+                      "value": 84
                     }
                   ]
                 }
@@ -246,18 +246,18 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 182
+                      "value": 172
                     },
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 320
+                      "value": 314
                     },
                     {
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 400
+                      "value": 398
                     }
                   ]
                 }
@@ -273,18 +273,18 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 182
+                      "value": 132
                     },
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 220
+                      "value": 196
                     },
                     {
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 250
+                      "value": 274
                     }
                   ]
                 }
@@ -305,7 +305,7 @@
                     {
                       "derivative": 0.0,
                       "location": -0.7,
-                      "value": 104
+                      "value": 84
                     },
                     {
                       "derivative": 0.0,
@@ -341,12 +341,12 @@
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 114
+                      "value": 104
                     },
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 172
+                      "value": 152
                     }
                   ]
                 }

@@ -5,7 +5,7 @@
     "input": "minecraft:y",
     "min_inclusive": 50,
     "max_exclusive": 120,
-    "when_in_range": "larion:overworld/ridges/rivers",
+    "when_in_range": "larion:overworld/caves/river_noodle_factor",
     "when_out_of_range": -1.0
   }
 }

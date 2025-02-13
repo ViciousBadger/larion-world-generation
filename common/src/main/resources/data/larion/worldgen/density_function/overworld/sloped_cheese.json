@@ -9,9 +9,9 @@
         "type": "minecraft:min",
         "argument1": {
           "type": "range_choice",
-          "input": "larion:overworld/ridges/rivers",
-          "min_inclusive": -10,
-          "max_exclusive": 0.22,
+          "input": "larion:overworld/caves/river_noodle_factor",
+          "min_inclusive": 0.4,
+          "max_exclusive": 1.0,
           "when_in_range": {
             "type": "range_choice",
             "input": "minecraft:y",
