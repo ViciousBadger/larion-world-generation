@@ -10,17 +10,17 @@
     "points": [
       {
         "location": 0.0,
-        "derivative": 0.0,
+        "derivative": 8.0,
         "value": {
           "coordinate": "larion:overworld/continents/shroom",
           "points": [
             {
-              "location": 0.5,
+              "location": 0.4,
               "derivative": 0.0,
               "value": -0.85
             },
             {
-              "location": 0.7,
+              "location": 0.6,
               "derivative": -0.5,
               "value": -1.25
             }
@@ -28,19 +28,19 @@
         }
       },
       {
-        "location": 0.22,
+        "location": 0.16,
         "derivative": 4.0,
         "value": -0.4
       },
       {
-        "location": 0.32,
+        "location": 0.22,
         "derivative": 1.5,
         "value": -0.18
       },
       {
-        "location": 0.5,
+        "location": 0.45,
         "derivative": 0.90,
-        "value": 0.10
+        "value": 0.33
       },
       {
         "location": 1.5,

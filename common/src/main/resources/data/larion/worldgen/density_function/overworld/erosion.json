@@ -1,24 +1,19 @@
 {
-  "type": "minecraft:add",
+  "type": "minecraft:max",
   "argument1": {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": "larion:overworld/erosion/mountain_ranges",
+      "coordinate": "larion:overworld/ridges/rivers",
       "points": [
         {
-          "location": 0,
-          "derivative": 0.5,
-          "value": -0.72
+          "location": 0.0,
+          "derivative": -0.16,
+          "value": -0.32
         },
         {
-          "location": 1.0,
-          "derivative": 0.0,
-          "value": 0.0
-        },
-        {
-          "location": 2.0,
-          "derivative": 0.0,
-          "value": 0.4
+          "location": 4.0,
+          "derivative": -0.16,
+          "value": -1
         }
       ]
     }
@@ -28,47 +23,73 @@
     "argument1": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": "larion:overworld/erosion/eroded_zones",
+        "coordinate": "larion:overworld/erosion/mountain_ranges",
         "points": [
           {
-            "location": 0.0,
+            "location": 0,
+            "derivative": 0.5,
+            "value": -0.72
+          },
+          {
+            "location": 1.0,
             "derivative": 0.0,
             "value": 0.0
           },
           {
-            "location": 0.33,
+            "location": 2.0,
             "derivative": 0.0,
-            "value": 0.25
-          },
-          {
-            "location": 0.66,
-            "derivative": 0.0,
-            "value": 0.35
-          },
-          {
-            "location": 1,
-            "derivative": 0.0,
-            "value": 0.65
+            "value": 0.4
           }
         ]
       }
     },
     "argument2": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "larion:overworld/erosion/base",
-        "points": [
-          {
-            "location": -1,
-            "derivative": 0.0,
-            "value": -0.32
-          },
-          {
-            "location": 1,
-            "derivative": 0.0,
-            "value": 0.0
-          }
-        ]
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/erosion/eroded_zones",
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": 0.0,
+              "value": 0.0
+            },
+            {
+              "location": 0.33,
+              "derivative": 0.0,
+              "value": 0.25
+            },
+            {
+              "location": 0.66,
+              "derivative": 0.0,
+              "value": 0.35
+            },
+            {
+              "location": 1,
+              "derivative": 0.0,
+              "value": 0.65
+            }
+          ]
+        }
+      },
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/erosion/base",
+          "points": [
+            {
+              "location": -1,
+              "derivative": 0.0,
+              "value": -0.32
+            },
+            {
+              "location": 1,
+              "derivative": 0.0,
+              "value": 0.0
+            }
+          ]
+        }
       }
     }
   }
