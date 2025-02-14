@@ -5,36 +5,22 @@
     "argument": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": "minecraft:overworld/erosion",
+        "coordinate": "larion:overworld/ridges/rivers",
         "points": [
           {
-            "location": -1.0,
+            "location": 0.0,
             "derivative": 0.0,
-            "value": 0.0
+            "value": 1.0
           },
           {
-            "location": -0.38,
+            "location": 0.11,
             "derivative": 0.0,
-            "value": {
-              "coordinate": "larion:overworld/ridges/rivers",
-              "points": [
-                {
-                  "location": 0.0,
-                  "derivative": 0.0,
-                  "value": 1.0
-                },
-                {
-                  "location": 0.10,
-                  "derivative": 0.0,
-                  "value": 0.5
-                },
-                {
-                  "location": 0.25,
-                  "derivative": 0.0,
-                  "value": 0.0
-                }
-              ]
-            }
+            "value": 0.5
+          },
+          {
+            "location": 0.23,
+            "derivative": 0.0,
+            "value": 0.0
           }
         ]
       }

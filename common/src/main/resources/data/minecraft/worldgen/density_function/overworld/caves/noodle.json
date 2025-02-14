@@ -3,7 +3,7 @@
   "input": {
     "type": "minecraft:range_choice",
     "input": "minecraft:y",
-    "max_exclusive": 321.0,
+    "max_exclusive": 480.0,
     "min_inclusive": -120.0,
     "when_in_range": {
       "type": "minecraft:noise",
@@ -21,7 +21,7 @@
     "argument1": {
       "type": "minecraft:range_choice",
       "input": "minecraft:y",
-      "max_exclusive": 321.0,
+      "max_exclusive": 480.0,
       "min_inclusive": -120.0,
       "when_in_range": {
         "type": "minecraft:add",
@@ -49,7 +49,7 @@
           "argument": {
             "type": "minecraft:range_choice",
             "input": "minecraft:y",
-            "max_exclusive": 321.0,
+            "max_exclusive": 480.0,
             "min_inclusive": -120.0,
             "when_in_range": {
               "type": "minecraft:noise",
@@ -65,7 +65,7 @@
           "argument": {
             "type": "minecraft:range_choice",
             "input": "minecraft:y",
-            "max_exclusive": 321.0,
+            "max_exclusive": 480.0,
             "min_inclusive": -120.0,
             "when_in_range": {
               "type": "minecraft:noise",

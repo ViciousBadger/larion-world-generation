@@ -1,29 +1,35 @@
 {
-  "type": "minecraft:add",
-  "argument1": {
-    "type": "minecraft:add",
-    "argument1": {
-      "type": "minecraft:mul",
-      "argument1": "minecraft:overworld/jaggedness",
-      "argument2": {
-        "type": "minecraft:abs",
-        "argument": {
-          "type": "minecraft:noise",
-          "noise": "larion:jagged",
-          "xz_scale": 2.0,
-          "y_scale": 0.0
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:mul",
+          "argument1": "minecraft:overworld/jaggedness",
+          "argument2": {
+            "type": "minecraft:abs",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "larion:jagged",
+              "xz_scale": 2.0,
+              "y_scale": 0.0
+            }
+          }
+        },
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": "larion:overworld/terrain/cliffs",
+          "argument2": "larion:overworld/terrain/cliffs_multiplier"
         }
+      },
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": "larion:overworld/terrain/hills",
+        "argument2": "larion:overworld/terrain/hills_multiplier"
       }
-    },
-    "argument2": {
-      "type": "minecraft:mul",
-      "argument1": "larion:overworld/terrain/cliffs",
-      "argument2": "larion:overworld/terrain/cliffs_multiplier"
     }
-  },
-  "argument2": {
-    "type": "minecraft:mul",
-    "argument1": "larion:overworld/terrain/hills",
-    "argument2": "larion:overworld/terrain/hills_multiplier"
   }
 }

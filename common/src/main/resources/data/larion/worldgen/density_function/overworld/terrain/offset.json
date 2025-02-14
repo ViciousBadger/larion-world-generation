@@ -5,7 +5,7 @@
     "argument": {
       "type": "minecraft:mul",
       "note": "Depth range divided by world height in blocks",
-      "argument1": 0.003125,
+      "argument1": 0.0046875,
       "argument2": {
         "type": "minecraft:add",
         "argument1": "larion:overworld/terrain/base_height",

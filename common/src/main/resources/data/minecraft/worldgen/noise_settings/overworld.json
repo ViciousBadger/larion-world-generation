@@ -37,17 +37,32 @@
       "max_exclusive": 1.0,
       "when_in_range": -10.0,
       "when_out_of_range": {
-        "type": "noise",
-        "noise": "minecraft:aquifer_fluid_level_floodedness",
-        "xz_scale": 1,
-        "y_scale": 0.67
+        "type": "range_choice",
+        "input": "larion:overworld/caves/river_noodle_flood",
+        "min_inclusive": 0.35,
+        "max_exclusive": 1.0,
+        "when_in_range": 1,
+        "when_out_of_range": {
+          "type": "noise",
+          "noise": "minecraft:aquifer_fluid_level_floodedness",
+          "xz_scale": 1,
+          "y_scale": 0.67
+        }
       }
     },
     "fluid_level_spread": {
-      "type": "noise",
-      "noise": "minecraft:aquifer_fluid_level_spread",
-      "xz_scale": 1.0,
-      "y_scale": 0.7142857142857143
+      "note": "Modified for Larion - enables flooding of river caves.",
+      "type": "range_choice",
+      "input": "larion:overworld/caves/river_noodle_flood",
+      "min_inclusive": 0.35,
+      "max_exclusive": 1.0,
+      "when_in_range": 0.5,
+      "when_out_of_range": {
+        "type": "noise",
+        "noise": "minecraft:aquifer_fluid_level_spread",
+        "xz_scale": 1.0,
+        "y_scale": 0.7142857142857143
+      }
     },
     "initial_density_without_jaggedness": {
       "type": "minecraft:add",
@@ -87,7 +102,7 @@
                     "argument1": -0.703125,
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 4.0,
+                      "argument1": 48.0,
                       "argument2": {
                         "type": "minecraft:quarter_negative",
                         "argument": "minecraft:overworld/depth"

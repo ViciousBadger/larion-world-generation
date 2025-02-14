@@ -5,7 +5,30 @@
     "type": "minecraft:quarter_negative",
     "argument": {
       "type": "larion:flat_domain_warp",
-      "input": "minecraft:overworld/depth",
+      "input": {
+        "type": "minecraft:min",
+        "argument1": "larion:overworld/caves/river_noodle",
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_value": 1.5,
+            "from_y": -128,
+            "to_value": -1.5,
+            "to_y": 512
+          },
+          "argument2": {
+            "type": "minecraft:mul",
+            "note": "Depth range divided by world height in blocks",
+            "argument1": 0.0046875,
+            "argument2": {
+              "type": "minecraft:add",
+              "argument1": "larion:overworld/terrain/base_height",
+              "argument2": "larion:overworld/terrain/features"
+            }
+          }
+        }
+      },
       "warp_x": "larion:overworld/terrain/warp_x",
       "warp_z": "larion:overworld/terrain/warp_z"
     }

@@ -3,16 +3,30 @@
   "argument1": {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": "larion:overworld/ridges/rivers",
+      "coordinate": "larion:overworld/ridges/river_tunnel",
       "points": [
         {
-          "location": 0.0,
-          "derivative": -0.16,
-          "value": -0.32
+          "location": 0.3,
+          "derivative": 0.0,
+          "value": {
+            "coordinate": "larion:overworld/ridges/rivers",
+            "points": [
+              {
+                "location": 0.0,
+                "derivative": -0.16,
+                "value": -0.32
+              },
+              {
+                "location": 4.0,
+                "derivative": -0.16,
+                "value": -1
+              }
+            ]
+          }
         },
         {
-          "location": 4.0,
-          "derivative": -0.16,
+          "location": 0.6,
+          "derivative": 0.0,
           "value": -1
         }
       ]
