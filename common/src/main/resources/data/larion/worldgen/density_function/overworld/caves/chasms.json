@@ -1,10 +1,10 @@
 {
   "type": "minecraft:add",
-  "argument1": 0.5,
+  "argument1": 0.92,
   "argument2": {
     "type": "minecraft:noise",
     "noise": "larion:caves/chasms",
-    "xz_scale": 1.0,
-    "y_scale": 0.6666666666666666
+    "xz_scale": 0.48,
+    "y_scale": 0.20
   }
 }
