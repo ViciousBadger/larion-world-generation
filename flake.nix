@@ -19,14 +19,15 @@
       formatter = pkgs.alejandra;
 
       devShells.default = pkgs.mkShell rec {
-        buildInputs = with pkgs; [
-          jdk21
+        buildInputs = with pkgs; let
+          jdkVersion = jdk17;
+        in [
+          jdkVersion
           libGL
-          (jdt-language-server.override { jdk = jdk21; })
+          (jdt-language-server.override {jdk = jdkVersion;})
         ];
         LD_LIBRARY_PATH = "${nixpkgs.lib.makeLibraryPath buildInputs}";
         # LD_LIBRARY_PATH="/run/opengl-driver/lib:/run/opengl-driver-32/lib";
       };
     });
 }
-
