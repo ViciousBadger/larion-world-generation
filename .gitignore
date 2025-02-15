@@ -22,7 +22,9 @@ build
 eclipse
 run
 runs
+.factorypath
 
 # direnv
 /.direnv
 /.envrc
+
