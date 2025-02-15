@@ -14,8 +14,8 @@
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:terrain/warp_x",
-        "xz_scale": 0.6,
-        "y_scale": 0.2
+        "xz_scale": 0.58,
+        "y_scale": 0.27
       }
     },
     "warp_z": {
@@ -24,8 +24,8 @@
       "argument2": {
         "type": "minecraft:noise",
         "noise": "larion:terrain/warp_z",
-        "xz_scale": 0.6,
-        "y_scale": 0.2
+        "xz_scale": 0.58,
+        "y_scale": 0.27
       }
     }
   }
