@@ -17,21 +17,21 @@ public class LarionMod implements ModInitializer {
     // project.
 
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "div"), Division.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "div"), Division.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "sqrt"), Sqrt.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "sqrt"), Sqrt.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "signum"), Signum.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "signum"), Signum.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "sine"), Sine.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "sine"), Sine.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "x"), XCoord.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "x"), XCoord.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "z"), ZCoord.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "z"), ZCoord.CODEC.codec());
     Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "flat_domain_warp"), FlatDomainWarp.CODEC.codec());
+        ResourceLocation.tryBuild(Constants.MOD_ID, "flat_domain_warp"), FlatDomainWarp.CODEC.codec());
     Registry.register(BuiltInRegistries.MATERIAL_CONDITION,
-        ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "somewhat_steep"),
+        ResourceLocation.tryBuild(Constants.MOD_ID, "somewhat_steep"),
         SomewhatSteepMaterialCondition.CODEC.codec());
 
     // Use Fabric to bootstrap the Common mod.
