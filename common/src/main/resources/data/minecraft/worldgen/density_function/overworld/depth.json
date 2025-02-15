@@ -9,11 +9,6 @@
       "to_value": -1.5,
       "to_y": 512
     },
-    "argument2": {
-      "type": "minecraft:mul",
-      "note": "Depth range divided by world height in blocks",
-      "argument1": 0.0046875,
-      "argument2": "larion:overworld/terrain/base_height"
-    }
+    "argument2": "larion:overworld/terrain/offset"
   }
 }

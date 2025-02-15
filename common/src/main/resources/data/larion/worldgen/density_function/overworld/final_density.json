@@ -72,7 +72,7 @@
                                   "type": "minecraft:clamp",
                                   "input": {
                                     "type": "minecraft:add",
-                                    "argument1": 0.47,
+                                    "argument1": 0.27,
                                     "argument2": {
                                       "type": "minecraft:noise",
                                       "noise": "minecraft:cave_cheese",

@@ -8,8 +8,12 @@
       "argument1": 0.0046875,
       "argument2": {
         "type": "minecraft:add",
-        "argument1": "larion:overworld/terrain/base_height",
-        "argument2": "larion:overworld/terrain/features"
+        "argument1": -0.3168897689123,
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": "larion:overworld/terrain/base_height",
+          "argument2": "larion:overworld/terrain/features"
+        }
       }
     }
   }

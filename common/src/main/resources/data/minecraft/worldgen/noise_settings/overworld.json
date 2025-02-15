@@ -102,11 +102,8 @@
                     "argument1": -0.703125,
                     "argument2": {
                       "type": "minecraft:mul",
-                      "argument1": 38.0,
-                      "argument2": {
-                        "type": "minecraft:quarter_negative",
-                        "argument": "minecraft:overworld/depth"
-                      }
+                      "argument1": 8.0,
+                      "argument2": "minecraft:overworld/depth"
                     }
                   },
                   "max": 64.0,

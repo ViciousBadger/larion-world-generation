@@ -15,6 +15,25 @@
           "coordinate": "minecraft:overworld/ridges_folded",
           "points": [
             {
+              "location": -1.0,
+              "derivative": 0.0,
+              "value": {
+                "coordinate": "larion:overworld/ridges/peaks",
+                "points": [
+                  {
+                    "location": 2.0,
+                    "derivative": 0.0,
+                    "value": 0
+                  },
+                  {
+                    "location": 3.0,
+                    "derivative": 0.0,
+                    "value": 18
+                  }
+                ]
+              }
+            },
+            {
               "location": -0.66,
               "derivative": 0.0,
               "value": 0.0
