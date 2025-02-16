@@ -2,22 +2,31 @@
 
 # Larion World Generation, for Minecraft 1.20-1.21.1
 
-Larion is a terrain generation overhaul that creates worlds inspired by epic fantasy media, particularily games like Elden Ring and Skyrim.
+Larion is a terrain generation overhaul that overhauls the style and layout of world generation in an unique "epic fantasy" style that favors otherworldly, dreamlike vistas.
 
-You will find yourself travelling rolling hills, twisting river valleys, large lakes, treacherous mountain ranges, strange eroded areas of swamps and clefts, all surrounded by an infinte sea of continents and island groups. The scale is overall larger than vanilla and terrain is a bit more realistically shaped, but still "video-gamey" and compact. There is a strong focus on generating steep cliffs and other "terrain hazards" that make the world more interesting to explore and build in.
+Larion alters the **shape of the terrain**, **cave generation** and the **layout of biomes**, but makes no changes to the actual biomes or their features, allowing you to pair it with any compatible biome-altering mods or just keep it close to vanilla as the screenshots show.
 
-Larion alters the **shape of the terrain**, the **layout of biomes** and a few **surface rules**, (stone instead of dirt/grass on all steep slopes and mud in rivers), but makes zero changes to the actual biomes, allowing you to pair it with any compatible biome-altering mods or just keep it close to vanilla as the screenshots show.
+Please be aware that the mod is still in active development, future updates will (almost) always change how the world is generated and break continuity with previously generated terrain. I would suggest not updating the mod on existing worlds unless your are okay with weird chunk borders.
 
 If you want a limited world size, check out the [Disc
 World](https://modrinth.com/datapack/larion-one-continent) add-on datapack!
 
-Please note that the mod is still in active development, future updates are nearly guaranteed to change how the world is generated. I would suggest not updating the mod on existing worlds unless your are okay with weird chunk borders.
+## Features
+
+- Adjusted world height, now goes from -128 to 512.
+- Oceans are actual infinite oceans with landmasses of varying size. On average they are maybe 3x3 thousand blocks in size, but some are way larger.
+- Terrain erosion (a parameter that decides between mountains, hills, flatland and windswept/swamps) is laid out very differently and can lead to unique landshapes.
+- Rivers are long, meandering and form deep valleys in mountain areas. In rare cases they will tunnel straight though terrain.
+- The shape of terrain is very different on the small scale too, using a special domain wrap technique to deform the horizontal axes only, replacing the janky 3d noise of vanilla. This makes cliffs way more cool looking.
+- Steep hills will have exposed stone surfaces in all biomes. Somewhat steep hills get a nice gradient of stone and normal surface.
+
+
 
 ## Recommended mods/datapacks
 
-I can heavily recommend playing with [Distant Horizons](https://modrinth.com/mod/distanthorizons) and pre-generating your world to allow the scale of the terrain to strike awe from the get-go.
+I heavily recommend playing with [Distant Horizons](https://modrinth.com/mod/distanthorizons) and pre-generating your world to allow the scale of the terrain to strike awe from the get-go.
 
-I also recommend using [William Wyther's Overhauled Overworld](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) as a complimentary worldgen datapack as it is frankly a work of art and its visual style fits Larion perfectly. Be sure to use the datapack version, if you use WWOO as a mod you may run into issues with load order. If you find that mountains are "chopped off" at around Y=320, please open the WWOO .zip archive in for example 7zip and delete the files at these locations:
+I also recommend using [William Wyther's Overhauled Overworld](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) as a complimentary worldgen datapack as it is frankly a work of art and its visual style fits Larion perfectly. Be sure to use the datapack version, if you use WWOO as a mod you may run into issues with load order. If you find that mountains are "chopped off" at around Y=320, open the WWOO .zip archive in for example 7zip and delete the files at these locations:
 - `1-20-5-overlay/data/minecraft/dimension_type/overworld.json`
 - `1-21-overlay/data/minecraft/dimension_type/overworld.json`
 - `data/minecraft/dimension_type/overworld.json`
@@ -37,35 +46,9 @@ Finally, you should stock up on worldgen optimization mods, as Larion tends to s
 
 As a rule of thumb, if mods or datapacks modify Minecraft's **density functions** (in worldgen/density_functions), there will be compability issues with Larion and your worlds will probably look weird in one way or the other. Basically any mod that alters terrain shape or caves, for example Terralith, Tectonic, Litosphere, Big Globe, Expanded Echosphere and Cascades.
 
-However, mods and datapacks that only alter biome features and/or add new biomes should be fully compatible.
+However, mods and datapacks that only alter biome features and/or add new biomes should be fully compatible. A few examples are Arboria, WWOO and Geophilic.
 
-## Changes to vanilla data files
-
-To make it easier to create compability patches etc, here is a list of
-overwritten files along with descriptions what has been changed.
-
-- `dimension_type/overworld.json` and `dimension_type/overworld_caves.json`
-    - Changed `height` and `logical_height`
-- `worldgen/noise_settings/overworld.json`
-    - Changed `noise/height`
-    - Several changes inside the giant `final_density` function
-        - Modified the `y_clamped_gradient` sections in `final_density` and `initial_density_without_jaggedness`
-        - Injected the `larion:overworld/river_noodle` and `larion:overworld/caves/lava_river_noodle` density functions to `final_density` to carve out underground rivers.
-    - Changed `fluid_level_floodedness` and `fluid_level_spread` using `larion:overworld/river_noodle_flood` to make sure river caves are always "flooded" (full of water at sea level) and also remove most aquifers near lava rivers.
-    - Changed `temperature` and `vegetation` to point at larion's custom density functions
-- Various functions in `worldgen/density_functions/overworld` have been overwritten:
-    - `continents`
-    - `erosion`
-    - `ridges`
-    - `depth`
-    - `factor`
-    - `sloped_cheese`
-    - In `caves/`:
-        - `entrances`
-        - `noodle`
-        - `spaghetti_2d`
-
-# Special thanks to
+# Thanks to
 
 - alkexr, creator of
 [Eldor](https://www.planetminecraft.com/data-pack/eldor/). Eldor was a major
