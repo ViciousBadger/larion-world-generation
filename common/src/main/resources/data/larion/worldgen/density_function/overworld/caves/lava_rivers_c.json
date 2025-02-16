@@ -1,12 +1,6 @@
 {
-	"type": "minecraft:flat_cache",
-	"argument": {
-		"type": "minecraft:cache_2d",
-		"argument": {
-			"type": "minecraft:noise",
-			"noise": "larion:caves/lava_rivers_c",
-			"xz_scale": 0.77,
-			"y_scale": 0.0
-		}
-	}
+	"type": "minecraft:noise",
+	"noise": "larion:caves/lava_rivers_c",
+	"xz_scale": 0.77,
+	"y_scale": 0.0
 }

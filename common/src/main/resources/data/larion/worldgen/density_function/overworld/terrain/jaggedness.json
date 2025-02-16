@@ -5,13 +5,13 @@
     "points": [
       {
         "derivative": 0.0,
-        "location": -1.3,
-        "value": -64
+        "location": -1.0,
+        "value": 0
       },
       {
         "derivative": 0.0,
-        "location": -1.1,
-        "value": 0.0
+        "location": -0.7,
+        "value": -64
       },
       {
         "derivative": 0.0,
@@ -110,7 +110,7 @@
                   {
                     "derivative": 0.0,
                     "location": 0.0,
-                    "value": -2
+                    "value": 0.0
                   },
                   {
                     "derivative": 0.0,

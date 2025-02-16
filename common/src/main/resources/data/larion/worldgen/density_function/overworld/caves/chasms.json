@@ -28,8 +28,8 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:caves/chasms_b",
-                "xz_scale": 0.38,
-                "y_scale": 0.15
+                "xz_scale": 0.19,
+                "y_scale": 0.36
               }
             }
           }

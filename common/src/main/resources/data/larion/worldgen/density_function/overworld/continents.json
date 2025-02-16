@@ -4,8 +4,26 @@
     "coordinate": {
       "type": "larion:flat_domain_warp",
       "input": "larion:overworld/continents/shapes",
-      "warp_x": "larion:overworld/continents/warp_x",
-      "warp_z": "larion:overworld/continents/warp_z"
+      "warp_x": {
+        "type": "minecraft:mul",
+        "argument1": 1000,
+        "argument2": {
+          "type": "minecraft:noise",
+          "noise": "larion:continents/warp_x",
+          "xz_scale": 0.28,
+          "y_scale": 0.0
+        }
+      },
+      "warp_z": {
+        "type": "minecraft:mul",
+        "argument1": 1000,
+        "argument2": {
+          "type": "minecraft:noise",
+          "noise": "larion:continents/warp_z",
+          "xz_scale": 0.28,
+          "y_scale": 0.0
+        }
+      }
     },
     "points": [
       {
@@ -22,7 +40,7 @@
             {
               "location": 0.6,
               "derivative": -0.5,
-              "value": -1.25
+              "value": -1.35
             }
           ]
         }

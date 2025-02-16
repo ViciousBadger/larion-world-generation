@@ -17,45 +17,17 @@
             {
               "location": -1.0,
               "derivative": 0.0,
-              "value": {
-                "coordinate": "larion:overworld/ridges/peaks",
-                "points": [
-                  {
-                    "location": 2.0,
-                    "derivative": 0.0,
-                    "value": 0
-                  },
-                  {
-                    "location": 3.0,
-                    "derivative": 0.0,
-                    "value": 16
-                  }
-                ]
-              }
-            },
-            {
-              "location": -0.66,
-              "derivative": 0.0,
-              "value": 0.0
+              "value": 12
             },
             {
               "location": 0.0,
               "derivative": 0.0,
-              "value": {
-                "coordinate": "minecraft:overworld/erosion",
-                "points": [
-                  {
-                    "location": -0.10,
-                    "derivative": 0.0,
-                    "value": 0
-                  },
-                  {
-                    "location": 0.10,
-                    "derivative": 0.0,
-                    "value": 16
-                  }
-                ]
-              }
+              "value": 16
+            },
+            {
+              "location": 1.0,
+              "derivative": 0.0,
+              "value": 24
             }
           ]
         }
