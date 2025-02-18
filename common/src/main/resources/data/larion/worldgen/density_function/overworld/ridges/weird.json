@@ -9,7 +9,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:ridges/weird",
-        "xz_scale": 0.20,
+        "xz_scale": 0.25,
         "y_scale": 0
       }
     }
