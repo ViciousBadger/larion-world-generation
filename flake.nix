@@ -16,13 +16,13 @@
 
       devShells.default = pkgs.mkShell rec {
         buildInputs = with pkgs; let
-          javaVersion = jdk17;
+          javaVersion = jdk21;
         in [
           libGL
           (gradle_8.override
             {
               java = javaVersion;
-              javaToolchains = [];
+              javaToolchains = [jdk17];
             })
           (jdt-language-server.override {jdk = javaVersion;})
         ];
