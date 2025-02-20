@@ -16,7 +16,7 @@
     "height": 640,
     "min_y": -128,
     "size_horizontal": 1,
-    "size_vertical": 2
+    "size_vertical": 1
   },
   "noise_router": {
     "barrier": {
@@ -99,7 +99,7 @@
                   "type": "minecraft:clamp",
                   "input": {
                     "type": "minecraft:add",
-                    "argument1": -0.703125,
+                    "argument1": -0.129137,
                     "argument2": {
                       "type": "minecraft:mul",
                       "argument1": 8.0,
