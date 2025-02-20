@@ -17,48 +17,48 @@ import net.minecraft.world.level.levelgen.SurfaceRules.ConditionSource;
 @Mod(Constants.MOD_ID)
 public class LarionMod {
 
-	private static final DeferredRegister<MapCodec<? extends DensityFunction>> DENSITY_FUNCTION_TYPES = DeferredRegister
+	private static final DeferredRegister<Codec<? extends DensityFunction>> DENSITY_FUNCTION_TYPES = DeferredRegister
 			.create(Registries.DENSITY_FUNCTION_TYPE, Constants.MOD_ID);
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> DIV = DENSITY_FUNCTION_TYPES.register("div",
+	public static final Supplier<Codec<? extends DensityFunction>> DIV = DENSITY_FUNCTION_TYPES.register("div",
 			() -> {
 				return Division.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> SQRT = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> SQRT = DENSITY_FUNCTION_TYPES
 			.register("sqrt", () -> {
 				return Sqrt.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> SIGNUM = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> SIGNUM = DENSITY_FUNCTION_TYPES
 			.register("signum", () -> {
 				return Signum.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> SINE = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> SINE = DENSITY_FUNCTION_TYPES
 			.register("sine", () -> {
 				return Sine.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> X_COORD = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> X_COORD = DENSITY_FUNCTION_TYPES
 			.register("x", () -> {
 				return XCoord.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> Z_COORD = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> Z_COORD = DENSITY_FUNCTION_TYPES
 			.register("z", () -> {
 				return ZCoord.CODEC.codec();
 			});
 
-	public static final Supplier<MapCodec<? extends DensityFunction>> FLAT_DOMAIN_WARP = DENSITY_FUNCTION_TYPES
+	public static final Supplier<Codec<? extends DensityFunction>> FLAT_DOMAIN_WARP = DENSITY_FUNCTION_TYPES
 			.register("flat_domain_warp", () -> {
 				return FlatDomainWarp.CODEC.codec();
 			});
 
-	private static final DeferredRegister<MapCodec<? extends ConditionSource>> MATERIAL_CONDITIONS = DeferredRegister
+	private static final DeferredRegister<Codec<? extends ConditionSource>> MATERIAL_CONDITIONS = DeferredRegister
 			.create(Registries.MATERIAL_CONDITION, Constants.MOD_ID);
 
-	public static final Supplier<MapCodec<? extends ConditionSource>> SOMEWHAT_STEEP = MATERIAL_CONDITIONS
+	public static final Supplier<Codec<? extends ConditionSource>> SOMEWHAT_STEEP = MATERIAL_CONDITIONS
 			.register("somewhat_steep", () -> {
 				return SomewhatSteepMaterialCondition.CODEC.codec();
 			});
