@@ -42,15 +42,15 @@
           {
             "location": 0,
             "derivative": 0.5,
-            "value": -0.72
+            "value": -1.0
           },
           {
             "location": 1.0,
-            "derivative": 0.0,
+            "derivative": 0.5,
             "value": 0.0
           },
           {
-            "location": 2.0,
+            "location": 3.0,
             "derivative": 0.0,
             "value": 0.4
           }
@@ -70,39 +70,26 @@
               "value": 0.0
             },
             {
-              "location": 0.33,
-              "derivative": 0.0,
-              "value": 0.25
-            },
-            {
               "location": 0.66,
-              "derivative": 0.0,
-              "value": 0.35
+              "derivative": 0.75,
+              "value": 0.25
             },
             {
               "location": 1,
               "derivative": 0.0,
-              "value": 0.65
+              "value": 0.55
             }
           ]
         }
       },
       "argument2": {
-        "type": "minecraft:spline",
-        "spline": {
-          "coordinate": "larion:overworld/erosion/base",
-          "points": [
-            {
-              "location": -1,
-              "derivative": 0.0,
-              "value": -0.32
-            },
-            {
-              "location": 1,
-              "derivative": 0.0,
-              "value": 0.0
-            }
-          ]
+        "type": "minecraft:mul",
+        "argument1": 0.18,
+        "argument2": {
+          "type": "minecraft:noise",
+          "noise": "larion:erosion/base",
+          "xz_scale": 0.23,
+          "y_scale": 0.0
         }
       }
     }
