@@ -22,7 +22,7 @@
           (gradle_8.override
             {
               java = javaVersion;
-              javaToolchains = [];
+              javaToolchains = [jdk21];
             })
           (jdt-language-server.override {jdk = javaVersion;})
         ];
