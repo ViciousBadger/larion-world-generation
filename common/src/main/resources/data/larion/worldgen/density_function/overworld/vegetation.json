@@ -27,7 +27,7 @@
       "input": {
         "type": "minecraft:noise",
         "noise": "larion:vegetation/a",
-        "xz_scale": 0.35,
+        "xz_scale": 0.55,
         "y_scale": 0
       }
     }

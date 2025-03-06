@@ -210,7 +210,7 @@
                       "note": "Swamps",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 61
+                      "value": 60
                     },
                     {
                       "note": "Eroded lands",
@@ -246,7 +246,7 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 172
+                      "value": 132
                     },
                     {
                       "derivative": 0.0,
@@ -257,7 +257,7 @@
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 398
+                      "value": 348
                     }
                   ]
                 }
@@ -273,7 +273,7 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 132
+                      "value": 112
                     },
                     {
                       "derivative": 0.0,
@@ -310,12 +310,12 @@
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 182
+                      "value": 172
                     },
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 220
+                      "value": 208
                     }
                   ]
                 }
@@ -429,7 +429,7 @@
                       "note": "Swamps",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 62
+                      "value": 61
                     },
                     {
                       "note": "Eroded lands",
@@ -461,7 +461,7 @@
                       "note": "Swamps",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 62
+                      "value": 61
                     },
                     {
                       "note": "Eroded lands",
