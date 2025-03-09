@@ -4,7 +4,7 @@
   "argument2": {
     "type": "minecraft:noise",
     "noise": "larion:ridges/river_tunnel",
-    "xz_scale": 0.22,
+    "xz_scale": 0.35,
     "y_scale": 0.0
   }
 }

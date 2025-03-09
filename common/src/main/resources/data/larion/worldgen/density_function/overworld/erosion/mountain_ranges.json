@@ -1,6 +1,6 @@
 {
   "type": "minecraft:mul",
-  "argument1": 0.66,
+  "argument1": 0.5,
   "argument2": {
     "type": "minecraft:add",
     "argument1": {
@@ -8,7 +8,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:erosion/ranges_a",
-        "xz_scale": 0.4,
+        "xz_scale": 0.25,
         "y_scale": 0.0
       }
     },
@@ -17,7 +17,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:erosion/ranges_b",
-        "xz_scale": 0.4,
+        "xz_scale": 0.25,
         "y_scale": 0.0
       }
     }

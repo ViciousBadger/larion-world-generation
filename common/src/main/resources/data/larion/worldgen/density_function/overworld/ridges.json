@@ -22,12 +22,12 @@
             "value": 0.10
           },
           {
-            "location": 1.8,
+            "location": 2.8,
             "derivative": 0.47,
             "value": 0.93
           },
           {
-            "location": 2.0,
+            "location": 3.0,
             "derivative": 0.0,
             "value": 1.0
           }
@@ -37,25 +37,17 @@
     "argument2": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": {
-          "type": "minecraft:abs",
-          "argument": "larion:overworld/ridges/peaks"
-        },
+        "coordinate": "larion:overworld/ridges/peaks",
         "points": [
           {
             "location": 0.0,
-            "derivative": -0.15,
+            "derivative": 0.0,
             "value": 0.66
           },
           {
-            "location": 2.0,
-            "derivative": -0.15,
-            "value": 0.33
-          },
-          {
-            "location": 4.0,
+            "location": 1.33,
             "derivative": 0.0,
-            "value": 0.0
+            "value": 0.14
           }
         ]
       }

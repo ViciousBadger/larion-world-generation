@@ -25,10 +25,30 @@
         }
       },
       "input": {
-        "type": "minecraft:noise",
-        "noise": "larion:vegetation/a",
-        "xz_scale": 0.55,
-        "y_scale": 0
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:add",
+            "argument1": 0.5,
+            "argument2": {
+              "type": "minecraft:mul",
+              "argument1": 0.75,
+              "argument2": {
+                "type": "minecraft:noise",
+                "noise": "larion:vegetation/a",
+                "xz_scale": 0.25,
+                "y_scale": 0
+              }
+            }
+          }
+        },
+        "argument2": {
+          "type": "minecraft:noise",
+          "noise": "larion:vegetation/b",
+          "xz_scale": 0.25,
+          "y_scale": 0
+        }
       }
     }
   }
