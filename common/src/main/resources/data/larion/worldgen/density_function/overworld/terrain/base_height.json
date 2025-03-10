@@ -126,7 +126,7 @@
               {
                 "note": "Hills E=3",
                 "derivative": 0.0,
-                "location": -0.02,
+                "location": 0.02,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -191,10 +191,16 @@
                       "value": 56
                     },
                     {
+                      "note": "Coast",
+                      "derivative": 0.0,
+                      "location": 0.12,
+                      "value": 64
+                    },
+                    {
                       "note": "Windswept coast",
                       "derivative": 0.0,
-                      "location": 0.0,
-                      "value": 92
+                      "location": 0.33,
+                      "value": 97
                     }
                   ]
                 }
@@ -221,7 +227,7 @@
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 72
+                      "value": 82
                     }
                   ]
                 }
@@ -323,7 +329,7 @@
               {
                 "note": "Hills E=3",
                 "derivative": 0.0,
-                "location": -0.02,
+                "location": 0.02,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [

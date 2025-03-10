@@ -1,6 +1,9 @@
 {
-  "type": "minecraft:noise",
-  "noise": "larion:erosion/base",
-  "xz_scale": 0.23,
-  "y_scale": 0.0
+  "type": "minecraft:square",
+  "argument": {
+    "type": "minecraft:noise",
+    "noise": "larion:erosion/base",
+    "xz_scale": 0.23,
+    "y_scale": 0.0
+  }
 }

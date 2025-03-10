@@ -33,31 +33,39 @@
     }
   },
   "argument2": {
-    "type": "minecraft:spline",
-    "spline": {
-      "coordinate": "larion:overworld/erosion/mountain_ranges",
-      "points": [
-        {
-          "location": 0,
-          "derivative": 0.5,
-          "value": -1.0
-        },
-        {
-          "location": 0.25,
-          "derivative": 0.5,
-          "value": 0.0
-        },
-        {
-          "location": 0.5,
-          "derivative": 0.15,
-          "value": 0.45
-        },
-        {
-          "location": 1.0,
-          "derivative": 0.5,
-          "value": 1.0
-        }
-      ]
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "larion:overworld/erosion/mountain_ranges",
+        "points": [
+          {
+            "location": 0,
+            "derivative": 0.5,
+            "value": -1.0
+          },
+          {
+            "location": 0.25,
+            "derivative": 0.5,
+            "value": 0.0
+          },
+          {
+            "location": 0.5,
+            "derivative": 0.15,
+            "value": 0.45
+          },
+          {
+            "location": 1.0,
+            "derivative": 0.5,
+            "value": 1.0
+          }
+        ]
+      }
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": -0.24,
+      "argument2": "larion:overworld/erosion/base"
     }
   }
 }

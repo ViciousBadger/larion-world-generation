@@ -3,7 +3,7 @@
   "argument": {
     "type": "minecraft:mul",
     "argument1": {
-      "type": "minecraft:max",
+      "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:noise",
         "noise": "larion:terrain/hills",
