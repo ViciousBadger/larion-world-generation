@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:square",
+  "type": "minecraft:abs",
   "argument": {
     "type": "minecraft:noise",
     "noise": "larion:erosion/base",

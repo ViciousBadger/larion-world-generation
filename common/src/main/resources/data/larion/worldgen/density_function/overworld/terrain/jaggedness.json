@@ -20,7 +20,7 @@
       },
       {
         "derivative": 0.0,
-        "location": 0.25,
+        "location": 0.5,
         "value": {
           "coordinate": "minecraft:overworld/erosion",
           "points": [

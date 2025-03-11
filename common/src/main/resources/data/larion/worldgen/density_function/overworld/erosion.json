@@ -17,7 +17,7 @@
                 "value": -0.32
               },
               {
-                "location": 4.0,
+                "location": 2.0,
                 "derivative": -0.16,
                 "value": -1
               }
@@ -33,7 +33,7 @@
     }
   },
   "argument2": {
-    "type": "minecraft:add",
+    "type": "minecraft:min",
     "argument1": {
       "type": "minecraft:spline",
       "spline": {
@@ -41,31 +41,65 @@
         "points": [
           {
             "location": 0,
-            "derivative": 0.5,
+            "derivative": 4.0,
             "value": -1.0
           },
           {
             "location": 0.25,
-            "derivative": 0.5,
+            "derivative": 4.0,
             "value": 0.0
           },
           {
-            "location": 0.5,
-            "derivative": 0.15,
-            "value": 0.45
-          },
-          {
-            "location": 1.0,
-            "derivative": 0.5,
-            "value": 1.0
+            "location": 0.35,
+            "derivative": 8.0,
+            "value": 0.5
           }
         ]
       }
     },
     "argument2": {
-      "type": "minecraft:mul",
-      "argument1": -0.24,
-      "argument2": "larion:overworld/erosion/base"
+      "type": "minecraft:max",
+      "argument1": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/erosion/eroded_zones",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 0.0,
+              "value": 0.0
+            },
+            {
+              "location": 0.5,
+              "derivative": 0.0,
+              "value": 0.5
+            },
+            {
+              "location": 1.0,
+              "derivative": 0.5,
+              "value": 0.7
+            }
+          ]
+        }
+      },
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/erosion/base",
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": -0.5,
+              "value": 0.35
+            },
+            {
+              "location": 1.0,
+              "derivative": -0.5,
+              "value": 0.05
+            }
+          ]
+        }
+      }
     }
   }
 }
