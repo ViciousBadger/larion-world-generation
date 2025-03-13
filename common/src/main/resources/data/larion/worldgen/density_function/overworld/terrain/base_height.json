@@ -256,7 +256,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": -0.33,
+                      "value": 182
+                    },
+                    {
+                      "derivative": 0.0,
+                      "location": 0.33,
                       "value": 314
                     },
                     {
@@ -283,14 +288,19 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": -0.33,
+                      "value": 132
+                    },
+                    {
+                      "derivative": 0.0,
+                      "location": 0.33,
                       "value": 196
                     },
                     {
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 274
+                      "value": 264
                     }
                   ]
                 }
@@ -310,12 +320,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.5,
+                      "location": -0.33,
                       "value": 84
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 172
                     },
                     {
@@ -341,12 +351,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.6,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 104
                     },
                     {
@@ -372,12 +382,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 76
                     },
                     {
@@ -403,13 +413,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 78
+                      "value": 97
                     },
                     {
                       "derivative": 0.0,
@@ -433,6 +443,11 @@
                   "points": [
                     {
                       "note": "Swamps",
+                      "derivative": 0.0,
+                      "location": -1.0,
+                      "value": 59
+                    },
+                    {
                       "derivative": 0.0,
                       "location": 0.0,
                       "value": 61
@@ -465,6 +480,11 @@
                   "points": [
                     {
                       "note": "Swamps",
+                      "derivative": 0.0,
+                      "location": -1.0,
+                      "value": 59
+                    },
+                    {
                       "derivative": 0.0,
                       "location": 0.0,
                       "value": 61

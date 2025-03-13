@@ -8,7 +8,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:erosion/zones_a",
-        "xz_scale": 0.35,
+        "xz_scale": 0.45,
         "y_scale": 0.0
       }
     },
@@ -17,7 +17,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:erosion/zones_b",
-        "xz_scale": 0.35,
+        "xz_scale": 0.45,
         "y_scale": 0.0
       }
     }
