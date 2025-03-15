@@ -6,7 +6,7 @@
       "coordinate": "larion:overworld/ridges/river_tunnel",
       "points": [
         {
-          "location": 0.3,
+          "location": 0.15,
           "derivative": 0.0,
           "value": {
             "coordinate": "larion:overworld/ridges/rivers",
@@ -17,7 +17,7 @@
                 "value": -0.32
               },
               {
-                "location": 4.0,
+                "location": 2.0,
                 "derivative": -0.16,
                 "value": -1
               }
@@ -25,7 +25,7 @@
           }
         },
         {
-          "location": 0.6,
+          "location": 0.45,
           "derivative": 0.0,
           "value": -1
         }
@@ -33,7 +33,7 @@
     }
   },
   "argument2": {
-    "type": "minecraft:add",
+    "type": "minecraft:min",
     "argument1": {
       "type": "minecraft:spline",
       "spline": {
@@ -41,55 +41,63 @@
         "points": [
           {
             "location": 0,
-            "derivative": 0.5,
+            "derivative": 4.0,
             "value": -1.0
           },
           {
-            "location": 1.0,
-            "derivative": 0.5,
+            "location": 0.25,
+            "derivative": 4.0,
             "value": 0.0
           },
           {
-            "location": 3.0,
-            "derivative": 0.0,
-            "value": 0.4
+            "location": 0.35,
+            "derivative": 8.0,
+            "value": 0.5
           }
         ]
       }
     },
     "argument2": {
-      "type": "minecraft:add",
+      "type": "minecraft:max",
       "argument1": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": "larion:overworld/erosion/eroded_zones",
           "points": [
             {
-              "location": 0.0,
+              "location": 0,
               "derivative": 0.0,
               "value": 0.0
             },
             {
-              "location": 0.66,
-              "derivative": 0.75,
-              "value": 0.25
+              "location": 0.5,
+              "derivative": 0.0,
+              "value": 0.5
             },
             {
-              "location": 1,
-              "derivative": 0.0,
-              "value": 0.55
+              "location": 1.0,
+              "derivative": 0.5,
+              "value": 0.7
             }
           ]
         }
       },
       "argument2": {
-        "type": "minecraft:mul",
-        "argument1": 0.18,
-        "argument2": {
-          "type": "minecraft:noise",
-          "noise": "larion:erosion/base",
-          "xz_scale": 0.23,
-          "y_scale": 0.0
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "larion:overworld/erosion/base",
+          "points": [
+            {
+              "location": 0.0,
+              "derivative": -0.5,
+              "value": 0.35
+            },
+            {
+              "location": 1.0,
+              "derivative": -0.5,
+              "value": 0.05
+            }
+          ]
         }
       }
     }
