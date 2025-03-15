@@ -126,7 +126,7 @@
               {
                 "note": "Hills E=3",
                 "derivative": 0.0,
-                "location": -0.02,
+                "location": 0.02,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -191,10 +191,16 @@
                       "value": 56
                     },
                     {
+                      "note": "Coast",
+                      "derivative": 0.0,
+                      "location": 0.12,
+                      "value": 64
+                    },
+                    {
                       "note": "Windswept coast",
                       "derivative": 0.0,
-                      "location": 0.0,
-                      "value": 92
+                      "location": 0.33,
+                      "value": 97
                     }
                   ]
                 }
@@ -210,7 +216,7 @@
                       "note": "Swamps",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 61
+                      "value": 60
                     },
                     {
                       "note": "Eroded lands",
@@ -221,7 +227,7 @@
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 72
+                      "value": 82
                     }
                   ]
                 }
@@ -246,18 +252,23 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 172
+                      "value": 132
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": -0.33,
+                      "value": 182
+                    },
+                    {
+                      "derivative": 0.0,
+                      "location": 0.33,
                       "value": 314
                     },
                     {
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 398
+                      "value": 348
                     }
                   ]
                 }
@@ -273,18 +284,23 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
+                      "value": 112
+                    },
+                    {
+                      "derivative": 0.0,
+                      "location": -0.33,
                       "value": 132
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 196
                     },
                     {
                       "note": "Peaks",
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 274
+                      "value": 264
                     }
                   ]
                 }
@@ -304,18 +320,18 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.5,
+                      "location": -0.33,
                       "value": 84
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
-                      "value": 182
+                      "location": 0.33,
+                      "value": 172
                     },
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 220
+                      "value": 208
                     }
                   ]
                 }
@@ -323,7 +339,7 @@
               {
                 "note": "Hills E=3",
                 "derivative": 0.0,
-                "location": -0.02,
+                "location": 0.02,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -335,12 +351,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.6,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 104
                     },
                     {
@@ -366,12 +382,12 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 0.33,
                       "value": 76
                     },
                     {
@@ -397,13 +413,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 78
+                      "value": 97
                     },
                     {
                       "derivative": 0.0,
@@ -428,8 +444,13 @@
                     {
                       "note": "Swamps",
                       "derivative": 0.0,
+                      "location": -1.0,
+                      "value": 59
+                    },
+                    {
+                      "derivative": 0.0,
                       "location": 0.0,
-                      "value": 62
+                      "value": 61
                     },
                     {
                       "note": "Eroded lands",
@@ -460,8 +481,13 @@
                     {
                       "note": "Swamps",
                       "derivative": 0.0,
+                      "location": -1.0,
+                      "value": 59
+                    },
+                    {
+                      "derivative": 0.0,
                       "location": 0.0,
-                      "value": 62
+                      "value": 61
                     },
                     {
                       "note": "Eroded lands",

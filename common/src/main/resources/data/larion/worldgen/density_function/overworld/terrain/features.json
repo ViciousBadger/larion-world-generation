@@ -6,7 +6,7 @@
       "type": "minecraft:mul",
       "argument1": "minecraft:overworld/jaggedness",
       "argument2": {
-        "type": "minecraft:abs",
+        "type": "minecraft:half_negative",
         "argument": {
           "type": "minecraft:noise",
           "noise": "larion:terrain/jagged",
