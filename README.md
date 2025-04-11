@@ -14,7 +14,9 @@ World](https://modrinth.com/datapack/larion-one-continent) add-on datapack!
 ## Features
 
 - Adjusted world height, now goes from -128 to 512.
-- Oceans are actual infinite oceans with landmasses of varying size. On average they are maybe 3x3 thousand blocks in size, but some are way larger.
+- Oceans are actual infinite oceans with landmasses of varying size. If your
+spawn point on a new world is just islands, you're likely just far away from any large landmasses.
+- Temperature zones are laid out vertically in bands, instead of being random blobs
 - Terrain erosion (a parameter that decides between mountains, hills, flatland and windswept/swamps) is laid out very differently and can lead to unique landshapes.
 - Rivers are long, meandering and form deep valleys in mountain areas. In rare cases they will tunnel straight though terrain.
 - The shape of terrain is very different on the small scale too, using a special domain wrap technique to deform the horizontal axes only, replacing the janky 3d noise of vanilla. This makes cliffs way more cool looking.
