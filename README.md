@@ -2,7 +2,7 @@
 
 # Larion World Generation, for Minecraft 1.20-1.21.1
 
-Larion is a terrain generation overhaul that overhauls the style and layout of world generation in an unique "epic fantasy" style that favors otherworldly, dreamlike vistas.
+Larion is a terrain generation mod that overhauls the style and layout of world generation in a modern-vanilla-like "epic fantasy" style favoring otherworldly, dreamlike vistas.
 
 Larion alters the **shape of the terrain**, **cave generation** and the **layout of biomes**, but makes no changes to the actual biomes or their features, allowing you to pair it with any compatible biome-altering mods or just keep it close to vanilla as the screenshots show.
 
