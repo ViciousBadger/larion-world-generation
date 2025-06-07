@@ -40,19 +40,29 @@
         "coordinate": "larion:overworld/erosion/mountain_ranges",
         "points": [
           {
-            "location": 0,
-            "derivative": 4.0,
+            "location": -0.88,
+            "derivative": 0.0,
             "value": -1.0
           },
           {
-            "location": 0.25,
-            "derivative": 4.0,
-            "value": 0.0
+            "location": -0.25,
+            "derivative": 0.0,
+            "value": -0.72
+          },
+          {
+            "location": -0.15,
+            "derivative": 0.0,
+            "value": -0.35
+          },
+          {
+            "location": 0.12,
+            "derivative": 0.0,
+            "value": 0.2
           },
           {
             "location": 0.35,
-            "derivative": 8.0,
-            "value": 0.5
+            "derivative": 0.0,
+            "value": 1.0
           }
         ]
       }
@@ -70,7 +80,7 @@
               "value": 0.0
             },
             {
-              "location": 0.5,
+              "location": 0.7,
               "derivative": 0.0,
               "value": 0.5
             },

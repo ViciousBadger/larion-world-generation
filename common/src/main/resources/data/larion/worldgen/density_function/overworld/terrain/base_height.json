@@ -64,7 +64,7 @@
                       "note": "Tall coastal cliff",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 180
+                      "value": 140
                     }
                   ]
                 }
@@ -91,7 +91,7 @@
                       "note": "Low coastal cliff",
                       "derivative": 0.0,
                       "location": 0.0,
-                      "value": 120
+                      "value": 106
                     }
                   ]
                 }
@@ -326,12 +326,12 @@
                     {
                       "derivative": 0.0,
                       "location": 0.33,
-                      "value": 172
+                      "value": 132
                     },
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 208
+                      "value": 168
                     }
                   ]
                 }
@@ -357,12 +357,12 @@
                     {
                       "derivative": 0.0,
                       "location": 0.33,
-                      "value": 104
+                      "value": 94
                     },
                     {
                       "derivative": 0.0,
                       "location": 1.0,
-                      "value": 152
+                      "value": 132
                     }
                   ]
                 }

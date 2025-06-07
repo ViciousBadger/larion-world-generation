@@ -14,7 +14,7 @@
               "argument": {
                 "type": "minecraft:noise",
                 "noise": "larion:terrain/cliffs_a",
-                "xz_scale": 0.1,
+                "xz_scale": 0.12,
                 "y_scale": 0
               }
             },
@@ -29,7 +29,7 @@
             "argument": {
               "type": "minecraft:noise",
               "noise": "larion:terrain/cliffs_b",
-              "xz_scale": 0.1,
+              "xz_scale": 0.14,
               "y_scale": 0
             }
           },
@@ -43,7 +43,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:terrain/cliffs_c",
-            "xz_scale": 0.1,
+            "xz_scale": 0.14,
             "y_scale": 0
           }
         },
