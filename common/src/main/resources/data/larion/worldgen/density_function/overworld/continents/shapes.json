@@ -8,7 +8,7 @@
       "argument": {
         "type": "minecraft:noise",
         "noise": "larion:continents/base",
-        "xz_scale": 0.25,
+        "xz_scale": 0.15,
         "y_scale": 0
       }
     }
