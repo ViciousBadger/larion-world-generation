@@ -12,7 +12,7 @@
       },
       "warp_x": {
         "type": "minecraft:mul",
-        "argument1": 24,
+        "argument1": 33.333,
         "argument2": {
           "type": "minecraft:noise",
           "noise": "larion:terrain/warp_x",
@@ -22,7 +22,7 @@
       },
       "warp_z": {
         "type": "minecraft:mul",
-        "argument1": 24,
+        "argument1": 33.333,
         "argument2": {
           "type": "minecraft:noise",
           "noise": "larion:terrain/warp_z",

@@ -45,7 +45,7 @@
               {
                 "note": "Mountain peaks E=0",
                 "derivative": 0.0,
-                "location": -1.0,
+                "location": -0.82,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -57,13 +57,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 92
                     },
                     {
                       "note": "Tall coastal cliff",
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 1.0,
                       "value": 140
                     }
                   ]
@@ -84,13 +84,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 72
                     },
                     {
                       "note": "Low coastal cliff",
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 1.0,
                       "value": 106
                     }
                   ]
@@ -111,13 +111,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 68
                     },
                     {
                       "note": "Highlands coast",
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 1.0,
                       "value": 84
                     }
                   ]
@@ -138,13 +138,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "note": "Hills coast",
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 1.0,
                       "value": 66
                     }
                   ]
@@ -165,13 +165,13 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.7,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "note": "Coast",
                       "derivative": 0.0,
-                      "location": 0.0,
+                      "location": 1.0,
                       "value": 66
                     }
                   ]
@@ -193,13 +193,13 @@
                     {
                       "note": "Coast",
                       "derivative": 0.0,
-                      "location": 0.12,
+                      "location": -0.33,
                       "value": 64
                     },
                     {
                       "note": "Windswept coast",
                       "derivative": 0.0,
-                      "location": 0.33,
+                      "location": 1.0,
                       "value": 97
                     }
                   ]
@@ -237,14 +237,14 @@
         },
         {
           "derivative": 0.0,
-          "location": 0.25,
+          "location": 0.10,
           "value": {
             "coordinate": "minecraft:overworld/erosion",
             "points": [
               {
                 "note": "Mountain peaks E=0",
                 "derivative": 0.0,
-                "location": -1.0,
+                "location": -0.82,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -252,17 +252,12 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 132
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": -0.33,
                       "value": 182
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.33,
-                      "value": 314
+                      "location": -0.33,
+                      "value": 224
                     },
                     {
                       "note": "Peaks",
@@ -281,20 +276,15 @@
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
                     {
-                      "note": "Valleys",
+                      "note": "Lakes",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 112
+                      "value": 56
                     },
                     {
                       "derivative": 0.0,
                       "location": -0.33,
-                      "value": 132
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": 0.33,
-                      "value": 196
+                      "value": 142
                     },
                     {
                       "note": "Peaks",
@@ -308,7 +298,7 @@
               {
                 "note": "Highlands E=2",
                 "derivative": 0.0,
-                "location": -0.32,
+                "location": -0.24,
                 "value": {
                   "coordinate": "minecraft:overworld/ridges_folded",
                   "points": [
@@ -321,12 +311,7 @@
                     {
                       "derivative": 0.0,
                       "location": -0.33,
-                      "value": 84
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": 0.33,
-                      "value": 132
+                      "value": 94
                     },
                     {
                       "derivative": 0.0,
@@ -352,12 +337,7 @@
                     {
                       "derivative": 0.0,
                       "location": -0.33,
-                      "value": 64
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": 0.33,
-                      "value": 94
+                      "value": 74
                     },
                     {
                       "derivative": 0.0,
@@ -387,11 +367,6 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.33,
-                      "value": 76
-                    },
-                    {
-                      "derivative": 0.0,
                       "location": 1.0,
                       "value": 84
                     }
@@ -410,11 +385,6 @@
                       "derivative": 0.0,
                       "location": -1.0,
                       "value": 56
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": -0.33,
-                      "value": 64
                     },
                     {
                       "derivative": 0.0,
@@ -460,11 +430,6 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": 0.66,
-                      "value": 82
-                    },
-                    {
-                      "derivative": 0.0,
                       "location": 1.0,
                       "value": 96
                     }
@@ -494,11 +459,6 @@
                       "derivative": 0.0,
                       "location": 0.33,
                       "value": 64
-                    },
-                    {
-                      "derivative": 0.0,
-                      "location": 0.66,
-                      "value": 92
                     },
                     {
                       "derivative": 0.0,
