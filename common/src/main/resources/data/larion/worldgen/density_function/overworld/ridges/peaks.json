@@ -8,7 +8,7 @@
         "coordinate": "minecraft:overworld/erosion",
         "points": [
           {
-            "location": -0.35,
+            "location": -0.85,
             "derivative": 0.0,
             "value": 0.0
           },
@@ -52,7 +52,7 @@
         "coordinate": "minecraft:overworld/erosion",
         "points": [
           {
-            "location": -0.35,
+            "location": -0.85,
             "derivative": 0.0,
             "value": 0.33
           },
@@ -73,7 +73,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:ridges/peaks_a",
-            "xz_scale": 0.35,
+            "xz_scale": 0.30,
             "y_scale": 0.0
           }
         },
@@ -82,7 +82,7 @@
           "argument": {
             "type": "minecraft:noise",
             "noise": "larion:ridges/peaks_b",
-            "xz_scale": 0.25,
+            "xz_scale": 0.22,
             "y_scale": 0.0
           }
         }

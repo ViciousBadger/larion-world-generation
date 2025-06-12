@@ -15,26 +15,31 @@
           "coordinate": "minecraft:overworld/erosion",
           "points": [
             {
-              "location": -1.0,
+              "location": -0.82,
               "derivative": 0.0,
               "value": {
                 "coordinate": "minecraft:overworld/ridges_folded",
                 "points": [
                   {
+                    "location": -1.0,
+                    "derivative": 0.0,
+                    "value": 12.0
+                  },
+                  {
                     "location": -0.33,
                     "derivative": 0.0,
-                    "value": 0.0
+                    "value": 27.0
                   },
                   {
                     "location": 1.0,
                     "derivative": 0.0,
-                    "value": 37.0
+                    "value": 47.0
                   }
                 ]
               }
             },
             {
-              "location": -0.35,
+              "location": -0.52,
               "derivative": 0.0,
               "value": {
                 "coordinate": "minecraft:overworld/ridges_folded",

@@ -57,7 +57,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 92
                     },
                     {
@@ -84,7 +84,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 72
                     },
                     {
@@ -111,7 +111,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 68
                     },
                     {
@@ -138,7 +138,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 64
                     },
                     {
@@ -165,7 +165,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 64
                     },
                     {
@@ -193,7 +193,7 @@
                     {
                       "note": "Coast",
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.33,
                       "value": 64
                     },
                     {
@@ -252,12 +252,12 @@
                       "note": "Valleys",
                       "derivative": 0.0,
                       "location": -1.0,
-                      "value": 182
+                      "value": 142
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
-                      "value": 224
+                      "location": 0.0,
+                      "value": 182
                     },
                     {
                       "note": "Peaks",
@@ -283,7 +283,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 142
                     },
                     {
@@ -310,7 +310,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 94
                     },
                     {
@@ -336,7 +336,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 74
                     },
                     {
@@ -362,7 +362,7 @@
                     },
                     {
                       "derivative": 0.0,
-                      "location": -0.33,
+                      "location": 0.0,
                       "value": 64
                     },
                     {
